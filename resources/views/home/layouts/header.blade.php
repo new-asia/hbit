@@ -52,9 +52,9 @@
         <div class="class170109" title="">
             <div class="basebase" title="">
                 <div class="base clear" title="">
-                    <a href="/static/java.html" target="_blank" title="Java大数据"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>Java大数据</u></a>
-                    <a href="/static/php.html" target="_blank" title="PHP全栈"><img src="/static/upload/img/php_ico.png" width="63" height="73"><u>PHP全栈</u></a>
-                    <a href="/static/html5.html" target="_blank" title="HTML5全栈"><img src="/static/upload/img/h5_ico.png" width="63" height="73"><u>HTML5全栈</u></a>
+                    <a href="/java.html" target="_blank" title="Java大数据"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>Java大数据</u></a>
+                    <a href="/php.html" target="_blank" title="PHP全栈"><img src="/static/upload/img/php_ico.png" width="63" height="73"><u>PHP全栈</u></a>
+                    <a href="/html5.html" target="_blank" title="HTML5全栈"><img src="/static/upload/img/h5_ico.png" width="63" height="73"><u>HTML5全栈</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>

@@ -7,7 +7,19 @@
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 
 {{--banner--}}
-@include('home.layouts.banner')
+{{--@include('home.layouts.banner')--}}
+<div class="banner">
+ <div class="a_banner">
+  <div class="a_banner_pic">
+   <ul>
+    <li>
+     <a href="#"><img src="./upload/img/201808101106563570.png" style="background: url(/static/upload/img/201808101106563570.png) center 0px no-repeat;height: 520px;width: 100%;"/></a>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div id="container" onclick="window.open('tencent://message/?Menu=yes&amp;uin=800856702','_blank')" style="cursor:pointer;"></div>
+</div>
 <div class="wrapper">
 <div class="content_nav">
 <div class="container" style="line-height: 60px;">

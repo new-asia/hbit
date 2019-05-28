@@ -21,9 +21,9 @@ Route::namespace('Home')->group(function () {
     Route::get('/faculty', 'IndexController@faculty');
     Route::get('/StudentsStory', 'IndexController@StudentsStory');
     //课程
-    Route::get('/java', 'CurriculumController@java');
-    Route::get('/php', 'CurriculumController@php');
-    Route::get('/html5', 'CurriculumController@html5');
+    Route::get('/java.html', 'CurriculumController@java');
+    Route::get('/php.html', 'CurriculumController@php');
+    Route::get('/html5.html', 'CurriculumController@html5');
     //导航
     Route::get('/idea', 'NavController@idea');
     Route::get('/history', 'NavController@history');
