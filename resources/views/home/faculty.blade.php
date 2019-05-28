@@ -24,10 +24,10 @@
    <div class="disList">
    <div class="dLleft f_l"><a target="_blank" href="/Faculty/show-3.html"><img src="{{$v->teacher_portrait_src}}" width="180" alt="{{$v->name}}" /></a></div>
    <div class="dLright f_l">
-   <a target="_blank" href="/Faculty/show-3.html"><p><strong>{{$v->name}}</strong></p></a>
+   <a target="_blank" href="/show-3.html"><p><strong>{{$v->name}}</strong></p></a>
    <p><span>{{$v->teacher_position}}</span></p>
    <p><b>工作年限：</b><span>{{$v->obtain_employment_time}}</span></p>
-   <p><b>擅长领域：</b>职业规划,心理咨询</p>
+   <p><b>擅长领域：</b>{{$v->field}}</p>
    <p><b>授课风格：</b>{{$v->teacher_style}}</p>
    </div>
    <div class="clear" style="height:0px;"></div>

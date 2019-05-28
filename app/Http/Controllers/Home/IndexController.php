@@ -13,18 +13,20 @@ class IndexController extends Controller
     }
 
     public function studentemployment(){
-        return view('home/studentemployment');
+        $student = new Student();
+        $data = $student->getStudentLimit(7);
+        return view('home/studentemployment',['student'=>$data]);
     }
 
     public function faculty(){
         $teacher = new Teacher();
-        $data = $teacher->orderBy('teacher_sort')->get();
+        $data = $teacher->orderBy('list_order')->get();
         return view('home/faculty',['teacher'=>$data]);
     }
 
     public function StudentsStory(){
         $student = new Student();
-        $data = $student->orderBy('list_order')->get();
+        $data = $student->getStudent();
         return view('home/StudentsStory',['student'=>$data]);
     }
 

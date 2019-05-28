@@ -244,18 +244,17 @@
 <div class="plot_con" style="height: 510px;">
 
 <div class="plot_l">
-<a href="/StudentsStory/show-4.html" class="picbox"><img src="/static/upload/img/201808301609094314.jpg" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
-<p class="p1">初来鸿博时，印象最深刻的就是标识牌上的那句“自己要学会独立”的标语。要为自己的未来拼搏，为自己未来的美好生说努力。</p>
-<p class="p2"><span>姓名：王**</span> <span>班级：java大数据</span><span>月薪：25000</span></p></a>
+<a href="/StudentsStory/show-4.html" class="picbox"><img src="{{$student[2]->img}}" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
+<p class="p1">{{$student[0]->testimonials}}</p>
+<p class="p2"><span>姓名：{{$student[0]->name}}</span> <span>班级：{{$student[0]->class_name}}</span><span>月薪：{{$student[0]->pay}}</span></p></a>
 </div>
 <div class="plot_r">
 <ul>
-<li><a href="/StudentsStory/show-19.html" class="picbox"><img height="140" src="/static/upload/img/201809171656317575.jpg"><p>姓名：石**<br>班级：PHP全栈<br>月薪：15000</p></a></li>
-<li><a href="/StudentsStory/show-18.html" class="picbox"><img height="140" src="/static/upload/img/201809171658434753.jpg"><p>姓名：王**月<br>班级：java大数据<br>月薪：20000</p></a></li>
-<li><a href="/StudentsStory/show-16.html" class="picbox"><img height="140" src="/static/upload/img/201805281545564876.jpg"><p>姓名：秦**<br>班级：java大数据<br>月薪：18000</p></a></li>
-<li><a href="/StudentsStory/show-15.html" class="picbox"><img height="140" src="/static/upload/img/201805281547452845.jpg"><p>姓名：苏**<br>班级：java大数据<br>月薪：16000</p></a></li>
-<li><a href="/StudentsStory/show-22.html" class="picbox"><img height="140" src="/static/upload/img/201805281553397981.jpg"><p>姓名：李**<br>班级：java大数据<br>月薪：15000</p></a></li>
-<li><a href="/StudentsStory/show-14.html" class="picbox"><img height="140" src="/static/upload/img/201809171657333191.jpg"><p>姓名：张**<br>班级：java大数据<br>月薪：26000</p></a></li>
+    @foreach($student as $k=>$v)
+        @if($k != 0)
+            <li><a href="/StudentsStory/show-19.html" class="picbox"><img height="140" src="{{$v->img}}"><p>姓名：{{$v->name}}<br>班级：{{$v->class_name}}<br>月薪：{{$v->pay}}</p></a></li>
+        @endif
+    @endforeach
 </ul>
 </div>
 </div>
