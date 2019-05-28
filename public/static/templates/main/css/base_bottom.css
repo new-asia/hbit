@@ -1,0 +1,91 @@
+.bottom_part2{
+    background:#276dc3;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.c_base{width: 1100px;margin:0 auto; position: relative;}
+.c_bot_lt{width: 1100px;float: left;position: relative;z-index: 30;}
+.c_bot_rg{float: right;position: absolute;top:5px;right:0;}
+
+
+.c_bot_lt_hd a{
+    display: inline-block;
+    width:64px;
+    height:95px;
+    line-height: 95px;
+    margin-right: 7px;
+    color:#fff;
+    text-align: center;
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    font-family:"Microsoft YaHei";
+ }
+/*  .c_bot_lt_hd a:nth-child(11){
+    margin-right: 0px;
+ } */
+ .c_bot_lt_hd a:last-child{
+    margin-right: 0px;
+ }
+ 
+.c_bot_lt_hd a.active{
+    background:url(http://www.mobiletrain.org/images/index/bottom_part2.png) no-repeat center top;
+}
+.c_bot_lt ul{padding:1% 0 0;}
+.c_bot_lt li{color:#fff;line-height:200%;display:none; font-size: 16px;text-align: left;font-family: "Microsoft YaHei";font-weight: 100;}
+.c_bot_rg li{ float:left; font-size:13px; text-align:center;color:#fff; line-height:18px;padding-top: 35%}
+.c_bot_rg li p{ padding-top:5px;}
+
+.bottom_part3{
+    width:100%;
+    background:#143257;
+    box-sizing:border-box;
+    padding:5px 0px 11px;
+
+}
+
+.c_footer{
+    text-align:center;
+    font-size:13px;
+    line-height:28px;
+    color:#AFAFAF;
+    font-family: "Microsoft YaHei";
+ }
+.c_footer a{padding:0 2px;}
+.c_footer .c_footer_nav a:hover{
+    text-decoration:underline;
+}
+.c_footer_nav{
+    width:100%;
+    text-align: center;
+}
+.c_footer_nav a{
+    font-size:13px;
+    padding:4px;color:#fff;
+}
+.c_footer_nav a:hover{
+    padding:0 4px;
+    color:#ffda0c;
+}
+.c_footer p a{color:#AFAFAF;}
+.c_footer p{font-size:12px;line-height: 14px;}
+.c_bot_lt ul li:nth-child(1){display:list-item;}
+/*公共-周末班*/
+.base-bk-big{background: #fff;}
+.base-bk-17520{padding:60px 0;}
+.base-bk-17520 h4{font-size:48px;line-height: 48px;color:#000;margin-bottom:15px;font-weight: 100;}
+.base-bk-17520 h4,.base-bk-17520 p,.base-bk-17520 .link17520{text-align:center;}
+.base-bk-17520 p{color:#4a4a4a;font-size:24px; line-height:36px;margin-bottom:40px;}
+.base-bk-17520 p i,.base-bk-17520 li em i{color:#e24242;font-weight:bold;}
+.base-bk-17520 a.base-link-17520{display: inline-block;padding:15px 50px;color:#fff;background: #f34848;border-radius: 30px;font-size:20px;}
+.base-bk-17520 a.base-link-17520:hover{background:#df4242;}
+.base-bk-17520 ul{margin-bottom:40px;overflow: hidden;}
+.base-bk-17520 li{padding:15px 0 0 0; text-align: center;float:left;width:212px;border:1px solid #ccc;margin-right:7px;}
+.base-bk-17520 li:nth-last-child(1){margin-right:0;}
+.base-bk-17520 li:hover{border-color:#f34848;}
+.base-bk-17520 li img{margin-bottom:20px;}
+.base-bk-17520 li h2{margin-bottom:12px;font-size:16px;color:#5c5c5c;}
+.base-bk-17520 li em{display: inline-block;text-align: left;font-size:14px; color:#898989; line-height: 22px;margin-bottom:25px;}
+.base-bk-17520 li a{display:block;border-top:1px solid #ccc;padding:10px 0;font-size:16px; color:#f34848;}
+.base-bk-17520 li a:hover{text-decoration: underline;}

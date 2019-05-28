@@ -1,0 +1,1075 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+  padding: 0;
+  margin: 0; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 14px; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  textarearesize: none; }
+
+fieldset, img {
+  border: 0; }
+
+img {
+  vertical-align: top;
+  border: none; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+abbr, acronym {
+  border: 0; }
+
+em, i {
+  font-style: normal; }
+
+a {
+  text-decoration: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+body {
+  min-width: 1100px; }
+
+.warp {
+  width: 1100px;
+  margin: 0 auto; }
+
+h2 {
+  font-size: 46px;
+  line-height: 46px;
+  color: #1e1f21;
+  text-align: center;
+  font-weight: bolder; }
+  h2 span {
+    color: #ef3755; }
+
+.f-tit-style1:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 59px;
+  border: 2px solid #f85654;
+  border-right: none;
+  border-bottom: none;
+  left: -10px;
+  top: -7px; }
+
+.f-tit-style1:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 59px;
+  border: 2px solid #f85654;
+  border-left: none;
+  border-top: none;
+  right: -10px;
+  bottom: -7px; }
+
+.f-tit-style1 {
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+  text-align: center;
+  margin: 0 auto; }
+  .f-tit-style1 span {
+    font-size: 20px;
+    color: #ef3a5b;
+    font-weight: bolder; }
+
+.btn-style1 {
+  width: 308px;
+  height: 66px;
+  margin: 0 auto;
+  background-image: url(http://www.qfedu.com/images/qf-bj-php/btn-style1.png); }
+  .btn-style1 a {
+    display: block;
+    text-align: center;
+    width: 304px;
+    height: 61px;
+    font-size: 24px;
+    line-height: 61px;
+    color: #018dd6;
+    background-color: none; }
+
+.btn-style1:hover a {
+  background-color: #018dd6;
+  color: #fff; }
+
+.btn-style2 {
+  width: 290px;
+  height: 62px;
+  margin: 0 auto;
+  background-image: url(http://www.qfedu.com/images/qf-bj-php/c8-btn.jpg); }
+  .btn-style2 a {
+    display: block;
+    text-align: center;
+    width: 286px;
+    height: 58px;
+    font-size: 24px;
+    line-height: 61px;
+    color: #ef3755;
+    background-color: none; }
+
+.btn-style2:hover a {
+  background-color: #ef3755;
+  color: #fff; }
+
+.banner {
+  height: 520px; }
+  
+.banner a {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+/*20170925  banner添加表单*/
+.banner .warp{
+  position: relative;
+}
+.banner20170923_wrap{
+    position: absolute;
+    width:260px;
+    height: 408px;
+    background: url(http://www.mobiletrain.org/img/banner_biaodan/php20170923_img1.png) no-repeat center top;
+    top:0;
+    left: 50%;
+    margin-left: -550px;
+    padding: 72px 10px 20px;
+}
+.banner20170923_head{
+    width:260px;
+    height: 65px;
+    margin:0 auto 45px;
+    background:url(http://www.mobiletrain.org/img/banner_biaodan/php20170923_img5.png) no-repeat center top;
+}
+.banner20170923_bg{
+    background:#f3f3f3;
+    width:260px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.banner20170923_form{
+    width:258px;
+    border:1px solid #cccccc;
+    border-radius: 10px;
+}
+.banner20170923_form p{
+    height: 48px;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 42px;
+    background:#fff url(http://www.mobiletrain.org/img/banner_biaodan/php20170923_img3.png) no-repeat 15px center;
+}
+.banner20170923_form p:nth-child(3){
+    border:0;
+    border-radius: 0 0 10px 10px ;
+    background:#fff url(http://www.mobiletrain.org/img/banner_biaodan/php20170923_img4.png) no-repeat 15px center;
+}
+.banner20170923_form p:nth-child(1){
+    border-radius: 10px 10px 0 0 ;
+    background:#fff url(http://www.mobiletrain.org/img/banner_biaodan/php20170923_img2.png) no-repeat 15px center;
+}
+.banner20170923_form p input{
+    font-size: 14px;
+    line-height: 48px;
+    color:#333;
+    border:0;
+    outline: none;
+    width:205px;
+    height: 48px;
+    box-sizing:border-box;
+}
+.banner20170923_bg span{
+    font-size: 14px;
+    color:#8e9a9d;
+    line-height: 20px;
+    display: block;
+    padding:5px;
+}
+.banner20170923_wrap button{
+    display: block;
+    border:0;
+    text-align: center;
+    font-size: 16px;
+    color:#fff;
+    width: 260px;
+    height: 46px;
+    background:#105ead;
+    border-radius: 23px;
+    margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.banner20170923_wrap .banner20170923_mf{
+    text-align: center;
+    font-size: 14px;
+    color:#8e9a9d;
+}
+.banner20170923_wrap .banner20170923_mf span{
+    color:#ea523b;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.c1 {
+  background-image: url(http://www.qfedu.com/images/qf-bj-php/c1-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 76px; }
+  .c1 > .warp {
+    padding-top: 84px; }
+    .c1 > .warp > h2 {
+      margin-bottom: 52px; }
+    .c1 > .warp > p:nth-child(2) {
+      width: 464px;
+      margin-bottom: 68px; }
+    .c1 > .warp > div:nth-child(3) {
+      margin-bottom: 43px; }
+      .c1 > .warp > div:nth-child(3) > div:nth-child(1) {
+        width: 720px;
+        height: 370px; }
+      .c1 > .warp > div:nth-child(3) > div:nth-child(2) {
+        background-image: url(http://www.qfedu.com/images/qf-bj-php/c1-line.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        width: 323px; }
+        .c1 > .warp > div:nth-child(3) > div:nth-child(2) ul {
+          margin-top: 7px; }
+        .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(1), .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(1) p {
+          background-color: #4b3566; }
+        .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(2), .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(2) p {
+          background-color: #e52642; }
+
+        .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(3), .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(3) p {
+          background-color: #00aca8; }
+        .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(4), .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(4) p {
+          background-color: #eb6b29; }
+        .c1 > .warp > div:nth-child(3) > div:nth-child(2) li {
+          font-size: 16px;
+          line-height: 64px;
+          color: #fff;
+          padding-left: 58px;
+          position: relative;
+          margin-bottom: 34px; }
+          .c1 > .warp > div:nth-child(3) > div:nth-child(2) li p {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            left: -41px;
+            top: -9px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 40px;
+            font-weight: bolder; }
+            .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(2){line-height:32px;}
+           .c1 > .warp > div:nth-child(3) > div:nth-child(2) li:nth-child(2) p{line-height:75px;}
+    .c1 > .warp > a {
+      display: block;
+      margin: 0 auto;
+      width: 302px;
+      height: 64px;
+      background-color: #ef3755;
+      -webkit-box-shadow: 0 5px 0 0 #480812;
+      -moz-box-shadow: 0 5px 0 0 #480812;
+      -ms-box-shadow: 0 5px 0 0 #480812;
+      box-shadow: 0 5px 0 0 #480812;
+      -webkit-transition: 0.6s all ease;
+      -o-transition: 0.6s all ease;
+      transition: 0.6s all ease;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      line-height: 64px;
+      position: relative;
+      top: 0; }
+      .c1 > .warp > a:hover {
+        top: 5px;
+        background-color: #d00022;
+        -webkit-box-shadow: 0 0px 0 0 #480812;
+        -moz-box-shadow: 0 0px 0 0 #480812;
+        -ms-box-shadow: 0 0px 0 0 #480812;
+        box-shadow: 0 0px 0 0 #480812; }
+
+.c2 {
+  background-image: url(http://www.qfedu.com/images/qf-bj-php/c2-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .c2 .warp {
+    padding-top: 76px;
+    padding-bottom: 96px; }
+    .c2 .warp > h2 {
+      margin-bottom: 42px; }
+    .c2 .warp > p {
+      font-size: 18px;
+      text-align: center;
+      line-height: 18px;
+      color: #666;
+      margin-bottom: 50px; }
+    .c2 .warp > div {
+      overflow: hidden;
+      margin-bottom: 65px; }
+      .c2 .warp > div > ul {
+        width: 1136px; }
+        .c2 .warp > div > ul > li.active > div > div:nth-child(2) {
+          right: 0; }
+        .c2 .warp > div > ul > li:nth-child(1) {
+          margin-top: 120px; }
+        .c2 .warp > div > ul > li:nth-child(2) {
+          margin-top: 92px; }
+          .c2 .warp > div > ul > li:nth-child(2) > div > div:nth-child(1) {
+            background-image: url(http://www.qfedu.com/images/qf-bj-php/c2-btn-02.png); }
+        .c2 .warp > div > ul > li:nth-child(3) {
+          margin-top: 64px; }
+          .c2 .warp > div > ul > li:nth-child(3) > div > div:nth-child(1) {
+            background-image: url(http://www.qfedu.com/images/qf-bj-php/c2-btn-03.png); }
+        .c2 .warp > div > ul > li:nth-child(4) {
+          margin-top: 34px; }
+          .c2 .warp > div > ul > li:nth-child(4) > div > div:nth-child(1) {
+            background-image: url(http://www.qfedu.com/images/qf-bj-php/c2-btn-04.png); }
+        .c2 .warp > div > ul > li:nth-child(5) > div > div:nth-child(1) {
+          background-image: url(http://www.qfedu.com/images/qf-bj-php/c2-btn-05.png); }
+        .c2 .warp > div > ul > li {
+          width: 190px;
+          margin-right: 37px; }
+          .c2 .warp > div > ul > li > p {
+            font-size: 20px;
+            color: #ef3755;
+            line-height: 18px;
+            text-align: center;
+            margin-bottom: 10px; }
+            .c2 .warp > div > ul > li > p span {
+              font-size: 14px; }
+          .c2 .warp > div > ul > li > div {
+            width: 189px;
+            height: 189px;
+            border: 1px solid #cccccc;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            background-color: #FFF; }
+            .c2 .warp > div > ul > li > div:hover > div:nth-child(2) {
+              right: 0;
+              opacity: 1; }
+            .c2 .warp > div > ul > li > div > div:nth-child(1) {
+              width: 165px;
+              height: 165px;
+              border-radius: 50%;
+              margin-top: 11px;
+              margin-left: 11px;
+              display: table;
+              text-align: center;
+              background-image: url(http://www.qfedu.com/images/qf-bj-php/c2-btn-01.png); }
+              .c2 .warp > div > ul > li > div > div:nth-child(1) > p {
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 30px;
+                line-height: 32px;
+                position: relative;
+                top: -10px; }
+                .c2 .warp > div > ul > li > div > div:nth-child(1) > p span {
+                  font-size: 12px; }
+            .c2 .warp > div > ul > li > div > div:nth-child(2) {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              right: 0;
+              text-align: center;
+              opacity: 0; }
+              .c2 .warp > div > ul > li > div > div:nth-child(2) > div {
+                height: 135px;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.8);
+                display: table;
+                color: #fff;
+                font-size: 12px;
+                line-height: 26px; }
+                .c2 .warp > div > ul > li > div > div:nth-child(2) > div > p {
+                  display: table-cell;
+                  vertical-align: middle; }
+    .c2 .warp > a {
+      display: block;
+      margin: 0 auto;
+      width: 302px;
+      height: 64px;
+      background-color: #ef3755;
+      -webkit-box-shadow: 0 5px 0 0 #480812;
+      -moz-box-shadow: 0 5px 0 0 #480812;
+      -ms-box-shadow: 0 5px 0 0 #480812;
+      box-shadow: 0 5px 0 0 #480812;
+      -webkit-transition: 0.6s all ease;
+      -o-transition: 0.6s all ease;
+      transition: 0.6s all ease;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      line-height: 64px;
+      position: relative;
+      top: 0; }
+      .c2 .warp > a:hover {
+        top: 5px;
+        background-color: #d00022;
+        -webkit-box-shadow: 0 0px 0 0 #480812;
+        -moz-box-shadow: 0 0px 0 0 #480812;
+        -ms-box-shadow: 0 0px 0 0 #480812;
+        box-shadow: 0 0px 0 0 #480812; }
+
+.c3 {
+  background-color: #f7f7f7; }
+  .c3 .warp {
+    padding-top: 80px;
+    padding-bottom: 70px; }
+    .c3 .warp h2 {
+      margin-bottom: 90px; }
+    .c3 .warp > div {
+      margin-bottom: 67px; }
+      .c3 .warp > div > ul {
+        width: 328px;
+        background-color: #FFF; }
+        .c3 .warp > div > ul > li {
+          height: 68px;
+          font-size: 16px;
+          color: #333;
+          padding-left: 154px;
+          line-height: 68px;
+          border: 1px solid #cbcbcb;
+          margin-top: -1px;
+          position: relative;
+          z-index: 1;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-position: 15px center; }
+          .c3 .warp > div > ul > li:hover {
+            border-color: #3688ff;
+            z-index: 2; }
+          .c3 .warp > div > ul > li:nth-child(2) {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-logo-01.jpg"); }
+          .c3 .warp > div > ul > li:nth-child(1) {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-logo-02.jpg"); }
+          .c3 .warp > div > ul > li:nth-child(3) {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-logo-03.jpg"); }
+          .c3 .warp > div > ul > li:nth-child(4) {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-logo-04.jpg"); }
+          .c3 .warp > div > ul > li:nth-child(5) {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-logo-05.jpg"); }
+          .c3 .warp > div > ul > li:nth-child(6) {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-logo-06.jpg"); }
+      .c3 .warp > div > div {
+        width: 761px;
+        height: 414px;
+        background-color: #ccc; }
+    .c3 .warp > a {
+      display: block;
+      width: 348px;
+      height: 64px;
+      background-image: url("http://www.qfedu.com/images/qf-bj-php/c3-btn.png");
+      color: #fff;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 64px;
+      font-size: 24px; }
+      .c3 .warp > a:hover {
+        background-image: none;
+        background-color: #f85455;
+        border-radius: 28px; }
+
+.c4 {
+  background-image: url("http://www.qfedu.com/images/qf-bj-php/c4-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .c4 .warp {
+    padding-top: 70px;
+    padding-bottom: 66px; }
+    .c4 .warp > h2 {
+      margin-bottom: 83px; }
+    .c4 .warp > div:nth-child(2), .c4 .warp > div:nth-child(3) {
+      margin-bottom: 90px; }
+      .c4 .warp > div:nth-child(2) > div, .c4 .warp > div:nth-child(3) > div {
+        width: 893px;
+        height: 62px;
+        margin: 0 auto;
+        background-image: url("http://www.qfedu.com/images/qf-bj-php/c4-line.jpg");
+        text-align: center; }
+        .c4 .warp > div:nth-child(2) > div > h3, .c4 .warp > div:nth-child(3) > div > h3 {
+          font-size: 36px;
+          line-height: 36px;
+          color: #f85554;
+          position: relative;
+          top: -20px; }
+        .c4 .warp > div:nth-child(2) > div > p, .c4 .warp > div:nth-child(3) > div > p {
+          font-size: 14px;
+          line-height: 22px;
+          position: relative;
+          top: -20px; }
+    .c4 .warp > div:nth-child(2) > ul {
+      width: 936px;
+      margin: 0 auto; }
+      .c4 .warp > div:nth-child(2) > ul li {
+        width: 304px;
+        height: 150px;
+        margin-right: 12px;
+        text-align: right;
+        color: #fff;
+        position: relative; }
+        .c4 .warp > div:nth-child(2) > ul li > h3, .c4 .warp > div:nth-child(2) > ul li > p {
+          margin-right: 20px; }
+        .c4 .warp > div:nth-child(2) > ul li > h3 {
+          font-size: 24px;
+          margin-top: 14px;
+          line-height: 24px; }
+        .c4 .warp > div:nth-child(2) > ul li > p {
+          font-size: 14px;
+          line-height: 26px; }
+        .c4 .warp > div:nth-child(2) > ul li:hover > div {
+          opacity: 1; }
+        .c4 .warp > div:nth-child(2) > ul li > div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          -webkit-transition: 0.8s all ease;
+          -o-transition: 0.8s all ease;
+          transition: 0.8s all ease;
+          background-color: rgba(0, 0, 0, 0.6); }
+          .c4 .warp > div:nth-child(2) > ul li > div > p {
+            height: 50px;
+            margin-top: 45px;
+            padding-top: 10px;
+            background-color: #00bec0;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center; }
+        .c4 .warp > div:nth-child(2) > ul li:last-child {
+          margin-right: 0; }
+        .c4 .warp > div:nth-child(2) > ul li:nth-child(1) {
+          background-image: url("http://www.qfedu.com/images/qf-bj-php/c4-bg-01.png"); }
+        .c4 .warp > div:nth-child(2) > ul li:nth-child(2) {
+          background-image: url("http://www.qfedu.com/images/qf-bj-php/c4-bg-02.png"); }
+          .c4 .warp > div:nth-child(2) > ul li:nth-child(2) p {
+            background-color: #2cb4f1; }
+        .c4 .warp > div:nth-child(2) > ul li:nth-child(3) {
+          background-image: url("http://www.qfedu.com/images/qf-bj-php/c4-bg-03.png"); }
+          .c4 .warp > div:nth-child(2) > ul li:nth-child(3) p {
+            background-color: #f9aa30; }
+    .c4 .warp > div:nth-child(3) {
+      margin-bottom: 74px; }
+      .c4 .warp > div:nth-child(3) > ul > li {
+        width: 268px;
+        height: 150px;
+        position: relative;
+        margin-right: 9px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        overflow: hidden; }
+        .c4 .warp > div:nth-child(3) > ul > li:last-child {
+          margin-right: 0; }
+        .c4 .warp > div:nth-child(3) > ul > li:hover > div {
+          opacity: 0; }
+        .c4 .warp > div:nth-child(3) > ul > li:hover > img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+          transform: scale(1.2); }
+        .c4 .warp > div:nth-child(3) > ul > li:nth-child(1) > div {
+          background-color: rgba(58, 89, 89, 0.8); }
+        .c4 .warp > div:nth-child(3) > ul > li:nth-child(2) > div {
+          background-color: rgba(81, 57, 89, 0.8); }
+        .c4 .warp > div:nth-child(3) > ul > li:nth-child(3) > div {
+          background-color: rgba(85, 56, 61, 0.8); }
+        .c4 .warp > div:nth-child(3) > ul > li:nth-child(4) > div {
+          background-color: rgba(56, 76, 80, 0.8); }
+        .c4 .warp > div:nth-child(3) > ul > li > img {
+          width: 100%;
+          height: 100%;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1);
+          -webkit-transition: 0.6s all ease;
+          -o-transition: 0.6s all ease;
+          transition: 0.6s all ease; }
+        .c4 .warp > div:nth-child(3) > ul > li > div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: table;
+          opacity: 1;
+          text-align: center;
+          -webkit-transition: 1s all ease;
+          -o-transition: 1s all ease;
+          transition: 1s all ease;
+          background-color: rgba(0, 0, 0, 0.8); }
+          .c4 .warp > div:nth-child(3) > ul > li > div > p {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 24px;
+            line-height: 22px;
+            color: #fff; }
+            .c4 .warp > div:nth-child(3) > ul > li > div > p span {
+              font-size: 14px;
+              line-height: 22px; }
+    .c4 .warp > a {
+      display: block;
+      width: 434px;
+      height: 58px;
+      border: 3px solid #ef3755;
+      border-radius: 20px;
+      font-size: 24px;
+      color: #fff;
+      line-height: 58px;
+      text-align: center;
+      color: #ef3755;
+      margin: 0 auto;
+      background-color: #FFF;
+      -webkit-transition: 1s all ease;
+      -o-transition: 1s all ease;
+      transition: 1s all ease; }
+      .c4 .warp > a:hover {
+        background-color: #ef3755;
+        color: #fff; }
+
+.c5 {
+  background-image: url(http://www.qfedu.com/images/qf-bj-php/c5-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .c5 .warp {
+    padding-top: 75px;
+    padding-bottom: 58px; }
+    .c5 .warp > h2 {
+      margin-bottom: 72px;
+      font-size: 40px; }
+    .c5 .warp > table {
+      margin-bottom: 63px; }
+      .c5 .warp > table td {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        width: 183px;
+        height: 220px;
+        position: relative;
+        vertical-align: top;
+        overflow: hidden; }
+        .c5 .warp > table td > h3, .c5 .warp > table td > h4 {
+          margin-left: 14px; }
+        .c5 .warp > table td > h3 {
+          font-size: 16px;
+          line-height: 16px;
+          color: #4480cb;
+          margin-top: 18px; }
+        .c5 .warp > table td > h4 {
+          font-size: 12px;
+          line-height: 12px;
+          color: #ef3755;
+          margin-top: 18px; }
+        .c5 .warp > table td > p {
+          margin-top: 14px;
+          padding: 0 14px;
+          font-size: 12px;
+          color: #888;
+          line-height: 20px; }
+        .c5 .warp > table td:hover > div {
+          right: 0;
+          opacity: 1; }
+        .c5 .warp > table td > div {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          right: -183px;
+          opacity: 0;
+          -webkit-transition: 1s all ease;
+          -o-transition: 1s all ease;
+          transition: 1s all ease;
+          text-align: center;
+          line-height: 100%;
+          background-color: rgba(255, 255, 255, 0.9); }
+          .c5 .warp > table td > div > img {
+            display: block;
+            margin: 20px auto; }
+        .c5 .warp > table td > img {
+          width: 100%;
+          height: 100%; }
+      .c5 .warp > table tr:nth-child(1) > td:nth-child(6) > div > img {
+        margin: 87px auto; }
+      .c5 .warp > table tr:nth-child(2) > td:nth-child(1) > div > img, .c5 .warp > table tr:nth-child(2) > td:nth-child(3) > div > img {
+        margin: 40px auto; }
+      .c5 .warp > table tr:nth-child(3) > td:nth-child(2) > div > img {
+        margin: 94px auto; }
+      .c5 .warp > table tr:nth-child(3) > td:nth-child(4) > div > img {
+        margin: 76px auto; }
+      .c5 .warp > table tr:nth-child(3) > td:nth-child(6) > div > img {
+        margin: 26px auto; }
+      .c5 .warp > table tr:nth-child(2) > td:nth-child(5) > div > img{
+    margin:78px auto;}
+    .c5 .warp > a {
+      display: block;
+      width: 289px;
+      height: 60px;
+      background-image: url("http://www.qfedu.com/images/qf-bj-php/c5-btn-01.png");
+      background-size: 100% 100%;
+      color: #fff;
+      text-align: center;
+      line-height: 60px;
+      font-size: 24px;
+      margin: 0 auto; }
+      .c5 .warp > a:hover {
+        line-height: 62px;
+        background-image: url("http://www.qfedu.com/images/qf-bj-php/c5-btn-02.png"); }
+
+.c6 .warp {
+  padding-top: 78px;
+  padding-bottom: 72px; }
+  .c6 .warp > h2 {
+    margin-bottom: 74px; }
+  .c6 .warp > p {
+    width: 360px;
+    margin-bottom: 84px; }
+  .c6 .warp > ul {
+    margin-bottom: 36px;
+    background-image: url(http://www.qfedu.com/images/qf-bj-php/c6-bg-line.png);
+    background-repeat: no-repeat;
+    background-position: 0 42px; }
+    .c6 .warp > ul > li {
+      width: 148px;
+      height: 128px;
+      background-image: url("http://www.qfedu.com/images/qf-bj-php/c6-btnbg-01.png");
+      background-color: #FFF;
+      margin-right: 90px;
+      text-align: center;
+      padding-top: 32px;
+      cursor: pointer; }
+      .c6 .warp > ul > li > p {
+        font-size: 18px;
+        line-height: 28px; }
+      .c6 .warp > ul > li > h3 {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
+        color: #333; }
+      .c6 .warp > ul > li.active {
+        background-image: url("http://www.qfedu.com/images/qf-bj-php/c6-btnbg-02.png"); }
+        .c6 .warp > ul > li.active p {
+          color: #fff; }
+        .c6 .warp > ul > li.active h3 {
+          color: #fbff3a; }
+      .c6 .warp > ul > li:last-child {
+        margin-right: 0; }
+  .c6 .warp > div {
+    margin-bottom: 40px; }
+    .c6 .warp > div > table {
+      display: none;
+      width: 100%;
+      border: 1px solid #276dc3; }
+      .c6 .warp > div > table.active {
+        display: block; }
+      .c6 .warp > div > table tbody {
+        width: 100%; }
+      .c6 .warp > div > table tr {
+        border-bottom: 1px solid #bed3ed; }
+      .c6 .warp > div > table td {
+        vertical-align: middle;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 10px 0;
+        padding-right: 10px; }
+        .c6 .warp > div > table td:nth-child(1) {
+          color: #fff;
+          font-size: 16px;
+          line-height: 32px;
+          width: 110px;
+          text-align: center; }
+        .c6 .warp > div > table td:nth-child(2) {
+          width: 210px;
+          padding-left: 26px; }
+        .c6 .warp > div > table td:nth-child(3) {
+          width: 252px; }
+        .c6 .warp > div > table td:nth-child(4) {
+          width: 250px; }
+        .c6 .warp > div > table td:nth-child(5) {
+          width: 272px; }
+      .c6 .warp > div > table tr:nth-child(odd) td:nth-child(1) {
+        background-color: #ffb400; }
+      .c6 .warp > div > table tr:nth-child(even) td:nth-child(1) {
+        background-color: #276dc3; }
+  .c6 .warp > a {
+    display: block;
+    width: 512px;
+    height: 58px;
+    border: 3px solid #ef3755;
+    border-radius: 29px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 58px;
+    text-align: center;
+    color: #ef3755;
+    margin: 0 auto;
+    background-color: #fff;
+    -webkit-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    transition: 1s all ease; }
+    .c6 .warp > a:hover {
+      background-color: #ef3755;
+      color: #fff; }
+
+@media screen and (min-width: 1000px) and (max-width: 1919px) {
+  #auto-width {
+    background-size: 100% auto;} }
+.c7 {
+  background-color: #f7f7f7; }
+  .c7 > .warp {
+    padding-top: 62px;
+    padding-bottom: 70px; }
+    .c7 > .warp h2 {
+      font-size: 40px; }
+  .c7 > div:nth-child(2) {
+    background-repeat: no-repeat;
+    background-position: center top; }
+    .c7 > div:nth-child(2) > .warp {
+      padding-bottom: 60px; }
+      .c7 > div:nth-child(2) > .warp table {
+        margin-bottom: 54px;
+        width: 100%;
+        background-color: #FFF; }
+        .c7 > div:nth-child(2) > .warp table td {
+          width: 220px;
+          height: 102px;
+          border: 1px solid #ccc; }
+      .c7 > div:nth-child(2) > .warp > a {
+        display: block;
+        width: 512px;
+        height: 58px;
+        border: 3px solid #ef3755;
+        border-radius: 29px;
+        font-size: 24px;
+        color: #fff;
+        line-height: 58px;
+        text-align: center;
+        color: #ef3755;
+        margin: 0 auto;
+        background-color: #f7f7f7;
+        -webkit-transition: 1s all ease;
+        -o-transition: 1s all ease;
+        transition: 1s all ease; }
+        .c7 > div:nth-child(2) > .warp > a:hover {
+          background-color: #ef3755;
+          color: #fff; }
+
+.c8 > .warp {
+  padding-top: 78px;
+  padding-bottom: 66px; }
+  .c8 > .warp h2 {
+    margin-bottom: 64px; }
+  .c8 > .warp > div:nth-child(2) {
+    overflow: hidden;
+    padding-top: 21px; }
+    .c8 > .warp > div:nth-child(2) > ul {
+      width: 1154px; }
+      .c8 > .warp > div:nth-child(2) > ul > li {
+        width: 330px;
+        border: 1px solid #dddddd;
+        border-radius: 2px;
+        position: relative;
+        padding-top: 5px;
+        text-align: center;
+        margin-bottom: 58px;
+        padding-bottom: 14px;
+        margin-right: 52px; }
+        .c8 > .warp > div:nth-child(2) > ul > li > h3 {
+          position: absolute;
+          width: 170px;
+          height: 42px;
+          top: -21px;
+          left: 50%;
+          margin-left: -85px;
+          text-align: center;
+          font-size: 18px;
+          line-height: 42px;
+          color: #fff;
+          background-image: url(http://www.qfedu.com/images/qf-bj-php/c8-titbg-01.png); }
+        .c8 > .warp > div:nth-child(2) > ul > li > p {
+          font-size: 14px;
+          line-height: 26px;
+          color: #666;
+          text-align: left;
+          margin-top: 17px;
+          padding-left: 26px; }
+        .c8 > .warp > div:nth-child(2) > ul > li:nth-child(4) > h3, .c8 > .warp > div:nth-child(2) > ul > li:nth-child(5) > h3, .c8 > .warp > div:nth-child(2) > ul > li:nth-child(6) > h3 {
+          background-image: url("http://www.qfedu.com/images/qf-bj-php/c8-titbg-02.png"); }
+
+.c9 {
+  background-color: #f7f7f7; }
+  .c9 .warp {
+    padding-top: 80px;
+    padding-bottom: 90px; }
+    .c9 .warp h2 {
+      margin-bottom: 90px; }
+    .c9 .warp > div {
+      overflow: hidden;
+      margin-bottom: 87px; }
+      .c9 .warp > div > ul {
+        width: 1190px; }
+        .c9 .warp > div > ul > li {
+          width: 258px;
+          margin-right: 22px;
+          margin-bottom: 24px;
+          border-radius: 2px; }
+          .c9 .warp > div > ul > li:nth-child(2) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-02.png"); }
+          .c9 .warp > div > ul > li:nth-child(3) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-03.png"); }
+          .c9 .warp > div > ul > li:nth-child(4) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-04.png"); }
+          .c9 .warp > div > ul > li:nth-child(5) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-05.png"); }
+          .c9 .warp > div > ul > li:nth-child(6) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-06.png"); }
+          .c9 .warp > div > ul > li:nth-child(7) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-07.png"); }
+          .c9 .warp > div > ul > li:nth-child(8) > h3 {
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-08.png"); }
+          .c9 .warp > div > ul > li > h3 {
+            font-size: 16px;
+            line-height: 68px;
+            color: #fff;
+            padding-left: 22px;
+            background-image: url("http://www.qfedu.com/images/qf-bj-php/c9-titbg-01.png"); }
+          .c9 .warp > div > ul > li > p {
+            border: 1px solid #cccccc;
+            font-size: 14px;
+            line-height: 28px;
+            color: #333;
+            min-height: 128px;
+            max-height: 155px;
+            padding: 13px 23px;
+            box-sizing: border-box;
+            -webkit-box-shadow: 0 3px 0 0 #ccc;
+            box-shadow: 0 2px 0 0 #ccc;
+            border-radius: 0 0 3px 3px; }
+    .c9 .warp > a {
+      display: block;
+      width: 452px;
+      height: 58px;
+      border: 3px solid #ef3755;
+      border-radius: 29px;
+      font-size: 24px;
+      color: #fff;
+      line-height: 58px;
+      text-align: center;
+      color: #ef3755;
+      margin: 0 auto;
+      background-color: #f7f7f7;
+      -webkit-transition: 1s all ease;
+      -o-transition: 1s all ease;
+      transition: 1s all ease; }
+      .c9 .warp > a:hover {
+        background-color: #ef3755;
+        color: #fff; }
+
+.c10 {
+  background-image: url("http://www.qfedu.com/images/qf-bj-php/c10-bg.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .c10 .warp {
+    padding-top: 76px;
+    padding-bottom: 42px; }
+    .c10 .warp > ul {
+      margin-bottom: 74px; }
+      .c10 .warp > ul > li {
+        width: 204px;
+        height: 204px;
+        background-image: url("http://www.qfedu.com/images/qf-bj-php/c10-btn.png");
+        margin-right: 92px;
+        position: relative; }
+        .c10 .warp > ul > li:last-child {
+          margin-right: 0; }
+        .c10 .warp > ul > li:hover > div:nth-child(1) {
+          opacity: 1; }
+        .c10 .warp > ul > li > div:nth-child(1) {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          -webkit-transition: 1s all ease;
+          -o-transition: 1s all ease;
+          transition: 1s all ease;
+          background-image: url("http://www.qfedu.com/images/qf-bj-php/c10-btn-hover.png");
+          background-size: 100%;
+          display: table;
+          text-align: center; }
+          .c10 .warp > ul > li > div:nth-child(1) a {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 24px;
+            line-height: 204px;
+            color: #ef3755;
+            font-weight: bolder; }
+        .c10 .warp > ul > li > div:nth-child(2) {
+          width: 100%;
+          height: 100%;
+          display: table;
+          text-align: center; }
+          .c10 .warp > ul > li > div:nth-child(2) > p {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 24px;
+            line-height: 30px; }
+            .c10 .warp > ul > li > div:nth-child(2) > p span {
+              font-size: 18px;
+              line-height: 22px; }
+    .c10 .warp > a {
+      display: block;
+      width: 374px;
+      height: 70px;
+      background-color: #ef3755;
+      text-align: center;
+      line-height: 70px;
+      font-size: 24px;
+      color: #fff;
+      margin: 0 auto;
+      margin-bottom: 42px;
+      border-radius: 35px; }
+
+/*# sourceMappingURL=qf-bj-php.css.map */
