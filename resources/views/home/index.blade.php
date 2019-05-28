@@ -1,10 +1,10 @@
 ﻿{{-- 包含页头 --css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" href="static/templates/main/css1/index_zdrj.css">
-<link rel="stylesheet" type="text/css" href="static/templates/main/css1/index1.css" />
-<link rel="stylesheet" href="static/templates/main/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/banner.css" />
-<link rel="stylesheet" href="static/templates/main/css1/index.css">
+<link rel="stylesheet" href="/static/templates/main/css1/index_zdrj.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css1/index1.css" />
+<link rel="stylesheet" href="/static/templates/main/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/banner.css" />
+<link rel="stylesheet" href="/static/templates/main/css1/index.css">
 <style>
     .shadow {
         box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
@@ -47,11 +47,11 @@
                 <div id="slideBox" class="slideBox">
                     <div class="bd">
                         <ul>
-                            <li><a href="/templates/main/activity.html"><img src="static/upload/img/201812071113217173.jpg" style="background: url(/upload/201812/07/201812071113217173.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/java.html"><img src="static/upload/201807/04/201807041026260216.jpg" style="background: url(/upload/201807/04/201807041026260216.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/php.html"><img src="static/upload/201806/24/201806241911120948.png" style="background: url(/upload/201806/24/201806241911120948.png) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/html5.html"><img src="static/upload/201806/24/201806241911323214.png" style="background: url(/upload/201806/24/201806241911323214.png) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/news/show-2204.html"><img src="static/upload/201904/02/201904021132445579.jpg" style="background: url(/upload/201904/02/201904021132445579.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                            <li><a href="/templates/main/activity.html"><img src="/static/upload/img/201812071113217173.jpg" style="background: url(/upload/201812/07/201812071113217173.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                            <li><a href="/java.html"><img src="/static/upload/201807/04/201807041026260216.jpg" style="background: url(/upload/201807/04/201807041026260216.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                            <li><a href="/php.html"><img src="/static/upload/201806/24/201806241911120948.png" style="background: url(/upload/201806/24/201806241911120948.png) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                            <li><a href="/html5.html"><img src="/static/upload/201806/24/201806241911323214.png" style="background: url(/upload/201806/24/201806241911323214.png) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                            <li><a href="/news/show-2204.html"><img src="/static/upload/201904/02/201904021132445579.jpg" style="background: url(/upload/201904/02/201904021132445579.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
                         </ul>
                     </div>
                     <a class="prev" href="javascript:void(0)"><i class="iconfont bfont">&#xe60b;</i></a>
@@ -147,10 +147,10 @@
             <div class="fast_r">
 
                 <ul>
-                    <li class="two_boxs"><a href="/studentemployment.html" target="_blank" rel="nofollow"><img src="static/upload/img/20171114142802137.jpg" style="width: 232px; height: 130px" /></a></li>
-                    <li class="three_boxs"><a href="/ClassInformation.html" target="_blank" rel="nofollow"><img src="static/upload/img/20161014113453577.jpg" /></a></li>
-                    <li class="four_boxs"><a href="/StudentsStory.html" target="_blank" rel="nofollow"><img src="static/upload/img/20180103094134025.jpg" style="width: 232px; height: 130px;" /></a></li>
-                    <li class="five_boxs"><a href="/flow.html" target="_blank" rel="nofollow"><img src="static/upload/img/20161014113534360.jpg" /></a></li>
+                    <li class="two_boxs"><a href="/studentemployment.html" target="_blank" rel="nofollow"><img src="/static/upload/img/20171114142802137.jpg" style="width: 232px; height: 130px" /></a></li>
+                    <li class="three_boxs"><a href="/ClassInformation.html" target="_blank" rel="nofollow"><img src="/static/upload/img/20161014113453577.jpg" /></a></li>
+                    <li class="four_boxs"><a href="/StudentsStory.html" target="_blank" rel="nofollow"><img src="/static/upload/img/20180103094134025.jpg" style="width: 232px; height: 130px;" /></a></li>
+                    <li class="five_boxs"><a href="/flow.html" target="_blank" rel="nofollow"><img src="/static/upload/img/20161014113534360.jpg" /></a></li>
                 </ul>
 
             </div>
@@ -173,7 +173,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="/java.html"><img alt="JavaEE+大数据工程师" src="static/upload/img/java.png" style="display: block;"></a>
+                    <a href="/java.html"><img alt="JavaEE+大数据工程师" src="/static/upload/img/java.png" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -181,7 +181,7 @@
                             <a href="/java.html" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_course.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>课程大纲</span>
                                 </div>
@@ -189,7 +189,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>点击报名</span>
                                 </div>
@@ -199,7 +199,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>就业薪资</span>
                                 </div>
@@ -207,7 +207,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>公开课</span>
                                 </div>
@@ -216,11 +216,11 @@
                     </div>
                     <style>
                         .xkzx_back_java {
-                            background:url('static/upload/img/javasm.jpg') no-repeat;
+                            background:url('/static/upload/img/javasm.jpg') no-repeat;
                         }
 
                         .aaxxx {
-                            background:url('static/upload/img/wxcx.png') no-repeat;
+                            background:url('/static/upload/img/wxcx.png') no-repeat;
                         }
 
                         .kc_5_6 div {
@@ -249,7 +249,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left fl_left">
-                    <a href="/php.html"><img alt="PHP开发工程师" src="static/upload/img/php.png" style="display: block;"></a>
+                    <a href="/php.html"><img alt="PHP开发工程师" src="/static/upload/img/php.png" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -292,7 +292,7 @@
                     </div>
                     <style>
                         .xkzx_back_php {
-                            background:url('static/upload/img/PHPsm.jpg') no-repeat;
+                            background:url('/static/upload/img/PHPsm.jpg') no-repeat;
                         }
                     </style>
                     <div class="module_right_r fl_left">
@@ -314,7 +314,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_2 fl_left">
-                    <a href="/html5.html"><img alt="H5全栈工程师" src="static/upload/img/h5.jpg"></a>
+                    <a href="/html5.html"><img alt="H5全栈工程师" src="/static/upload/img/h5.jpg"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -357,7 +357,7 @@
                     </div>
                     <style>
                         .xkzx_back_h5 {
-                            background:url('static/upload/img/HTML5sm.jpg') no-repeat;
+                            background:url('/static/upload/img/HTML5sm.jpg') no-repeat;
                         }
                     </style>
                     <div class="module_right_r fl_left">
@@ -379,7 +379,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="云计算" src="static/upload/img/yun.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="云计算" src="/static/upload/img/yun.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -387,7 +387,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_course.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>课程大纲</span>
                                 </div>
@@ -395,7 +395,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>点击报名</span>
                                 </div>
@@ -405,7 +405,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>就业薪资</span>
                                 </div>
@@ -413,7 +413,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>公开课</span>
                                 </div>
@@ -422,11 +422,11 @@
                     </div>
                     <style>
                         .xkzx_back_yun {
-                            background:url('static/upload/img/yunsm.jpg') no-repeat;
+                            background:url('/static/upload/img/yunsm.jpg') no-repeat;
                         }
 
                         .aaxxx {
-                            background:url('static/upload/img/wxcx.png') no-repeat;
+                            background:url('/static/upload/img/wxcx.png') no-repeat;
                         }
 
                         .kc_5_6 div {
@@ -447,7 +447,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="人工智能" src="static/upload/img/intelligent.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="人工智能" src="/static/upload/img/intelligent.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -455,7 +455,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_course.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>课程大纲</span>
                                 </div>
@@ -463,7 +463,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>点击报名</span>
                                 </div>
@@ -473,7 +473,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>就业薪资</span>
                                 </div>
@@ -481,7 +481,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>公开课</span>
                                 </div>
@@ -490,11 +490,11 @@
                     </div>
                     <style>
                         .xkzx_back_intelligent {
-                            background:url('static/upload/img/intelligentsm.jpg') no-repeat;
+                            background:url('/static/upload/img/intelligentsm.jpg') no-repeat;
                         }
 
                         .aaxxx {
-                            background:url('static/upload/img/wxcx.png') no-repeat;
+                            background:url('/static/upload/img/wxcx.png') no-repeat;
                         }
 
                         .kc_5_6 div {
@@ -524,7 +524,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="Python课程" src="static/upload/img/python.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="Python课程" src="/static/upload/img/python.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -532,7 +532,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_course.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>课程大纲</span>
                                 </div>
@@ -540,7 +540,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>点击报名</span>
                                 </div>
@@ -550,7 +550,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>就业薪资</span>
                                 </div>
@@ -558,7 +558,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>公开课</span>
                                 </div>
@@ -567,11 +567,11 @@
                     </div>
                     <style>
                         .xkzx_back_python {
-                            background:url('static/upload/img/pythonsm.jpg') no-repeat;
+                            background:url('/static/upload/img/pythonsm.jpg') no-repeat;
                         }
 
                         .aaxxx {
-                            background:url('static/upload/img/wxcx.png') no-repeat;
+                            background:url('/static/upload/img/wxcx.png') no-repeat;
                         }
 
                         .kc_5_6 div {
@@ -600,7 +600,7 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="UI/UE设计" src="static/upload/img/ui.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="UI/UE设计" src="/static/upload/img/ui.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
@@ -608,7 +608,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_course.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>课程大纲</span>
                                 </div>
@@ -616,7 +616,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>点击报名</span>
                                 </div>
@@ -626,7 +626,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>就业薪资</span>
                                 </div>
@@ -634,7 +634,7 @@
                             <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
-                                        <div class="bg_position" style="background-image: url(static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
+                                        <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
                                     </div>
                                     <span>公开课</span>
                                 </div>
@@ -643,11 +643,11 @@
                     </div>
                     <style>
                         .xkzx_back_ui {
-                            background:url('static/upload/img/uism.jpg') no-repeat;
+                            background:url('/static/upload/img/uism.jpg') no-repeat;
                         }
 
                         .aaxxx {
-                            background:url('static/upload/img/wxcx.png') no-repeat;
+                            background:url('/static/upload/img/wxcx.png') no-repeat;
                         }
 
                         .kc_5_6 div {
@@ -934,7 +934,7 @@
                     <div class="box">
                         <a href="/Campus/show-1063.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201807051107536358.jpg">
+                                <img src="/static/upload/img/201807051107536358.jpg">
                             </div>
                             <div class="info">
                                 <h3>你想成为“扶摇式女主”吗？</h3>
@@ -946,7 +946,7 @@
                     <div class="box">
                         <a href="/Campus/show-1062.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201807051057055548.jpg">
+                                <img src="/static/upload/img/201807051057055548.jpg">
                             </div>
                             <div class="info">
                                 <h3>谢谢这些校长的毕业致辞把我从毕业季的伤感中拉了出来！</h3>
@@ -958,7 +958,7 @@
                     <div class="box">
                         <a href="/Campus/show-1061.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201807031612306876.jpg">
+                                <img src="/static/upload/img/201807031612306876.jpg">
                             </div>
                             <div class="info">
                                 <h3>鸿博教育给您讲解谷歌涂鸦的由来</h3>
@@ -970,7 +970,7 @@
                     <div class="box">
                         <a href="/Campus/show-1060.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806281412153312.jpg">
+                                <img src="/static/upload/img/201806281412153312.jpg">
                             </div>
                             <div class="info">
                                 <h3>“冲天一博气如虹,踏浪凌波入海中”鸿博教育祝高考学子金榜题名</h3>
@@ -982,7 +982,7 @@
                     <div class="box">
                         <a href="/Campus/show-1059.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806271351096056.jpg">
+                                <img src="/static/upload/img/201806271351096056.jpg">
                             </div>
                             <div class="info">
                                 <h3>感谢鸿博教育给予我浴火重生的机会</h3>
@@ -994,7 +994,7 @@
                     <div class="box">
                         <a href="/Campus/show-1058.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806270728058429.jpg">
+                                <img src="/static/upload/img/201806270728058429.jpg">
                             </div>
                             <div class="info">
                                 <h3>大鹏一日同风起,扶摇直上九万里</h3>
@@ -1006,7 +1006,7 @@
                     <div class="box">
                         <a href="/Campus/show-1057.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806260741150997.jpg">
+                                <img src="/static/upload/img/201806260741150997.jpg">
                             </div>
                             <div class="info">
                                 <h3>金麟岂是池中物，一遇风云便化龙</h3>
@@ -1018,7 +1018,7 @@
                     <div class="box">
                         <a href="/Campus/show-1056.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806220951455675.jpg">
+                                <img src="/static/upload/img/201806220951455675.jpg">
                             </div>
                             <div class="info">
                                 <h3>感谢鸿博教育给我再次开启鱼跃龙门之路</h3>
@@ -1030,7 +1030,7 @@
                     <div class="box">
                         <a href="/Campus/show-1055.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806210816071359.jpg">
+                                <img src="/static/upload/img/201806210816071359.jpg">
                             </div>
                             <div class="info">
                                 <h3>鸿博教育招生简章</h3>
@@ -1042,7 +1042,7 @@
                     <div class="box">
                         <a href="/Campus/show-1053.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806131402540519.png">
+                                <img src="/static/upload/img/201806131402540519.png">
                             </div>
                             <div class="info">
                                 <h3>Java程序员面试最常见的10道XML试题</h3>
@@ -1054,7 +1054,7 @@
                     <div class="box">
                         <a href="/Campus/show-1052.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806120840162355.gif">
+                                <img src="/static/upload/img/201806120840162355.gif">
                             </div>
                             <div class="info">
                                 <h3>鸿博教育给您讲解JAVA7的7个新特性</h3>
@@ -1066,7 +1066,7 @@
                     <div class="box">
                         <a href="/Campus/show-1051.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806120825226105.jpg">
+                                <img src="/static/upload/img/201806120825226105.jpg">
                             </div>
                             <div class="info">
                                 <h3>鸿博教育办学优势</h3>
@@ -1078,7 +1078,7 @@
                     <div class="box">
                         <a href="/Campus/show-1050.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806110932338693.jpg">
+                                <img src="/static/upload/img/201806110932338693.jpg">
                             </div>
                             <div class="info">
                                 <h3>JAVA学习中最容易忽略的一些小细节</h3>
@@ -1090,7 +1090,7 @@
                     <div class="box">
                         <a href="/Campus/show-1049.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806081911253136.jpg">
+                                <img src="/static/upload/img/201806081911253136.jpg">
                             </div>
                             <div class="info">
                                 <h3>JAVA程序员基础的面试题都有哪些？</h3>
@@ -1102,7 +1102,7 @@
                     <div class="box">
                         <a href="/Campus/show-1048.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806071001358712.jpg">
+                                <img src="/static/upload/img/201806071001358712.jpg">
                             </div>
                             <div class="info">
                                 <h3>Java 环境 JDK 最完整配置方法</h3>
@@ -1114,7 +1114,7 @@
                     <div class="box">
                         <a href="/Campus/show-1047.html" target="_blank">
                             <div class="img">
-                                <img src="static/upload/img/201806061113036798.jpg">
+                                <img src="/static/upload/img/201806061113036798.jpg">
                             </div>
                             <div class="info">
                                 <h3>java软件编程开发中类与对象的知识解析</h3>
@@ -1148,49 +1148,49 @@
                     <h2 class="module_h2">学校环境</h2>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);margin-left: 0px;">
-                    <img src="static/upload/img/201901041528116538.jpg" style="display: block;">
+                    <img src="/static/upload/img/201901041528116538.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">学校环境</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);">
-                    <img src="static/upload/img/201809110955202566.jpg" style="display: block;">
+                    <img src="/static/upload/img/201809110955202566.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">学员风貌</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);">
-                    <img src="static/upload/img/201809110956586228.jpg" style="display: block;">
+                    <img src="/static/upload/img/201809110956586228.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">宿舍环境</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);">
-                    <img src="static/upload/img/201802051948025886.jpg" style="display: block;">
+                    <img src="/static/upload/img/201802051948025886.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">教学环境</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);margin-left: 0px;">
-                    <img src="static/upload/img/201809110958477868.jpg" style="display: block;">
+                    <img src="/static/upload/img/201809110958477868.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">学员军训</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);">
-                    <img src="static/upload/img/201802051948179733.jpg" style="display: block;">
+                    <img src="/static/upload/img/201802051948179733.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">教学环境</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);">
-                    <img src="static/upload/img/201802051949080388.jpg" style="display: block;">
+                    <img src="/static/upload/img/201802051949080388.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">学校食堂</span>
                     </div>
                 </div>
                 <div class="gs_item fl_left" style="color: rgb(0, 0, 0);">
-                    <img src="static/upload/img/201809111000519216.jpg" style="display: block;">
+                    <img src="/static/upload/img/201809111000519216.jpg" style="display: block;">
                     <div class="gs_btn">
                         <span style="color: rgb(0, 0, 0);">校园环境</span>
                     </div>
@@ -1204,7 +1204,7 @@
                 </div>
                 <div style="width:1158px; height:180px; border:1px solid #F3F3F3; padding:10px 20px 10px 20px; margin-bottom:20px;">
                     <div style="float:left; width:200px;">
-                        <img src="static/upload/img/201802052256457214.jpg" width="130" height="180" />
+                        <img src="/static/upload/img/201802052256457214.jpg" width="130" height="180" />
                     </div>
                     <div style="float:left; width:950px;">
                         <div style="font-size:24px; font-weight:bold; height:40px; line-height:40px;margin-bottom: 10px; margin-top:5px;">
@@ -1220,7 +1220,7 @@
                 </div>
                 <div style="width:1158px; height:180px; border:1px solid #F3F3F3; padding:10px 20px 10px 20px; margin-bottom:20px;">
                     <div style="float:left; width:200px;">
-                        <img src="static/upload/img/201802091000523513.jpg" width="130" height="180" />
+                        <img src="/static/upload/img/201802091000523513.jpg" width="130" height="180" />
                     </div>
                     <div style="float:left; width:950px;">
                         <div style="font-size:24px; font-weight:bold; height:40px; line-height:40px;margin-bottom: 10px; margin-top:5px;">
@@ -1236,7 +1236,7 @@
                 </div>
                 <div style="width:1158px; height:180px; border:1px solid #F3F3F3; padding:10px 20px 10px 20px; margin-bottom:20px;">
                     <div style="float:left; width:200px;">
-                        <img src="static/upload/img/201802091002548083.jpg" width="130" height="180" />
+                        <img src="/static/upload/img/201802091002548083.jpg" width="130" height="180" />
                     </div>
                     <div style="float:left; width:950px;">
                         <div style="font-size:24px; font-weight:bold; height:40px; line-height:40px;margin-bottom: 10px; margin-top:5px;">
@@ -1264,7 +1264,7 @@
 </div>
 {{--公共js--}}
 @include('home.layouts.script')
-<script src="static/templates/main/js/jquery-1.7.2.min.js"></script>
+<script src="/static/templates/main/js/jquery-1.7.2.min.js"></script>
 <script>
     //拉幕特效
     setTimeout("lm()",2000);
@@ -1275,10 +1275,10 @@
         $(".lm").slideUp();
     })
 </script>
-<script src="static/templates/main/js/jquery.min.js"></script>
-<script src="static/templates/main/js/index1.js"></script>
-<script type="text/javascript" src="static/templates/main/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="static/templates/main/js/special_java.js"></script>
+<script src="/static/templates/main/js/jquery.min.js"></script>
+<script src="/static/templates/main/js/index1.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/special_java.js"></script>
 <script>
     $('.kczx_item fl_left').on({
         mouseover: function() {
@@ -1289,24 +1289,24 @@
         }
     });
 </script>
-<script src="static/templates/main/js/index.js"></script>
-<script src="static/templates/main/js/all.js"></script>
-<script src="static/templates/main/js/ajax.js"></script>
-<script src="static/templates/main/js/wow.min.js"></script>
-<script src="static/templates/main/js/jquery.SuperSlide.2.1.2.js"></script>
-<script src="static/templates/main/js/jquery.flipster.js"></script>
-<script src="static/templates/main/js/header.js"></script>
-<script src="static/templates/main/js/index.js"></script>
+<script src="/static/templates/main/js/index.js"></script>
+<script src="/static/templates/main/js/all.js"></script>
+<script src="/static/templates/main/js/ajax.js"></script>
+<script src="/static/templates/main/js/wow.min.js"></script>
+<script src="/static/templates/main/js/jquery.SuperSlide.2.1.2.js"></script>
+<script src="/static/templates/main/js/jquery.flipster.js"></script>
+<script src="/static/templates/main/js/header.js"></script>
+<script src="/static/templates/main/js/index.js"></script>
 
-<script src="static/templates/main/js/jquery.js"></script>
-<script src="static/templates/main/js/sidenav.min.js"></script>
+<script src="/static/templates/main/js/jquery.js"></script>
+<script src="/static/templates/main/js/sidenav.min.js"></script>
 <script>$('[data-sidenav]').sidenav();</script>
 
-<script src="static/templates/main/js/idangerous.swiper.js"></script>
-<script src="static/templates/main/js/idangerous.swiper.scrollbar-2.4.1.min.js"></script>
+<script src="/static/templates/main/js/idangerous.swiper.js"></script>
+<script src="/static/templates/main/js/idangerous.swiper.scrollbar-2.4.1.min.js"></script>
 
-<script src="static/templates/main/js/main.js"></script>
-<script src="static/templates/main/js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<script src="/static/templates/main/js/main.js"></script>
+<script src="/static/templates/main/js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
 <script>
     $('.two_boxs,.three_boxs,.four_boxs,.five_boxs,.six_boxs,.seven_boxs,.eight_boxs,.nine_boxs,.kczx_item,.module_left').on({
         mouseover: function() {

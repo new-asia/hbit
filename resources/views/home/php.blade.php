@@ -1,7 +1,7 @@
 {{--头部-css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
-<link rel="stylesheet" href="static/templates/main/css/qf-bj-php.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
+<link rel="stylesheet" href="/static/templates/main/css/qf-bj-php.css">
 
 <script>
 var _hmt = _hmt || [];
@@ -75,7 +75,7 @@ var _hmt = _hmt || [];
 <p><span>学习</span><br>第6天</p>
 </div>
 <div>
-<img src="static/templates/main/images/c2-hover-01.png" alt="">
+<img src="/static/templates/main/images/c2-hover-01.png" alt="">
 <div>
 <p>掌握京东、淘宝首页开发</p>
 </div>
@@ -91,7 +91,7 @@ var _hmt = _hmt || [];
 <p><span>学习</span><br>第30天</p>
 </div>
 <div>
-<img src="static/templates/main/images/c2-hover-02.png" alt="">
+<img src="/static/templates/main/images/c2-hover-02.png" alt="">
 <div>
 <p>熟练掌握主流电商<br>贴吧技术开发</p>
 </div>
@@ -107,7 +107,7 @@ var _hmt = _hmt || [];
 <p><span>学习</span><br>第45天</p>
 </div>
 <div>
-<img src="static/templates/main/images/c2-hover-03.png" alt="">
+<img src="/static/templates/main/images/c2-hover-03.png" alt="">
 <div>
 <p>使用框架<br>
 在阿里云、腾讯云部署博客<br>
@@ -125,7 +125,7 @@ var _hmt = _hmt || [];
 <p><span>学习</span><br>第70天</p>
 </div>
 <div>
-<img src="static/templates/main/images/c2-hover-04.png" alt="">
+<img src="/static/templates/main/images/c2-hover-04.png" alt="">
 <div>
 <p>写框架、用框架、开<br>
 发微信，独立完成<br>
@@ -143,7 +143,7 @@ var _hmt = _hmt || [];
 <p><span>学习</span><br>第90天</p>
 </div>
 <div>
-<img src="static/templates/main/images/c2-hover-05.png" alt="">
+<img src="/static/templates/main/images/c2-hover-05.png" alt="">
 <div>
 <p>熟练完成B站、优酷<br>
 及直播平台弹幕实现、<br>
@@ -195,7 +195,7 @@ var _hmt = _hmt || [];
 </div>
 <ul class="clearfix">
 <li class="fl">
-<img src="static/templates/main/images/c4-img-01.jpg" alt="">
+<img src="/static/templates/main/images/c4-img-01.jpg" alt="">
 <div>
 <p>
 discuz论坛<br><span>成熟论坛项目</span>
@@ -203,7 +203,7 @@ discuz论坛<br><span>成熟论坛项目</span>
 </div>
 </li>
 <li class="fl">
-<img src="static/templates/main/images/c4-img-02.jpg" alt="">
+<img src="/static/templates/main/images/c4-img-02.jpg" alt="">
 <div>
 <p>
 新浪博客<br><span>博客项目</span>
@@ -211,7 +211,7 @@ discuz论坛<br><span>成熟论坛项目</span>
 </div>
 </li>
 <li class="fl">
-<img src="static/templates/main/images/c4-img-03.jpg" alt="">
+<img src="/static/templates/main/images/c4-img-03.jpg" alt="">
 <div>
 <p>
 京东商城<br><span>社区、商城、微信项目</span>
@@ -219,7 +219,7 @@ discuz论坛<br><span>成熟论坛项目</span>
 </div>
 </li>
 <li class="fl">
-<img src="static/templates/main/images/c4-img-04.jpg" alt="">
+<img src="/static/templates/main/images/c4-img-04.jpg" alt="">
 <div>
 <p>
 小米秒杀<br><span>千万级秒杀系统</span>
@@ -587,42 +587,42 @@ PHP多进程和多线程
 <ul class="clearfix">
 <li class="fl">
 <h3>名企双选会</h3>
-<img style="with: 320px;height:170px;" src="static/upload/img/201802071132068484.png" alt="">
+<img style="with: 320px;height:170px;" src="/static/upload/img/201802071132068484.png" alt="">
 <p>目的：学员求职换工作<br>
 规模：一万多家企业轮流招聘<br>
 周期：每年最少12次</p>
 </li>
 <li class="fl">
 <h3>单身party</h3>
-<img style="with: 320px;height:170px;" src="static/upload/img/201802071132353972.png" alt="">
+<img style="with: 320px;height:170px;" src="/static/upload/img/201802071132353972.png" alt="">
 <p>目的：解决学员单身问题<br>
 规模：数百人（男女参半）<br>
 周期：每年最少1次</p>
 </li>
 <li class="fl">
 <h3>校友联盟会</h3>
-<img style="with: 320px;height:170px;" src="static/upload/img/201803011645324005.JPG" alt="">
+<img style="with: 320px;height:170px;" src="/static/upload/img/201803011645324005.JPG" alt="">
 <p>目的：扩展学员人脉<br>
 规模：数百人（新老学员）<br>
 周期：每年最少1次</p>
 </li>
 <li class="fl">
 <h3>教学资源共享</h3>
-<img style="with: 320px;height:170px;" src="static/upload/img/201802071133289499.png" alt="">
+<img style="with: 320px;height:170px;" src="/static/upload/img/201802071133289499.png" alt="">
 <p>目的：让毕业学员持续学习<br>
 规模：录制前沿PHP视频教程<br>
 周期：跟随企业需求实时更新</p>
 </li>
 <li class="fl">
 <h3>职业发展规划</h3>
-<img style="with: 320px;height:170px;" src="static/upload/img/201802071133526599.png" alt="">
+<img style="with: 320px;height:170px;" src="/static/upload/img/201802071133526599.png" alt="">
 <p>目的：快速晋升、少走弯路<br>
 规模：线上线下同步进行<br>
 周期：根据学员需求随时提供帮助</p>
 </li>
 <li class="fl">
 <h3>创业平台支持</h3>
-<img style="with: 320px;height:170px;" src="static/upload/img/201802071134222351.png" alt="">
+<img style="with: 320px;height:170px;" src="/static/upload/img/201802071134222351.png" alt="">
 <p>目的：协助学员创业<br>
 规模：优秀人才提供，相关技术支持<br>
 周期：根据创业学员需求随时提供帮助</p>
@@ -714,7 +714,7 @@ PHP多进程和多线程
 
 {{--公共js--}}
 @include('home.layouts.script')
- <script src="static/templates/main/js/global.js"></script>
+ <script src="/static/templates/main/js/global.js"></script>
  <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
  <script src="http://code.highcharts.com/highcharts.js"></script>
- <script src="static/templates/main/js/qf-bj-php.js"></script>
+ <script src="/static/templates/main/js/qf-bj-php.js"></script>

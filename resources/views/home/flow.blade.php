@@ -1,6 +1,6 @@
 {{--头部-css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 
 <style>
 						* {
@@ -106,7 +106,7 @@
 <div class="flow_con">
 <div class="inner">
 <div class="box_flow">
-<h2 class="flow_tt"><img src="static/templates/main/images/flow1.jpg" /></h2>
+<h2 class="flow_tt"><img src="/static/templates/main/images/flow1.jpg" /></h2>
 <p>您如果想报名参加培训，需要在下方填写个人预报名信息，提交信息后，我们的咨询老师会主动联系您！</p>
 <div id="bm">
 <div class="bm">
@@ -157,7 +157,7 @@
 </div>
 </div>
 <div class="box_flow">
-<h2 class="flow_tt"><img src="static/templates/main/images/flow2.jpg" /></h2>
+<h2 class="flow_tt"><img src="/static/templates/main/images/flow2.jpg" /></h2>
 <p>和咨询老师确认预报名信息后，请按照以下汇款渠道，基础班一次缴清学费598元；就业班缴纳报名费500元，作为座位预订金，该座位预订金将从您的总学费中扣除。</p>
 <p class="p_s"><span>*</span> &nbsp;特别提示：如果您在缴纳报名费用后不打算参加学习了，请在开课日的前<span> 7 </span>天通知我们，我们将全额退还您的报名费，如果您在外地，汇款的费用将从您的报名费中扣除。</p>
 <p class="p_s">距离开课<span> 7 </span>天内（包括<span> 7 </span>天），您不打算参加学习，我们将不予退还您的报名费用。</p>
@@ -178,18 +178,18 @@
 </div>
 </div>
 <div class="box_flow">
-<h2 class="flow_tt"><img src="static/templates/main/images/flow3.jpg" /></h2>
+<h2 class="flow_tt"><img src="/static/templates/main/images/flow3.jpg" /></h2>
 <p>请将您的汇款情况告知咨询老师（主要包括汇款人姓名、所报班级、汇款金额、汇出银行、汇入银行、汇款时间等），咨询老师</p>
 <p>在确认收到汇款后会及时跟您确认座位预订成功。</p>
 </div>
 <div class="box_flow">
-<h2 class="flow_tt"><img src="static/templates/main/images/flow4.jpg" /></h2>
+<h2 class="flow_tt"><img src="/static/templates/main/images/flow4.jpg" /></h2>
 <p>所有学员须在开课前1天之前来公司报到，报到时须携带身份证原件，填写学籍卡，签订学员守则。要安排住宿的外地学员请在</p>
 <p>开课三天之前到京（注：节假日除外）并在买好车票告知咨询老师，以便我们提前安排工作人员为您安排住宿。</p>
 <p><a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" style="color:#f00; text-decoration:underline;">查看各校区详细地址</a></p>
 </div>
 <div class="box_flow">
-<h2 class="flow_tt"><img src="static/templates/main/images/flow5.jpg" /></h2>
+<h2 class="flow_tt"><img src="/static/templates/main/images/flow5.jpg" /></h2>
 <p>为了不影响您的正常上课，所有学员须在开课前一周，从以下两种缴费方式中任选一种，补齐所有学费。</p>
 <p>1、现金缴纳：您可以到我们的培训中心所在地亲自缴纳。</p>
 <p>2、银行汇款：您可以通过银行汇款或者网银转账的方式补齐学费（参见第二步中的汇款帐号）。</p>
@@ -200,8 +200,8 @@
 </div>
 </div>
 
-<script type="text/javascript" src="static/templates/main/js/html5_20170105.js"></script>
-<script src="static/templates/main/js/php_new.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/html5_20170105.js"></script>
+<script src="/static/templates/main/js/php_new.js"></script>
 {{--底部--}}
 @include('home.layouts.footer')
 <script id="qd28521529033c5559ef89a81cb9a2cce5a2f8af319e" src="https://wp.qiye.qq.com/qidian/2852152903/3c5559ef89a81cb9a2cce5a2f8af319e" charset="utf-8" async defer></script>
@@ -222,8 +222,8 @@
 <style type="text/css">
 #ie7-warning{background:rgb(255,255,225); position:absolute; top:0; left:0; font-size:12px; color:#333; width:100%; padding:5px 0; text-align:center; z-index:99999; }
 </style>
-<script src="static/templates/main/js/zx.js"></script>
-<script src="static/templates/main/js/other.js"></script>
+<script src="/static/templates/main/js/zx.js"></script>
+<script src="/static/templates/main/js/other.js"></script>
 <script type="text/javascript">
 	$(function(){
 		$(".nav_left ul li").click(function(){

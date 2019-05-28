@@ -1,9 +1,9 @@
 {{--头部 css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
-<link href="static/templates/main/css/global.css" type="text/css" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/sjs_tc.css">
-<link rel="stylesheet" media="screen" href="static/templates/main/css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
+<link href="/static/templates/main/css/global.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/sjs_tc.css">
+<link rel="stylesheet" media="screen" href="/static/templates/main/css/jquery-ui.min.css">
 
 
 {{--banner--}}
@@ -22,7 +22,7 @@
 <div class="des-tab-clum demo-TabBody" style="display:block;">
 
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-3.html"><img src="static/upload/img/201802052008356999.jpg" width="180" alt="许彩辉" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-3.html"><img src="/static/upload/img/201802052008356999.jpg" width="180" alt="许彩辉" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-3.html"><p><strong>许彩辉</strong></p></a>
 <p><span>鸿博创始人</span></p>
@@ -33,7 +33,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-2.html"><img src="static/upload/img/201802052011102175.jpg" width="180" alt="白世鑫" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-2.html"><img src="/static/upload/img/201802052011102175.jpg" width="180" alt="白世鑫" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-2.html"><p><strong>白世鑫</strong></p></a>
 <p><span>教学总监</span></p>
@@ -44,7 +44,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-13.html"><img src="static/upload/img/201903251512579671.jpg" width="180" alt="白涛" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-13.html"><img src="/static/upload/img/201903251512579671.jpg" width="180" alt="白涛" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-13.html"><p><strong>白涛</strong></p></a>
 <p><span>Java教学负责人</span></p>
@@ -56,7 +56,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-12.html"><img src="static/upload/img/201901021704136880.jpg" width="180" alt="袁伟" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-12.html"><img src="/static/upload/img/201901021704136880.jpg" width="180" alt="袁伟" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-12.html"><p><strong>袁伟</strong></p></a>
 <p><span>Java大数据资深讲师</span></p>
@@ -67,7 +67,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-5.html"><img src="static/upload/img/201802052012284792.jpg" width="180" alt="张永超" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-5.html"><img src="/static/upload/img/201802052012284792.jpg" width="180" alt="张永超" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-5.html"><p><strong>张永超</strong></p></a>
 <p><span>Java高级讲师</span></p>
@@ -78,7 +78,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-7.html"><img src="static/upload/img/201806071516222169.jpg" width="180" alt="王建立" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-7.html"><img src="/static/upload/img/201806071516222169.jpg" width="180" alt="王建立" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-7.html"><p><strong>王建立</strong></p></a>
 <p><span>JAVA大数据高级讲师</span></p>
@@ -89,7 +89,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-10.html"><img src="static/upload/img/201811021010005908.jpg" width="180" alt="刘新" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-10.html"><img src="/static/upload/img/201811021010005908.jpg" width="180" alt="刘新" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-10.html"><p><strong>刘新</strong></p></a>
 <p><span>HTML5高级讲师</span></p>
@@ -100,7 +100,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-4.html"><img src="static/upload/img/201802052011490915.jpg" width="180" alt="杨晓芸" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-4.html"><img src="/static/upload/img/201802052011490915.jpg" width="180" alt="杨晓芸" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-4.html"><p><strong>杨晓芸</strong></p></a>
 <p><span>HTML5高级讲师</span></p>
@@ -111,7 +111,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-1.html"><img src="static/upload/img/201801302338433064.png" width="180" alt="李卫军" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-1.html"><img src="/static/upload/img/201801302338433064.png" width="180" alt="李卫军" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-1.html"><p><strong>李卫军</strong></p></a>
 <p><span>PHP教学总监</span></p>
@@ -122,7 +122,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-8.html"><img src="static/upload/img/201807121715531544.jpg" width="180" alt="李春阳" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-8.html"><img src="/static/upload/img/201807121715531544.jpg" width="180" alt="李春阳" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-8.html"><p><strong>李春阳</strong></p></a>
 <p><span>高级讲师</span></p>
@@ -133,7 +133,7 @@
 <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-9.html"><img src="static/upload/img/201807121610167696.jpg" width="180" alt="徐晓娜" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-9.html"><img src="/static/upload/img/201807121610167696.jpg" width="180" alt="徐晓娜" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-9.html"><p><strong>徐晓娜</strong></p></a>
 <p><span>高级职业规划师</span></p>
@@ -144,7 +144,7 @@
  <div class="clear" style="height:0px;"></div>
 </div>
 <div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-11.html"><img src="static/upload/img/201811231131482398.jpg" width="180" alt="张志帅" /></a></div>
+<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-11.html"><img src="/static/upload/img/201811231131482398.jpg" width="180" alt="张志帅" /></a></div>
 <div class="dLright f_l">
 <a target="_blank" href="/Faculty/show-11.html"><p><strong>张志帅</strong></p></a>
 <p><span>高级讲师</span></p>
@@ -195,8 +195,8 @@
 </div>
 </div>
 <div class="right_pi_wrap img_div">
-<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="static/upload/img/201812071114316567.jpg" alt="广告3"></a>
-<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="static/upload/img/201901041517363540.jpg" alt="广告2"></a>
+<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="/static/upload/img/201812071114316567.jpg" alt="广告3"></a>
+<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="/static/upload/img/201901041517363540.jpg" alt="广告2"></a>
 </div>
 <div class="right_item">
 <div class="right_item_title">
@@ -363,5 +363,5 @@
 
 {{--公共js--}}
 @include('home.layouts.script')
-<script src="static/templates/main/js/jquery.validate.js" type="text/javascript"></script>
-<script src="static/templates/main/js/jquery-ui.min.js"></script>
+<script src="/static/templates/main/js/jquery.validate.js" type="text/javascript"></script>
+<script src="/static/templates/main/js/jquery-ui.min.js"></script>

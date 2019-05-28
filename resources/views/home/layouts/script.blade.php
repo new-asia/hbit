@@ -44,11 +44,11 @@
         }
     </script>
 
-<script type="text/javascript" src="static/scripts/jquery/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="static/scripts/jquery/jquery.form.min.js"></script>
-<script type="text/javascript" src="static/scripts/jquery/Validform_v5.3.2_min.js"></script>
-<script type="text/javascript" src="static/scripts/artdialog/dialog-plus-min.js"></script>
-<script type="text/javascript" src="static/templates/main/js/common.js"></script>
-<script src="static/templates/main/js/global.js"></script>
-<script type="text/javascript" src="static/templates/main/js/html5_20170105.js"></script>
-<script src="static/templates/main/js/php_new.js"></script>
+<script type="text/javascript" src="/static/scripts/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/static/scripts/jquery/jquery.form.min.js"></script>
+<script type="text/javascript" src="/static/scripts/jquery/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="/static/scripts/artdialog/dialog-plus-min.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/common.js"></script>
+<script src="/static/templates/main/js/global.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/html5_20170105.js"></script>
+<script src="/static/templates/main/js/php_new.js"></script>

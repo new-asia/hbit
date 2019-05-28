@@ -1,10 +1,10 @@
 {{--头部-css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" href="static/templates/main/css/javaee.css" " />
-<link href="static/templates/main/css/animate.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="static/templates/main/css/h5_class.css" />
-<link rel="stylesheet" type="text/css" href="static/templates/main/css1/index1.css" />
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
+<link rel="stylesheet" href="/static/templates/main/css/javaee.css" " />
+<link href="/static/templates/main/css/animate.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/static/templates/main/css/h5_class.css" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css1/index1.css" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 
 {{--banner--}}
 @include('home.layouts.banner')
@@ -55,22 +55,22 @@
 <ul class="con2_logo">
 <li>
 <span>
-<img src="static/templates/main/images/con2_img1.png" height="57" width="164">
+<img src="/static/templates/main/images/con2_img1.png" height="57" width="164">
 </span>
 <p>“Java开发”相关职位<i>10000+</i><em>（根据6月22日猎聘网搜索所得数据）</em></p>
 </li><li>
 <span>
-<img src="static/templates/main/images/con1_img2.png" height="55" width="129">
+<img src="/static/templates/main/images/con1_img2.png" height="55" width="129">
 </span>
 <p>“Java开发”相关职位<i>40342+</i><em>（根据6月22日猎聘网搜索所得数据）</em></p>
 </li><li>
 <span>
-<img src="static/templates/main/images/con2_img3.png" height="55" width="151">
+<img src="/static/templates/main/images/con2_img3.png" height="55" width="151">
 </span>
 <p>“Java开发”相关职位<i>48932+</i><em>（根据6月22日猎聘网搜索所得数据）</em></p>
 </li><li>
 <span>
-<img src="static/templates/main/images/con2_img4.png" height="50" width="147">
+<img src="/static/templates/main/images/con2_img4.png" height="50" width="147">
 </span>
 <p>“Java开发”相关职位<i>63677+</i><em>（根据6月22日猎聘网搜索所得数据）</em></p>
 </li>
@@ -1064,8 +1064,8 @@
 </div>
 </div>
 <div class="contain9">
-<img src="static/templates/main/images/con9_img1.png" class="img1"><br />
-<img src="static/templates/main/images/con9_img2.png" class="img2">
+<img src="/static/templates/main/images/con9_img1.png" class="img1"><br />
+<img src="/static/templates/main/images/con9_img2.png" class="img2">
 <div class="link_53 " data-depth="0.2">
 <a rel="nofollow" href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank" class="btn2">
 立刻报名
@@ -1083,15 +1083,15 @@
 @include('home.layouts.script')
 <script> (function(){ var bp = document.createElement('script'); var curProtocol = window.location.protocol.split(':')[0]; if (curProtocol === 'https') { bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; } else { bp.src = 'http://push.zhanzhang.baidu.com/push.js'; } var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(bp, s); })(); </script>
 
-<script src="static/templates/main/js/global.js"></script>
+<script src="/static/templates/main/js/global.js"></script>
 <script id="qd28521529033c5559ef89a81cb9a2cce5a2f8af319e" src="https://wp.qiye.qq.com/qidian/2852152903/3c5559ef89a81cb9a2cce5a2f8af319e" charset="utf-8" async defer></script>
 
-<script type="text/javascript" src="static/templates/main/js/jquery-1.11.3.min.js?ver=160620"></script>
-<script type="text/javascript" src="static/templates/main/js/wow.min.js?ver=160620"></script>
+<script type="text/javascript" src="/static/templates/main/js/jquery-1.11.3.min.js?ver=160620"></script>
+<script type="text/javascript" src="/static/templates/main/js/wow.min.js?ver=160620"></script>
 <script>
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
         new WOW().init();
     };
 </script>
-<script src="static/templates/main/js/javaee.js?t=1517305589"></script>
-<script src="static/templates/main/js/php_new.js?t=1517305589"></script>
+<script src="/static/templates/main/js/javaee.js?t=1517305589"></script>
+<script src="/static/templates/main/js/php_new.js?t=1517305589"></script>

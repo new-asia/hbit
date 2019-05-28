@@ -1,14 +1,14 @@
 {{--头部-css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/bootstrap.min1.css" />
-<link rel="stylesheet" type="text/css" href="static/templates/main/css1/reset.css">
-<link rel="stylesheet" href="static/templates/main/css1/index.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/bootstrap.min1.css" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css1/reset.css">
+<link rel="stylesheet" href="/static/templates/main/css1/index.css">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-<link rel="stylesheet" href="static/templates/main/css/base_bottom.css" />
-<link rel="stylesheet" href="static/templates/main/css/newstyle.css" />
-<link rel="stylesheet" href="static/templates/main/css/qf-bj-php.css">
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
+<link rel="stylesheet" href="/static/templates/main/css/base_bottom.css" />
+<link rel="stylesheet" href="/static/templates/main/css/newstyle.css" />
+<link rel="stylesheet" href="/static/templates/main/css/qf-bj-php.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 <style>
 		.city_class th{
 			text-align: center;
@@ -4967,9 +4967,9 @@ UI设计师 </a>
 @include('home.layouts.footer')
 {{--公共js--}}
 @include('home.layouts.script')
-<script src="static/templates/main/js/jquery.min.js"></script>
-<script src="static/templates/main/js/bootstrap.min.js"></script>
-<script src="static/templates/main/js/home.js"></script>
+<script src="/static/templates/main/js/jquery.min.js"></script>
+<script src="/static/templates/main/js/bootstrap.min.js"></script>
+<script src="/static/templates/main/js/home.js"></script>
 <script>
     var _hmt = _hmt || [];
     (function() {

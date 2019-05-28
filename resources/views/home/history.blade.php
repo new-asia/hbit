@@ -1,6 +1,6 @@
 {{--头部-css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 
 <div class="wrapper">
 
@@ -29,10 +29,10 @@ var _hmt = _hmt || [];
 <div class="con_about">
 <div class="about_nav">
 <ul>
-<li><a id="abouts" href="static/abouts.html">企业简介</a></li>
-<li><a id="idea" href="static/idea.html">企业理念</a></li>
-<li><a id="history" href="static/history.html">发展历史</a></li>
-<li><a id="school" href="static/school.html">直营校区</a></li>
+<li><a id="abouts" href="/static/abouts.html">企业简介</a></li>
+<li><a id="idea" href="/static/idea.html">企业理念</a></li>
+<li><a id="history" href="/static/history.html">发展历史</a></li>
+<li><a id="school" href="/static/school.html">直营校区</a></li>
 </ul>
 </div>
 <div class="about_con">
@@ -56,7 +56,7 @@ var _hmt = _hmt || [];
 {{--公共js--}}
 @include('home.layouts.script')
 <script id="qd28521529033c5559ef89a81cb9a2cce5a2f8af319e" src="https://wp.qiye.qq.com/qidian/2852152903/3c5559ef89a81cb9a2cce5a2f8af319e" charset="utf-8" async defer></script>
-<script src="static/templates/main/js/jquery-1.7.2.min.js"></script>
+<script src="/static/templates/main/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
     window.onload=function (){
         //alert(window.location.href);

@@ -1,18 +1,18 @@
 {{--头部-css--}}
 @include('home.layouts.header')
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="static/templates/main/css2/style.css" />
-<link rel="stylesheet" href="static/templates/main/css/qf-bj-php.css">
-<link rel="stylesheet" type="text/css" href="static/templates/main/css1/index1.css" />
-<link rel="stylesheet" href="static/templates/main/css1/index.css">
-<link rel="stylesheet" type="text/css" href="static/templates/main/css/other.css" />
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css2/style.css" />
+<link rel="stylesheet" href="/static/templates/main/css/qf-bj-php.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css1/index1.css" />
+<link rel="stylesheet" href="/static/templates/main/css1/index.css">
+<link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 {{--<body id="special_">--}}
 
 {{--<div class="a_banner">
 <div class="a_banner_pic">
 <ul>
 <li>
-<li><a href="#"><img src="static/upload/img/201803062351329727.jpg" style="background: url(static/upload/img/201803062351329727.jpg) center 0px no-repeat;width: 100%;height: 100%;" style="display: none;" /></a></li>
+<li><a href="#"><img src="/static/upload/img/201803062351329727.jpg" style="background: url(/static/upload/img/201803062351329727.jpg) center 0px no-repeat;width: 100%;height: 100%;" style="display: none;" /></a></li>
 </li>
 </ul>
 </div>
@@ -32,7 +32,7 @@
 <div class="title f-30 txt-center">
 <h2 class="h2-unit rel">鸿博学员就业信息</h2>
 <p class="p-unit">懂原理、精实操，薪资才更高</p>
-<p class="img-unit"><img src="static/templates/main/images/h2_ico.png" /></p>
+<p class="img-unit"><img src="/static/templates/main/images/h2_ico.png" /></p>
 </div>
 <div class="content">
 <div class="thead txt-center c-w f-20 clearfix">
@@ -244,18 +244,18 @@
 <div class="plot_con" style="height: 510px;">
 
 <div class="plot_l">
-<a href="/StudentsStory/show-4.html" class="picbox"><img src="static/upload/img/201808301609094314.jpg" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
+<a href="/StudentsStory/show-4.html" class="picbox"><img src="/static/upload/img/201808301609094314.jpg" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
 <p class="p1">初来鸿博时，印象最深刻的就是标识牌上的那句“自己要学会独立”的标语。要为自己的未来拼搏，为自己未来的美好生说努力。</p>
 <p class="p2"><span>姓名：王**</span> <span>班级：java大数据</span><span>月薪：25000</span></p></a>
 </div>
 <div class="plot_r">
 <ul>
-<li><a href="/StudentsStory/show-19.html" class="picbox"><img height="140" src="static/upload/img/201809171656317575.jpg"><p>姓名：石**<br>班级：PHP全栈<br>月薪：15000</p></a></li>
-<li><a href="/StudentsStory/show-18.html" class="picbox"><img height="140" src="static/upload/img/201809171658434753.jpg"><p>姓名：王**月<br>班级：java大数据<br>月薪：20000</p></a></li>
-<li><a href="/StudentsStory/show-16.html" class="picbox"><img height="140" src="static/upload/img/201805281545564876.jpg"><p>姓名：秦**<br>班级：java大数据<br>月薪：18000</p></a></li>
-<li><a href="/StudentsStory/show-15.html" class="picbox"><img height="140" src="static/upload/img/201805281547452845.jpg"><p>姓名：苏**<br>班级：java大数据<br>月薪：16000</p></a></li>
-<li><a href="/StudentsStory/show-22.html" class="picbox"><img height="140" src="static/upload/img/201805281553397981.jpg"><p>姓名：李**<br>班级：java大数据<br>月薪：15000</p></a></li>
-<li><a href="/StudentsStory/show-14.html" class="picbox"><img height="140" src="static/upload/img/201809171657333191.jpg"><p>姓名：张**<br>班级：java大数据<br>月薪：26000</p></a></li>
+<li><a href="/StudentsStory/show-19.html" class="picbox"><img height="140" src="/static/upload/img/201809171656317575.jpg"><p>姓名：石**<br>班级：PHP全栈<br>月薪：15000</p></a></li>
+<li><a href="/StudentsStory/show-18.html" class="picbox"><img height="140" src="/static/upload/img/201809171658434753.jpg"><p>姓名：王**月<br>班级：java大数据<br>月薪：20000</p></a></li>
+<li><a href="/StudentsStory/show-16.html" class="picbox"><img height="140" src="/static/upload/img/201805281545564876.jpg"><p>姓名：秦**<br>班级：java大数据<br>月薪：18000</p></a></li>
+<li><a href="/StudentsStory/show-15.html" class="picbox"><img height="140" src="/static/upload/img/201805281547452845.jpg"><p>姓名：苏**<br>班级：java大数据<br>月薪：16000</p></a></li>
+<li><a href="/StudentsStory/show-22.html" class="picbox"><img height="140" src="/static/upload/img/201805281553397981.jpg"><p>姓名：李**<br>班级：java大数据<br>月薪：15000</p></a></li>
+<li><a href="/StudentsStory/show-14.html" class="picbox"><img height="140" src="/static/upload/img/201809171657333191.jpg"><p>姓名：张**<br>班级：java大数据<br>月薪：26000</p></a></li>
 </ul>
 </div>
 </div>
@@ -272,18 +272,18 @@
 <div class="warp">
 <table>
 <tr>
-<td><img src="static/upload/img/201802072327292790.jpg" alt=""></td>
-<td><img src="static/upload/img/201802072327149724.jpg" alt=""></td>
-<td><img src="static/upload/img/201802072326505017.jpg" alt=""></td>
-<td><img src="static/upload/img/201802070913136628.jpg" alt=""></td>
-<td><img src="static/upload/img/201802070913055378.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802072327292790.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802072327149724.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802072326505017.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070913136628.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070913055378.jpg" alt=""></td>
 </tr>
 <tr>
-<td><img src="static/upload/img/201802070912514929.jpg" alt=""></td>
-<td><img src="static/upload/img/201802070912436199.jpg" alt=""></td>
-<td><img src="static/upload/img/201802070912341403.jpg" alt=""></td>
-<td><img src="static/upload/img/201802070912257761.jpg" alt=""></td>
-<td><img src="static/upload/img/201802070912131648.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070912514929.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070912436199.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070912341403.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070912257761.jpg" alt=""></td>
+<td><img src="/static/upload/img/201802070912131648.jpg" alt=""></td>
 </tr>
 <tr>
 </tr>
@@ -298,8 +298,8 @@
 {{--公共js--}}
 @include('home.layouts.script')
 
-<script type="text/javascript" src="static/templates/main/js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="static/templates/main/js/special_java.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/static/templates/main/js/special_java.js"></script>
 <script>
 $('.kczx_item fl_left').on({
     mouseover: function() {
