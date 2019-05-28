@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
+use App\Models\Teacher;
+use App\Models\Student;
 class IndexController extends Controller
 {
     public function index(){
@@ -16,11 +17,15 @@ class IndexController extends Controller
     }
 
     public function faculty(){
-        return view('home/faculty');
+        $teacher = new Teacher();
+        $data = $teacher->orderBy('teacher_sort')->get();
+        return view('home/faculty',['teacher'=>$data]);
     }
 
     public function StudentsStory(){
-        return view('home/StudentsStory');
+        $student = new Student();
+        $data = $student->orderBy('list_order')->get();
+        return view('home/StudentsStory',['student'=>$data]);
     }
 
     public function idea(){

@@ -20,140 +20,19 @@
 <div class="inside-contanier-l-wrap inside2">
 <div class="des-tab-box demo-TabWrap">
 <div class="des-tab-clum demo-TabBody" style="display:block;">
-
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-3.html"><img src="/static/upload/img/201802052008356999.jpg" width="180" alt="许彩辉" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-3.html"><p><strong>许彩辉</strong></p></a>
-<p><span>鸿博创始人</span></p>
-<p><b>工作年限：</b><span>20年</span></p>
-<p><b>擅长领域：</b>职业规划,心理咨询</p>
-<p><b>授课风格：</b>“认真、严谨、用心、负责、诙谐幽默”</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-2.html"><img src="/static/upload/img/201802052011102175.jpg" width="180" alt="白世鑫" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-2.html"><p><strong>白世鑫</strong></p></a>
-<p><span>教学总监</span></p>
-<p><b>工作年限：</b><span>10年</span></p>
-<p><b>擅长领域：</b>Java大数据</p>
-<p><b>授课风格：</b>授课思维严谨灵活，将复杂的业务应用逻辑以直观浅显的方式阐述。</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-13.html"><img src="/static/upload/img/201903251512579671.jpg" width="180" alt="白涛" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-13.html"><p><strong>白涛</strong></p></a>
-<p><span>Java教学负责人</span></p>
-<p><b>工作年限：</b><span>15年</span></p>
-<p><b>擅长领域：</b>Java企业级开发、大数据分析、移动开发、区块链</p>
-<p><b>授课风格：</b>运用通俗易懂的生活语言，讲解抽象难于理解的编程语言。
-教师详情十五年的企业级应用开发及IT培训授课经验。参与过多个大型项目的分析、设计等工作。授课方面幽默风趣，对教学内容能做到深入浅出，条理分明，通俗易懂，注重对学员学习的方式与方法。</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-12.html"><img src="/static/upload/img/201901021704136880.jpg" width="180" alt="袁伟" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-12.html"><p><strong>袁伟</strong></p></a>
-<p><span>Java大数据资深讲师</span></p>
-<p><b>工作年限：</b><span>7年</span></p>
-<p><b>擅长领域：</b>Java大数据</p>
-<p><b>授课风格：</b>深入浅出、生动活波</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-5.html"><img src="/static/upload/img/201802052012284792.jpg" width="180" alt="张永超" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-5.html"><p><strong>张永超</strong></p></a>
-<p><span>Java高级讲师</span></p>
-<p><b>工作年限：</b><span>10年</span></p>
-<p><b>擅长领域：</b>JAVAEE/JAVA框架/oracle数据库</p>
-<p><b>授课风格：</b>实战经验丰富，讲课通俗易懂，风趣幽默，深入浅出</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-7.html"><img src="/static/upload/img/201806071516222169.jpg" width="180" alt="王建立" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-7.html"><p><strong>王建立</strong></p></a>
-<p><span>JAVA大数据高级讲师</span></p>
-<p><b>工作年限：</b><span>5年</span></p>
-<p><b>擅长领域：</b>JAVA大数据</p>
-<p><b>授课风格：</b>幽默诙谐</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-10.html"><img src="/static/upload/img/201811021010005908.jpg" width="180" alt="刘新" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-10.html"><p><strong>刘新</strong></p></a>
-<p><span>HTML5高级讲师</span></p>
-<p><b>工作年限：</b><span>6年</span></p>
-<p><b>擅长领域：</b>HTML5</p>
-<p><b>授课风格：</b>耐心细致，由浅入深</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-4.html"><img src="/static/upload/img/201802052011490915.jpg" width="180" alt="杨晓芸" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-4.html"><p><strong>杨晓芸</strong></p></a>
-<p><span>HTML5高级讲师</span></p>
-<p><b>工作年限：</b><span>15年</span></p>
-<p><b>擅长领域：</b>HTML5</p>
-<p><b>授课风格：</b>主讲H5全栈开发，实战经验丰富，授课耐心细致，思路清晰易懂，风趣幽默，现致力于H5全栈应用的研究与推广。</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-1.html"><img src="/static/upload/img/201801302338433064.png" width="180" alt="李卫军" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-1.html"><p><strong>李卫军</strong></p></a>
-<p><span>PHP教学总监</span></p>
-<p><b>工作年限：</b><span>15年</span></p>
-<p><b>擅长领域：</b>PHP全栈开发</p>
-<p><b>授课风格：</b>秉承“师者、传道授业解惑”的教学态度，坚信“授人以鱼不如授人以渔”</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-8.html"><img src="/static/upload/img/201807121715531544.jpg" width="180" alt="李春阳" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-8.html"><p><strong>李春阳</strong></p></a>
-<p><span>高级讲师</span></p>
-<p><b>工作年限：</b><span>7年</span></p>
-<p><b>擅长领域：</b>职业导师</p>
-<p><b>授课风格：</b>风格幽默，风趣，循序善诱</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-9.html"><img src="/static/upload/img/201807121610167696.jpg" width="180" alt="徐晓娜" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-9.html"><p><strong>徐晓娜</strong></p></a>
-<p><span>高级职业规划师</span></p>
-<p><b>工作年限：</b><span>3年</span></p>
-<p><b>擅长领域：</b>职业素养，就业指导</p>
-<p><b>授课风格：</b>教学细致，循序善诱</p>
-</div>
- <div class="clear" style="height:0px;"></div>
-</div>
-<div class="disList">
-<div class="dLleft f_l"><a target="_blank" href="/Faculty/show-11.html"><img src="/static/upload/img/201811231131482398.jpg" width="180" alt="张志帅" /></a></div>
-<div class="dLright f_l">
-<a target="_blank" href="/Faculty/show-11.html"><p><strong>张志帅</strong></p></a>
-<p><span>高级讲师</span></p>
-<p><b>工作年限：</b><span>6年</span></p>
-<p><b>擅长领域：</b>网络安全与服务器搭建</p>
-<p><b>授课风格：</b>把教育跟娱乐融合为一体，使人在娱乐中受到教育</p>
-</div>
-<div class="clear" style="height:0px;"></div>
-</div>
+ @foreach($teacher as $v)
+   <div class="disList">
+   <div class="dLleft f_l"><a target="_blank" href="/Faculty/show-3.html"><img src="{{$v->teacher_portrait_src}}" width="180" alt="{{$v->name}}" /></a></div>
+   <div class="dLright f_l">
+   <a target="_blank" href="/Faculty/show-3.html"><p><strong>{{$v->name}}</strong></p></a>
+   <p><span>{{$v->teacher_position}}</span></p>
+   <p><b>工作年限：</b><span>{{$v->obtain_employment_time}}</span></p>
+   <p><b>擅长领域：</b>职业规划,心理咨询</p>
+   <p><b>授课风格：</b>{{$v->teacher_style}}</p>
+   </div>
+   <div class="clear" style="height:0px;"></div>
+   </div>
+ @endforeach
 
 <p class="nex-page">
 </p>
@@ -321,13 +200,11 @@
 </div>
 <div class="right_item_content">
 <ul>
-<li><a href="/Faculty/show-2.html">白世鑫</a></li>
-<li><a href="/Faculty/show-13.html">白涛</a></li>
-<li><a href="/Faculty/show-12.html">袁伟</a></li>
-<li><a href="/Faculty/show-5.html">张永超</a></li>
-<li><a href="/Faculty/show-4.html">杨晓芸</a></li>
-<li><a href="/Faculty/show-1.html">李卫军</a></li>
-<li><a href="/Faculty/show-11.html">张志帅</a></li>
+   @foreach($teacher as $v)
+      <li><a href="/Faculty/show-2.html">{{$v->name}}</a></li>
+   @endforeach
+
+
 </ul>
 </div>
 </div>
