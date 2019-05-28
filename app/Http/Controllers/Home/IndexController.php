@@ -26,5 +26,14 @@ class IndexController extends Controller
     public function idea(){
         return view('home/idea');
     }
+    //文章内容
+    public function show(){
+        return view('home/show');
+    }
+    //文章列表
+    public function Campusall(){
+        return view('home/Campusall');
+    }
+
 
 }
