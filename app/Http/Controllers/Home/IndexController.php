@@ -20,7 +20,7 @@ class IndexController extends Controller
 
     public function faculty(){
         $teacher = new Teacher();
-        $data = $teacher->orderBy('list_order')->get();
+        $data = $teacher->getTeacher();
         return view('home/faculty',['teacher'=>$data]);
     }
 
