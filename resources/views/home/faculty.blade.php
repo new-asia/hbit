@@ -211,26 +211,9 @@
 <div class="sidebar-box right_item">
 <h4>热门标签</h4>
 <div class="tags-box clearfix">
-<a href="/search.html?tags=%e9%87%91%e9%93%ad%e9%bc%8e">鸿博<i>(76)</i></a>
-<a href="/search.html?tags=HTML5">HTML5<i>(19)</i></a>
-<a href="/search.html?tags=%e7%a8%8b%e5%ba%8f%e7%8c%bf">程序猿<i>(7)</i></a>
-<a href="/search.html?tags=HTML5%e5%ad%a6%e4%b9%a0">HTML5学习<i>(4)</i></a>
-<a href="/search.html?tags=html">html<i>(4)</i></a>
-<a href="/search.html?tags=php%e5%9f%b9%e8%ae%ad">php培训<i>(4)</i></a>
-<a href="/search.html?tags=%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87">工作效率<i>(2)</i></a>
-<a href="/search.html?tags=%e7%97%9b%e8%8b%a6%e9%a2%86%e6%82%9f">痛苦领悟<i>(1)</i></a>
-<a href="/search.html?tags=%e6%92%a9%e6%b1%89">撩汉<i>(1)</i></a>
-<a href="/search.html?tags=Html%e6%a0%87%e7%ad%be">Html标签<i>(1)</i></a>
-<a href="/search.html?tags=%e5%81%9a%e9%a1%b9%e7%9b%ae">做项目<i>(1)</i></a>
-<a href="/search.html?tags=%e5%ad%a6%e7%bc%96%e7%a8%8b">学编程<i>(1)</i></a>
-<a href="/search.html?tags=PHP%e9%a1%b9%e7%9b%ae">PHP项目<i>(1)</i></a>
-<a href="/search.html?tags=%e7%b9%81%e5%8d%8e%e9%83%bd%e5%b8%82">繁华都市<i>(1)</i></a>
-<a href="/search.html?tags=%e9%83%bd%e6%98%af%e7%94%9f%e6%b4%bb">都是生活<i>(1)</i></a>
-<a href="/search.html?tags=IT%e5%9f%b9%e8%ae%ad">IT培训<i>(1)</i></a>
-<a href="/search.html?tags=%e9%87%91%e9%93%ad%e9%bc%8e%e5%9f%b9%e8%ae%ad">鸿博培训<i>(1)</i></a>
-<a href="/search.html?tags=%e6%b2%a1%e6%9c%89%e5%9f%ba%e7%a1%80">没有基础<i>(1)</i></a>
-<a href="/search.html?tags=%e5%9f%ba%e7%a1%80%e5%85%a5%e9%97%a8">基础入门<i>(1)</i></a>
-<a href="/search.html?tags=%e6%92%a9%e6%b1%89%e4%bc%98%e9%80%89%e2%80%9c%e7%a8%8b%e5%ba%8f%e7%8c%bf%e2%80%9d">撩汉优选“程序猿”<i>(0)</i></a>
+@foreach($tags as $v)
+   <a href="{{$v['id']}}">{{$v['name']}}<i>({{$v['count']}})</i></a>
+@endforeach 
 </div>
 </div>
 </div>
