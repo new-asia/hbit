@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Teacher;
 use App\Models\Student;
+use App\Models\Tags;
+
 class IndexController extends Controller
 {
     public function index(){
@@ -20,8 +22,9 @@ class IndexController extends Controller
 
     public function faculty(){
         $teacher = new Teacher();
-        $data = $teacher->getTeacher();
-        return view('home/faculty',['teacher'=>$data]);
+        $Tags =Tags::allcount();
+        $data = $teacher->orderBy('list_order')->get();
+        return view('home/faculty',['teacher'=>$data,'tags'=>$Tags]);
     }
 
     public function StudentsStory(){
