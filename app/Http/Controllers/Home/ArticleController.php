@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Models\Category;
 
 class ArticleController extends Controller
 {
@@ -12,7 +13,10 @@ class ArticleController extends Controller
         return view('home/show');
     }
     //文章列表
+    
     public function Campusall(){
-        return view('home/Campusall');
+        $Category = new Category();
+        $list = $Category->ArticleList();
+        return view('home/Campusall',['list'=>$list]);
     }
 }
