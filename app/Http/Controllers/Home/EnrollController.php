@@ -16,7 +16,7 @@ class EnrollController extends Controller
         }
         $validator = \Validator::make($post,[
             'name'=>'required|min:2|max:20',
-            'tel'=>'required|integer|digits_between:7,11',
+            'tel'=>'required|integer|digits:11',
             'qq'=>'required|integer|digits_between:5,11',
             'campus_id'=>'required|min:1',
             'course_id'=>'required|min:1',
@@ -25,11 +25,12 @@ class EnrollController extends Controller
             'min'=>':attribute 长度不符合要求',
             'max'=>':attribute 长度超出范围',
             'integer'=>':attribute 必须是整形',
-            'digits_between'=>':attribute 长度不符合要求'
+            'digits_between'=>':attribute 长度不符合要求',
+            'digits'=>':attribute 长度不符合要求'
 
         ],[
             'name'=>'姓名',
-            'tel'=>'电话 ',
+            'tel'=>'手机号 ',
             'qq'=>'QQ号',
             'campus_id'=>'校区',
             'course_id'=>'课程',

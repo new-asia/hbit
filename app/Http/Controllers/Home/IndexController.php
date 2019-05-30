@@ -10,7 +10,6 @@ use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
 use App\Models\Campus;
-use App\Models\Course;
 class IndexController extends Controller
 {
     public function index(){

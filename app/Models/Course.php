@@ -18,7 +18,7 @@ class Course extends Model
     public static function getAllCourse(){
         return parent::select('course_id','course_name')->get();
     }
-}
+
     public function course(){
         return DB::table('course')
             ->select('course_name','enroll_link','list_order','course_time')
