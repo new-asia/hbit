@@ -8,6 +8,7 @@ use App\Models\Teacher;
 use App\Models\Student;
 use App\Models\Advert;
 use App\Models\Course;
+use App\Models\Tags;
 
 class IndexController extends Controller
 {
@@ -32,7 +33,8 @@ class IndexController extends Controller
         $advert = $advert->getAdvert(1);
         $course = new Course();
         $course = $course->course();
-        return view('home/faculty',['teacher'=>$data,'advert'=>$advert,'course'=>$course]);
+        $Tags =Tags::allcount();
+        return view('home/faculty',['teacher'=>$data,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
     }
 
     public function StudentsStory(){
