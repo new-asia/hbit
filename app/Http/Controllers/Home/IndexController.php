@@ -15,8 +15,10 @@ class IndexController extends Controller
     public function index(){
         $advert = new Advert();
         $rotation_chart = $advert->rotation_chart();
+        $course = new Course();
+        $course = $course->cou_index();
         //print_r();die;
-        return view('home/index',['rotation_chart'=>$rotation_chart]);
+        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
     }
 
     public function studentemployment(){

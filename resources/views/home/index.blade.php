@@ -681,246 +681,53 @@
         </div>
         <div class="city_class city_subject">
             <table class="table table-hover table-bordered">
-                <tbody><tr>
+                <tbody>
+                <tr>
                     <th>培训形式</th>
                     <th>技术科目</th>
                     <th>开班期数</th>
                     <th>开班时间</th>
-
                     <th>课程大纲</th>
                     <th>火热抢座中</th>
                 </tr>
-                <tr>
-                    <td>
-                        <span class="glyphicon glyphicon-blackboard marker1"></span>
-                        <span>
-<b>
-线下面授 </b>
-</span>
-                    </td>
-                    <td class="myitem">
-<span>
-<b>
-大数据工程师 </b>
-</span>
-                    </td>
-                    <td>
-<span>
-<b>
-第6期
-</b>
-</span>
-                    </td>
-                    <td class="bg-warning">
-<span>
-<b>
-2019-02-26 </b>
-</span>
-                    </td>
-                    <td>
-
-                        <a href="" class="btn" target="_blank">
-                            <b>
-                                课程大纲
-                            </b>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="glyphicon glyphicon-fire"></span>
-
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" class="btn btn-danger" target="_blank">
-                            <b>
-                                火热抢座中
-                            </b>
-                        </a>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="glyphicon glyphicon-blackboard marker1"></span>
-                        <span>
-<b>
-线下面授 </b>
-</span>
-                    </td>
-                    <td class="myitem">
-<span>
-<b>
-大数据工程师 </b>
-</span>
-                    </td>
-                    <td>
-<span>
-<b>
-第7期
-</b>
-</span>
-                    </td>
-                    <td class="bg-warning">
-<span>
-<b>
-2019-03-06 </b>
-</span>
-                    </td>
-                    <td>
-
-                        <a href="" class="btn" target="_blank">
-                            <b>
-                                课程大纲
-                            </b>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="glyphicon glyphicon-fire"></span>
-
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" class="btn btn-danger" target="_blank">
-                            <b>
-                                火热抢座中
-                            </b>
-                        </a>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="glyphicon glyphicon-blackboard marker1"></span>
-                        <span>
-<b>
-线下面授 </b>
-</span>
-                    </td>
-                    <td class="myitem">
-<span>
-<b>
-大数据工程师 </b>
-</span>
-                    </td>
-                    <td>
-<span>
-<b>
-第8期
-</b>
-</span>
-                    </td>
-                    <td class="bg-warning">
-<span>
-<b>
-2019-03-20 </b>
-</span>
-                    </td>
-                    <td>
-
-                        <a href="" class="btn" target="_blank">
-                            <b>
-                                课程大纲
-                            </b>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="glyphicon glyphicon-fire"></span>
-
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" class="btn btn-danger" target="_blank">
-                            <b>
-                                火热抢座中
-                            </b>
-                        </a>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="glyphicon glyphicon-blackboard marker1"></span>
-                        <span>
-<b>
-线下面授 </b>
-</span>
-                    </td>
-                    <td class="myitem">
-<span>
-<b>
-大数据工程师 </b>
-</span>
-                    </td>
-                    <td>
-<span>
-<b>
-第9期
-</b>
-</span>
-                    </td>
-                    <td class="bg-warning">
-<span>
-<b>
-2019-04-10 </b>
-</span>
-                    </td>
-                    <td>
-
-                        <a href="" class="btn" target="_blank">
-                            <b>
-                                课程大纲
-                            </b>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="glyphicon glyphicon-fire"></span>
-
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" class="btn btn-danger" target="_blank">
-                            <b>
-                                火热抢座中
-                            </b>
-                        </a>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span class="glyphicon glyphicon-blackboard marker1"></span>
-                        <span>
-<b>
-线下面授 </b>
-</span>
-                    </td>
-                    <td class="myitem">
-<span>
-<b>
-大数据工程师 </b>
-</span>
-                    </td>
-                    <td>
-<span>
-<b>
-第10期
-</b>
-</span>
-                    </td>
-                    <td class="bg-warning">
-<span>
-<b>
-2019-04-22 </b>
-</span>
-                    </td>
-                    <td>
-
-                        <a href="" class="btn" target="_blank">
-                            <b>
-                                课程大纲
-                            </b>
-                        </a>
-                    </td>
-                    <td>
-                        <span class="glyphicon glyphicon-fire"></span>
-
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" class="btn btn-danger" target="_blank">
-                            <b>
-                                火热抢座中
-                            </b>
-                        </a>
-
-                    </td>
-                </tr>
-                </tbody></table>
+                @foreach($course as $item)
+                    <tr>
+                        <td>
+                            <span class="glyphicon glyphicon-blackboard marker1"></span>
+                            <span>
+                                <b>{{$item->course_form == 1?'线下授课':'线上授课'}}</b>
+                            </span>
+                        </td>
+                        <td class="myitem">
+                            <span>
+                                <b>{{$item->course_name}}</b>
+                            </span>
+                        </td>
+                        <td>
+                            <span>
+                                <b>第{{$item->course_num}}期</b>
+                            </span>
+                        </td>
+                        <td class="bg-warning">
+                            <span>
+                                <b>{{date("Y-m-d",$item->course_time)}} </b>
+                            </span>
+                        </td>
+                        <td>
+                            <a href="{{$item->outline_link}}" class="btn" target="_blank">
+                                <b>课程大纲</b>
+                            </a>
+                        </td>
+                        <td>
+                            <span class="glyphicon glyphicon-fire"></span>
+                            <a href="{{$item->enroll_link}}" class="btn btn-danger" target="_blank">
+                                <b>火热抢座中</b>
+                            </a>
+                        </td>
+                    </tr>
+                @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="part new">

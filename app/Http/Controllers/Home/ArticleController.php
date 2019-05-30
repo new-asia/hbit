@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Category;
+use App\Models\Advert;
+use App\Models\Course;
 
 class ArticleController extends Controller
 {
@@ -17,7 +19,11 @@ class ArticleController extends Controller
     public function Campusall(){
         $Category = new Category();
         $list = $Category->ArticleList();
-        //print_r();die;
-        return view('home/Campusall',['list'=>$list]);
+        $advert = new Advert();
+        $advert = $advert->getAdvert(7);
+        $course = new Course();
+        $course = $course->course();
+        //print_r($advert);die;
+        return view('home/Campusall',['list'=>$list,'advert'=>$advert,'course'=>$course]);
     }
 }

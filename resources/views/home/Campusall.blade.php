@@ -128,7 +128,7 @@
 		<div class="a_banner_pic">
 			<ul>
 				<li>
-				<li><a href="#"><img src="/static/upload/201803062351329727.jpg" style="background: url(https://www.itjmd.com/upload/201803062351329727.jpg) center 0px no-repeat;width: 100%;height: 100%;" style="display: none;" /></a></li>
+				<li><a href="{{$advert[0]->picture_url}}"><img src="@if($advert[0]->picture_place == 1) {{$advert[0]->picture_src}} @endif" style="background: url(https://www.itjmd.com/upload/201803062351329727.jpg) center 0px no-repeat;width: 100%;height: 100%;" style="display: none;" /></a></li>
 				</li>
 			</ul>
 		</div>
@@ -236,123 +236,32 @@
 					</div>
 				</div>
 				<div class="right_pi_wrap img_div">
-					<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="/static/upload//201812/07/201812071114316567.jpg" alt="广告3"></a>
-					<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="/static/upload//201901/04/201901041517363540.jpg" alt="广告2"></a>
+					@foreach($advert as $item)
+						@if($item->picture_place == 2)
+							<a href="{{$item->picture_url}}" target="_blank"><img src="{{$item->picture_src}}" alt="广告3"></a>
+							<!--<a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" target="_blank"><img src="/static/upload//201901/04/201901041517363540.jpg" alt="广告2"></a>-->
+						@endif
+					@endforeach
 				</div>
 				<div class="right_item">
 					<div class="right_item_title">
 						<h2>开课信息</h2>
-
 					</div>
 					<div class="right_item_content">
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>6</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-02-26</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>7</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-03-06</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>8</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-03-20</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>9</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-04-10</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>10</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-04-22</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>11</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-05-08</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>12</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-06-12</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>13</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-07-03</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
-						<ul style="float:left;width: 110px;margin-left: 3px;">
-							<li>大数据工程师</li>
-						</ul>
-						<ul style="float:left;width: 50px;">
-							<li>14</li>
-						</ul>
-						<ul style="float:left;width: 80px;">
-							<li>2019-07-25</li>
-						</ul>
-						<ul style="float:left;width: 100px;">
-							<li><a href="http://q.url.cn/ABULOl?_type=wpa&qidian=true" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
-						</ul>
+						@foreach($course as $item)
+							<ul style="float:left;width: 110px;margin-left: 3px;">
+								<li>{{$item->course_name}}</li>
+							</ul>
+							<ul style="float:left;width: 50px;">
+								<li>{{$item->list_order}}</li>
+							</ul>
+							<ul style="float:left;width: 80px;">
+								<li>{{date("Y-m-d",$item->course_time)}}</li>
+							</ul>
+							<ul style="float:left;width: 100px;">
+								<li><a href="{{$item->enroll_link}}" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
+							</ul>
+						@endforeach
 					</div>
 				</div>
 				<div class="right_item right_item_3">

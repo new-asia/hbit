@@ -18,7 +18,16 @@ class Course extends Model
     public function course(){
         return DB::table('course')
             ->select('course_name','enroll_link','list_order','course_time')
+            ->offset(0)
+            ->limit(9)
             ->get();
         //print_r();die;
+    }
+    public function cou_index(){
+        return DB::table('course')
+            ->select('course_name','enroll_link','course_form','outline_link','course_num','course_time')
+            ->offset(0)
+            ->limit(5)
+            ->get();
     }
 }
