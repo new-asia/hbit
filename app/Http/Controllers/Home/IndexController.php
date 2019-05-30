@@ -22,8 +22,8 @@ class IndexController extends Controller
 
     public function faculty(){
         $teacher = new Teacher();
+        $data = $teacher->getTeacher();
         $Tags =Tags::allcount();
-        $data = $teacher->orderBy('list_order')->get();
         return view('home/faculty',['teacher'=>$data,'tags'=>$Tags]);
     }
 
