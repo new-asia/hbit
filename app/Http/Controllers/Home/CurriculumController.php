@@ -4,11 +4,15 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Models\Advert;
 
 class CurriculumController extends Controller
 {
     public function java(){
-        return view('home/java');
+        $advert = new Advert();
+        $advert = $advert->getAdvert(4);
+        //print_r();die;
+        return view('home/java',['advert'=>$advert]);
     }
 
     public function php(){

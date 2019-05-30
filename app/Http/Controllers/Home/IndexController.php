@@ -6,34 +6,48 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Teacher;
 use App\Models\Student;
+use App\Models\Advert;
+use App\Models\Course;
 use App\Models\Tags;
 use App\Models\Campus;
 use App\Models\Course;
 class IndexController extends Controller
 {
     public function index(){
-        return view('home/index');
+        $advert = new Advert();
+        $rotation_chart = $advert->rotation_chart();
+        $course = new Course();
+        $course = $course->cou_index();
+        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
     }
 
     public function studentemployment(){
         $student = new Student();
         $data = $student->getStudentLimit(7);
-        return view('home/studentemployment',['student'=>$data]);
+        $advert = new Advert();
+        $advert = $advert->getAdvert(2);
+        return view('home/studentemployment',['student'=>$data,'advert'=>$advert]);
     }
 
     public function faculty(){
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
+        $advert = new Advert();
+        $advert = $advert->getAdvert(1);
+        $course = new Course();
+        $course = $course->course();
         $Tags =Tags::allcount();
         $campus = Campus::getAllCampus();
         $course = Course::getAllCourse();
-        return view('home/faculty',['teacher'=>$data,'tags'=>$Tags,'campus'=>$campus,'course'=>$course]);
+        return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
     }
 
     public function StudentsStory(){
         $student = new Student();
         $data = $student->getStudent();
-        return view('home/StudentsStory',['student'=>$data]);
+        $advert = new Advert();
+        $stu_story = $advert->getAdvert(3);
+        return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);
     }
 
     public function idea(){

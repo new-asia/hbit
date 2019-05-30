@@ -1,4 +1,5 @@
 {{--头部-css--}}
+{{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 
@@ -15,6 +16,11 @@ var _hmt = _hmt || [];
 
 <section>
 <div class="story_ban">
+    <div class="a_banner_pic">
+        <a href="{{$stu_story[0]->picture_url}}">
+            <img src="@if($stu_story[0]->picture_place == 1) {{$stu_story[0]->picture_src}} @endif" style=" width: 100%; height: 260px;" />
+        </a>
+    </div>
 </div>
 </section>
 <div class="wrapper">
