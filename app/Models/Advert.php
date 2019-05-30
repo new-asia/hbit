@@ -22,6 +22,7 @@ class Advert extends Model
             ->where('modular',$modular)
             ->select('picture_src','picture_place','picture_url')
             ->get();
+        //print_r();die;
     }
     public function rotation_chart(){
         return DB::table('picture')

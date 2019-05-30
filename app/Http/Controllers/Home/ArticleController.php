@@ -17,6 +17,7 @@ class ArticleController extends Controller
     public function Campusall(){
         $Category = new Category();
         $list = $Category->ArticleList();
+        //print_r();die;
         return view('home/Campusall',['list'=>$list]);
     }
 }

@@ -1,4 +1,5 @@
 {{--头部 css--}}
+{{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 <link href="/static/templates/main/css/global.css" type="text/css" rel="stylesheet" />

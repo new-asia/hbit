@@ -1,4 +1,5 @@
 ﻿{{-- 包含页头 --css--}}
+{{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" href="/static/templates/main/css1/index_zdrj.css">
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css1/index1.css" />

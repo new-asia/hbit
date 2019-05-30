@@ -19,5 +19,6 @@ class Course extends Model
         return DB::table('course')
             ->select('course_name','enroll_link','list_order','course_time')
             ->get();
+        //print_r();die;
     }
 }

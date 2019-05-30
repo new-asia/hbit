@@ -15,6 +15,7 @@ class IndexController extends Controller
     public function index(){
         $advert = new Advert();
         $rotation_chart = $advert->rotation_chart();
+        //print_r();die;
         return view('home/index',['rotation_chart'=>$rotation_chart]);
     }
 
