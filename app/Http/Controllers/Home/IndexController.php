@@ -7,7 +7,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Teacher;
 use App\Models\Student;
 use App\Models\Tags;
-
+use App\Models\Campus;
+use App\Models\Course;
 class IndexController extends Controller
 {
     public function index(){
@@ -24,7 +25,9 @@ class IndexController extends Controller
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
         $Tags =Tags::allcount();
-        return view('home/faculty',['teacher'=>$data,'tags'=>$Tags]);
+        $campus = Campus::getAllCampus();
+        $course = Course::getAllCourse();
+        return view('home/faculty',['teacher'=>$data,'tags'=>$Tags,'campus'=>$campus,'course'=>$course]);
     }
 
     public function StudentsStory(){

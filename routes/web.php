@@ -33,4 +33,6 @@ Route::namespace('Home')->group(function () {
     //文章
     Route::get('/show', 'ArticleController@show');
     Route::get('/Campusall', 'ArticleController@Campusall');
+    //报名
+    Route::post('/apply', 'EnrollController@apply');
 });

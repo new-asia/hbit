@@ -5,6 +5,7 @@
     <title>北京鸿博教育-匠心打造,品质铸就</title>
     <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训" />
     <meta name="description" content="背景鸿博教育，坐落于首都北京市海淀区区，IT职业教育领军品牌。" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/static/templates/main/css/base_index.css" />
     <link rel="stylesheet" type="text/css" href="/static/templates/main/css/reset.css" />
