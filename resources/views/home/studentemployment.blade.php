@@ -8,17 +8,17 @@
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
 {{--<body id="special_">--}}
 
-{{--<div class="a_banner">
-<div class="a_banner_pic">
-<ul>
-<li>
-<li><a href="#"><img src="/static/upload/img/201803062351329727.jpg" style="background: url(/static/upload/img/201803062351329727.jpg) center 0px no-repeat;width: 100%;height: 100%;" style="display: none;" /></a></li>
-</li>
-</ul>
+<div class="a_banner">
+    <div class="a_banner_pic">
+        <ul>
+            <li>
+                <li><a href="{{$advert[0]->picture_url}}"><img src="@if($advert[0]->picture_place == 1) {{$advert[0]->picture_src}} @endif" style="background: url(/static/upload/img/201803062351329727.jpg) center 0px no-repeat;width: 100%;height: 100%;" style="display: none;" /></a></li>
+            </li>
+        </ul>
+    </div>
 </div>
-</div>--}}
 {{--banner--}}
-@include('home.layouts.banner')
+{{--@include('home.layouts.banner')--}}
 <div id="container" onclick="window.open('tencent://message/?Menu=yes&amp;uin=800856702','_blank')" style="cursor:pointer;"></div>
 <div class="content_nav">
 <div class="container">

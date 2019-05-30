@@ -47,11 +47,11 @@
                 <div id="slideBox" class="slideBox">
                     <div class="bd">
                         <ul>
-                            <li><a href="/templates/main/activity.html"><img src="/static/upload/img/201812071113217173.jpg" style="background: url(/upload/201812/07/201812071113217173.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/java.html"><img src="/static/upload/201807/04/201807041026260216.jpg" style="background: url(/upload/201807/04/201807041026260216.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/php.html"><img src="/static/upload/201806/24/201806241911120948.png" style="background: url(/upload/201806/24/201806241911120948.png) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/html5.html"><img src="/static/upload/201806/24/201806241911323214.png" style="background: url(/upload/201806/24/201806241911323214.png) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
-                            <li><a href="/news/show-2204.html"><img src="/static/upload/201904/02/201904021132445579.jpg" style="background: url(/upload/201904/02/201904021132445579.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                            @foreach($rotation_chart as $item)
+                                @if($item->picture_place == 0)
+                                    <li><a href="{{$item->picture_url}}"><img src="{{$item->picture_src}}" style="background: url(/upload/201812/07/201812071113217173.jpg) center 0px no-repeat;width: 100%;height: 450px;" style="display: none;" /></a></li>
+                                @endif
+                            @endforeach
                         </ul>
                     </div>
                     <a class="prev" href="javascript:void(0)"><i class="iconfont bfont">&#xe60b;</i></a>

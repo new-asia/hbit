@@ -15,6 +15,11 @@ var _hmt = _hmt || [];
 
 <section>
 <div class="story_ban">
+    <div class="a_banner_pic">
+        <a href="{{$stu_story[0]->picture_url}}">
+            <img src="@if($stu_story[0]->picture_place == 1) {{$stu_story[0]->picture_src}} @endif" style=" width: 100%; height: 260px;" />
+        </a>
+    </div>
 </div>
 </section>
 <div class="wrapper">
