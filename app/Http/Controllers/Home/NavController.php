@@ -14,6 +14,11 @@ class NavController extends Controller
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
     }
     public function idea(){
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/abouts');
+        }
         return view('home/idea');
     }
 
