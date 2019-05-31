@@ -45,10 +45,9 @@
         <div class="nav_right base" title="">
             <a href="/" target="_blank" class="nav_index nav" title="">首页</a>
             <span class="nav">课程培训</span>
-            <a href="faculty" class="nav">豪华师资</a>
-            <a href="studentemployment" class="nav">就业喜报</a>
-            <a href="StudentsStory" class="nav">学员生活</a>
-            <a href="Campusall" class="nav">IT资讯</a>
+                @foreach($nav as $item)
+                    <a href="{{$item->href}}" class="nav">{{$item->name}}</a>
+                @endforeach
         </div>
         <div class="class170109" title="">
             <div class="basebase" title="">
