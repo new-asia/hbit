@@ -51,7 +51,6 @@ class ArticleController extends Controller
         $courseall = Course::getAllCourse();
         $Tags =Tags::allcount();
         $recommend = Article::recommend();
-
         return view('home/show',['recommend'=>$recommend,'tags'=>$Tags,'article'=>$article,'prev'=>$prev,'next'=>$next,'relevant'=>$relevant,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
     }
     //文章列表
