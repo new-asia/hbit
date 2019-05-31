@@ -26,4 +26,9 @@ class NavController extends Controller
     public function ClassInfomation(){
         return view('home/ClassInfomation');
     }
+
+    public function header_nav(){
+
+        return view('home/layouts/header');
+    }
 }

@@ -52,7 +52,9 @@ var _hmt = _hmt || [];
 @endforeach
 </ul>
 <div class="page-box">
-<div class="digg"><span>共26记录</span><span class="disabled">«上一页</span><span class="current">1</span><a href="/StudentsStory/0/2.html">2</a><a href="/StudentsStory/0/3.html">3</a><a href="/StudentsStory/0/2.html">下一页»</a></div>
+<div class="digg">
+    {{ $student->links() }}
+</div>
 </div>
 <script src="/js/newspage.js"></script></ul></div>
 </div>

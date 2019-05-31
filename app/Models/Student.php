@@ -1,6 +1,6 @@
 <?php
 /**
- * 教师表
+ * 学生表
  * Created by PhpStorm.
  * User: cy
  * Date: 2019/5/28
@@ -19,8 +19,7 @@ class Student extends Model
             ->leftjoin('class','class.class_id','=','student.class_id')
             ->where('is_graduate',1)
             ->select('student_id', 'name','class_name','pay','testimonials','img')
-            ->get();
-
+            ->paginate(8);
     }
 
     public function getStudentLimit($limit){

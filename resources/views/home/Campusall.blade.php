@@ -253,7 +253,7 @@
 								<li>{{$item->course_name}}</li>
 							</ul>
 							<ul style="float:left;width: 50px;">
-								<li>{{$item->list_order}}</li>
+								<li>{{$item->course_num}}</li>
 							</ul>
 							<ul style="float:left;width: 80px;">
 								<li>{{date("Y-m-d",$item->course_time)}}</li>

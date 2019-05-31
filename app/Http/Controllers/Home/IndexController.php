@@ -9,6 +9,7 @@ use App\Models\Student;
 use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
+use App\Models\NavMenu;
 
 class IndexController extends Controller
 {
@@ -17,8 +18,10 @@ class IndexController extends Controller
         $rotation_chart = $advert->rotation_chart();
         $course = new Course();
         $course = $course->cou_index();
-        //print_r();die;
-        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
+        $nav = new NavMenu();
+        $nav = $nav -> nav_list();
+        //print_r($nav);die;
+        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course,'nav'=>$nav]);
     }
 
     public function studentemployment(){

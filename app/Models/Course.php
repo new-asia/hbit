@@ -17,7 +17,7 @@ class Course extends Model
     public $primaryKey ="course_id";
     public function course(){
         return DB::table('course')
-            ->select('course_name','enroll_link','list_order','course_time')
+            ->select('course_name','enroll_link','course_num','course_time')
             ->offset(0)
             ->limit(9)
             ->get();
