@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="/static/templates/main/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="/static/templates/main/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/static/templates/main/css/index.css" />
-
     <link type="text/css" rel="stylesheet" href="/static/css/validate.css" />
     <link type="text/css" rel="stylesheet" href="/static/css/pagination.css" />
     <link type="text/css" rel="stylesheet" href="/static/scripts/artdialog/ui-dialog.css" />

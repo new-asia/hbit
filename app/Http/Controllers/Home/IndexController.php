@@ -10,18 +10,22 @@ use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
 use App\Models\NavMenu;
-
 use App\Models\Campus;
 class IndexController extends Controller
 {
+    public function __construct()
+    {
+        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+    }
     public function index(){
         $advert = new Advert();
         $rotation_chart = $advert->rotation_chart();
         $course = new Course();
         $course = $course->cou_index();
-        $nav = new NavMenu();
-        $nav = $nav -> nav_list();
-        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course,'nav'=>$nav]);
+        //$nav = new NavMenu();
+        //$nav = $nav -> nav_list();
+
+        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
     }
 
     public function studentemployment(){

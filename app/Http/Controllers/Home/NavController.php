@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Models\NavMenu;
+use Illuminate\View\View;
 
 class NavController extends Controller
 {
@@ -27,8 +29,10 @@ class NavController extends Controller
         return view('home/ClassInfomation');
     }
 
-    public function header_nav(){
-
-        return view('home/layouts/header');
+    public function header_nav(View $view){
+        $nav = new NavMenu();
+        $nav = $nav -> nav_list();
+        $view->with('nav',$nav);
+        //return view('home/layouts/header',['nav'=>$nav]);
     }
 }
