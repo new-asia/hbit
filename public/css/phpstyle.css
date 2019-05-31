@@ -1,0 +1,735 @@
+/*
+    Created on : 2017-4-24
+    Author     : guoyuna
+*/
+
+@charset "utf-8";
+/*startpage*/
+body{background: #26268a;overflow-x: hidden;}
+.main img{display: block; width:100%}
+.main a{color: #333;}
+.main .a_btn{clear: both; font-size: 1em;color: #fff; width:70%; text-align: center; display: block; margin: 8% auto 0; padding: .6em 0 .8em; color: #fff; border-radius: 5px; background: #f53769;-webkit-box-shadow:0 0 .6em #f8386b; -moz-box-shadow:0 0 .6em #f8386b; box-shadow:0 0 .6em #f8386b;}
+/*.main .a_btn:active{background:#3BBBF5;}*/
+
+
+/*banner部分*/
+.flexslider{position: relative;}
+.block_home_slider .slide{position:relative;}
+.ban-bot .flex-control-paging {position: absolute; bottom:7%; text-align: center; width:100%;}
+.ban-bot .flex-control-paging li {display: inline-block; width:10%; height: 3px; line-height: 3px; font-size:0; background: #D5D4E2; margin: 0 1%; opacity: .6;}
+.ban-bot .flex-control-paging li a{width:100%; height:auto; display:block; text-indent:-9000px; cursor:pointer;}
+.ban-bot .flex-control-paging li a.flex-active {background: #fff;}
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; list-style-type: none;}
+
+/* tab */
+.tab{
+	width: 100%;
+	/*height: 100%;*/
+	float: left;
+	margin-top: 5%;
+}
+.tab ul{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+.tab ul li{
+	width: 23%;
+	border: 1px #c1bfff solid;
+	border-radius: .9em;
+	float: left;
+	font-size: .9em;
+	margin-right: 2.6%;
+	text-align: center;
+	height: 2em;
+	line-height: 2em;
+}
+.tab ul li a{
+	color: #fff;
+	float: left;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.tab ul li.tabon{
+	background: #5843e2;
+	border-color: #5843e2;
+}
+.tab ul li.lisend{
+	margin-right: 0;
+}
+.tabs{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #26268a;
+	z-index: 999;
+	padding: 5% 0;
+	display: none;
+}
+.tabs ul{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+.tabs ul li{
+	width: 23%;
+	border: 1px #c1bfff solid;
+	border-radius: .9em;
+	float: left;
+	font-size: .9em;
+	margin-right: 2.6%;
+	text-align: center;
+	height: 2em;
+	line-height: 2em;
+}
+.tabs ul li a{
+	color: #fff;
+	float: left;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.tabs ul li.tabon{
+	background: #5843e2;
+	border-color: #5843e2;
+}
+.tabs ul li.lisend{
+	margin-right: 0;
+}
+
+/* box1 */
+.box1{
+	width: 100%;
+	height: 100%;
+	margin-top: 5%;
+	float: left;
+}
+.box1 .box1con{
+	width: 95%;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 5px;
+	border-top: .3em #5843e2 solid;
+	-webkit-box-shadow:0 .3em .5em #181859;
+	-moz-box-shadow:0 .3em .5em #181859;
+	box-shadow:0 5px .5em #181859;
+}
+.box1 .box1con p{
+	font-size: 1em;
+	color: #666;
+	padding: 1em;
+	line-height: 1.8em;
+}
+.box1 .box1con p span{
+	color: #fc396d;
+}
+
+/* .box2 */
+.box2{
+	width: 100%;
+	height: 100%;
+	margin-top: 8%;
+	float: left;
+}
+.box2 .box2con{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* box3 */
+.box3{
+	width: 100%;
+	height: 100%;
+	margin-top: 8%;
+	float: left;
+}
+.main-p{
+	width: 85%;
+	font-size: 1.1em;
+	color: #fff;
+	padding-left: 7%;
+	position: relative;
+	line-height: 1.5em;
+}
+.main-p span{
+	position: absolute;
+	left: 0;
+	top: .2em;
+	width: 4%;
+	height: 1.2em;
+	background: #5843e2;
+}
+.box3 .box3con{
+	width: 100%;
+	height: 100%;
+	margin-top: 10%;
+}
+.box3 .box3con div{
+	width: 28%;
+	margin-left: 4%;
+	position: relative;
+	float: left;
+	margin-bottom: 5%;
+}
+.box3 .box3con div .box3pic{
+	width: 100%;
+	-webkit-animation: circle 8s linear infinite;
+	-moz-animation: circle 8s linear infinite;
+	-o-animation: circle 8s linear infinite;
+	animation: circle 8s linear infinite;
+}
+.box3 .box3con div .box3s{
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	top: 10%;
+}
+.box3 .box3con div.box3cons{
+	margin-left: 18%;
+}
+
+/* box4 */
+.box4,.box5,.box6{
+	width: 100%;
+	height: 100%;
+	margin-top: 5%;
+	float: left;
+}
+.box4 .box4con{
+	width: 100%;
+	margin-top: 8%;
+}
+
+/* box5 */
+.box5{
+	margin-top: 8%;
+}
+.box5 .box5con{
+	width: 95%;
+	margin: 5% 2.5% 8%;
+	background: #fff;
+	border-radius: 5px;
+	border-top: .3em #fc396d solid;
+	-webkit-box-shadow:0 .3em .5em #181859;
+	-moz-box-shadow:0 .3em .5em #181859;
+	box-shadow:0 5px .5em #181859;
+	float: left;
+}
+.box5 .box5con .box5top{
+	width: 100%;
+	height: 100%;
+	margin-top: .5em;
+	margin-bottom: .2em;
+	float: left;
+}
+.box5 .box5con .box5top li{
+	float: left;
+	text-align: center;
+	color: #000;
+	font-size: 1em;
+}
+.box5 .box5con .box5bot{
+	width: 100%;
+	height: 100%;
+	margin-top: 2%;
+}
+.box5 .box5con .box5bot li{
+	height: 1.8em;
+	line-height: 1.8em;
+}
+.box5 .box5con .box5bot li span{
+	float: left;
+	text-align: center;
+	font-size: .9em;
+	color: #333;
+}
+.box5 .box5con .b5bot1{
+	width: 25%;
+}
+.box5 .box5con .b5bot2{
+	width: 45%;
+}
+.box5 .box5con .b5bot3{
+	width: 30%;
+	color: #fc396d !important;
+}
+
+/* box6 */
+.box6{
+	margin-top: 8%;
+	position: relative;
+}
+.box6 .box6con{
+	width: 95%;
+	margin-left: 2.5%;
+	margin-top: -8%;
+}
+.box6 .box6con .a_btn{
+	float: left;
+	margin-top: 4%;
+	margin-left: 15%;
+}
+.box6 .box6con .box6lis{
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	border-top: .3em #716fe2 solid;
+	-webkit-box-shadow:0 .3em .5em #181859;
+	-moz-box-shadow:0 .3em .5em #181859;
+	box-shadow:0 5px .5em #181859;
+	float: left;
+	margin-bottom: 5%;
+	position: relative;
+	overflow: hidden;
+}
+.box6 .box6con .col{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: -15px;
+	top: -15px;
+	background: #716fe2;
+	border-radius: 50%;
+}
+.box6 .box6con .col img{
+	width: 35%;
+	padding-top: 1.1em;
+	padding-left: .4em;
+}
+.box6 .box6lis .box6lcon{
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+}
+.box6 .box6lcon .b6con-top{
+	display: block;
+	text-align: right;
+	padding-right: 8%;
+	font-size: .9em;
+	color: #999;
+	line-height: 1.8em;
+}
+.box6 .box6lcon .b6con-cen{
+	width: 100%;
+	height: 100%;
+	float: left;
+	padding-bottom: 5%;
+}
+.box6 .box6lcon .b6con-cen>div{
+	float: left;
+}
+.box6 .box6lcon .b6con-cen .b6cen-left{
+	width: 79%;
+}
+.box6 .box6lcon .b6con-cen .b6cen-right{
+	width: 20%;
+	margin-top: 3%;
+	margin-right: 1%;
+}
+.box6 .box6lcon p{
+	font-size: 1em;
+	margin: .3em 0;
+	color: #000;
+}
+.box6 .box6lcon .b6con-cen .b6-p{
+	padding-left: 4%;
+	border-left: .3em #716fe2 solid;
+}
+.box6 .box6lcon li span{
+	line-height: 1.6em;
+}
+.box6 .box6lcon .lip{
+	color: #000;
+	font-size:.8em ;
+}
+.box6 .box6lcon .lip span{
+	color: #666;
+}
+.box6 .box6lcon li{
+	font-size: .75em;
+	padding-top: .5em;
+	color: #666;
+}
+.box6 .box6lcon .b6con-bot{
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-top: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px #ccc dashed;
+	position: relative;
+	display: none;
+}
+.box6 .box6lcon .b6con-bot2{
+	border-bottom: none;
+}
+.box6 .box6lcon .b6con-bot .b6bot-left{
+	width: 48.5%;
+	float: left;
+}
+.box6 .box6lcon .b6con-bot .b6bot-right{
+	width: 51.5%;
+	padding-left: 2%;
+}
+.box6 .box6lcon .b6con-bot .b6bot-cen{
+	position: absolute;
+	left: 48.8%;
+	top: 0;
+	width: 1px;
+	height: 96%;
+	background: #ccc;
+}
+.box6 .box6lcon .b6con-bot p{
+	padding-left: 10%;
+}
+.box6 .box6lcon .b6con-bot .b6-1{
+	background: url("../images/box6_1.jpg") no-repeat left .25em;
+	background-size: 8%;
+}
+.box6 .box6lcon .b6con-bot .b6-2{
+	background: url("../images/box6_2.jpg") no-repeat left .25em;
+	background-size: 8%;
+}
+.box6 .box6lcon .b6con-bot .b6-3{
+	background: url("../images/box6_3.jpg") no-repeat left .25em;
+	background-size: 4.5%;
+	padding-left: 6%;
+}
+
+/* box7 */
+.box7{
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-top: 10%;
+}
+.box7 .box7con{
+	width: 100%;
+	height: 32em;
+	position: relative;
+	margin-top: 5%;
+}
+.box7 .box7con1{
+	position: absolute;
+	width: 85%;
+	height: 32em;
+	left: 7.5%;
+	top: 0;
+	background: #fff;
+	opacity: .3;
+	border-radius: .3em;
+}
+.box7 .box7con2{
+	position: absolute;
+	width: 90%;
+	height: 31.5em;
+	left: 5%;
+	top: 0;
+	background: #fff;
+	opacity: .6;
+	border-radius: .3em;
+}
+.box7 .box7con3{
+	position: absolute;
+	width: 95%;
+	height: 31em;
+	left: 2.5%;
+	top: 0;
+	background: #fff;
+	border-radius: .3em;
+}
+.box7 .box7con3 .box7con3-bot{
+	width: 90%;
+	margin: .2em auto;
+}
+.box7con3-bot .flex-control-paging {position: absolute; bottom: -5%; text-align: center; width:100%;}
+.box7con3-bot .flex-control-paging li {display: inline-block; width:10%; height: 3px; line-height: 3px; font-size:0; background: #e3e3e3; margin: 0 1%; opacity: .6;}
+.box7con3-bot .flex-control-paging li a{width:100%; height:auto; display:block; text-indent:-9000px; cursor:pointer;}
+.box7con3-bot .flex-control-paging li a.flex-active {background: #a1a1a1;}
+.box7 .box7con3 .box7con3-bot h2{
+	margin-top: 1em;
+	font-size: 1.1em;
+	color: #000;
+}
+.box7 .box7con3 .box7con3-bot p{
+	font-size: 1em;
+	color: #000;
+	line-height: 1.6em;
+	margin-bottom: .5em;
+}
+.box7 .box7con3 .box7con3-bot p span{
+	color: #999;
+}
+.box8{
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-top: 8%;
+}
+.box8 .box8con{
+	width: 95%;
+	margin: 8% 2.5% 1.5em;
+	background: #fff;
+	border-radius: 5px;
+	border-top: .3em #716fe2 solid;
+	-webkit-box-shadow:0 .3em .5em #181859;
+	-moz-box-shadow:0 .3em .5em #181859;
+	box-shadow:0 5px .5em #181859;
+	float: left;
+	position: relative;
+	padding: .8em 3% 2.5em;
+}
+.box8 .box8con h2{
+	font-size: 1.1em;
+	color: #000;
+	padding-bottom: .8em;
+}
+.box8 .box8con p{
+	font-size: 1em;
+	color: #666;
+	line-height: 1.6em;
+	margin-top: .8em;
+}
+.box8 .box8con p span{
+	color: #fc396d;
+}
+.box8 .box8con .a_btn{
+	position: absolute;
+	left: 15%;
+	bottom: -1.2em;
+}
+/* box9 */
+.box9{
+	width: 100%;
+	height: 100%;
+	margin-top: 8%;
+	float: left;
+}
+.box9 .main-p em{
+	font-size: .7em;
+	padding-left: 5%;
+}
+.box9 .box9con{
+	width: 95%;
+	margin: 8% 2.5% 1.5em;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow:0 .3em .5em #181859;
+	-moz-box-shadow:0 .3em .5em #181859;
+	box-shadow:0 5px .5em #181859;
+	float: left;
+	position: relative;
+	padding-bottom: 3em;
+}
+.box9 .box9con .a_btn{
+	position: absolute;
+	left: 15%;
+	bottom: -1.2em;
+}
+.box9 .box9con dl{
+	width: 96%;
+	margin-left: 2%;
+	padding: 1.2em 0;
+	height: 100%;
+	float: left;
+	border-bottom: 1px #ccc dashed;
+}
+.box9 .box9con dl dt{
+	width: 33%;
+	float: left;
+}
+.box9 .box9con dl dd{
+	width: 65%;
+	float: right;
+}
+.box9 .box9con dl dd h2{
+	font-size: 1em;
+	color: #000;
+	padding: .2em 0;
+}
+.box9 .box9con dl dd span{
+	font-size: .8em;
+	color: #999;
+}
+.box9 .box9con dl dd p{
+	font-size: .9em;
+	color: #000;
+	line-height: 1.5em;
+}
+
+/* box10 */
+.box10{
+	width: 100%;
+	height: 100%;
+	margin-top: 5%;
+}
+.box10 .box10con{
+	width: 95%;
+	margin: 8% 2.5% 0em;
+	background: #fff;
+	border-radius: 5px;
+	-webkit-box-shadow:0 .3em .5em #181859;
+	-moz-box-shadow:0 .3em .5em #181859;
+	box-shadow:0 5px .5em #181859;
+	float: left;
+	position: relative;
+	padding: 1em 0;
+}
+.box10 .box10con2{
+	padding-bottom: 3em;
+}
+.box10 .box10con2 .a_btn{
+	position: absolute;
+	left: 15%;
+	bottom: -1.2em;
+}
+.box10 .box10con h2{
+	width: 95%;
+	margin-left: 2.5%;
+	font-size: 1.1em;
+	color: #000;
+	text-align: center;
+	border-bottom: 1px #ccc dashed;
+	padding-bottom: .5em;
+}
+.box10 .box10con .box10-a1{
+	width: 65%;
+}
+.box10 .box10con .box10-a2{
+	width: 35%;
+}
+.box10 .box10con div{
+	width: 95%;
+	margin: .5em auto 0;
+}
+.box10 .box10con div a{
+	font-size: .8em;
+	color: #000;
+	float: left;
+	width: 20%;
+	padding: .4em 0;
+}
+
+
+@-webkit-keyframes circle{
+	from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(-360deg)}
+}
+@-moz-keyframes circle{
+	from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(-360deg)}
+}
+@-o-keyframes circle{
+	from{-o-transform:rotate(0deg)}to{-o-transform:rotate(-360deg)}
+}
+@keyframes circle{
+	from{transform:rotate(0deg)}to{transform:rotate(-360deg)}
+}
+/* 底部 */
+.footer{
+	width: 100%;
+	height: 100%;
+	float: left;
+	margin-top: 15%;
+	background: #16164f;
+	padding: 1.5em 0;
+}
+.footer h2{
+	font-size: 1.1em;
+	color: #fff586;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 0 .8em;
+}
+.footer p{
+	font-size: .8em;
+	color: #bdc2ff;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+
+
+/*小屏幕/苹果5s*/
+@media only screen and (max-width: 360px){
+/*.icon ul li span{font-size: .9em;}	*/
+	body{font-size: .9rem;}
+	.box6 .box6lcon li{
+		font-size: .7em;
+	}
+	.box6 .box6con .col img {
+		padding-top: 1.3em;
+	}
+	.box10 .box10con div a{
+		width: 19.5%;
+	}
+	.box10 .box10con div a.chang{
+		width: 22%;
+	}
+}
+
+/* iphone6 plus */
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+	header .nav_btn{width: 10%;}
+	.icon ul li{padding-bottom: 10%;}
+	.icon ul li span{top: 66%;}
+}
+
+/*大于pad屏幕*/
+@media only screen and (min-width: 750px){
+	body{font-size: 1.5rem; max-width: 750px;}
+	header{padding:24px 0;}
+	header .nav_btn{width: 10%;}
+	header .logo img{max-width:260px;}
+	nav ul li{
+		width: 96%;
+		height: 60px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	nav ul li i{
+		margin-top: 20px;
+	}
+	nav ul li p{
+		width: 76%;
+		line-height: 60px;
+	}
+	.bdzx ul li i{width: 28px;height: 25px; background: url("../images/bdzx1.png") no-repeat;}
+	.bdzx ul li.bdzx1 i{background-position: 0 0;}
+	.bdzx ul li.bdzx2 i{background-position: 0 -25px;}
+	.bdzx ul li.bdzx3 i{background-position: 0 -50px;}
+	.bdzx ul li.bdzx4 i{background-position: 0 -75px;}
+	.quck ul li .li_in span{padding-top:7%;}
+	.bdzx{left: 50%; margin-left: -380px;}
+	.back{width:3%; right:50%; margin-right: -380px;}
+	.tabs{
+		height: 100px;
+	}
+	.tabs ul{
+		position: absolute;
+		width: 750px;
+		left: 50%;
+		margin-left: -375px;
+		top: 30%;
+		z-index: 99999;
+	}
+	.box6 .box6lcon .b6con-bot .b6-1{
+	    background: url(../images/box6_1.jpg) no-repeat left .25em;
+	    background-size: 7%;
+	}
+	.box6 .box6lcon .b6con-bot .b6-2{
+	    background: url(../images/box6_2.jpg) no-repeat left .25em;
+	    background-size: 7%;
+	}
+	.box6 .box6lcon .b6con-bot .b6-3{
+	    background: url(../images/box6_3.jpg) no-repeat left .25em;
+	    background-size: 3.5%;
+	}
+	.box6 .box6con .col img {
+	    padding-top: .8em;
+	    padding-left: .3em;
+	}
+}
+
+	

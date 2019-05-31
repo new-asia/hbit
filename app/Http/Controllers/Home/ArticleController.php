@@ -56,15 +56,22 @@ class ArticleController extends Controller
     //文章列表
     
     public function Campusall(){
-        $Category = new Category();
-        $list = $Category->ArticleList();
-        $advert = new Advert();
-        $advert = $advert->getAdvert(7);
-        $course = new Course();
-        $course = $course->course();
-        $campus = Campus::getAllCampus();
-        $courseall = Course::getAllCourse();
-        $recommend = Article::recommend();
-        return view('home/Campusall',['recommend'=>$recommend,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/news');
+        } else {
+            $Category = new Category();
+            $list = $Category->ArticleList();
+            $advert = new Advert();
+            $advert = $advert->getAdvert(7);
+            $course = new Course();
+            $course = $course->course();
+            $campus = Campus::getAllCampus();
+            $courseall = Course::getAllCourse();
+            $recommend = Article::recommend();
+            return view('home/Campusall',['recommend'=>$recommend,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
+        }
+       
     }
 }
