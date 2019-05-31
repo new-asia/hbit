@@ -42,26 +42,48 @@ class IndexController extends Controller
     }
 
     public function faculty(){
-        $teacher = new Teacher();
-        $data = $teacher->getTeacher();
-        $advert = new Advert();
-        $advert = $advert->getAdvert(1);
-        $course = new Course();
-        $course = $course->course();
-        $Tags =Tags::allcount();
-        $campus = Campus::getAllCampus();
-        $course = Course::getAllCourse();
-        return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/faculty');
+        } else {
+            
+            $teacher = new Teacher();
+            $data = $teacher->getTeacher();
+            $advert = new Advert();
+            $advert = $advert->getAdvert(1);
+            $course = new Course();
+            $course = $course->course();
+            $Tags =Tags::allcount();
+            $campus = Campus::getAllCampus();
+            $course = Course::getAllCourse();
+            return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
+        }
     }
 
     public function StudentsStory(){
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/StudentsStory');
+        }
         $student = new Student();
         $data = $student->getStudent();
         $advert = new Advert();
         $stu_story = $advert->getAdvert(3);
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);
     }
-    public function idea(){
+
+    public function idea()
+    {
         return view('home/idea');
+    }
+
+    public function EmploymentInformation(){
+        return view("api/EmploymentInformation");
+    }
+
+    public function phonebd(){
+        return view("api/phonebd");
     }
 }
