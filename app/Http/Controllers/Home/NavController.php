@@ -9,6 +9,10 @@ use Illuminate\View\View;
 
 class NavController extends Controller
 {
+    public function __construct()
+    {
+        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+    }
     public function idea(){
         return view('home/idea');
     }

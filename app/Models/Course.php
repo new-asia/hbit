@@ -21,7 +21,7 @@ class Course extends Model
 
     public function course(){
         return DB::table('course')
-            ->select('course_name','enroll_link','course_num','course_time')
+            ->select('list_order','course_name','enroll_link','course_num','course_time')
             ->offset(0)
             ->limit(9)
             ->get();

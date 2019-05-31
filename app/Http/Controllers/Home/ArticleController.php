@@ -13,6 +13,10 @@ use App\Models\Article;
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {
+        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+    }
     //文章内容
     public function show($id){
         if((int)$id <= 0) return view('error');
@@ -47,7 +51,6 @@ class ArticleController extends Controller
         $courseall = Course::getAllCourse();
         $Tags =Tags::allcount();
         $recommend = Article::recommend();
-
         return view('home/show',['recommend'=>$recommend,'tags'=>$Tags,'article'=>$article,'prev'=>$prev,'next'=>$next,'relevant'=>$relevant,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
     }
     //文章列表
