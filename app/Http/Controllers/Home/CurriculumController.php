@@ -15,7 +15,6 @@ class CurriculumController extends Controller
     public function java(){
         $advert = new Advert();
         $advert = $advert->getAdvert(4);
-        //print_r();die;
         return view('home/java',['advert'=>$advert]);
     }
 
