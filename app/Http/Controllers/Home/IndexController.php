@@ -9,12 +9,9 @@ use App\Models\Student;
 use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
-<<<<<<< HEAD
 use App\Models\NavMenu;
 
-=======
 use App\Models\Campus;
->>>>>>> 19246ade9ffa8c97fb53a14f7803b14594cc05ea
 class IndexController extends Controller
 {
     public function index(){
