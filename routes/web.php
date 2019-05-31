@@ -24,6 +24,7 @@ Route::namespace('Home')->group(function () {
     Route::get('/java.html', 'CurriculumController@java');
     Route::get('/php.html', 'CurriculumController@php');
     Route::get('/html5.html', 'CurriculumController@html5');
+    Route::get('/python.html', 'CurriculumController@python');
     //导航
     Route::get('/idea', 'NavController@idea');
     Route::get('/history', 'NavController@history');
@@ -36,4 +37,5 @@ Route::namespace('Home')->group(function () {
     Route::get('/Campusall', 'ArticleController@Campusall');
     //报名
     Route::post('/apply', 'EnrollController@apply');
+
 });

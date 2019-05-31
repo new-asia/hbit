@@ -53,10 +53,10 @@ window.onload=function (){
 <div class="con_about">
 <div class="about_nav">
 <ul>
-<li><a id="abouts" href="/static/abouts.html">企业简介</a></li>
-<li><a id="idea" href="/static/idea.html">企业理念</a></li>
-<li><a id="history" href="/static/history.html">发展历史</a></li>
-<li><a id="school" href="/static/school.html">直营校区</a></li>
+	<li><a id="abouts" href="/abouts">企业简介</a></li>
+	<li><a id="idea" href="/idea">企业理念</a></li>
+	<li><a id="history" href="/history">发展历史</a></li>
+	<li><a id="school" href="/school">直营校区</a></li>
 </ul>
 </div>
 <div class="about_con">

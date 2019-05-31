@@ -25,4 +25,8 @@ class CurriculumController extends Controller
     public function html5(){
         return view('home/html5');
     }
+
+    public function python(){
+        return view('home/python');
+    }
 }

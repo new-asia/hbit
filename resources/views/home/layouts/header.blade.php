@@ -45,7 +45,7 @@
             <a href="/" target="_blank" class="nav_index nav" title="">首页</a>
             <span class="nav">课程培训</span>
                 @foreach($nav as $item)
-                    <a href="{{$item->href}}" class="nav">{{$item->name}}</a>
+                    <a href="{{$item->href}}" id="container" class="nav">{{$item->name}}</a>
                 @endforeach
         </div>
         <div class="class170109" title="">
@@ -56,7 +56,7 @@
                     <a href="/html5.html" target="_blank" title="HTML5全栈"><img src="/static/upload/img/h5_ico.png" width="63" height="73"><u>HTML5全栈</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>
+                    <a href="/python.html" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="UI/UE设计"><img src="/static/upload/img/ui_ico.png" width="63" height="73"><u>UI/UE设计</u></a>
                 </div>
             </div>
