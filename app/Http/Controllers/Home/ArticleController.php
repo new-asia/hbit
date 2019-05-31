@@ -13,6 +13,10 @@ use App\Models\Article;
 
 class ArticleController extends Controller
 {
+    public function __construct()
+    {
+        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+    }
     //文章内容
     public function show($id){
         $Article = new Article();

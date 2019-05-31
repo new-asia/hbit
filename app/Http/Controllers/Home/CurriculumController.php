@@ -8,6 +8,10 @@ use App\Models\Advert;
 
 class CurriculumController extends Controller
 {
+    public function __construct()
+    {
+        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+    }
     public function java(){
         $advert = new Advert();
         $advert = $advert->getAdvert(4);

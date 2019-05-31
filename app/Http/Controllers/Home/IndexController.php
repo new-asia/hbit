@@ -9,7 +9,6 @@ use App\Models\Student;
 use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
-use App\Models\NavMenu;
 use App\Models\Campus;
 class IndexController extends Controller
 {
