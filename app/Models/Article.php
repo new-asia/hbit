@@ -43,4 +43,5 @@ class Article extends Model
         return parent::where('is_show',1)->orderBy('reading_num','desc')->select('article_id','title')->get();
     }
 
+
 }
