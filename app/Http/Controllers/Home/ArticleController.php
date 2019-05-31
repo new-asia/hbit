@@ -15,8 +15,9 @@ class ArticleController extends Controller
 {
     //文章内容
     public function show($id){
-        $Article = new Article();
+        if((int)$id <= 0) return view('error');
         $article = Article::where('is_show',1)->find($id);
+        if(!$article) return view('error');
         $prevID = Article::prevID($id);
         $nextId = Article::nextId($id);
         if(empty($prevID)){
@@ -32,6 +33,8 @@ class ArticleController extends Controller
             $next = Article::select('article_id','title')->find($nextId);
         }
         $article['add_time'] = date('Y-m-d H:i:s',$article['add_time']);
+        $article['reading_num'] = $article['reading_num'] + 1;
+        if(!Article::where('article_id',$article['article_id'])->update(['reading_num'=>$article['reading_num']])) return 'Modification error';
         $tags_id = explode(',',$article['tags_id']);
         $relevant = Article::relevant($tags_id,$id);
         $Category = new Category();
@@ -44,6 +47,7 @@ class ArticleController extends Controller
         $courseall = Course::getAllCourse();
         $Tags =Tags::allcount();
         $recommend = Article::recommend();
+
         return view('home/show',['recommend'=>$recommend,'tags'=>$Tags,'article'=>$article,'prev'=>$prev,'next'=>$next,'relevant'=>$relevant,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
     }
     //文章列表
