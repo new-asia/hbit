@@ -61,7 +61,6 @@ class IndexController extends Controller
         $stu_story = $advert->getAdvert(3);
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);
     }
-
     public function idea(){
         return view('home/idea');
     }

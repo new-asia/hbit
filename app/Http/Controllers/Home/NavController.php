@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\NavMenu;
 use Illuminate\View\View;
+use Illuminate\Http\Request;
+use App\Models\Title;
 
 class NavController extends Controller
 {
@@ -37,6 +39,11 @@ class NavController extends Controller
         $nav = new NavMenu();
         $nav = $nav -> nav_list();
         $view->with('nav',$nav);
-        //return view('home/layouts/header',['nav'=>$nav]);
+    }
+    public function header_title(Request $request){
+        $id =$request->input('id');
+        $title = new Title();
+        $title = $title->title_list($id);
+        return json_encode($title);
     }
 }

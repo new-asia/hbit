@@ -31,6 +31,7 @@ Route::namespace('Home')->group(function () {
     Route::get('/abouts', 'NavController@abouts');
     Route::get('/ClassInfomation', 'NavController@ClassInfomation');
     Route::get('nav/header_nav', 'NavController@header_nav');
+    Route::any('nav/header_title', 'NavController@header_title');
     //文章
     Route::get('/show-{id}', 'ArticleController@show');
     Route::get('/Campusall', 'ArticleController@Campusall');

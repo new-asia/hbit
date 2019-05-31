@@ -42,10 +42,10 @@
             </div>
         </div>
         <div class="nav_right base" title="">
-            <a href="/" target="_blank" class="nav_index nav" title="">首页</a>
-            <span class="nav">课程培训</span>
+            <a href="/" target="_blank" class="nav" id="1" title="">首页</a>
+            <span class="navs">课程培训</span>
                 @foreach($nav as $item)
-                    <a href="{{$item->href}}" class="nav">{{$item->name}}</a>
+                    <a href="{{$item->href}}" class="nav" id="{{$item->id}}">{{$item->name}}</a>
                 @endforeach
         </div>
         <div class="class170109" title="">
@@ -76,3 +76,19 @@
         <img src="/static/upload/img/qf_fix02.png" style="display: block;width:67px;border-top:1px solid #fff;cursor:pointer;display:none" class="qf_fix02">
     </div>
 </div>
+<script src="/static/templates/main/js/jquery-1.12.4.min.js"></script>
+<script>
+    $(".nav").click(function(){
+        var title = $(this).attr('id');
+        $.ajax({
+            type: "post",
+            url:'{{url('nav/header_title')}}',
+            data:'id='+title,
+            dataType: "json",
+            success: function(data){
+                console.log(data[0].title);
+                $('title').text(data[0].title);
+            }
+        });
+    })
+</script>
