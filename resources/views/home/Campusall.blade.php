@@ -152,13 +152,14 @@
 				<div class="scZxCcSf scZxCcSff">
 					<div class="scZxCcSfM scZCcSfMM clearfix">
 						<div class="scZxCcTit clearfix">
-							<h3><a href="/news/62.html">{{$v[0]->c_name}}</a></h3><a href="/news/62.html">更多</a>
+							<h3><a href="/news/62.html">{{$v[0]->c_name}}</a>
+							</h3><a href="/news/62.html">更多</a>
 						</div>
 						<div class="scZxCcCon clearfix">
 							<div class="scZxCcConTop clearfix">
 								@if (isset($v[1]))
-								<a href="/news/show-6449.html">
-									<img src="/static/upload//201904/10/201904100920455589.jpg">
+								<a href="/show-{{$v[1]->article_id}}">
+									<img src="{{$v[1]->img}}">
 									<div class="scZxCcConTopInfo">
 										<strong style="display: block;overflow:hidden;width: 200px;">{{$v[1]->title}}</strong>
 										<p style="height: 80px;overflow: hidden;">{{$v[1]->content}}</p>
@@ -170,17 +171,17 @@
 								<ul class="clearfix scZxCcConLi-ul">
 								@if (isset($v[2]))
 									<li class="clearfix">
-										<a href="/news/show-6438.html" title="{{$v[2]->title}}">{{$v[2]->title}}</a><span>{{$v[2]->add_time}}</span>
+										<a href="/show-{{$v[2]->article_id}}" title="{{$v[2]->title}}">{{$v[2]->title}}</a><span>{{$v[2]->add_time}}</span>
 									</li>
 								@endif
 								@if (isset($v[3]))
 									<li class="clearfix">
-										<a href="/news/show-6438.html" title="{{$v[3]->title}}">{{$v[3]->title}}</a><span>{{$v[3]->add_time}}</span>
+										<a href="/show-{{$v[3]->article_id}}" title="{{$v[3]->title}}">{{$v[3]->title}}</a><span>{{$v[3]->add_time}}</span>
 									</li>
 								@endif
 								@if (isset($v[4]))
 									<li class="clearfix">
-										<a href="/news/show-6438.html" title="{{$v[4]->title}}">{{$v[4]->title}}</a><span>{{$v[4]->add_time}}</span>
+										<a href="/show-{{$v[4]->article_id}}" title="{{$v[4]->title}}">{{$v[4]->title}}</a><span>{{$v[4]->add_time}}</span>
 									</li>
 								@endif
 								</ul>
@@ -214,25 +215,45 @@
 				<div class="right_item right_item_4">
 					<div class="lfMflf">
 						<div class="lfMflfTit">提交报名</div>
-						<form class="rightform1" id="feedback_form" name="feedback_form" url="/plugins/feedback/ajax.ashx?action=add&site=1" action="/plugins/feedback/ajax.ashx?action=add&site=1" method="post" novalidate>
-							<input type="hidden" name="type" value="15">
-							<input type="hidden" name="source" value="8">
-							<input type="text" placeholder="请输入您的姓名" name="txtUserName" id="txtUserName">
-							<input type="text" placeholder="请输入您的电话" name="txtUserTel" id="txtUserTel" size="5" maxlength="11">
-							<input type="text" placeholder="请输入您的QQ号码" name="txtUserQQ" id="txtUserQQ">
-							<select name="txtUserEmail" id="txtUserEmail">
+						<form class="rightform1" id="feedback_form" onsubmit="return checkSubmit()" name="feedback_form" url="" action="{{url('apply')}}" method="post" novalidate>
+							@csrf
+							<input type="text" placeholder="请输入您的姓名" onblur="checkIshanzi()" name="name" id="txtUserName">
+							<input type="text" placeholder="请输入您的电话" onblur="checkIsTel()"  name="tel" id="txtUserTel" size="5" maxlength="11">
+							<input type="text" placeholder="请输入您的QQ号码" onblur="isQQ()" name="qq" id="txtUserQQ">
+							<select name="campus_id" onchange="checkCampus()" id="txtUserCampus">
 								<option value="0">请选择上课地址</option>
-								<option value="北京校区">北京校区</option>
+								@foreach($campus as $v)
+									<option value="{{$v->id}}">{{$v->campus}}</option>
+								@endforeach
 							</select>
-							<select name="txtContent" id="txtContent">
+							<select name="course_id" onchange="checkCourse(this.value)" id="txtCourse">
 								<option value="0">请选择报名学科</option>
-								<option value="php">php</option>
-								<option value="Java">Java</option>
-								<option value="H5+全栈工程师">H5+全栈工程师</option>
+								@foreach($courseall as $v)
+									<option value="{{$v->course_id}}">{{$v->course_name}}</option>
+								@endforeach
 							</select>
-							<input type="hidden" name="source" value="8">
-							<input id="btnSubmit" name="btnSubmit" type="submit" class="lfMflfBtn" value="提交申请" />
+							<input id="btnSubmit" type="submit" class="lfMflfBtn" value="提交申请" />
 						</form>
+
+						<div class="form-group" style="margin-left: 50px;">
+							<div id="Tips" style="color:red;"></div>
+							{{--@if (session('message'))
+                               <div class="alert alert-success">
+                                  {{ session('message') }}
+                               </div>
+                               <input type="hidden" name="" value="{{ session('message') }}" id="msg">
+                            @endif--}}
+							@if (count($errors) > 0)
+								<div class="alert alert-danger">
+									<ul style="color:red;">
+										@foreach ($errors->all() as $error)
+											<li>{{ $error }}</li>
+										@endforeach
+									</ul>
+								</div>
+							@endif
+						</div>
+
 					</div>
 				</div>
 				<div class="right_pi_wrap img_div">
@@ -271,16 +292,9 @@
 					</div>
 					<div class="right_item_content">
 						<ul>
-							<li><a href="/news/show-6457.html">Java学习之final关键字详细解析</a></li>
-							<li><a href="/news/show-6456.html">Python常用高阶函数汇总大解析</a></li>
-							<li><a href="/news/show-6455.html">2019年Java面试试题之跳表</a></li>
-							<li><a href="/news/show-6454.html">Java学习之构造方法汇总</a></li>
-							<li><a href="/news/show-6453.html">Python基础学习之多任务-协程详细讲解</a></li>
-							<li><a href="/news/show-6452.html">Python开发之控制流代码详细解析</a></li>
-							<li><a href="/news/show-6451.html">Java学习小技巧之利用注解技术检查空指针</a></li>
-							<li><a href="/news/show-6450.html">大数据HIVE之DDL操作详细解析</a></li>
-							<li><a href="/news/show-6449.html">PHP面向对象详细解析</a></li>
-							<li><a href="/news/show-6448.html">2019年最新大数据HIVE定义及数据类型详解</a></li>
+							@foreach($recommend as $v)
+								<li><a href="/show-{{$v->article_id}}">{{$v->title}}</a></li>
+							@endforeach
 						</ul>
 					</div>
 				</div>
@@ -315,4 +329,73 @@
 		var s = document.getElementsByTagName("script")[0];
 		s.parentNode.insertBefore(bp, s);
 	})();
+</script>
+<script>
+    function checkIshanzi() {
+        //var patrn = /^[\u2E80-\u9FFF]$/; //Unicode编码中的汉字范围  /[^\x00-\x80]/
+        var s = $('#txtUserName').val();
+        var patrn = /[^\x00-\x80]$/;
+        if(s.length < 2 | s.length >10){
+            $('#Tips').html('用户名长度为2-10！')
+            return false
+        }
+        if (!patrn.exec(s)){
+            $('#Tips').html('用户名需要汉字！')
+            return false
+        }
+        $('#Tips').html('');
+        return true
+    }
+    //校验手机号码
+    function checkIsTel() {
+        var s = $('#txtUserTel').val();
+        var patrn = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+        if (patrn.exec(s)){
+            $('#Tips').html('')
+            return true;
+        }
+        $('#Tips').html('请输入正确的手机号码！')
+        return false
+    }
+
+    //验证QQ号码5-11位
+    function isQQ() {
+        var qq = $('#txtUserQQ').val();
+        var filter = /^\s*[.0-9]{5,11}\s*$/;
+        if (!filter.test(qq)) {
+            $('#Tips').html('请输入正确的QQ,QQ号码5-11位！')
+            return false;
+        } else {
+            $('#Tips').html('')
+            return true;
+        }
+    }
+
+    function checkCampus() {
+        var id = $('#txtUserCampus').val();
+        if(parseInt(id) <= 0 ){
+            $('#Tips').html('上课地址不能为空！')
+            return false;
+        }
+        $('#Tips').html('')
+        return true;
+    }
+
+    function checkCourse() {
+        var id = $('#txtCourse').val();
+        if(parseInt(id) <= 0 ){
+            $('#Tips').html('学科不能为空！')
+            return false;
+        }
+        $('#Tips').html('')
+        return true;
+    }
+
+    function checkSubmit() {
+        if(!checkIshanzi() || !checkIsTel() || !isQQ() || !checkCampus() || !checkCourse()){
+            $('#Tips').html('请填写完整的报名信息！')
+            return false;
+        }
+        return true;
+    }
 </script>

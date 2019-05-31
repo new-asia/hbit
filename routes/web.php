@@ -32,6 +32,8 @@ Route::namespace('Home')->group(function () {
     Route::get('/ClassInfomation', 'NavController@ClassInfomation');
     Route::get('Nav/header_nav', 'NavController@header_nav');
     //文章
-    Route::get('/show', 'ArticleController@show');
+    Route::get('/show-{id}', 'ArticleController@show');
     Route::get('/Campusall', 'ArticleController@Campusall');
+    //报名
+    Route::post('/apply', 'EnrollController@apply');
 });

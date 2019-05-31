@@ -64,25 +64,45 @@
 <div class="right_item right_item_4">
 <div class="lfMflf">
 <div class="lfMflfTit">提交报名</div>
-<form class="rightform1" id="feedback_form" name="feedback_form" url="/plugins/feedback/ajax.ashx?action=add&site=1" action="/plugins/feedback/ajax.ashx?action=add&site=1" method="post" novalidate>
-<input type="hidden" name="type" value="15">
-<input type="hidden" name="source" value="8">
-<input type="text" placeholder="请输入您的姓名" name="txtUserName" id="txtUserName">
-<input type="text" placeholder="请输入您的电话" name="txtUserTel" id="txtUserTel" size="5" maxlength="11">
-<input type="text" placeholder="请输入您的QQ号码" name="txtUserQQ" id="txtUserQQ">
-<select name="txtUserEmail" id="txtUserEmail">
-<option value="0">请选择上课地址</option>
-<option value="北京校区">北京校区</option>
-</select>
-<select name="txtContent" id="txtContent">
-<option value="0">请选择报名学科</option>
-<option value="php">php</option>
-<option value="Java">Java</option>
-<option value="H5+全栈工程师">H5+全栈工程师</option>
-</select>
-<input type="hidden" name="source" value="8">
-<input id="btnSubmit" name="btnSubmit" type="submit" class="lfMflfBtn" value="提交申请" />
+<form class="rightform1" id="feedback_form" onsubmit="return checkSubmit()" name="feedback_form" url="" action="{{url('apply')}}" method="post" novalidate>
+   @csrf
+   <input type="text" placeholder="请输入您的姓名" onblur="checkIshanzi()" name="name" id="txtUserName">
+   <input type="text" placeholder="请输入您的电话" onblur="checkIsTel()"  name="tel" id="txtUserTel" size="5" maxlength="11">
+   <input type="text" placeholder="请输入您的QQ号码" onblur="isQQ()" name="qq" id="txtUserQQ">
+   <select name="campus_id" onchange="checkCampus()" id="txtUserCampus">
+      <option value="0">请选择上课地址</option>
+      @foreach($campus as $v)
+      <option value="{{$v->id}}">{{$v->campus}}</option>
+      @endforeach
+   </select>
+   <select name="course_id" onchange="checkCourse(this.value)" id="txtCourse">
+   <option value="0">请选择报名学科</option>
+      @foreach($course as $v)
+         <option value="{{$v->course_id}}">{{$v->course_name}}</option>
+      @endforeach
+   </select>
+   <input id="btnSubmit" type="submit" class="lfMflfBtn" value="提交申请" />
 </form>
+
+   <div class="form-group" style="margin-left: 50px;">
+       <div id="Tips" style="color:red;"></div>
+      {{--@if (session('message'))
+         <div class="alert alert-success">
+            {{ session('message') }}
+         </div>
+         <input type="hidden" name="" value="{{ session('message') }}" id="msg">
+      @endif--}}
+      @if (count($errors) > 0)
+         <div class="alert alert-danger">
+            <ul style="color:red;">
+               @foreach ($errors->all() as $error)
+                  <li>{{ $error }}</li>
+               @endforeach
+            </ul>
+         </div>
+      @endif
+   </div>
+
 </div>
 </div>
 <div class="right_pi_wrap img_div">
@@ -150,3 +170,72 @@
 @include('home.layouts.script')
 <script src="/static/templates/main/js/jquery.validate.js" type="text/javascript"></script>
 <script src="/static/templates/main/js/jquery-ui.min.js"></script>
+<script>
+    function checkIshanzi() {
+        //var patrn = /^[\u2E80-\u9FFF]$/; //Unicode编码中的汉字范围  /[^\x00-\x80]/
+        var s = $('#txtUserName').val();
+        var patrn = /[^\x00-\x80]$/;
+        if(s.length < 2 | s.length >10){
+            $('#Tips').html('用户名长度为2-10！')
+            return false
+        }
+        if (!patrn.exec(s)){
+            $('#Tips').html('用户名需要汉字！')
+            return false
+        }
+        $('#Tips').html('');
+        return true
+    }
+    //校验手机号码
+    function checkIsTel() {
+        var s = $('#txtUserTel').val();
+        var patrn = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+        if (patrn.exec(s)){
+            $('#Tips').html('')
+            return true;
+        }
+        $('#Tips').html('请输入正确的手机号码！')
+        return false
+    }
+
+    //验证QQ号码5-11位
+    function isQQ() {
+        var qq = $('#txtUserQQ').val();
+        var filter = /^\s*[.0-9]{5,11}\s*$/;
+        if (!filter.test(qq)) {
+            $('#Tips').html('请输入正确的QQ,QQ号码5-11位！')
+            return false;
+        } else {
+            $('#Tips').html('')
+            return true;
+        }
+    }
+
+    function checkCampus() {
+        var id = $('#txtUserCampus').val();
+        if(parseInt(id) <= 0 ){
+            $('#Tips').html('上课地址不能为空！')
+            return false;
+        }
+        $('#Tips').html('')
+        return true;
+    }
+
+    function checkCourse() {
+        var id = $('#txtCourse').val();
+        if(parseInt(id) <= 0 ){
+            $('#Tips').html('学科不能为空！')
+            return false;
+        }
+        $('#Tips').html('')
+        return true;
+    }
+    
+    function checkSubmit() {
+        if(!checkIshanzi() || !checkIsTel() || !isQQ() || !checkCampus() || !checkCourse()){
+            $('#Tips').html('请填写完整的报名信息！')
+            return false;
+        }
+        return true;
+    }
+</script>

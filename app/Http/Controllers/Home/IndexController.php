@@ -9,8 +9,12 @@ use App\Models\Student;
 use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
+<<<<<<< HEAD
 use App\Models\NavMenu;
 
+=======
+use App\Models\Campus;
+>>>>>>> 19246ade9ffa8c97fb53a14f7803b14594cc05ea
 class IndexController extends Controller
 {
     public function index(){
@@ -20,7 +24,6 @@ class IndexController extends Controller
         $course = $course->cou_index();
         $nav = new NavMenu();
         $nav = $nav -> nav_list();
-        //print_r($nav);die;
         return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course,'nav'=>$nav]);
     }
 
@@ -40,7 +43,9 @@ class IndexController extends Controller
         $course = new Course();
         $course = $course->course();
         $Tags =Tags::allcount();
-        return view('home/faculty',['teacher'=>$data,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
+        $campus = Campus::getAllCampus();
+        $course = Course::getAllCourse();
+        return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
     }
 
     public function StudentsStory(){
@@ -54,14 +59,4 @@ class IndexController extends Controller
     public function idea(){
         return view('home/idea');
     }
-    //文章内容
-    public function show(){
-        return view('home/show');
-    }
-    //文章列表
-    public function Campusall(){
-        return view('home/Campusall');
-    }
-
-
 }

@@ -15,6 +15,10 @@ class Course extends Model
     protected $table = 'course';
     public $timestamps = false;
     public $primaryKey ="course_id";
+    public static function getAllCourse(){
+        return parent::select('course_id','course_name')->get();
+    }
+
     public function course(){
         return DB::table('course')
             ->select('course_name','enroll_link','course_num','course_time')
