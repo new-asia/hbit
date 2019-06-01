@@ -14,6 +14,7 @@ class EnrollController extends Controller
         if(!$request->isMethod('POST')){
             return redirect()->back();
         }
+
         $validator = \Validator::make($post,[
             'name'=>'required|min:2|max:20',
             'tel'=>'required|integer|digits:11',
@@ -45,6 +46,9 @@ class EnrollController extends Controller
         if(!$enroll->insert($post)){
             return redirect()->back()->with('message', '报名失败');
         }
-        return redirect('faculty')->with('message', '报名成功');
+        $isMobile = $this->isMobile();
+        if (!$isMobile) {
+            return redirect('faculty')->with('message', '报名成功');
+        }
     }
 }

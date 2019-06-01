@@ -119,53 +119,7 @@
 		}
 	</style>
 	<script type="text/javascript" src="http://www.itcast.cn/js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript">
-		function check() {
-			var realname = $("#txtUserName");
-			var phone = $("#txtUserTel");
 
-			var qq = $("#txtUserQQ");
-			var address = $("#txtUserEmail");
-			var cid = $("#cid");
-
-			var realnamereg = /^[\u4E00-\u9FA5]+$/;
-			var phonereg = /^[1][3-9][0-9]9$/;
-
-
-			var shuoreg = /(http[s]?|ftp):\/\/[^\/\.]+?\..+\w$/i;
-			var url = "";
-			try {
-				url = window.top.document.referrer;
-			} catch (M) {
-				if (window.parent) {
-					try {
-						url = window.parent.document.referrer;
-					} catch (L) {
-						url = "";
-					}
-				}
-			}
-			if (url === "") {
-				url = document.referrer;
-			}
-			$("#u").val(url);
-			if (!realnamereg.test(realname.val())) {
-				realname.focus().val('');
-				alert('请输入正确的中文名称！');
-				return false;
-			} else {
-				$("#feedback_form").submit();
-
-				alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
-				realname.val('');
-				phone.val('');
-				address.val('');
-				cid.val('');
-
-				qq.val('');
-			}
-		}
-	</script>
 </head>
 
 <body style="">
@@ -181,42 +135,51 @@
 			<div class="bm" style="max-width:750px; margin:0 auto;">
 				<div class="bm_con">
 					<h2>每期开班座位有限<br>预报名可优先享有占座特权哦！</h2>
-					<iframe style="display:none" id="ajaxframe" name="ajaxframe"></iframe>
-					<form id="feedback_form" url="" action="" method="post" target="ajaxframe">
+					<iframe style="display:none" id="ajaxframe"  name="ajaxframe"></iframe>
+					<form id="feedback_form" url=""  action="{{url('apply')}}" method="post" target="ajaxframe">
+						@csrf
 						<div class="left">
 							<ul>
 								<li>
 									<span class="l_text"><s style="color:#e00000; font-size:0.8em; text-decoration:none; line-height:0.9em; padding-right:5px;">*</s>真实姓名</span>
-									<input type="text" placeholder="我们期待更了解您" name="txtUserName" id="txtUserName">
+									<input type="text" placeholder="我们期待更了解您" onblur="checkIshanzi()" name="name" id="txtUserName">
+									<span style="color: red;" id="name"></span>
 								</li>
 								<li>
 									<span class="l_text"><s style="color:#e00000; font-size:0.8em; text-decoration:none; line-height:0.9em; padding-right:5px;">*</s>联系手机</span>
-									<input type="text" placeholder="我们和您一样讨厌骚扰电话" name="txtUserTel" id="txtUserTel">
+									<input type="text" placeholder="我们和您一样讨厌骚扰电话" onblur="checkIsTel()" name="tel" id="txtUserTel">
+									<span style="color: red;" id="tel"></span>
 								</li>
 								<li>
 									<span class="l_text"><s style="color:#e00000; font-size:0.8em; text-decoration:none; line-height:0.9em; padding-right:11px;">*</s>QQ号码</span>
-									<input type="text" placeholder="我们将尽快与您联系" name="txtUserQQ" id="txtUserQQ">
+									<input type="text" placeholder="我们将尽快与您联系" onblur="isQQ()" name="qq" id="txtUserQQ">
+									<span style="color: red;" id="qq"></span>
 								</li>
 								<li>
 									<span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>上课地址</span>
-									<select name="txtUserEmail" id="txtUserEmail">
-										<option value="">选择校区</option>
-										<option value="北京校区">北京校区</option>
+									<select name="campus_id" onchange="checkCampus()" id="txtUserCampus">
+										<option value="0">选择校区</option>
+										@foreach($campus as $v)
+											<option value="{{$v->id}}">{{$v->campus}}</option>
+										@endforeach
 									</select>
+									<span style="color: red;" id="campus"></span>
 								</li>
 								<li>
 									<span class="l_text"><s style="color:#e00000; font-size:0.8em; text-decoration:none; padding-right:5px;">*</s>抢报学科</span>
-									<select name="txtContent" id="txtContent">
+									<select name="course_id" onchange="checkCourse()" id="txtCourse">
 										<option value="0">请选择报名学科</option>
-										<option value="php">php</option>
-										<option value="Java">Java</option>
-										<option value="H5+全栈工程师">H5+全栈工程师</option>
+										@foreach($courses as $v)
+											<option value="{{$v->course_id}}">{{$v->course_name}}</option>
+										@endforeach
 									</select>
+									<span style="color: red;" id="course"></span>
 								</li>
-								<input type="hidden" name="come" value="鸿博移动端">
-								<input type="hidden" name="url" value="" id="u">
+								{{--<input type="hidden" name="come" value="鸿博移动端">
+								<input type="hidden" name="url" value="" id="u">--}}
 								<li class="right">
 									<a href="javascript:;" onclick="check()">现在预报名</a>
+									<p id="Tips" style="color: red;"></p>
 									<p>温馨提示：请保持手机畅通，咨询老师将为您提供专属的一对一报名服务。</p>
 								</li>
 							</ul>
@@ -250,7 +213,116 @@
 			spaceBetween: 0 //控制两个块之间的宽度
 		})
 	</script>
+	<script>
+        function checkIshanzi() {
+            //var patrn = /^[\u2E80-\u9FFF]$/; //Unicode编码中的汉字范围  /[^\x00-\x80]/
+            var s = $('#txtUserName').val();
+            var patrn = /[^\x00-\x80]$/;
+            if(s.length < 2 | s.length >10){
+                $('#name').html('请输入正确姓名！')
+                return false
+            }
+            if (!patrn.exec(s)){
+                $('#name').html('用户名需要汉字！')
+                return false
+            }
+            $('#name').html('');
+            return true
+        }
+        //校验手机号码
+        function checkIsTel() {
+            var s = $('#txtUserTel').val();
+            var patrn = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+            if (patrn.exec(s)){
+                $('#tel').html('')
+                return true;
+            }
+            $('#tel').html('请输入正确的手机号码！')
+            return false
+        }
 
+        //验证QQ号码5-11位
+        function isQQ() {
+            var qq = $('#txtUserQQ').val();
+            var filter = /^\s*[.0-9]{5,11}\s*$/;
+            if (!filter.test(qq)) {
+                $('#qq').html('请输入正确的QQ,QQ号码5-11位！')
+                return false;
+            } else {
+                $('#qq').html('')
+                return true;
+            }
+        }
+
+        function checkCampus() {
+            var id = $('#txtUserCampus').val();
+            if(parseInt(id) <= 0 ){
+                $('#campus').html('上课地址不能为空！')
+                return false;
+            }
+            $('#campus').html('')
+            return true;
+        }
+
+        function checkCourse() {
+            var id = $('#txtCourse').val();
+            if(parseInt(id) <= 0 ){
+                $('#course').html('学科不能为空！')
+                return false;
+            }
+            $('#course').html('')
+            return true;
+        }
+
+        function check() {
+            var realname = $("#txtUserName");
+            var phone = $("#txtUserTel");
+
+            var qq = $("#txtUserQQ");
+            var Campus = $("#txtUserCampus");
+            var Course = $("#txtCourse");
+
+            var realnamereg = /^[\u4E00-\u9FA5]+$/;
+            var phonereg = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+           // var phonereg = /^[1][3-9][0-9]9$/;
+            var filter = /^\s*[.0-9]{5,11}\s*$/;
+
+            if (!realnamereg.test(realname.val())) {
+                realname.focus().val('');
+                alert('请输入正确的姓名！');
+                return false;
+            }
+            if (!phonereg.test(phone.val())) {
+                realname.focus().val('');
+                alert('请输入正确的手机号！');
+                return false;
+            }
+            if (!filter.test(qq.val())) {
+                realname.focus().val('');
+                alert('请输入正确的qq号码！');
+                return false;
+            }
+            if (parseInt(Campus.val()) <= 0) {
+                realname.focus().val('');
+                alert('请选择上课地址');
+                return false;
+            }
+            if (parseInt(Course.val()) <= 0) {
+                realname.focus().val('');
+                alert('请选择学科!');
+                return false;
+            }
+            else {
+                $("#feedback_form").submit();
+                alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
+                realname.val('');
+                phone.val('');
+                qq.val('');
+                Course.val('0');
+                Campus.val('0');
+            }
+        }
+	</script>
 </body>
 
 </html>

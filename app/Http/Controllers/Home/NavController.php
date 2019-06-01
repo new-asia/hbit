@@ -54,11 +54,7 @@ class NavController extends Controller
                     $titles = $titles[0]->title;
                 }
             }
-        }else{
-            $titles = '北京鸿博教育-匠心打造,品质铸就';
         }
-
-
         $view->with(['nav'=>$nav,'title'=>$titles]);
     }
 

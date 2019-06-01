@@ -53,8 +53,8 @@ class IndexController extends Controller
             $course = $course->course();
             $Tags =Tags::allcount();
             $campus = Campus::getAllCampus();
-            $course = Course::getAllCourse();
-            return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
+            $courses = Course::getAllCourse();
+            return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'courses'=>$courses,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
         }
     }
 
@@ -83,6 +83,8 @@ class IndexController extends Controller
     }
 
     public function phonebd(){
-        return view("api/phonebd");
+        $campus = Campus::getAllCampus();
+        $courses = Course::getAllCourse();
+        return view("api/phonebd",['campus'=>$campus,'courses'=>$courses]);
     }
 }

@@ -75,9 +75,9 @@
       <option value="{{$v->id}}">{{$v->campus}}</option>
       @endforeach
    </select>
-   <select name="course_id" onchange="checkCourse(this.value)" id="txtCourse">
+   <select name="course_id" onchange="checkCourse()" id="txtCourse">
    <option value="0">请选择报名学科</option>
-      @foreach($course as $v)
+      @foreach($courses as $v)
          <option value="{{$v->course_id}}">{{$v->course_name}}</option>
       @endforeach
    </select>
@@ -86,12 +86,6 @@
 
    <div class="form-group" style="margin-left: 50px;">
        <div id="Tips" style="color:red;"></div>
-      {{--@if (session('message'))
-         <div class="alert alert-success">
-            {{ session('message') }}
-         </div>
-         <input type="hidden" name="" value="{{ session('message') }}" id="msg">
-      @endif--}}
       @if (count($errors) > 0)
          <div class="alert alert-danger">
             <ul style="color:red;">

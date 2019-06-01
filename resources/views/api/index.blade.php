@@ -20,10 +20,10 @@
 <body>
 
 
-{{--nav--}}
-@include('api.layouts.nav')
-<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
-     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
+  {{--nav--}}
+  @include('api.layouts.nav')
+  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
+    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
       <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
         <img src="/upload/img/201807041449210059.png" alt="轮播" class="img-responsive">
       </div>
@@ -42,7 +42,7 @@
     </div>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   </div>
-  
+
   <div class="type">
     <a href="/java.blade.php">
       <div class="type-item">
@@ -327,6 +327,8 @@
         <span class="nav-bar-item" href="php">PHP全栈<em></em></span>
         <span class="nav-bar-item" href="html">html全栈<em></em></span>
       </div>
+
+
       <div class="swiper-container-list-0 swiper-container-horizontal" id="JavaEE" style="display: block;">
         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);height:350px;">
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
@@ -357,7 +359,7 @@
               </a>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-next" style="width: 355px;">
+          <div class="swiper-slide swiper-slide-next" style="">
             <div class="it-content">
               <a href="/news/show-6447.html">
                 <div class="item">
@@ -386,12 +388,17 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination-0 swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+        <div class="swiper-pagination-0 swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
+
+
       <div class="swiper-container-list-1 swiper-container-horizontal" id="php" style="display: none;">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-          <div class="swiper-slide swiper-slide-active" style="width: 1329px;">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);height:350px;">
+          <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="it-content">
               <a href="/news/show-6449.html">
                 <div class="item">
@@ -419,7 +426,7 @@
               </a>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-next" style="width: 1329px;">
+          <div class="swiper-slide swiper-slide-next" style="">
             <div class="it-content">
               <a href="/news/show-6403.html">
                 <div class="item">
@@ -448,12 +455,21 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination-1 swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+        <div class="swiper-pagination-1 swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>
+        <div class="swiper-pagination-1 swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
+
+
       <div class="swiper-container-list-2 swiper-container-horizontal" id="html" style="display: none;">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
-          <div class="swiper-slide swiper-slide-active" style="width: 1329px;">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); ">
+          <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="it-content">
               <a href="/news/show-4289.html">
                 <div class="item">
@@ -481,7 +497,7 @@
               </a>
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-next" style="width: 1329px;">
+          <div class="swiper-slide swiper-slide-next" style="">
             <div class="it-content">
               <a href="/news/show-4243.html">
                 <div class="item">
@@ -510,7 +526,9 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination-2 swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
+        <div class="swiper-pagination-2 swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+          <span class="swiper-pagination-bullet"></span></div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
     </div>
@@ -608,7 +626,7 @@
 
 
   {{--tabBar--}}
-@include('api.layouts.tabBar')
+  @include('api.layouts.tabBar')
 
 
   <script type="text/javascript" src="/templates/mobile/plugin/jquery-3.2.1.min.js"></script>
