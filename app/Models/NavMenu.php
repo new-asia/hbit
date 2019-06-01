@@ -1,6 +1,6 @@
 <?php
 /**
- * 课程表
+ * 导航表
  * Created by PhpStorm.
  * User: cy
  * Date: 2019/5/28
@@ -19,7 +19,7 @@ class NavMenu extends Model
         return DB::table('nav_menu')
             ->where('nav_id','=','3')
             ->where('status','=','1')
-            ->select('name','href')
+            ->select('name','href','id','parent_id','list_order')
             ->get();
     }
 }

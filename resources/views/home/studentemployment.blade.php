@@ -24,7 +24,7 @@
 <div class="container">
 <span>当前位置：</span>
 <a href="/index.html">首页</a> &gt;
-<a href="/studentemployment.html">就业喜报</a>
+<a href="/studentemployment">就业喜报</a>
 </div>
 </div>
 <div id="special_employ" class="employ p-50 c-bg-w">

@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
-    <title>北京鸿博教育-匠心打造,品质铸就</title>
+    <title>{{$title}}</title>
     <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训" />
     <meta name="description" content="背景鸿博教育，坐落于首都北京市海淀区区，IT职业教育领军品牌。" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -42,21 +42,27 @@
             </div>
         </div>
         <div class="nav_right base" title="">
-            <a href="/" target="_blank" class="nav_index nav" title="">首页</a>
-            <span class="nav">课程培训</span>
+            <a href="/" target="_blank" class="nav" id="1" title="">首页</a>
+            @if($nav[0]->list_order == 2)
+                <span class="navs">{{$nav[0]->name}}</span>
+            @endif
                 @foreach($nav as $item)
-                    <a href="{{$item->href}}" class="nav">{{$item->name}}</a>
+                    @if($item->parent_id == 0 && $item->list_order != 2)
+                        <a href="{{$item->href}}" class="nav"  id="{{$item->id}}">{{$item->name}}</a>
+                    @endif
                 @endforeach
         </div>
         <div class="class170109" title="">
             <div class="basebase" title="">
                 <div class="base clear" title="">
-                    <a href="/java.html" target="_blank" title="Java大数据"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>Java大数据</u></a>
-                    <a href="/php.html" target="_blank" title="PHP全栈"><img src="/static/upload/img/php_ico.png" width="63" height="73"><u>PHP全栈</u></a>
-                    <a href="/html5.html" target="_blank" title="HTML5全栈"><img src="/static/upload/img/h5_ico.png" width="63" height="73"><u>HTML5全栈</u></a>
+                    @foreach($nav as $item)
+                        @if($item->parent_id == 2)
+                            <a href="/{{$item->href}}" id="{{$item->id}}" target="_blank" title="{{$item->name}}"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>{{$item->name}}</u></a>
+                        @endif
+                    @endforeach
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>
+                    <a href="/python.html" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="UI/UE设计"><img src="/static/upload/img/ui_ico.png" width="63" height="73"><u>UI/UE设计</u></a>
                 </div>
             </div>
@@ -76,3 +82,5 @@
         <img src="/static/upload/img/qf_fix02.png" style="display: block;width:67px;border-top:1px solid #fff;cursor:pointer;display:none" class="qf_fix02">
     </div>
 </div>
+<script src="/static/templates/main/js/jquery-1.12.4.min.js"></script>
+

@@ -172,81 +172,9 @@
 	<div class="main gd">
 
 
-		<link rel="stylesheet" href="./templates/mobile/css/common.css">
-		<script type="text/javascript" src="./templates/mobile/js/newjquery.js"></script>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="font-size: 14px;">
-			<div class="navbar-header">
-				<div class="mNav">
-					<div class="mNav-close">
-						<script type="text/javascript">
-							//<![CDATA[
-							window.__mirage2 = {
-								petok: "525bd96eaf0ad26f134206264ea69fbed47f1e09-1557555919-1800"
-							};
-							//]]>
-						</script>
-						<script type="text/javascript" src="https://edge.yunjiasu.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script>
-						<img data-cfsrc="./templates/mobile/images/mNav_10.png" width="19" height="19" src="https://m.itjmd.com./templates/mobile/images/mNav_10.png">
-					</div>
-					<ul style="margin-bottom: 00px;">
-						<li><a href="./Faculty.html"><img data-cfsrc="./templates/mobile/images/shizi.png" src="./templates/mobile/images/shizi.png"><span>师资</span></a></li>
-						<li><a href="./EmploymentInformation.html"><img data-cfsrc="./templates/mobile/images/jiuye.png" src="./templates/mobile/images/jiuye.png"><span>就业</span></a></li>
-						<li><a href="./phonebd.html"><img data-cfsrc="./templates/mobile/images/baoming.png" src="./templates/mobile/images/baoming.png"><span>报名</span></a></li>
-						<li><a href="./news.html"><img data-cfsrc="./templates/mobile/images/ITzixun.png" src="./templates/mobile/images/ITzixun.png"><span>IT资讯</span></a></li>
-						<li><a href="./StudentsStory.html"><img data-cfsrc="./templates/mobile/images/gushi.png" src="./templates/mobile/images/gushi.png"><span>故事</span></a></li>
-						<li><a href="./about/abouts.html"><img data-cfsrc="./templates/mobile/images/guanyu.png" src="./templates/mobile/images/guanyu.png"><span>关于</span></a></li>
-						<div class="clear"></div>
-					</ul>
-				</div>
-				<button type="button" class="navbar-toggle mNav-icon" data-toggle="collapse" data-target="#example-navbar-collapse">
-					<span class="sr-only">切换导航</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-x-1 icon-x"></span>
-					<span class="icon-x-2 icon-x"></span>
-				</button>
-				<img data-cfsrc="./upload/img/201806290946405929.png" alt="logo" class="nav-logo navbar-brand" src="./upload/img/201806290946405929.png">
-				<a>
-					<img data-cfsrc="./templates/mobile/src/icons/call.png" alt="电话" class="nav-call" href="010-57032333" src="./templates/mobile/src/icons/call.png">
-				</a>
-			</div>
-		</nav>
-		<script type="text/javascript">
-			$(window).load(function() {
-				$('.mNav-icon').click(function() {
-					$('.mNav').removeClass('mNav-ani-outScale').addClass('mNav-ani-fromScale');
+	{{--nav--}}
+@include('api.layouts.nav')
 
-				});
-				$('.mNav-close').click(function() {
-					$('.mNav').removeClass('mNav-ani-fromScale').addClass('mNav-ani-outScale');
-
-				})
-			})
-		</script>
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-				var hm = document.createElement("script");
-				hm.src = "https://hm.baidu.com/hm.js?19b972123a261b3be88cf2d47bd66ccb";
-				var s = document.getElementsByTagName("script")[0];
-				s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
-		<script type="application/ld+json">
-			{
-				"@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-				"@id": "https://www.itjmd.com/",
-				"appid": "1600403569933280",
-				"title": "鸿博IT教育-匠心打造,品质铸就",
-				"images": [
-					"./upload/201807/04/201807041026260216.jpg",
-					"./upload/201806/24/201806241911120948.png",
-					"./upload/201806/24/201806241911323214.png"
-				], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
-				"pubDate": "2018-07-30T09:40:01" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
-			}
-		</script>
 
 
 		<div class="con">
@@ -302,26 +230,8 @@
 			<p>版权所有 2006 - 2018 北京鸿博互联软件有限公司</p>
 			<p>地址：北京市海淀区苏家坨54号</p>
 		</footer>
-		<div class="tabBar" style="font-size: 14px;">
-			<a href="/">
-				<div class="item">
-					<p><img data-cfsrc="./templates/mobile/src/icons/tab_home.png" class="img-responsive" src="https://m.itjmd.com./templates/mobile/src/icons/tab_home.png"></p>
-					<p>首页</p>
-				</div>
-			</a>
-			<a href="http://q.url.cn/ABULOl?_type=wpa&amp;qidian=true">
-				<div class="item">
-					<p><img data-cfsrc="./templates/mobile/src/icons/tab_zixun.png" class="img-responsive" src="https://m.itjmd.com./templates/mobile/src/icons/tab_zixun.png"></p>
-					<p>在线咨询</p>
-				</div>
-			</a>
-			<a href="/phonebd.html">
-				<div class="item">
-					<p><img data-cfsrc="./templates/mobile/src/icons/tab_baoming.png" class="img-responsive" src="https://m.itjmd.com./templates/mobile/src/icons/tab_baoming.png"></p>
-					<p>我要报名</p>
-				</div>
-			</a>
-		</div>
+		{{--tabBar--}}
+@include('api.layouts.tabBar')
 
 	</div>
 	<script src="./templates/mobile/js/jquery-1.10.2.min.js"></script>

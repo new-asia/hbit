@@ -24,7 +24,7 @@
 <div class="container" style="text-align: left;">
 <span>当前位置：</span>
 <a href="/index.html">首页</a> &gt;
-<a href="/Faculty.html">豪华师资</a>
+<a href="/faculty">豪华师资</a>
 </div>
 </div>
 
@@ -158,7 +158,7 @@
 @endforeach 
 
 
- 
+
 </div>
 </div>
 </div>

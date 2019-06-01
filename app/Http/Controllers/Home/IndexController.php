@@ -42,14 +42,18 @@ class IndexController extends Controller
     }
 
     public function faculty(){
+        $teacher = new Teacher();
+        $data = $teacher->getTeacher();
+       // dump($data);
+
+
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
-            return view('api/faculty');
+            return view('api/faculty',["teacher"=>$data]);
         } else {
             
-            $teacher = new Teacher();
-            $data = $teacher->getTeacher();
+            
             $advert = new Advert();
             $advert = $advert->getAdvert(1);
             $course = new Course();
@@ -74,7 +78,11 @@ class IndexController extends Controller
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);
     }
 
- 
+    public function idea()
+    {
+        return view('home/idea');
+    }
+
     public function EmploymentInformation(){
         return view("api/EmploymentInformation");
     }
