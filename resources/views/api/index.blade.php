@@ -7,84 +7,21 @@
   <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训">
   <meta name="description" content="鸿博IT教育，具有良好的学术学习氛围，最具前沿的互联网高新技术。 专注互联网领域技术10余年，全国知名十佳教育培训机构，IT职业教育领军品牌。">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_689149_dby6e0fcds.css">
-  <link rel="stylesheet" href="/templates/mobile/plugin/bootstrap-3.3.7/css/bootstrap.css">
-  <link rel="stylesheet" href="/templates/mobile/plugin/swiper/swiper-4.3.3.min.css">
-  <link rel="stylesheet" href="/templates/mobile/css/style1.css">
+  <link rel="stylesheet" href="./templates/mobile/plugin/bootstrap-3.3.7/css/bootstrap.css">
+  <link rel="stylesheet" href="./templates/mobile/plugin/swiper/swiper-4.3.3.min.css">
+  <link rel="stylesheet" href="./templates/mobile/css/style1.css">
   <!--[if lt IE 9]>
-  <script src="/templates/mobile/plugin/bootstrap-3.3.7/js/html5shiv.js"></script>
-  <script src="/templates/mobile/plugin/bootstrap-3.3.7/js/respond.min.js"></script>
+  <script src="./templates/mobile/plugin/bootstrap-3.3.7/js/html5shiv.js"></script>
+  <script src="./templates/mobile/plugin/bootstrap-3.3.7/js/respond.min.js"></script>
   <![endif]-->
 </head>
+
 
 <body>
 
 
-  <link rel="stylesheet" href="/templates/mobile/css/common.css">
-  <script type="text/javascript" src="/templates/mobile/js/newjquery.js"></script>
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="font-size: 14px;">
-    <div class="navbar-header">
-      <div class="mNav">
-        <div class="mNav-close"><img src="/templates/mobile/images/mNav_10.png" width="19" height="19"></div>
-        <ul style="margin-bottom: 00px;">
-          <li><a href="/faculty"><img src="/templates/mobile/images/shizi.png"><span>师资</span></a></li>
-          <li><a href="/EmploymentInformation"><img src="/templates/mobile/images/jiuye.png"><span>就业</span></a></li>
-          <li><a href="/phonebd"><img src="/templates/mobile/images/baoming.png"><span>报名</span></a></li>
-          <li><a href="/Campusall"><img src="/templates/mobile/images/ITzixun.png"><span>IT资讯</span></a></li>
-          <li><a href="/StudentsStory"><img src="/templates/mobile/images/gushi.png"><span>故事</span></a></li>
-          <li><a href="/idea"><img src="/templates/mobile/images/guanyu.png"><span>关于</span></a></li>
-          <div class="clear"></div>
-        </ul>
-      </div>
-      <button type="button" class="navbar-toggle mNav-icon" data-toggle="collapse" data-target="#example-navbar-collapse">
-        <span class="sr-only">切换导航</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-x-1 icon-x"></span>
-        <span class="icon-x-2 icon-x"></span>
-      </button>
-      <img src="/upload/img/201806290946405929.png" alt="logo" class="nav-logo navbar-brand">
-      <a>
-        <img src="/templates/mobile/src/icons/call.png" alt="电话" class="nav-call" href="010-57032333">
-      </a>
-    </div>
-  </nav>
-  <script type="text/javascript">
-    $(window).load(function() {
-      $('.mNav-icon').click(function() {
-        $('.mNav').removeClass('mNav-ani-outScale').addClass('mNav-ani-fromScale');
-
-      });
-      $('.mNav-close').click(function() {
-        $('.mNav').removeClass('mNav-ani-fromScale').addClass('mNav-ani-outScale');
-
-      })
-    })
-  </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?19b972123a261b3be88cf2d47bd66ccb";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-      "@id": "https://www.itjmd.com/",
-      "appid": "1600403569933280",
-      "title": "鸿博IT教育-匠心打造,品质铸就",
-      "images": [
-        "https://www.itjmd.com/upload/201807/04/201807041026260216.jpg",
-        "https://www.itjmd.com/upload/201806/24/201806241911120948.png",
-        "https://www.itjmd.com/upload/201806/24/201806241911323214.png"
-      ], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
-      "pubDate": "2018-07-30T09:40:01" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
-    }
-  </script>
-
+{{--nav--}}
+@include('api.layouts.nav')
   <div class="swiper-container swiper-container-horizontal">
     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
       <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
@@ -669,26 +606,10 @@
     <p>地址：北京市海淀区苏家坨54号</p>
   </div>
 
-  <div class="tabBar">
-    <a href="/">
-      <div class="item">
-        <p><img src="/templates/mobile/src/icons/tab_home.png" class="img-responsive"></p>
-        <p>首页</p>
-      </div>
-    </a>
-    <a href="http://q.url.cn/ABULOl?_type=wpa&amp;qidian=true">
-      <div class="item">
-        <p><img src="/templates/mobile/src/icons/tab_zixun.png" class="img-responsive"></p>
-        <p>在线咨询</p>
-      </div>
-    </a>
-    <a href="/phonebd.blade.php">
-      <div class="item">
-        <p><img src="/templates/mobile/src/icons/tab_baoming.png" class="img-responsive"></p>
-        <p>我要报名</p>
-      </div>
-    </a>
-  </div>
+
+  {{--tabBar--}}
+@include('api.layouts.tabBar')
+
 
   <script type="text/javascript" src="/templates/mobile/plugin/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/templates/mobile/plugin/bootstrap-3.3.7/js/bootstrap.js"></script>
