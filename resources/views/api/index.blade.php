@@ -22,8 +22,8 @@
 
 {{--nav--}}
 @include('api.layouts.nav')
-  <div class="swiper-container swiper-container-horizontal">
-    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
+<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
+     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
       <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
         <img src="/upload/img/201807041449210059.png" alt="轮播" class="img-responsive">
       </div>
@@ -42,7 +42,7 @@
     </div>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   </div>
-
+  
   <div class="type">
     <a href="/java.blade.php">
       <div class="type-item">
@@ -106,7 +106,7 @@
     </div>
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
-        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);height:60%">
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="work-contenr">
               <a href="#">
@@ -231,7 +231,7 @@
     </div>
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;height:80%">
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="student-content">
               <a href="/StudentsStory/show-4.blade.php">
@@ -328,7 +328,7 @@
         <span class="nav-bar-item" href="html">html全栈<em></em></span>
       </div>
       <div class="swiper-container-list-0 swiper-container-horizontal" id="JavaEE" style="display: block;">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);height:350px;">
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="it-content">
               <a href="/news/show-6457.html">
@@ -524,7 +524,7 @@
     </div>
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);height:350px;">
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div>
               <a href="#">

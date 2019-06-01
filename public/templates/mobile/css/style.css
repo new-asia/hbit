@@ -1,4 +1,5 @@
-@charset "utf-8"; body {
+@charset "utf-8";
+body {
     background: #fff;
     overflow-x: hidden
 }
@@ -34,9 +35,9 @@
     color: #fff;
     padding: 2.5% 0;
     border-radius: 5px;
-    background-image: -webkit-linear-gradient(to top,#0596D8,#42BFF8);
-    background-image: -moz-linear-gradient(to top,#0596D8,#42BFF8);
-    background-image: linear-gradient(to top,#0596D8,#42BFF8)
+    background-image: -webkit-linear-gradient(to top, #0596D8, #42BFF8);
+    background-image: -moz-linear-gradient(to top, #0596D8, #42BFF8);
+    background-image: linear-gradient(to top, #0596D8, #42BFF8)
 }
 
 .main .a_btn:active {
@@ -53,7 +54,8 @@
 }
 
 .clears {
-    zoom:1}
+    zoom: 1
+}
 
 header {
     width: 100%;
@@ -1411,7 +1413,8 @@ header .nav_btn img {
     width: 26%
 }
 
-.bmbd .bmbd-con select,.bmbd .bmbd-con input {
+.bmbd .bmbd-con select,
+.bmbd .bmbd-con input {
     width: 70%;
     height: 2.5em;
     border: 1px #262128 solid;
@@ -1448,7 +1451,6 @@ header .nav_btn img {
 
 .footer {
     width: 100%;
-    height: 100%;
     margin-top: 5%
 }
 
@@ -1533,7 +1535,7 @@ header .nav_btn img {
     bottom: -3%;
     z-index: 1;
     margin-bottom: 150px;
-    background: rgba(173,173,173,.9);
+    background: rgba(173, 173, 173, .9);
     display: none;
     border-radius: .5em;
     overflow: hidden
@@ -1559,33 +1561,26 @@ header .nav_btn img {
 
 @media only screen and (max-width: 360px) {
     body {
-        font-size:.9rem
+        font-size: .9rem
     }
-
     header .nav_btn {
         width: 15%
     }
-
     .tab {
         padding: .8em 1em
     }
-
     .icon ul li {
         padding-bottom: 16%
     }
-
     .icon ul li span {
         top: 56%
     }
-
     .bmlc .bmlc-con .bmlcxq span {
         font-size: .8em
     }
-
     .bmlc .bmlc-con p {
         line-height: 1.8em
     }
-
     .bmbd .bmbd-con>div img {
         top: 40%
     }
@@ -1593,13 +1588,11 @@ header .nav_btn img {
 
 @media(min-device-width: 414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3) {
     header .nav_btn {
-        width:12%
+        width: 12%
     }
-
     .icon ul li {
         padding-bottom: 15%
     }
-
     .icon ul li span {
         top: 60%
     }
@@ -1607,102 +1600,82 @@ header .nav_btn img {
 
 @media only screen and (min-width: 750px) {
     body {
-        font-size:1.5rem;
+        font-size: 1.5rem;
         max-width: 750px
     }
-
     header {
         padding: 24px 0
     }
-
     header .nav_btn {
         width: 14.5%
     }
-
     header .logo img {
         max-width: 260px
     }
-
     nav ul {
         margin-bottom: 60%
     }
-
     nav ul li {
         width: 96%;
         height: 60px;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px
     }
-
     nav ul li i {
         margin-top: 20px
     }
-
     nav ul li p {
         width: 103%;
         line-height: 60px;
         font-size: .9em;
         padding-left: 3px
     }
-
     .gzwm #qq {
         right: 3%;
         top: 49%
     }
-
     .gzwm #wb {
         right: 8%;
         top: 48%
     }
-
     .bmlc .bmlc-con select {
         height: 3em
     }
-
     .bmlc .bmlc-con .bmlcxq img {
         width: 2%;
         left: 14%;
         top: 35%
     }
-
     .bzjhbot li span {
         height: 9em
     }
-
     .bdzx ul li i {
         width: 28px;
         height: 25px;
         background: url(../images/bdzx1.png) no-repeat
     }
-
     .bdzx ul li.bdzx1 i {
         background-position: 0 -25px
     }
-
     .bdzx ul li.bdzx2 i {
         background-position: 0 0;
         background-size: auto
     }
-
     .bdzx ul li.bdzx3 i {
         background-position: 0 0;
         background-size: auto
     }
-
     .bdzx ul li.bdzx4 i {
         background-position: 0 -75px;
         background-size: auto
     }
-
     .quck ul li .li_in span {
         padding-top: 7%
     }
-
     .bdzx {
         left: 50%;
         margin-left: -380px
     }
-
     .back {
         width: 3%;
         right: 50%;

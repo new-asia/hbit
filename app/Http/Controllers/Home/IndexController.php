@@ -40,14 +40,14 @@ class IndexController extends Controller
     }
 
     public function faculty(){
+        $teacher = new Teacher();
+        $data = $teacher->getTeacher();
+
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
-            return view('api/faculty');
+            return view('api/faculty',["teacher"=>$data]);
         } else {
-            
-            $teacher = new Teacher();
-            $data = $teacher->getTeacher();
             $advert = new Advert();
             $advert = $advert->getAdvert(1);
             $course = new Course();

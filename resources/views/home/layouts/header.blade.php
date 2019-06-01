@@ -43,17 +43,23 @@
         </div>
         <div class="nav_right base" title="">
             <a href="/" target="_blank" class="nav" id="1" title="">首页</a>
-            <span class="navs">课程培训</span>
+            @if($nav[0]->list_order == 2)
+                <span class="navs">{{$nav[0]->name}}</span>
+            @endif
                 @foreach($nav as $item)
-                <a href="{{$item->href}}" class="nav"  id="{{$item->id}}">{{$item->name}}</a>
+                    @if($item->parent_id == 0 && $item->list_order != 2)
+                        <a href="{{$item->href}}" class="nav"  id="{{$item->id}}">{{$item->name}}</a>
+                    @endif
                 @endforeach
         </div>
         <div class="class170109" title="">
             <div class="basebase" title="">
                 <div class="base clear" title="">
-                    <a href="/java.html" target="_blank" title="Java大数据"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>Java大数据</u></a>
-                    <a href="/php.html" target="_blank" title="PHP全栈"><img src="/static/upload/img/php_ico.png" width="63" height="73"><u>PHP全栈</u></a>
-                    <a href="/html5.html" target="_blank" title="HTML5全栈"><img src="/static/upload/img/h5_ico.png" width="63" height="73"><u>HTML5全栈</u></a>
+                    @foreach($nav as $item)
+                        @if($item->parent_id == 2)
+                            <a href="/{{$item->href}}" id="{{$item->id}}" target="_blank" title="{{$item->name}}"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>{{$item->name}}</u></a>
+                        @endif
+                    @endforeach
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
                     <a href="/python.html" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>
