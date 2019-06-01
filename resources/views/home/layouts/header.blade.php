@@ -46,7 +46,7 @@
             <span class="navs">课程培训</span>
                 @foreach($nav as $item)
                 <a href="{{$item->href}}" class="nav"  id="{{$item->id}}">{{$item->name}}</a>
-            @endforeach
+                @endforeach
         </div>
         <div class="class170109" title="">
             <div class="basebase" title="">
