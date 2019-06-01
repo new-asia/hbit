@@ -26,7 +26,7 @@
 
 
     <div class="fast-enter">
-        <div class="swiper-slide">
+        <div class="swiper-slide" style="height:25%;">
             <img data-cfsrc="./upload/img/201808131712170056.jpg" alt="" class="img-responsive" src="./upload/img/201808131712170056.jpg">
         </div>
     </div>
