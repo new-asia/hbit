@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
-    <title>北京鸿博教育-匠心打造,品质铸就</title>
+    <title>{{$title}}</title>
     <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训" />
     <meta name="description" content="背景鸿博教育，坐落于首都北京市海淀区区，IT职业教育领军品牌。" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -45,8 +45,8 @@
             <a href="/" target="_blank" class="nav" id="1" title="">首页</a>
             <span class="navs">课程培训</span>
                 @foreach($nav as $item)
-                    <a href="{{$item->href}}" class="nav" id="{{$item->id}}">{{$item->name}}</a>
-                @endforeach
+                <a href="{{$item->href}}" class="nav"  id="{{$item->id}}">{{$item->name}}</a>
+            @endforeach
         </div>
         <div class="class170109" title="">
             <div class="basebase" title="">
@@ -77,18 +77,4 @@
     </div>
 </div>
 <script src="/static/templates/main/js/jquery-1.12.4.min.js"></script>
-<script>
-    $(".nav").click(function(){
-        var title = $(this).attr('id');
-        $.ajax({
-            type: "post",
-            url:'{{url('nav/header_title')}}',
-            data:'id='+title,
-            dataType: "json",
-            success: function(data){
-                console.log(data[0].title);
-                $('title').text(data[0].title);
-            }
-        });
-    })
-</script>
+
