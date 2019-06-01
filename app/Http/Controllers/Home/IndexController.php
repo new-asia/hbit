@@ -21,8 +21,6 @@ class IndexController extends Controller
         $rotation_chart = $advert->rotation_chart();
         $course = new Course();
         $course = $course->cou_index();
-        //$nav = new NavMenu();
-        //$nav = $nav -> nav_list();
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
@@ -44,24 +42,20 @@ class IndexController extends Controller
     public function faculty(){
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
-       // dump($data);
-
 
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
             return view('api/faculty',["teacher"=>$data]);
         } else {
-            
-            
             $advert = new Advert();
             $advert = $advert->getAdvert(1);
             $course = new Course();
             $course = $course->course();
             $Tags =Tags::allcount();
             $campus = Campus::getAllCampus();
-            $course = Course::getAllCourse();
-            return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
+            $courses = Course::getAllCourse();
+            return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'courses'=>$courses,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
         }
     }
 
@@ -88,6 +82,8 @@ class IndexController extends Controller
     }
 
     public function phonebd(){
-        return view("api/phonebd");
+        $campus = Campus::getAllCampus();
+        $courses = Course::getAllCourse();
+        return view("api/phonebd",['campus'=>$campus,'courses'=>$courses]);
     }
 }
