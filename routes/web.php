@@ -41,5 +41,4 @@ Route::namespace('Home')->group(function () {
 
     Route::get('/EmploymentInformation', 'IndexController@employmentInformation');
     Route::get('/phonebd', 'IndexController@phonebd');
-
 });

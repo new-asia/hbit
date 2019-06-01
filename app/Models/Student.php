@@ -31,4 +31,12 @@ class Student extends Model
             ->select('student_id', 'name','class_name','pay','testimonials','img')
             ->get();
     }
+
+    public function Studentlist(){
+        return DB::table('student')
+            ->leftjoin('class','class.class_id','=','student.class_id')
+            ->where('is_graduate',1)
+            ->select('student_id', 'name','class_name','pay','company')
+            ->paginate(20);
+    }
 }

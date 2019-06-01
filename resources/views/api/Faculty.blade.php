@@ -29,8 +29,6 @@
 
     <div class="faculty-list">
     @foreach($teacher as $item)
-          
-    
         <div class="cell">
             <div class="img" style="height: 200px;overflow: hidden;">
                 <a href="/Faculty/show-3.html"><img data-cfsrc="{{$item->teacher_portrait_src}}" class="img-responsive" src="{{$item->teacher_portrait_src}}"></a>

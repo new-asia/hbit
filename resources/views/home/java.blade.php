@@ -14,7 +14,7 @@
   <div class="a_banner_pic">
    <ul>
     <li>
-     <a href="{{$advert[0]->picture_url}}"><img src="@if($advert[0]->picture_place == 1) {{$advert[0]->picture_src}} @endif" style="background: url(/static/upload/img/201808101106563570.png) center 0px no-repeat;height: 520px;width: 100%;"/></a>
+     <a href="{{$advert[0]->picture_url}}"><img src="@if($advert[0]->picture_place == 1) {{$advert[0]->picture_src}} @endif" style="background: url(/static/upload/img/201808101106563570.png);height: 100%;width: 1920px;"/></a>
     </li>
    </ul>
   </div>

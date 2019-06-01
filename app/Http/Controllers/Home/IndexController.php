@@ -21,8 +21,6 @@ class IndexController extends Controller
         $rotation_chart = $advert->rotation_chart();
         $course = new Course();
         $course = $course->cou_index();
-        //$nav = new NavMenu();
-        //$nav = $nav -> nav_list();
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
@@ -44,16 +42,11 @@ class IndexController extends Controller
     public function faculty(){
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
-       // dump($data);
-
-
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
             return view('api/faculty',["teacher"=>$data]);
         } else {
-            
-            
             $advert = new Advert();
             $advert = $advert->getAdvert(1);
             $course = new Course();
@@ -84,7 +77,9 @@ class IndexController extends Controller
     }
 
     public function EmploymentInformation(){
-        return view("api/EmploymentInformation");
+        $employment = new Student();
+        $employment = $employment->Studentlist();
+        return view("api/EmploymentInformation",['employment'=>$employment]);
     }
 
     public function phonebd(){
