@@ -11,7 +11,6 @@ use Illuminate\Http\Request;
 use App\Models\Title;
 class NavController extends Controller
 {
-    public $HomePageTitle = '北京鸿博教育-匠心打造,品质铸就';
     public function __construct()
     {
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
@@ -55,7 +54,7 @@ class NavController extends Controller
                 }
             }
         }else{
-            $titles = $this->HomePageTitle;
+            $titles = '北京鸿博教育-匠心打造,品质铸就';
         }
 
 
