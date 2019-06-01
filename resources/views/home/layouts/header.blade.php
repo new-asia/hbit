@@ -43,11 +43,11 @@
         </div>
         <div class="nav_right base" title="">
             <a href="/" target="_blank" class="nav" id="1" title="">首页</a>
-            @if($nav[0]->path == 2-2)
-            <span class="navs">{{$nav[0]->name}}</span>
+            @if($nav[0]->list_order == 2)
+                <span class="navs">{{$nav[0]->name}}</span>
             @endif
                 @foreach($nav as $item)
-                    @if($item->parent_id == 0)
+                    @if($item->parent_id == 0 && $item->list_order != 2)
                         <a href="{{$item->href}}" class="nav"  id="{{$item->id}}">{{$item->name}}</a>
                     @endif
                 @endforeach

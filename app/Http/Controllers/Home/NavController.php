@@ -45,6 +45,7 @@ class NavController extends Controller
         $route = ltrim($route,'/');
         $nav = new NavMenu();
         $nav = $nav -> nav_list();
+        $titles = '北京鸿博教育-匠心打造,品质铸就';
         if($route != ''){
             $title = new Title();
             foreach ($nav as $v){
