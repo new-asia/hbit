@@ -16,7 +16,7 @@
 <div class="header">
 	<div class="header-top">
 		<div class="main clearfix">
-			<a href="#" target="_blank"><img class="logo" src="/static/python/img/logo.png" /></a>
+			<a href="#" target="_blank"><img class="logo" src="/static/upload/img/201802032231514431.png" /></a>
 			<p class="logo-text">教育机构<br/>
 				鸿博Python+人工智能学院</p>
 			<p class="phone">课程咨询：010-5723333<br/>	</p>

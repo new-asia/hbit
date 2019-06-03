@@ -22,4 +22,12 @@ class Teacher extends Model
             ->select('teacher_id', 'name','position_name','teacher_portrait_src','obtain_employment_time','teacher_style','field')
             ->get();
     }
+    public function getTeacherLimit($limit){
+        return DB::table('teacher')
+            ->leftjoin('position','position.position_id','=','teacher.position_id')
+            -> orderBy('list_order')
+            -> take($limit)
+            ->select('teacher_id', 'name','position_name','teacher_portrait_src','details')
+            ->get();
+    }
 }

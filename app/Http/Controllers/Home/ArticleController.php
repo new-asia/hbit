@@ -59,7 +59,8 @@ class ArticleController extends Controller
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
-            return view('api/news');
+            $Newest = Article::Newest();
+            return view('api/news',['Newest'=>$Newest]);
         } else {
             $Category = new Category();
             $list = $Category->ArticleList();

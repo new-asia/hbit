@@ -85,10 +85,6 @@
             全国统一咨询热线：：北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;邮箱:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f353f2c0f263b252b22612c2022">[email&#160;protected]</a>&nbsp;&nbsp;&nbsp;京ICP备16043431号-1&nbsp;&nbsp;&nbsp;</p>
     </div>
     <br>
-    <script src="static/templates/main/js/global.js"></script>
-
-
-
 </div>
 
 </body>

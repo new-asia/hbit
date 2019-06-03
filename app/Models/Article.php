@@ -43,5 +43,11 @@ class Article extends Model
         return parent::where('is_show',1)->orderBy('reading_num','desc')->select('article_id','title')->get();
     }
 
-
+    public static function Newest(){
+        $res = parent::where('is_show',1)->orderBy('add_time','desc')->select('article_id','title','img','add_time','content')->get();
+        foreach ($res as $v){
+            $v['add_time'] = date('m-d',$v['add_time']);
+        }
+        return $res;
+    }
 }

@@ -10,10 +10,12 @@ use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
 use App\Models\Campus;
+use Illuminate\View\View;
 class IndexController extends Controller
 {
     public function __construct()
     {
+        view()->composer('home.layouts.faculty','App\Http\Controllers\Home\IndexController@teacher');
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
     }
     public function index(){
@@ -67,15 +69,20 @@ class IndexController extends Controller
             return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'courses'=>$courses,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
         }
     }
+    public function teacher(View $view){
+        $teacher = new Teacher();
+        $data = $teacher->getTeacherLimit(5);
+        $view->with(['data'=>$data]);
+    }
 
     public function StudentsStory(){
         $isMobile = $this->isMobile();
-
-        if ($isMobile) {
-            return view('api/StudentsStory');
-        }
         $student = new Student();
         $data = $student->getStudent();
+        if ($isMobile) {
+            return view('api/StudentsStory',['student'=>$data]);
+        }
+
         $advert = new Advert();
         $stu_story = $advert->getAdvert(3);
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);

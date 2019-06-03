@@ -28,6 +28,9 @@
     .js_list a:link{
         color: #fff;
     }
+    .js_list a{
+        color: white;
+    }
 </style>
 {{--轮播图--}}
 {{--@include('home.layouts.banner')--}}

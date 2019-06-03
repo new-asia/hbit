@@ -1,5 +1,5 @@
 <div style="width:1200px;height:740px;">
-    <div style="width:210px; height:740px; float:left; margin-right:18.75px;">
+   {{-- <div style="width:210px; height:740px; float:left; margin-right:18.75px;">
         <div style=" height:410px;width:210px;">
             <a href="/Faculty/show-3.html"><img src="static/upload/img/201802052008356999.jpg" style="height:410px; width:210px;" height="410" width="210" /></a>
         </div>
@@ -78,5 +78,23 @@
                     毕业于北京大学，10年以上开发经验，精通JAVAEE/JAVA框架/oracle数据库，曾任职于腾讯、UPS科技、中达科技等多家知名企业技术总监，实战经验丰富，讲课通俗易懂，风趣幽默，深入浅出，全方位指导，受到学员一致好评。
                 </div></a>
         </div>
+    </div>--}}
+    @foreach($data as $v)
+    <div style="width:210px; height:740px; float:left; margin-right:18.75px;">
+        <div style=" height:410px;width:210px;">
+            <a href="/Faculty/show-3.html"><img src="{{$v->teacher_portrait_src}}" style="height:410px; width:210px;" height="410" width="210" /></a>
+        </div>
+        <div style="height:290px; width:188px; border:1px solid #F5F3F3;padding-left: 10px;padding-right: 10px;">
+            <a href="/Faculty/show-3.html"><div style="height:50px; line-height:50px; font-size:24px;">
+                    {{$v->name}}
+                </div>
+                <div style="height:40px; line-height:40px; font-size:18px;">
+                    {{$v->position_name}}
+                </div>
+                <div style="height:200px; line-height:21px; font-size:12px; width:188px;">
+                    {{$v->details}}
+                </div></a>
+        </div>
     </div>
+    @endforeach
 </div>

@@ -10,6 +10,7 @@ class CurriculumController extends Controller
 {
     public function __construct()
     {
+        view()->composer('home.layouts.faculty','App\Http\Controllers\Home\IndexController@teacher');
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
     }
     public function java(){
