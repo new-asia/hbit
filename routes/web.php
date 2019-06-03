@@ -11,8 +11,6 @@
 |
 */
 
-
-
 //前台
 Route::namespace('Home')->group(function () {
     //首页
@@ -46,4 +44,6 @@ Route::namespace('Home')->group(function () {
 
     //教师详情
     Route::get('/Faculty/show-{id}.html', 'FacultyController@show');
+     //标签列表
+     Route::get('/tags/show-{id}.html', 'TagsController@show');
 });
