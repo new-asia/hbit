@@ -22,6 +22,12 @@ class Article extends Model
     public static function nextId($id){
         return parent::where('article_id', '>', $id)->where('is_show',1)->min('article_id');
     }
+    
+    public function getall($id){
+        $sql  = "(select * from `cmf_article` where is_show = 1 and find_in_set(".$id.",tags_id) order By list_order desc) as article ";
+        return DB::table(DB::raw($sql))->paginate(11);
+    }
+
 
     public static function relevant($tags_id,$id){
         $relevant = parent::whereIn('tags_id',$tags_id)

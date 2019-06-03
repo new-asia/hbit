@@ -3,67 +3,50 @@
         <div class="content_nav">
             <div class="container">
                 <span>当前位置：</span>
-                <a href="/index.html">首页</a> &gt;
-                <a href="/Faculty.html">豪华师资</a> &gt;
-                {{$teacher->name}}
+                <a href="/">首页</a> &gt;
+                <a>标签</a> &gt;
+                {{$tags->name}}
             </div>
         </div>
         <div class="content">
             <div class="container">
-                <div class="left_container">
-                    <div class="jsneirong row">
-                        <div class="js_img">
-                            <img src="{{$teacher->teacher_portrait_src}}" alt="{{$teacher->name}}">
-                        </div>
-                        <div class="js_jieshao" deep="5">
-                            <div class="js_xingming">
-                                <p>{{$teacher->position_name}}</p>
-                                <div><span>{{$teacher->obtain_employment_time}}</span>
-                                    <h1 class="name">{{$teacher->name}}</h1>
-                                </div>
-                                <span>|</span>
+            <div class="scZxListLeft clearfix">
+                    <div class="scZxListCon">
+                        <ul>
+                            <div class="search-tit">
+                                <h3>搜索结果</h3>
+                                <span>查询Tags标签：<strong>{{$tags->name}}</strong>，共有<strong>76</strong>条记录</span>
                             </div>
-                            <div class="xian"></div>
-                            <p class="js_lvli">
-                                <span class="hidden-xs">擅长领域</span>
-                                {{$teacher->field}}。
-                            </p>
-                            <p class="js_lvli">
-                                <span class="hidden-xs">工作经历</span>
-                                {{$teacher->experience}}。
-                            </p>
-                            <p class="js_skfangshi">
-                                <span class="hidden-xs">授课风格</span>
-                                {{$teacher->teacher_style}}</p>
-                        </div>
-                    </div>
-                    <div class="shipin" style="min-height: 1503px;">
-                        <p class="title"><span class="icon iconfont icon-shipin"></span>教师详情</p>
-                        <div class="shipins" style="overflow: hidden;margin: 0px 5px 0px 5px;">
-						{{$teacher->details}}
-                        </div>
-                    </div>
-                    <div class="wjiangshi">
-                        <p class="title" style="padding:0px;"><span class="icon iconfont icon-jiangshirenzheng"></span>其他讲师</p>
-                        <div class="jiangshi_data" style="height: 171.6px; overflow: hidden;">
-                            <div>
-								@foreach($teacher_list as $v)
-								<div class="js_img_data" style="overflow: hidden">
-                                    <a href="/Faculty/show-{{$v->teacher_id}}.html">
-                                        <img src="{{$v->teacher_portrait_src}}" alt="">
-                                        <p><span class="ming">{{$v->name}}</span><span> {{$v->position_name}} </span></p>
-                                    </a>
+
+                            @foreach($article as $k => $v)
+                            <li class="clearfix">
+                                <a target="_blank" href="/show-{{$v->article_id}}.html">
+                                    <img src="{{$v->img}}" alt="{{$v->title}}">
+                                </a>
+                                <div class="scZxListConR">
+                                    <div class="scZxListConRTop">
+                                        <a target="_blank" href="/show-{{$v->article_id}}.html">
+                                            <h2>{{$v->title}}</h2>
+                                            <p>{{$v->title}}</p>
+                                        </a>
+                                    </div>
                                 </div>
-								@endforeach
-                               
-                            </div>
+                            </li>
+                            @endforeach
+                            
+                        </ul>
+
+                        
+
+                    </div><div class="page-box">
+                            <div class="digg">{{$article->links()}}</div>
                         </div>
-                    </div>
                 </div>
                 <style>
                     .right_item_last a:hover {
                         color: #fff;
                     }
+                     
                 </style>
                 <div class="right_container">
                     <script type="text/javascript">
@@ -133,27 +116,8 @@
 							@endforeach
                         </div>
                     </div>
-                    <div class="right_item right_item_3">
-                        <div class="right_item_title">
-                            <h2>推荐讲师</h2>
-                            <a href="/faculty">更多>></a>
-                        </div>
-                        <div class="right_item_content">
-                            <ul>
-							@foreach($teacher_list as $v)
-								<li><a href="/Faculty/show-{{$v->teacher_id}}.html">{{$v->name}}</a></li>
-							@endforeach
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-box right_item">
-					<h4>热门标签</h4>
-						<div class="tags-box clearfix">
-							@foreach($tags as $v)
-							<a href="/tags/show-{{$v['id']}}.html">{{$v['name']}}<i>({{$v['count']}})</i></a>
-							@endforeach
-						</div>
-                    </div>
+                     
+                    
                 </div>
             </div>
         </div>

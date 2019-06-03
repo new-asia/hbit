@@ -57,7 +57,7 @@ var _hmt = _hmt || [];
 </ul>
 </div>
 </div>
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">新班级报名抢座</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">新班级报名抢座</a>
 </div>
 </div>
 <div class="c2">
@@ -155,7 +155,7 @@ var _hmt = _hmt || [];
 </li>
 </ul>
 </div>
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">查看PHP项目详情</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">查看PHP项目详情</a>
 </div>
 </div>
 <div class="c4">
@@ -228,7 +228,7 @@ discuz论坛<br><span>成熟论坛项目</span>
 </li>
 </ul>
 </div>
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">获取全集视频教程（含稀有框架）</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">获取全集视频教程（含稀有框架）</a>
 </div>
 </div>
 <div class="c5">
@@ -238,7 +238,7 @@ discuz论坛<br><span>成熟论坛项目</span>
 </h2>
 {{--师资力量--}}
  @include('home.layouts.faculty')
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">查看更多讲师</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">查看更多讲师</a>
 </div>
 </div>
 <div class="c6" id="hash-dagang" title="php培训 | php开发培训 | php技术培训 | php网站培训 - 鸿博php学院">
@@ -563,7 +563,7 @@ PHP多进程和多线程
 </tr>
 </table>
 </div>
-<a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" rel="nofollow">获取完整课程大纲（PDF版本）</a>
+<a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" rel="nofollow">获取完整课程大纲（PDF版本）</a>
 </div>
 </div>
 <div class="c7">
@@ -576,7 +576,7 @@ PHP多进程和多线程
 <div class="warp">
 {{--合作企业--}}
  @include('home.layouts.CooperativeEnterprise')
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">看看还有哪些企业选择鸿博学员？</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">看看还有哪些企业选择鸿博学员？</a>
 </div>
 </div>
 </div>
@@ -630,7 +630,7 @@ PHP多进程和多线程
 </ul>
 </div>
 <div class="btn-style2">
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">提出其他要求</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">提出其他要求</a>
 </div>
 </div>
 </div>
@@ -673,39 +673,39 @@ PHP多进程和多线程
 </li>
 </ul>
 </div>
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">预约一月免费试听</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">预约一月免费试听</a>
 </div>
 </div>
 <div class="c10">
 <div class="warp">
 <ul class="clearfix">
 <li class="fl">
-<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">点击咨询</a></div>
+<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">点击咨询</a></div>
 <div>
 <p>0基础<br><span>能学会吗？</span></p>
 </div>
 </li>
 <li class="fl">
-<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">点击咨询</a></div>
+<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">点击咨询</a></div>
 <div>
 <p>学完后就业<br><span>能拿多少钱？</span></p>
 </div>
 </li>
 <li class="fl">
-<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">点击咨询</a></div>
+<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">点击咨询</a></div>
 <div>
 <p>学费是多少？</p>
 </div>
 </li>
 <li class="fl">
-<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">点击咨询</a></div>
+<div><a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">点击咨询</a></div>
 <div>
 <p>免费学习资料<br><span>是否可以获取？</span></p>
 </div>
 </li>
 </ul>
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">点击报名</a>
-<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">0学费入学</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">点击报名</a>
+<a rel="nofollow" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">0学费入学</a>
 </div>
 </div>
 
