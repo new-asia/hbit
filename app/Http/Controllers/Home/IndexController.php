@@ -43,7 +43,6 @@ class IndexController extends Controller
     public function faculty(){
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
-
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
@@ -84,7 +83,9 @@ class IndexController extends Controller
     }
 
     public function EmploymentInformation(){
-        return view("api/EmploymentInformation");
+        $employment = new Student();
+        $employment = $employment->Studentlist();
+        return view("api/EmploymentInformation",['employment'=>$employment]);
     }
 
     public function phonebd(){
