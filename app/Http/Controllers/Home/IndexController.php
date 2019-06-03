@@ -15,6 +15,7 @@ class IndexController extends Controller
 {
     public function __construct()
     {
+        view()->composer('home.layouts.faculty','App\Http\Controllers\Home\IndexController@teacher');
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
     }
     public function index(){
@@ -66,12 +67,12 @@ class IndexController extends Controller
 
     public function StudentsStory(){
         $isMobile = $this->isMobile();
-
-        if ($isMobile) {
-            return view('api/StudentsStory');
-        }
         $student = new Student();
         $data = $student->getStudent();
+        if ($isMobile) {
+            return view('api/StudentsStory',['student'=>$data]);
+        }
+
         $advert = new Advert();
         $stu_story = $advert->getAdvert(3);
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);

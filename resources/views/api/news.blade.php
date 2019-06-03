@@ -42,26 +42,6 @@
 
             <div id="slider" class="swiper-container swiper-container-horizontal swiper-container-ios">
                 <div class="swiper-wrapper">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
                 <div class="pagination"></div>
                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -75,53 +55,19 @@
                         <ul>
                             <li>
                                 <a href="/news/show-6457.html">
-                                    <img data-cfsrc="./upload/img/201904121348270277.jpg" src="./upload/img/201904121348270277.jpg">
-                                    <h2>Java学习之final关键字详细解析</h2>
-                                    <p class="intro">学习Java的小伙伴们对于final关键字一定不陌生，他在Java开发中用到的几率是相当的大，在本文将重点讲解这个知识点.......</p>
+                                    <img data-cfsrc="{{$Newest[0]->img}}" src="{{$Newest[0]->img}}">
+                                    <h2>{{$Newest[0]->title}}</h2>
+                                    <p class="intro">{!! mb_substr($Newest[0]->content,0,40,'UTF-8') !!}</p>
                                 </a>
                             </li>
+                            @foreach($Newest as $v)
                             <li>
                                 <a href="/news/show-6456.html">
-                                    <i class="date">04-12</i>
-                                    <span class="text">Python常用高阶函数汇总大解析</span>
+                                    <i class="date">{{$v->add_time}}</i>
+                                    <span class="text">{{$v->title}}</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="/news/show-6455.html">
-                                    <i class="date">04-12</i>
-                                    <span class="text">2019年Java面试试题之跳表</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/news/show-6454.html">
-                                    <i class="date">04-12</i>
-                                    <span class="text">Java学习之构造方法汇总</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/news/show-6453.html">
-                                    <i class="date">04-11</i>
-                                    <span class="text">Python基础学习之多任务-协程详细讲解</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/news/show-6452.html">
-                                    <i class="date">04-11</i>
-                                    <span class="text">Python开发之控制流代码详细解析</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/news/show-6451.html">
-                                    <i class="date">04-11</i>
-                                    <span class="text">Java学习小技巧之利用注解技术检查空指针</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/news/show-6450.html">
-                                    <i class="date">04-11</i>
-                                    <span class="text">大数据HIVE之DDL操作详细解析</span>
-                                </a>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
