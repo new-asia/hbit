@@ -40,7 +40,7 @@ class Article extends Model
     }
 
     public static function recommend(){
-        return parent::where('is_show',1)->orderBy('reading_num','desc')->select('article_id','title')->get();
+        return parent::where('is_show',1)->orderBy('reading_num','desc')->select('reading_num','article_id','title')->get();
     }
 
     public static function Newest(){

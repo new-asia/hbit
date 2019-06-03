@@ -45,7 +45,6 @@ class IndexController extends Controller
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
         $isMobile = $this->isMobile();
-
         if ($isMobile) {
             return view('api/faculty',["teacher"=>$data]);
         } else {

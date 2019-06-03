@@ -16,7 +16,7 @@ class Category extends Model
     public $timestamps = false;
     public $primaryKey ="cid";
    
-    public function ArticleList(){
+    public function ArticleList($datestr){
         $data = $this->get();
         $article_arr = [];
         foreach($data as $k => $v){
@@ -26,7 +26,8 @@ class Category extends Model
             if(!empty( $arr)){
                 foreach($arr as $key => $val){
                     $val->content = $this->subtext(strip_tags($val->content),40);
-                    $val->add_time = date("m月d日",$val->add_time);
+                    $val->add_time = date($datestr,$val->add_time);
+                    $val->reading_num = (int)$val->reading_num;
                     $article_arr[$k][] = $val;
                 }
             }

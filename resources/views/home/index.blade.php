@@ -6,36 +6,23 @@
 <link rel="stylesheet" href="/static/templates/main/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/banner.css" />
 <link rel="stylesheet" href="/static/templates/main/css1/index.css">
-<style>
+<style type="text/css">
     .shadow {
         box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
         transform: translate3d(0, -2px, 0);
     }
-</style>
-<style>
-    .shadow {
-        box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
-        transform: translate3d(0, -2px, 0);
-    }
-
     .shadow_a {
         box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
     }
-
     .bg_position {
         transition: all .3s linear;
     }
-
     .xdlkc_1 {
         display: none;
     }
-
-
     .module_left .title p {
         color: #fff;
     }
-</style>
-<style type="text/css">
     #ie7-warning{background:rgb(255,255,225); position:absolute; top:0; left:0; font-size:12px; color:#333; width:100%; padding:5px 0; text-align:center; z-index:99999; }
 </style>
 <div class="wrapper">
@@ -943,7 +930,7 @@
         <section class="sec hm_plot">
             <div class="hd">
                 <h2 class="hd_tt">豪华师资</h2>
-                <a href="/Faculty.html" class="a_default">查看更多&gt;&gt;</a>
+                <a href="/faculty" class="a_default">查看更多&gt;&gt;</a>
             </div>
 
             {{-- 就业信息 --}}
