@@ -21,7 +21,13 @@ class Student extends Model
             ->select('student_id', 'name','class_name','pay','testimonials','img')
             ->paginate(8);
     }
+    public static function prevID($id){
+        return parent::where('student_id', '<', $id)->where('is_graduate',1)->max('student_id');
+    }
 
+    public static function nextId($id){
+        return parent::where('student_id', '>', $id)->where('is_graduate',1)->min('student_id');
+    }
     public function getStudentLimit($limit){
         return DB::table('student')
             ->leftjoin('class','class.class_id','=','student.class_id')
@@ -65,5 +71,13 @@ class Student extends Model
             ->where('is_graduate',1)
             ->select('student_id', 'name','class_name','pay','company')
             ->paginate($limit);
+    }
+    public function Studentfind($id){
+        return DB::table('student')
+            ->leftjoin('class','class.class_id','=','student.class_id')
+            ->where('is_graduate',1)
+            ->where('student_id',$id)
+            ->select('student_id', 'name','class_name','pay','company','testimonials','sex')
+            ->get();
     }
 }

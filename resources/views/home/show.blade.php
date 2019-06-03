@@ -75,10 +75,10 @@
 </div>
 </div>
 <style>
-					.right_item_last a:hover{
-						color:#fff;
-					}
-				</style>
+    .right_item_last a:hover{
+        color:#fff;
+    }
+</style>
 <div class="right_container">
 <script type="text/javascript">
 	$(function(){
