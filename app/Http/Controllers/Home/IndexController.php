@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Teacher;
 use App\Models\Student;
+use App\Models\Article;
+
 use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
@@ -19,27 +21,28 @@ class IndexController extends Controller
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
     }
     public function index(){
+        
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            $student = new Student();
+            $student_list = $student->getStudentSelect(4,2);
+            
+            $Article = new Article();
+            $Article_list = $Article->getArticleSelect();
+
+
+            return view('api/index',['student_list'=>$student_list,'article_list'=>$Article_list]);
+        }
+
         $advert = new Advert();
         $rotation_chart = $advert->rotation_chart();
+
         $course = new Course();
         $course = $course->cou_index();
-        $isMobile = $this->isMobile();
-        if ($isMobile) {
-            $employment = new Student();
-            $employment = $employment->Studentlist(4);
-            $employment = $employment->toArray();
-            foreach ($employment['data'] as $v){
-                $strlen     = mb_strlen($v->name, 'utf-8');
-                $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
-                $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
-                $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
-                //echo $v->name;
-            }
-            //print_r($employment);die;
-            return view('api/index',['employment'=>$employment['data']]);
-        } else {
-            return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
-        }
+
+        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
+        
         
     }
 
