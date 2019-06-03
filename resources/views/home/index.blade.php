@@ -222,14 +222,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campusjava.html"><h2 class="xkzx_back_java six_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campusjava/show-6457.html"><li>Java学习之final关键字详细解析</li></a>
-                                <a href="/Campusjava/show-6455.html"><li>2019年Java面试试题之跳表</li></a>
-                                <a href="/Campusjava/show-6454.html"><li>Java学习之构造方法汇总</li></a>
-                                <a href="/Campusjava/show-6451.html"><li>Java学习小技巧之利用注解技术检查空指针</li></a>
-                                <a href="/Campusjava/show-6447.html"><li>2019年最新Java常用注释详解</li></a>
-                                <a href="/Campusjava/show-6445.html"><li>一招巧妙解决Java虚拟机中OMM问题</li></a>
-                                <a href="/Campusjava/show-6444.html"><li>Java8新特性引用详细解析</li></a>
-                                <a href="/Campusjava/show-6440.html"><li>Java开发中Struts控制器详细解析</li></a>
+                                @foreach($art_java as $art_java)
+                                <a href="/show-{{$art_java->article_id}}"><li>{{$art_java->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -287,14 +282,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campusphp.html"><h2 class="xkzx_back_php seven_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campusphp/show-6449.html"><li>PHP面向对象详细解析</li></a>
-                                <a href="/Campusphp/show-6438.html"><li>PHP通过Laravel巧妙实现超大文件上传</li></a>
-                                <a href="/Campusphp/show-6433.html"><li>PHP开发之 strpos stripos strrpos strripos的区别</li></a>
-                                <a href="/Campusphp/show-6430.html"><li>2019年最新PHP访问数据缓存处理详细解析</li></a>
-                                <a href="/Campusphp/show-6403.html"><li>2019年最新PHP工厂模式使用方法详解</li></a>
-                                <a href="/Campusphp/show-6400.html"><li>PHP抽象类abstract详细解析</li></a>
-                                <a href="/Campusphp/show-6385.html"><li>PHP环境部署伪静态教程</li></a>
-                                <a href="/Campusphp/show-6382.html"><li>php中TS和NTS都有哪些区别？</li></a>
+                                @foreach($art_php as $art_php)
+                                    <a href="/show-{{$art_php->article_id}}"><li>{{$art_php->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -352,14 +342,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campush5.html"><h2 class="xkzx_back_h5 eight_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campush5/show-4289.html"><li>HTML5中巧妙的利用canvas将网页元素生成图片并成功的保存到本地</li></a>
-                                <a href="/Campush5/show-4262.html"><li>前端HTML框架(frameset)用法详细解析</li></a>
-                                <a href="/Campush5/show-4251.html"><li>for循环+setTimeout的延迟操作详解</li></a>
-                                <a href="/Campush5/show-4248.html"><li>HTML5 Web储存实例解析</li></a>
-                                <a href="/Campush5/show-4243.html"><li>HTML5中webSocket方法详细解析</li></a>
-                                <a href="/Campush5/show-4242.html"><li>WebSocket API详细解析</li></a>
-                                <a href="/Campush5/show-2218.html"><li>Web使用技巧—html高亮显示源码示例</li></a>
-                                <a href="/Campush5/show-67.html"><li>最适合HTML5的四类人</li></a>
+                                @foreach($art_html as $art_html)
+                                    <a href="/show-{{$art_html->article_id}}"><li>{{$art_html->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -573,14 +558,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campuspython.html"><h2 class="xkzx_back_python six_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campuspython/show-6456.html"><li>Python常用高阶函数汇总大解析</li></a>
-                                <a href="/Campuspython/show-6453.html"><li>Python基础学习之多任务-协程详细讲解</li></a>
-                                <a href="/Campuspython/show-6452.html"><li>Python开发之控制流代码详细解析</li></a>
-                                <a href="/Campuspython/show-6446.html"><li>Python基础学习之多任务线程详细解析</li></a>
-                                <a href="/Campuspython/show-6443.html"><li>Python开发之迭代器与装饰器详细解析</li></a>
-                                <a href="/Campuspython/show-6442.html"><li>Python日常学习之基础语法汇总解析</li></a>
-                                <a href="/Campuspython/show-6439.html"><li>Python开发之编辑器汇总</li></a>
-                                <a href="/Campuspython/show-6437.html"><li>2019年最新Python之大话算法详细解析</li></a>
+                                @foreach($art_Python as $art_Python)
+                                    <a href="/show-{{$art_Python->article_id}}"><li>{{$art_Python->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>

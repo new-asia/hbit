@@ -76,7 +76,14 @@ class Article extends Model
             $v->list = $arr;
             
         }
-        
         return $data;
+    }
+    public function art_list($c_id){
+        return DB::table('article')
+            ->where('cid',$c_id)
+            ->orderBy('list_order','desc')
+            ->limit(8)
+            ->select('title','article_id')
+            ->get();
     }
 }

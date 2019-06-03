@@ -40,10 +40,14 @@ class IndexController extends Controller
 
         $advert = new Advert();
         $rotation_chart = $advert->rotation_chart();
-
+        $art = new Article;
+        $art_java = $art->art_list(1);
+        $art_php = $art->art_list(2);
+        $art_html = $art->art_list(4);
+        $art_Python = $art->art_list(5);
         $course = new Course();
         $course = $course->cou_index();
-        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
+        return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course,'art_java'=>$art_java,'art_php'=>$art_php,'art_html'=>$art_html,'art_Python'=>$art_Python]);
     }
 
     public function studentemployment(){
