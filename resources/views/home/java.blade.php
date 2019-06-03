@@ -1,5 +1,4 @@
 {{--头部-css--}}
-{{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" href="/static/templates/main/css/javaee.css" " />
 <link href="/static/templates/main/css/animate.css" type="text/css" rel="stylesheet">
@@ -14,7 +13,7 @@
   <div class="a_banner_pic">
    <ul>
     <li>
-     <a href="{{$advert[0]->picture_url}}"><img src="@if($advert[0]->picture_place == 1) {{$advert[0]->picture_src}} @endif" style="background: url(/static/upload/img/201808101106563570.png);height: 100%;width: 1920px;"/></a>
+      <a href="{{$advert[0]->picture_url}}"><img src="@if($advert[0]->picture_place == 1) {{$advert[0]->picture_src}} @endif" style="height: 100%;width: 1500px;text-align: center;"/></a>
     </li>
    </ul>
   </div>

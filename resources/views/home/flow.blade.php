@@ -185,7 +185,7 @@ ol, ul, li {
 <h2 class="flow_tt"><img src="/static/templates/main/images/flow4.jpg" /></h2>
 <p>所有学员须在开课前1天之前来公司报到，报到时须携带身份证原件，填写学籍卡，签订学员守则。要安排住宿的外地学员请在</p>
 <p>开课三天之前到京（注：节假日除外）并在买好车票告知咨询老师，以便我们提前安排工作人员为您安排住宿。</p>
-<p><a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" style="color:#f00; text-decoration:underline;">查看各校区详细地址</a></p>
+<p><a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" style="color:#f00; text-decoration:underline;">查看各校区详细地址</a></p>
 </div>
 <div class="box_flow">
 <h2 class="flow_tt"><img src="/static/templates/main/images/flow5.jpg" /></h2>
@@ -193,7 +193,7 @@ ol, ul, li {
 <p>1、现金缴纳：您可以到我们的培训中心所在地亲自缴纳。</p>
 <p>2、银行汇款：您可以通过银行汇款或者网银转账的方式补齐学费（参见第二步中的汇款帐号）。</p>
 <p class="p_c">以上为报名流程，如有疑问，欢迎咨询</p>
-<a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a_gd bm_btn">点击咨询</a>
+<a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a_gd bm_btn">点击咨询</a>
 </div>
 </div>
 </div>

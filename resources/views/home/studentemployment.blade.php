@@ -235,16 +235,16 @@
 </div>
 </div>
 <div class="xdl_kczx" id="modain">
-
 <section class="sec hm_plot">
 <div class="hd">
  <h2 class="hd_tt">学员故事</h2>
-<a href="/StudentsStory.html" class="a_default">查看更多&gt;&gt;</a>
+<a href="/StudentsStory" class="a_default">查看更多&gt;&gt;</a>
 </div>
 <div class="plot_con" style="height: 510px;">
 
 <div class="plot_l">
-<a href="/StudentsStory/show-4.html" class="picbox"><img src="{{$student[2]->img}}" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
+<a href="/Studentsdetails?id={{$student[0]->student_id}}" class="picbox">
+    <img src="{{$student[0]->img}}" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
 <p class="p1">{{$student[0]->testimonials}}</p>
 <p class="p2"><span>姓名：{{$student[0]->name}}</span> <span>班级：{{$student[0]->class_name}}</span><span>月薪：{{$student[0]->pay}}</span></p></a>
 </div>
@@ -252,7 +252,7 @@
 <ul>
     @foreach($student as $k=>$v)
         @if($k != 0)
-            <li><a href="/StudentsStory/show-19.html" class="picbox"><img height="140" src="{{$v->img}}"><p>姓名：{{$v->name}}<br>班级：{{$v->class_name}}<br>月薪：{{$v->pay}}</p></a></li>
+            <li><a href="/Studentsdetails?id={{$v->student_id}}" class="picbox"><img height="140" src="{{$v->img}}"><p>姓名：{{$v->name}}<br>班级：{{$v->class_name}}<br>月薪：{{$v->pay}}</p></a></li>
         @endif
     @endforeach
 </ul>

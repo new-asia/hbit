@@ -52,31 +52,31 @@
         <p>html全栈</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=800856702">
+    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>云计算</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=800856702">
+    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>人工智能</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=800856702">
+    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Python课程</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=800856702">
+    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>UI/UE设计</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=800856702">
+    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>更多资源</p>

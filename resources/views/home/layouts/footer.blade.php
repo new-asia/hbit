@@ -35,23 +35,23 @@
             <ul>
                 <li><a class="a_gd" href="/flow" target="_blank">报名流程</a></li>
                 <li><a class="a_gd" href="/ClassInformation" target="_blank">开班信息</a></li>
-                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">来校线路</a></li>
+                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">来校线路</a></li>
             </ul>
         </div>
         <div class="div_list">
             <h3>学习资料</h3>
             <ul>
-                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">在线视频</a></li>
-                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">视频下载</a></li>
-                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">视频播放</a></li>
+                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">在线视频</a></li>
+                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">视频下载</a></li>
+                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">视频播放</a></li>
             </ul>
         </div>
         <div class="div_list">
             <h3>学员故事</h3>
             <ul>
-                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">学员心声</a></li>
+                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">学员心声</a></li>
                 <li><a class="a_gd" href="/StudentsStory" target="_blank">学员生活</a></li>
-                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">学校环境</a></li>
+                <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">学校环境</a></li>
             </ul>
         </div>
         <div class="div_list div_ewm">

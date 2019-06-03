@@ -22,6 +22,19 @@ class Article extends Model
     public static function nextId($id){
         return parent::where('article_id', '>', $id)->where('is_show',1)->min('article_id');
     }
+    
+    public function getall($id){
+        $sql  = "(select * from `cmf_article` where is_show = 1 and find_in_set(".$id.",tags_id) order By list_order desc) as article ";
+        $arr =DB::table(DB::raw($sql))->paginate(11);
+        foreach($arr as $k=>$v){
+            if(mb_strlen($v->content)>200){
+                $newStr = mb_substr(strip_tags(str_replace('&nbsp;','',$v->content)),0,300,"UTF8")."...";
+            }
+            $v->content = $newStr;
+        }
+        return $arr;
+    }
+
 
     public static function relevant($tags_id,$id){
         $relevant = parent::whereIn('tags_id',$tags_id)
@@ -76,7 +89,14 @@ class Article extends Model
             $v->list = $arr;
             
         }
-        
         return $data;
+    }
+    public function art_list($c_id){
+        return DB::table('article')
+            ->where('cid',$c_id)
+            ->orderBy('list_order','desc')
+            ->limit(8)
+            ->select('title','article_id')
+            ->get();
     }
 }

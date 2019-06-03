@@ -63,16 +63,16 @@
                     <a class="left-ico-h5" href="/html5.html" title="HTML5全栈" target="_blank">
                         <span>HTML5全栈</span><i>></i>
                     </a>
-                    <a class="left-ico-linux" href="tencent://message/?Menu=yes&amp;uin=800856702" title="云计算" target="_blank">
+                    <a class="left-ico-linux" href="tencent://message/?Menu=yes&amp;uin=932443281" title="云计算" target="_blank">
                         <span>云计算</span><i>></i>
                     </a>
-                    <a class="left-ico-bigdata" href="tencent://message/?Menu=yes&amp;uin=800856702" title="人工智能" target="_blank">
+                    <a class="left-ico-bigdata" href="tencent://message/?Menu=yes&amp;uin=932443281" title="人工智能" target="_blank">
                         <span>人工智能</span><i>></i>
                     </a>
-                    <a class="left-ico-python" href="tencent://message/?Menu=yes&amp;uin=800856702" title="Python课程" target="_blank">
+                    <a class="left-ico-python" href="tencent://message/?Menu=yes&amp;uin=932443281" title="Python课程" target="_blank">
                         <span>Python课程</span><i>></i>
                     </a>
-                    <a class="left-ico-ui" href="tencent://message/?Menu=yes&amp;uin=800856702" title="UI/UE设计" target="_blank">
+                    <a class="left-ico-ui" href="tencent://message/?Menu=yes&amp;uin=932443281" title="UI/UE设计" target="_blank">
                         <span>UI/UE设计</span><i>></i>
                     </a>
                 </li>
@@ -81,39 +81,39 @@
                 <ul>
                     <li class="banner_up_right" title="">
                         <a href="/java.html" target="_blank" class="a1" title="">课程大纲</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a2" title="">点击报名</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a3" title="">就业薪资</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a4" title="">公开课</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a2" title="">点击报名</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a3" title="">就业薪资</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a4" title="">公开课</a>
                     </li>
                     <li class="banner_up_right" title="">
                         <a href="/php.html" target="_blank" class="a1" title="">课程大纲</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a2" title="">点击报名</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a3" title="">就业薪资</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a4" title="">公开课</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a2" title="">点击报名</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a3" title="">就业薪资</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a4" title="">公开课</a>
                     </li>
                     <li class="banner_up_right" title="">
                         <a href="/html5.html" target="_blank" class="a1" title="">课程大纲</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a2" title="">点击报名</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a3" title="">就业薪资</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a4" title="">公开课</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a2" title="">点击报名</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a3" title="">就业薪资</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a4" title="">公开课</a>
                     </li>
                     <li class="banner_up_right" title="">
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a1" title="">课程大纲</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a2" title="">点击报名</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a3" title="">就业薪资</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a4" title="">公开课</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a1" title="">课程大纲</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a2" title="">点击报名</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a3" title="">就业薪资</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a4" title="">公开课</a>
                     </li>
                     <li class="banner_up_right" title="">
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a1" title="">课程大纲</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a2" title="">点击报名</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a3" title="">就业薪资</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a4" title="">公开课</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a1" title="">课程大纲</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a2" title="">点击报名</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a3" title="">就业薪资</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a4" title="">公开课</a>
                     </li>
                     <li class="banner_up_right" title="">
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a1" title="">课程大纲</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a2" title="">点击报名</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a3" title="">就业薪资</a>
-                        <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank" class="a4" title="">公开课</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a1" title="">课程大纲</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a2" title="">点击报名</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a3" title="">就业薪资</a>
+                        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="a4" title="">公开课</a>
                     </li>
                 </ul>
             </div>
@@ -126,7 +126,7 @@
                 <ul>
                     <li> <a href="/about/abouts.html" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe600;</i> <span>企业简介</span> </a> </li>
                     <li> <a href="/flow.html" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe61d;</i> <span>报名流程</span> </a> </li>
-                    <li class="li_r"> <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe622;</i> <span>来校路线</span> </a> </li>
+                    <li class="li_r"> <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe622;</i> <span>来校路线</span> </a> </li>
                     <li class="li_b"> <a href="/StudentsStory.html" target="_blank"> <i class="iconfont">&#xe61c;</i> <span>学员故事</span> </a> </li>
                     <li class="li_b"> <a href="/Faculty.html" target="_blank"> <i class="iconfont">&#xe64f;</i> <span>豪华师资</span> </a> </li>
                     <li class="li_r li_b"> <a href="/ClassInformation.html" target="_blank"> <i class="iconfont">&#xe602;</i> <span>开班报道</span> </a> </li>
@@ -174,7 +174,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
@@ -184,7 +184,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
@@ -192,7 +192,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
@@ -222,14 +222,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campusjava.html"><h2 class="xkzx_back_java six_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campusjava/show-6457.html"><li>Java学习之final关键字详细解析</li></a>
-                                <a href="/Campusjava/show-6455.html"><li>2019年Java面试试题之跳表</li></a>
-                                <a href="/Campusjava/show-6454.html"><li>Java学习之构造方法汇总</li></a>
-                                <a href="/Campusjava/show-6451.html"><li>Java学习小技巧之利用注解技术检查空指针</li></a>
-                                <a href="/Campusjava/show-6447.html"><li>2019年最新Java常用注释详解</li></a>
-                                <a href="/Campusjava/show-6445.html"><li>一招巧妙解决Java虚拟机中OMM问题</li></a>
-                                <a href="/Campusjava/show-6444.html"><li>Java8新特性引用详细解析</li></a>
-                                <a href="/Campusjava/show-6440.html"><li>Java开发中Struts控制器详细解析</li></a>
+                                @foreach($art_java as $art_java)
+                                <a href="/show-{{$art_java->article_id}}"><li>{{$art_java->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -250,7 +245,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_1">
                                         <div class="bg_position"></div>
@@ -260,7 +255,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_1">
                                         <div class="bg_position"></div>
@@ -268,7 +263,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_1">
                                         <div class="bg_position"></div>
@@ -287,14 +282,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campusphp.html"><h2 class="xkzx_back_php seven_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campusphp/show-6449.html"><li>PHP面向对象详细解析</li></a>
-                                <a href="/Campusphp/show-6438.html"><li>PHP通过Laravel巧妙实现超大文件上传</li></a>
-                                <a href="/Campusphp/show-6433.html"><li>PHP开发之 strpos stripos strrpos strripos的区别</li></a>
-                                <a href="/Campusphp/show-6430.html"><li>2019年最新PHP访问数据缓存处理详细解析</li></a>
-                                <a href="/Campusphp/show-6403.html"><li>2019年最新PHP工厂模式使用方法详解</li></a>
-                                <a href="/Campusphp/show-6400.html"><li>PHP抽象类abstract详细解析</li></a>
-                                <a href="/Campusphp/show-6385.html"><li>PHP环境部署伪静态教程</li></a>
-                                <a href="/Campusphp/show-6382.html"><li>php中TS和NTS都有哪些区别？</li></a>
+                                @foreach($art_php as $art_php)
+                                    <a href="/show-{{$art_php->article_id}}"><li>{{$art_php->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -315,7 +305,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_2">
                                         <div class="bg_position"></div>
@@ -325,7 +315,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_2">
                                         <div class="bg_position"></div>
@@ -333,7 +323,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_2">
                                         <div class="bg_position"></div>
@@ -352,14 +342,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campush5.html"><h2 class="xkzx_back_h5 eight_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campush5/show-4289.html"><li>HTML5中巧妙的利用canvas将网页元素生成图片并成功的保存到本地</li></a>
-                                <a href="/Campush5/show-4262.html"><li>前端HTML框架(frameset)用法详细解析</li></a>
-                                <a href="/Campush5/show-4251.html"><li>for循环+setTimeout的延迟操作详解</li></a>
-                                <a href="/Campush5/show-4248.html"><li>HTML5 Web储存实例解析</li></a>
-                                <a href="/Campush5/show-4243.html"><li>HTML5中webSocket方法详细解析</li></a>
-                                <a href="/Campush5/show-4242.html"><li>WebSocket API详细解析</li></a>
-                                <a href="/Campush5/show-2218.html"><li>Web使用技巧—html高亮显示源码示例</li></a>
-                                <a href="/Campush5/show-67.html"><li>最适合HTML5的四类人</li></a>
+                                @foreach($art_html as $art_html)
+                                    <a href="/show-{{$art_html->article_id}}"><li>{{$art_html->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -367,12 +352,12 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="云计算" src="/static/upload/img/yun.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=932443281"><img alt="云计算" src="/static/upload/img/yun.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
                         <div class="module_right_top">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
@@ -380,7 +365,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
@@ -390,7 +375,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
@@ -398,7 +383,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
@@ -435,12 +420,12 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="人工智能" src="/static/upload/img/intelligent.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=932443281"><img alt="人工智能" src="/static/upload/img/intelligent.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
                         <div class="module_right_top">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
@@ -448,7 +433,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
@@ -458,7 +443,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
@@ -466,7 +451,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
@@ -512,12 +497,12 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="Python课程" src="/static/upload/img/python.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=932443281"><img alt="Python课程" src="/static/upload/img/python.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
                         <div class="module_right_top">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
@@ -525,7 +510,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
@@ -535,7 +520,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
@@ -543,7 +528,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
@@ -573,14 +558,9 @@
                         <a title="查看更多&gt" alt="查看更多&gt" href="/Campuspython.html"><h2 class="xkzx_back_python six_boxs"></h2></a>
                         <div class="kczx_xkzx">
                             <ul>
-                                <a href="/Campuspython/show-6456.html"><li>Python常用高阶函数汇总大解析</li></a>
-                                <a href="/Campuspython/show-6453.html"><li>Python基础学习之多任务-协程详细讲解</li></a>
-                                <a href="/Campuspython/show-6452.html"><li>Python开发之控制流代码详细解析</li></a>
-                                <a href="/Campuspython/show-6446.html"><li>Python基础学习之多任务线程详细解析</li></a>
-                                <a href="/Campuspython/show-6443.html"><li>Python开发之迭代器与装饰器详细解析</li></a>
-                                <a href="/Campuspython/show-6442.html"><li>Python日常学习之基础语法汇总解析</li></a>
-                                <a href="/Campuspython/show-6439.html"><li>Python开发之编辑器汇总</li></a>
-                                <a href="/Campuspython/show-6437.html"><li>2019年最新Python之大话算法详细解析</li></a>
+                                @foreach($art_Python as $art_Python)
+                                    <a href="/show-{{$art_Python->article_id}}"><li>{{$art_Python->title}}</li></a>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -588,12 +568,12 @@
             </div>
             <div class="module_content">
                 <div class="module_left module_left_6 fl_left">
-                    <a href="tencent://message/?Menu=yes&amp;uin=800856702"><img alt="UI/UE设计" src="/static/upload/img/ui.jpg" style="display: block;"></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=932443281"><img alt="UI/UE设计" src="/static/upload/img/ui.jpg" style="display: block;"></a>
                 </div>
                 <div class="module_right fl_right">
                     <div class="fl_left">
                         <div class="module_right_top">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_2 kc_2_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_course.png);background-repeat:repeat;"></div>
@@ -601,7 +581,7 @@
                                     <span>课程大纲</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_1 kc_1_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_baoming.png);background-repeat:repeat;"></div>
@@ -611,7 +591,7 @@
                             </a>
                         </div>
                         <div class="module_right_btn" style="margin-top:10px;">
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left">
                                     <div class="bg_eee bg_eee_5 kc_5_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_jiuye.png);background-repeat:repeat;"></div>
@@ -619,7 +599,7 @@
                                     <span>就业薪资</span>
                                 </div>
                             </a>
-                            <a href="tencent://message/?Menu=yes&amp;uin=800856702" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">
                                 <div class="kczx_item fl_left mr0">
                                     <div class="bg_eee bg_eee_7 kc_7_6">
                                         <div class="bg_position" style="background-image: url(/static/upload/img/java_gongkaike.png);background-repeat:repeat;"></div>
