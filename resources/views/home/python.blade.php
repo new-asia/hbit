@@ -2,6 +2,9 @@
 @include('home.layouts.header')
 <link type="text/css" rel="stylesheet" href="/static/python/css/idangerous.swiper.css">
 <link type="text/css" rel="stylesheet" href="/static/python/css/index.css">
+<link rel="stylesheet" href="http://bj.tedu.cn/liuy/lyly.css" />
+{{--公共js--}}
+@include('home.layouts.script')
 <!--banner轮播图-->
 <div class="fluid_div banner">
 	<div class="swiper-container banner_swiper">
@@ -904,12 +907,12 @@
 
 
 <script src="/static/python/js/jquery.min.js"></script>
-<link rel="stylesheet" href="http://bj.tedu.cn/liuy/lyly.css" />
 <script src="http://bj.tedu.cn/liuy/lyly.js"></script>
 <script src="/static/python/js/idangerous.swiper.min.js" ></script>
-<script src="/static/python/js/js.js" async="async" ></script>
 <script src="/static/python/js/gn_js.js" async="async" ></script>
 <script src="/static/python/js/gx_js.js" async="async" ></script>
+
+<script src="/static/python/js/js.js" async="async" ></script>
 
 
 
