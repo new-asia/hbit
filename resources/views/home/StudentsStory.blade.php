@@ -1,8 +1,7 @@
 {{--头部-css--}}
-{{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
-<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+{{--<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">--}}
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -52,9 +51,18 @@ var _hmt = _hmt || [];
 @endforeach
 </ul>
 <div class="page-box">
-<div class="">
-    {{ $student->links('common.pagination') }}
-</div>
+    <div class="digg">
+        <span>共26记录</span>
+        <span class="disabled">«上一页</span>
+        <span class="current">1</span>
+        <a href="/StudentsStory/0/2.html">2</a>
+        <a href="/StudentsStory/0/3.html">3</a>
+        <a href="/StudentsStory/0/2.html">下一页»</a>
+        {{ $student->links() }}
+    </div>
+
+
+
 </div>
 <script src="/js/newspage.js"></script></ul></div>
 </div>

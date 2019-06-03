@@ -198,7 +198,7 @@
 <script>
     function checkIshanzi() {
         //var patrn = /^[\u2E80-\u9FFF]$/; //Unicode编码中的汉字范围  /[^\x00-\x80]/
-        var s = $('#txtUserName').val();
+        var s = $.trim($('#txtUserName').val());
         var patrn = /[^\x00-\x80]$/;
         if (s.length < 2 | s.length > 10) {
             $('#Tips').html('用户名长度为2-10！')
@@ -213,8 +213,8 @@
     }
     //校验手机号码
     function checkIsTel() {
-        var s = $('#txtUserTel').val();
-        var patrn = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+        var s = $.trim($('#txtUserTel').val());
+        var patrn = /^[1][3-9][0-9]{9}$/;
         if (patrn.exec(s)) {
             $('#Tips').html('')
             return true;
@@ -225,7 +225,7 @@
 
     //验证QQ号码5-11位
     function isQQ() {
-        var qq = $('#txtUserQQ').val();
+        var qq = $.trim($('#txtUserQQ').val());
         var filter = /^\s*[.0-9]{5,11}\s*$/;
         if (!filter.test(qq)) {
             $('#Tips').html('请输入正确的QQ,QQ号码5-11位！')
@@ -269,15 +269,15 @@
             var phonereg = /^[1][3-9][0-9]{9}$/;
             var filter = /^\s*[.0-9]{5,11}\s*$/;
 
-            if (!realnamereg.test(realname.val())) {
-                 alert('请输入正确的姓名！');
+            if (!realnamereg.test($.trim(realname.val()))) {
+                alert('请输入正确的姓名！');
                 return false;
             }
-            if (!phonereg.test(phone.val())) {
+            if (!phonereg.test($.trim(phone.val()))) {
                 alert('请输入正确的手机号！');
                 return false;
             }
-            if (!filter.test(qq.val())) {
+            if (!filter.test($.trim(qq.val()))) {
                 alert('请输入正确的qq号码！');
                 return false;
             }

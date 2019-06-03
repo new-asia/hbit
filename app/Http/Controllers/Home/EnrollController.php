@@ -14,7 +14,6 @@ class EnrollController extends Controller
         if(!$request->isMethod('POST')){
             return redirect()->back();
         }
-
         $validator = \Validator::make($post,[
             'name'=>'required|min:2|max:20',
             'tel'=>'required|integer|digits:11',
