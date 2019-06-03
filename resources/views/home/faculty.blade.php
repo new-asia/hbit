@@ -32,11 +32,11 @@
 <div class="inside-contanier-l-wrap inside2">
 <div class="des-tab-box demo-TabWrap">
 <div class="des-tab-clum demo-TabBody" style="display:block;">
- @foreach($teacher as $v)
+@foreach($teacher as $v)
    <div class="disList">
-   <div class="dLleft f_l"><a target="_blank" href="/Faculty/show-3.html"><img src="{{$v->teacher_portrait_src}}" width="180" alt="{{$v->name}}" /></a></div>
+   <div class="dLleft f_l"><a target="_blank" href="/Faculty/show-{{$v->teacher_id}}.html"><img src="{{$v->teacher_portrait_src}}" width="180" alt="{{$v->name}}" /></a></div>
    <div class="dLright f_l">
-   <a target="_blank" href="/show-3.html"><p><strong>{{$v->name}}</strong></p></a>
+   <a target="_blank" href="/Faculty/show-{{$v->teacher_id}}.html"><p><strong>{{$v->name}}</strong></p></a>
    <p><span>{{$v->position_name}}</span></p>
    <p><b>工作年限：</b><span>{{$v->obtain_employment_time}}</span></p>
    <p><b>擅长领域：</b>{{$v->field}}</p>
