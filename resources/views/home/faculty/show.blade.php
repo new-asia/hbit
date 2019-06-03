@@ -19,7 +19,7 @@
                             <div class="js_xingming">
                                 <p>{{$teacher->position_name}}</p>
                                 <div><span>{{$teacher->obtain_employment_time}}</span>
-                                    <h1 class="name">{{$teacher->name}}</h1>experience
+                                    <h1 class="name">{{$teacher->name}}</h1>
                                 </div>
                                 <span>|</span>
                             </div>
@@ -136,7 +136,7 @@
                     <div class="right_item right_item_3">
                         <div class="right_item_title">
                             <h2>推荐讲师</h2>
-                            <a href="/Faculty.html">更多>></a>
+                            <a href="/faculty">更多>></a>
                         </div>
                         <div class="right_item_content">
                             <ul>

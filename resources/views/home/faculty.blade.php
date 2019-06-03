@@ -132,7 +132,7 @@
 <div class="right_item right_item_3">
 <div class="right_item_title">
 <h2>推荐讲师</h2>
-<a href="/Faculty.html">更多>></a>
+<a href="/Faculty">更多>></a>
 </div>
 <div class="right_item_content">
 <ul>
