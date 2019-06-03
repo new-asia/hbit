@@ -50,11 +50,14 @@ class NavController extends Controller
             $title = new Title();
             foreach ($nav as $v){
                 if($route == $v->href){
-                    $titles = $title->title_list($v->id);
-                    $titles = $titles[0]->title;
+                    $navtitle = $title->title_list($v->id);
+                    if(!empty($navtitle->items)){
+                        $titles = $titles[0]->title;
+                    }
                 }
             }
         }
+
         $view->with(['nav'=>$nav,'title'=>$titles]);
     }
 

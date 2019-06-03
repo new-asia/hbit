@@ -30,4 +30,13 @@ class Teacher extends Model
             ->select('teacher_id', 'name','position_name','teacher_portrait_src','details')
             ->get();
     }
+
+    public static function one($id){
+        return DB::table('teacher')
+            ->leftjoin('position','position.position_id','=','teacher.position_id')
+            ->where('teacher_id',$id)
+            ->take(1)
+            ->select('teacher_id', 'name','position_name','teacher_portrait_src','details','obtain_employment_time','field','experience','teacher_style')
+            ->get();
+    }
 }

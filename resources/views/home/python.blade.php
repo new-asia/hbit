@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
-	<title>鸿博python培训班_鸿博python培训课程_北京python培训机构</title>
-	<meta name="description" content="北京鸿博python培训班邀您学习python编程语言，学python全栈式开发+人工智能变身走在时代前端，收获Python项目实战经验，成为优秀AI高手，学python开发就找鸿博北京Python培训机构。
-" />
-	<meta name="keywords" content="鸿博python培训班，鸿博python培训课程，北京python培训机构"/>
-	<link type="text/css" rel="stylesheet" href="/static/python/css/idangerous.swiper.css">
-	<link type="text/css" rel="stylesheet" href="/static/python/css/index.css">
-</head>
-
-<body>
-<div class="header">
-	<div class="header-top">
-		<div class="main clearfix">
-			<a href="#" target="_blank"><img class="logo" src="/static/upload/img/201802032231514431.png" /></a>
-			<p class="logo-text">教育机构<br/>
-				鸿博Python+人工智能学院</p>
-			<p class="phone">课程咨询：010-5723333<br/>	</p>
-		</div>
-	</div>
-</div>
-<!--nav-->
-<div class="nav_box">
-	<ul class="clear_fix nav_ul">
-		<li class="nav_selected"><a href="index.html" target="_blank">首页 <span></span></a></li>
-		<li><a href="#adv" target="_blank">课程优势 <span></span></a></li>
-		<li><a href="#project" target="_blank">实战项目 <span></span></a></li>
-		<li><a href="#class" target="_blank">课程内容 <span></span></a></li>
-		<li><a href="#teacher" target="_blank">师资力量 <span></span></a></li>
-		<li><a href="dnpp/" target="_blank">了解鸿博 <span></span></a></li>
-	</ul>
-</div>
+{{--头部-css--}}
+@include('home.layouts.header')
+<link type="text/css" rel="stylesheet" href="/static/python/css/idangerous.swiper.css">
+<link type="text/css" rel="stylesheet" href="/static/python/css/index.css">
+<link rel="stylesheet" href="http://bj.tedu.cn/liuy/lyly.css" />
+{{--公共js--}}
+@include('home.layouts.script')
 <!--banner轮播图-->
 <div class="fluid_div banner">
 	<div class="swiper-container banner_swiper">
@@ -857,11 +828,11 @@
 		<small class="c6">鸿博特惠：1元即刻领取两周课程</small>
 	</h2>
 	<div class="global_div">
-		<form id="informm" name="form"  action="http://liuyan.bj.tedu.cn/plus/diy.php" target="actionframe" enctype="multipart/form-data" method="post">			
+		<form id="informm" name="form"  action="http://liuyan.bj.tedu.cn/plus/diy.php" target="actionframe" enctype="multipart/form-data" method="post">
 			<input type="hidden" name="action" value="post" />
 			<input type="hidden" name="diyid" value="1" />
-			<input type="hidden" name="do" value="2" />	
-		
+			<input type="hidden" name="do" value="2" />
+
 			<div class="topBox">
 				<div class="th1 clearfix">
 					<img src="http://bj.tedu.cn/liuy/img/icon01.png" width="54" height="40" class="fl"/>
@@ -870,13 +841,13 @@
 				<div class="th1 clearfix">
 					<img src="http://bj.tedu.cn/liuy/img/icon02.png" width="54" height="40" class="fl"/>
 					<input class="text fl" type="text"  name="phone" id="phonee" placeholder="请输入您的电话"/>
-					
+
 					<div class="fr" id="getcodee">
 						<b></b>
 						<p>获取验证码</p>
 					</div>
 				</div>
-				
+
 				<div class="th1 clearfix">
 					<img src="http://bj.tedu.cn/liuy/img/icon03.png" width="54" height="40" class="fl"/>
 					<input class="text fl"  type="text"  id='phoneCodee' placeholder="请输入手机验证码" value=""/>
@@ -884,15 +855,15 @@
 				<div class="btn_wrap clear_fix">
 					<a href="http://tb.53kf.com/code/client/10028340/7" class="btn_more">咨询更多</a>
 					<button type="submit" class="btn_submit" id="submsgg"  name="submit">点击提交获取名额</button>
-				</div>			
-			</div>						
+				</div>
+			</div>
 			<input type="hidden" id="urlBott"  name="url"  value=""/>
 			<input type="hidden" id="timeBott" name="time" value="" />
 			<input type="hidden" name="dede_fields" value="name,text;phone,text;qq,text;url,text;time,text" />
-			<input type="hidden" name="dede_fieldshash" value="8a472f2ab0cb5ce64dba5a9e3db105bd" />	
+			<input type="hidden" name="dede_fieldshash" value="8a472f2ab0cb5ce64dba5a9e3db105bd" />
 			<iframe width="0" height="0" name="actionframe" type="“hidden”" style="display:none"></iframe>
 		</form>
-		
+
 	</div>
 </div>
 
@@ -906,28 +877,28 @@
 			<form id="inform" name="form"  action="http://liuyan.bj.tedu.cn/plus/diy.php" target="actionframe" enctype="multipart/form-data" method="post">
 				<input type="hidden" name="action" value="post" />
 				<input type="hidden" name="diyid" value="1" />
-				<input type="hidden" name="do" value="2" />						
+				<input type="hidden" name="do" value="2" />
 				<div class="fl">
 					<img src="http://bj.tedu.cn/liuy/img/icon1.png" width="36" height="28" class="fl"/>
 					<input class="text fl" type="text"  name="name" id="name" placeholder="如何称呼您"/>
-				</div>						
+				</div>
 				<div class="fl">
 					<img src="http://bj.tedu.cn/liuy/img/icon3.png" width="37" height="28" class="fl"/>
 					<input class="text fl" type="text"  name="phone" id="phone" placeholder="您的手机"/>
-				</div>						
+				</div>
 				<div class="fl" id="getcode">点击获取验证码</div>
 				<div class="fl">
-					<img src="http://bj.tedu.cn/liuy/img/icon2.png" width="39" height="28" class="fl"/>							
+					<img src="http://bj.tedu.cn/liuy/img/icon2.png" width="39" height="28" class="fl"/>
 					<input class="text fl"  type="text"  id='phoneCode' placeholder="手机验证码" value=""/>
-				</div>		
+				</div>
 				<input class="submit fl" type="submit" value=""  name="submit" id="submsg"/>
-				
+
 				<input type="hidden" id="urlBot"  name="url"  value=""/>
 				<input type="hidden" id="timeBot" name="time" value="" />
 				<input type="hidden" name="dede_fields" value="name,text;phone,text;qq,text;url,text;time,text" />
-				<input type="hidden" name="dede_fieldshash" value="8a472f2ab0cb5ce64dba5a9e3db105bd" />	
-			
-			</form>	
+				<input type="hidden" name="dede_fieldshash" value="8a472f2ab0cb5ce64dba5a9e3db105bd" />
+
+			</form>
 		</div>
 	</div>
 </div>
@@ -936,12 +907,12 @@
 
 
 <script src="/static/python/js/jquery.min.js"></script>
-<link rel="stylesheet" href="http://bj.tedu.cn/liuy/lyly.css" />
 <script src="http://bj.tedu.cn/liuy/lyly.js"></script>
 <script src="/static/python/js/idangerous.swiper.min.js" ></script>
-<script src="/static/python/js/js.js" async="async" ></script>
 <script src="/static/python/js/gn_js.js" async="async" ></script>
 <script src="/static/python/js/gx_js.js" async="async" ></script>
+
+<script src="/static/python/js/js.js" async="async" ></script>
 
 
 

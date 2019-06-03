@@ -43,4 +43,7 @@ Route::namespace('Home')->group(function () {
 
     Route::get('/EmploymentInformation', 'IndexController@employmentInformation');
     Route::get('/phonebd', 'IndexController@phonebd');
+
+    //教师详情
+    Route::get('/Faculty/show-{id}.html', 'FacultyController@show');
 });
