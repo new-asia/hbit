@@ -32,11 +32,11 @@ class Student extends Model
             ->get();
     }
 
-    public function Studentlist(){
+    public function Studentlist($limit){
         return DB::table('student')
             ->leftjoin('class','class.class_id','=','student.class_id')
             ->where('is_graduate',1)
             ->select('student_id', 'name','class_name','pay','company')
-            ->paginate(20);
+            ->paginate($limit);
     }
 }

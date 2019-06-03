@@ -102,118 +102,23 @@
     <div class="header">
       <img src="/templates/mobile/src/icons/header_icon.png" class="header-icon">
       <strong>就业信息</strong>
-      <a href="/EmploymentInformation.blade.php">更多信息 &gt;&gt;</a>
+      <a href="/EmploymentInformation">更多信息 &gt;&gt;</a>
     </div>
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);height:60%">
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="work-contenr">
+              @foreach($employment as $item)
               <a href="#">
                 <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>25000</strong></p>
-                  <p><span>姓名：</span><em>王**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
+                  <p style="color: black;"><span>入职企业：</span><em>{{$item->company}}</em></p>
+                  <p><span>月薪：</span> <strong>{{$item->pay}}</strong></p>
+                  <p><span>姓名：</span><em>{{$item->name}}</em></p>
+                  <p><span>班级：</span><em>{{$item->class_name}}</em></p>
                 </div>
               </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>15000</strong></p>
-                  <p><span>姓名：</span><em>石**</em></p>
-                  <p><span>班级：</span><em>PHP全栈</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>20000</strong></p>
-                  <p><span>姓名：</span><em>王**月</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>18000</strong></p>
-                  <p><span>姓名：</span><em>秦**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-next" style="width: 355px;">
-            <div class="work-contenr">
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>16000</strong></p>
-                  <p><span>姓名：</span><em>苏**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>15000</strong></p>
-                  <p><span>姓名：</span><em>李**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>26000</strong></p>
-                  <p><span>姓名：</span><em>张**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>17000</strong></p>
-                  <p><span>姓名：</span><em>乔**</em></p>
-                  <p><span>班级：</span><em>PHP全栈</em></p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-slide" style="width: 355px;">
-            <div class="work-contenr">
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>15000</strong></p>
-                  <p><span>姓名：</span><em>董**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>17000</strong></p>
-                  <p><span>姓名：</span><em>赵**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>16000</strong></p>
-                  <p><span>姓名：</span><em>朱**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
-              <a href="#">
-                <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em></em></p>
-                  <p><span>月薪：</span> <strong>15000</strong></p>
-                  <p><span>姓名：</span><em>王**</em></p>
-                  <p><span>班级：</span><em>java大数据</em></p>
-                </div>
-              </a>
+              @endforeach
             </div>
           </div>
         </div>

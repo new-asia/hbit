@@ -22,9 +22,19 @@ class IndexController extends Controller
         $course = new Course();
         $course = $course->cou_index();
         $isMobile = $this->isMobile();
-
         if ($isMobile) {
-            return view('api/index');
+            $employment = new Student();
+            $employment = $employment->Studentlist(4);
+            $employment = $employment->toArray();
+            foreach ($employment['data'] as $v){
+                $strlen     = mb_strlen($v->name, 'utf-8');
+                $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
+                $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
+                $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
+                //echo $v->name;
+            }
+            //print_r($employment);die;
+            return view('api/index',['employment'=>$employment['data']]);
         } else {
             return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
         }
@@ -78,8 +88,15 @@ class IndexController extends Controller
 
     public function EmploymentInformation(){
         $employment = new Student();
-        $employment = $employment->Studentlist();
-        return view("api/EmploymentInformation",['employment'=>$employment]);
+        $employment = $employment->Studentlist(20);
+        $employment = $employment->toArray();
+        foreach ($employment['data'] as $v){
+            $strlen     = mb_strlen($v->name, 'utf-8');
+            $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
+            $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
+            $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
+        }
+        return view("api/EmploymentInformation",['employment'=>$employment['data']]);
     }
 
     public function phonebd(){
