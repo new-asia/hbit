@@ -52,13 +52,18 @@ var _hmt = _hmt || [];
 </ul>
 <div class="page-box">
     <div class="digg">
-        <span>共26记录</span>
-        <span class="disabled">«上一页</span>
-        <span class="current">1</span>
-        <a href="/StudentsStory/0/2.html">2</a>
-        <a href="/StudentsStory/0/3.html">3</a>
-        <a href="/StudentsStory/0/2.html">下一页»</a>
-        {{ $student->links() }}
+        <span>共{{$student->toArray()['total']}}记录</span>
+        <a @if($student->toArray()['current_page'] == 1)style="color:#ddd;border-color: #ddd;" @endif href="@if($student->toArray()['current_page'] == 1)javascript:;@else{{$student->toArray()['prev_page_url']}}@endif"  >«上一页</a>
+        @for($i=1;$i<=$student->toArray()['last_page'];$i++)
+
+        @if($student->toArray()['current_page'] == $i)
+                <span class="current">{{$i}}</span>
+        @else
+                <a class="current" href="/StudentsStory?page={{$i}}">{{$i}}</a>
+        @endif
+
+        @endfor
+        <a href="{{$student->toArray()['next_page_url']}}">下一页»</a>
     </div>
 
 
