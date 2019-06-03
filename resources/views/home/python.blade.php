@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="renderer" content="webkit">
-	<title>鸿博python培训班_鸿博python培训课程_北京python培训机构</title>
-	<meta name="description" content="北京鸿博python培训班邀您学习python编程语言，学python全栈式开发+人工智能变身走在时代前端，收获Python项目实战经验，成为优秀AI高手，学python开发就找鸿博北京Python培训机构。
-" />
-	<meta name="keywords" content="鸿博python培训班，鸿博python培训课程，北京python培训机构"/>
-
-</head>
-
-<body>
 {{--头部-css--}}
-@include('home.layouts.EmploymentInfo')
-<div class="header">
-	<div class="header-top">
-		<div class="main clearfix">
-			<a href="#" target="_blank"><img class="logo" src="/static/upload/img/201802032231514431.png" /></a>
-			<p class="logo-text">教育机构<br/>
-				鸿博Python+人工智能学院</p>
-			<p class="phone">课程咨询：010-5723333<br/>	</p>
-		</div>
-	</div>
-</div>
-<!--nav-->
-<div class="nav_box">
-	<ul class="clear_fix nav_ul">
-		<li class="nav_selected"><a href="index.html" target="_blank">首页 <span></span></a></li>
-		<li><a href="#adv" target="_blank">课程优势 <span></span></a></li>
-		<li><a href="#project" target="_blank">实战项目 <span></span></a></li>
-		<li><a href="#class" target="_blank">课程内容 <span></span></a></li>
-		<li><a href="#teacher" target="_blank">师资力量 <span></span></a></li>
-		<li><a href="dnpp/" target="_blank">了解鸿博 <span></span></a></li>
-	</ul>
-</div>
+@include('home.layouts.header')
 <link type="text/css" rel="stylesheet" href="/static/python/css/idangerous.swiper.css">
 <link type="text/css" rel="stylesheet" href="/static/python/css/index.css">
 <!--banner轮播图-->

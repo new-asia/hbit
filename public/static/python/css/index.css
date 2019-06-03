@@ -6,7 +6,6 @@ html{
     margin: 0;
     border: none;
     list-style: none;
-    box-sizing: border-box;
     outline: none;
 }
 ul{
@@ -24,12 +23,12 @@ body{
 }
 
 
-/*覆盖浏览器默认样式*/
+/*!*覆盖浏览器默认样式*!*/
 a{text-decoration:none;}
 a:hover,a:focus{text-decoration:none !important;}
 
 
-/*共用样式*/
+/*!*共用样式*!*/
 .font_w{font-weight: bold;}
 .img_wrap > img{
     width: 100%;
@@ -58,7 +57,7 @@ a:hover,a:focus{text-decoration:none !important;}
     clear: both;
 }
 
-/*统一样式*/
+/*!*统一样式*!*/
 .f1{font-size: 14px;}
 .f2{font-size: 16px;}
 .f3{font-size: 18px;}
@@ -84,7 +83,7 @@ a:hover,a:focus{text-decoration:none !important;}
 #bg3 .topBox{margin: 20px auto 0;}
 
 
-/*div*/
+/*!*div*!*/
 .fluid_div{width:100%;}
 .global_div{
     width:1030px;
@@ -94,11 +93,11 @@ a:hover,a:focus{text-decoration:none !important;}
 }
 
 /*header*/
-/*.header{
+.header{
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: left;
-}*/
+}
 .header{
 	width: 1024px;
 	margin: 0 auto;
@@ -106,14 +105,14 @@ a:hover,a:focus{text-decoration:none !important;}
 .header-top{
     height:102px;
 }
-.logo{
+/*.logo{
     float:left;
     margin-top:30px;
     padding-right:22px;
     height:44px;
     display:block;
     border-right:1px solid #dbdbdb;
-}
+}*/
 .logo-text{
     float:left;
     margin-top:37px;
@@ -541,7 +540,7 @@ ul.gn_ul li.select_11 span{
     padding:10px 0 10px 0;
 }
 .gn_center p >img{
-	width: 100%;} 
+	width: 100%;}
 
 /*案例*/
 .al_div{
@@ -592,8 +591,8 @@ ul.al_ul li >div > img{ width: 100%; display: block;  transform: rotateY(0deg);}
     -webkit-transition: top .3s ease-out;
     transition: all 0.5s ease-in-out 0s;
 }
-ul.al_ul li.selected >div > img{ 
-	width: 100%; display: block;  
+ul.al_ul li.selected >div > img{
+	width: 100%; display: block;
 	transform: rotateY(90deg);
 	transition: all 0.5s ease-in-out 0s;
 	}
@@ -779,7 +778,7 @@ ul.ys_lu li >p{
 	position: relative;
 	height: 58px;
 	line-height: 58px;
-	
+
 }
 .sj_ul li > span{
 	position: absolute;
@@ -885,7 +884,7 @@ ul.sj_content li{
 	padding-top: 50px;
 }
 .xuexi_left{
- width:500px; 
+ width:500px;
  margin-bottom:60px;
 }
 .xuexi_right{
@@ -1314,7 +1313,7 @@ ul.gx_xuesheng_ul li.gx_selected img{
    background:rgba(0,0,0,0.5);
    text-align: center;
   padding-top: 32px;
-  
+
 }
 
 .xuexi_icon_ul{
@@ -1434,5 +1433,5 @@ footer{
 	text-align: center;
 	font-size: 16px;
 	padding: 34px;
-	
+
 }
