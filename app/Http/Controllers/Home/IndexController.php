@@ -28,15 +28,16 @@ class IndexController extends Controller
             $employment = new Student();
             $employment = $employment->Studentlist(4);
             $employment = $employment->toArray();
+            $api_chart = $advert->api_chart();
             foreach ($employment['data'] as $v){
                 $strlen     = mb_strlen($v->name, 'utf-8');
                 $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
                 $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
                 $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
-                //echo $v->name;
             }
+
             //print_r($employment);die;
-            return view('api/index',['employment'=>$employment['data']]);
+            return view('api/index',['rotation_chart'=>$api_chart,'employment'=>$employment['data']]);
         } else {
             return view('home/index',['rotation_chart'=>$rotation_chart,'course'=>$course]);
         }

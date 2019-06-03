@@ -24,21 +24,11 @@
   @include('api.layouts.nav')
   <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
     <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
-      <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
-        <img src="/upload/img/201807041449210059.png" alt="轮播" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;">
-        <img src="/upload/img/201810091621479219.jpg" alt="轮播" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 375px;">
-        <img src="/upload/img/201812100834246382.jpg" alt="轮播" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 375px;">
-        <img src="/upload/img/201807041449210059.png" alt="轮播" class="img-responsive">
-      </div>
-      <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 375px;">
-        <img src="/upload/img/201810091621479219.jpg" alt="轮播" class="img-responsive">
-      </div>
+      @foreach($rotation_chart as $items)
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
+          <img src="{{$items->picture_src}}" alt="轮播" class="img-responsive">
+        </div>
+      @endforeach
     </div>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   </div>
@@ -122,7 +112,11 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        <div class="swiper-pagination swiper-pagination-bullets">
+          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+          <span class="swiper-pagination-bullet"></span>
+          <span class="swiper-pagination-bullet"></span>
+        </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
     </div>

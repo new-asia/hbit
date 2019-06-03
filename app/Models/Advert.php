@@ -31,4 +31,12 @@ class Advert extends Model
             ->select('picture_src','picture_place','picture_url')
             ->get();
     }
+    public function api_chart(){
+        return DB::table('picture')
+            ->where('status',1)
+            ->where('is_advert',0)
+            ->where('is_api',1)
+            ->select('picture_src','picture_place','picture_url')
+            ->get();
+    }
 }

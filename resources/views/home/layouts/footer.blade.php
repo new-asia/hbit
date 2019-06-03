@@ -56,13 +56,13 @@
         </div>
         <div class="div_list div_ewm">
             <div class="ewmbox"><span class="iconbox iconbox2"><i class="iconfont"></i></span><span class="icon_tt">微信公众号</span>
-                <div class="ewm" style="display: none;"><img src="static/upload/img/wx_cz.jpg">
+                <div class="ewm" style="display: none;"><img width="150" src="static/upload/img/wx_cz.jpg">
                     <p><span>扫描二维码</span><br>
                         关注鸿博微信公众账号</p>
                 </div>
             </div>
             <div class="ewmbox"><span class="iconbox iconbox3"><i class="iconfont"></i></span><span class="icon_tt">新浪微博</span>
-                <div class="ewm" style="display: none;"><img src="static/upload/img/wx_cz.jpg">
+                <div class="ewm" style="display: none;"><img width="150" src="static/upload/img/wx_cz.jpg">
                     <p><span>扫描二维码</span><br>
                         关注鸿博新浪微博账号</p>
                 </div>

@@ -46,7 +46,7 @@
 
 
                 <div id="slideBox" class="slideBox">
-                    <div class="bd">
+                    <div class="bd" id="bd">
                         <ul>
                             @foreach($rotation_chart as $item)
                                 @if($item->picture_place == 0)
@@ -1124,6 +1124,9 @@
             $(this).removeClass('shadow');
         }
     })
+
+
+
 </script>
 
 

@@ -36,7 +36,7 @@
         <div class="nav_bg clear" title="">
             <div class="base">
                 <div class="logo">
-                    <a href="/index.html" target="_blank" title="鸿博IT教育-匠心打造,品质铸就"><img src="/static/upload/img/201802032231514431.png"></a>
+                    <a href="/" target="_blank" title="鸿博IT教育-匠心打造,品质铸就"><img src="/static/upload/img/201802032231514431.png"></a>
                 </div>
                 <img src="/static/upload/img/nav_r_ico.png" class="index_nav_r" />
             </div>
