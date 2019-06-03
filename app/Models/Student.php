@@ -14,14 +14,19 @@ class Student extends Model
     protected $table = 'student';
     public $timestamps = false;
     public $primaryKey ="student_id";
-    public function getStudent(){
+    public function getStudentPage($page){
         return DB::table('student')
             ->leftjoin('class','class.class_id','=','student.class_id')
             ->where('is_graduate',1)
             ->select('student_id', 'name','class_name','pay','testimonials','img')
-            ->paginate(8);
+            ->paginate(8,$columns = ['*'], $pageName = '', $page);
     }
-
+    public function MaxPage(){
+        $num = parent::leftjoin('class','class.class_id','=','student.class_id')
+            ->where('is_graduate',1)
+            ->count();
+        return ceil($num/8);
+    }
     public function getStudentLimit($limit){
         return DB::table('student')
             ->leftjoin('class','class.class_id','=','student.class_id')

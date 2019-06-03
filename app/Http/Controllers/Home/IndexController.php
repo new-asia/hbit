@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Teacher;
 use App\Models\Student;
 use App\Models\Article;
-
+use Illuminate\Http\Request;
 use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
@@ -75,10 +75,13 @@ class IndexController extends Controller
         $view->with(['data'=>$data]);
     }
 
-    public function StudentsStory(){
-        $isMobile = $this->isMobile();
+    public function StudentsStory(Request $request){
         $student = new Student();
-        $data = $student->getStudent();
+        $MaxPage = $student->MaxPage();
+        $page = (int)$request->input('page') > 0 ? (int)$request->input('page') : 1;
+        $page = $page > $MaxPage ? $MaxPage : $page;
+        $isMobile = $this->isMobile();
+        $data = $student->getStudentPage($page);
         if ($isMobile) {
             return view('api/StudentsStory',['student'=>$data]);
         }
@@ -87,6 +90,7 @@ class IndexController extends Controller
         $stu_story = $advert->getAdvert(3);
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);
     }
+
 
     public function idea()
     {

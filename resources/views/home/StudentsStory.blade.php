@@ -2,7 +2,7 @@
 {{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css/other.css" />
-
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -52,8 +52,8 @@ var _hmt = _hmt || [];
 @endforeach
 </ul>
 <div class="page-box">
-<div class="digg">
-    {{ $student->links() }}
+<div class="">
+    {{ $student->links('common.pagination') }}
 </div>
 </div>
 <script src="/js/newspage.js"></script></ul></div>
