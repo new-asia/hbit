@@ -64,7 +64,7 @@
 <div class="right_item right_item_4">
 <div class="lfMflf">
 <div class="lfMflfTit">提交报名</div>
-<form class="rightform1" id="feedback_form" onsubmit="return checkSubmit()" name="feedback_form" url="" action="{{url('apply')}}" method="post" novalidate>
+<form class="rightform1" id="feedback_form"  name="feedback_form" url="" action="{{url('apply')}}" method="post" novalidate>
    @csrf
    <input type="text" placeholder="请输入您的姓名" onblur="checkIshanzi()" name="name" id="txtUserName">
    <input type="text" placeholder="请输入您的电话" onblur="checkIsTel()"  name="tel" id="txtUserTel" size="5" maxlength="11">
@@ -81,7 +81,7 @@
          <option value="{{$v->course_id}}">{{$v->course_name}}</option>
       @endforeach
    </select>
-   <input id="btnSubmit" type="submit" class="lfMflfBtn" value="提交申请" />
+   <input id="btnSubmit" type="button" onclick="check()" class="lfMflfBtn" value="提交申请" />
 </form>
 
    <div class="form-group" style="margin-left: 50px;">
@@ -170,7 +170,7 @@
         var s = $('#txtUserName').val();
         var patrn = /[^\x00-\x80]$/;
         if(s.length < 2 | s.length >10){
-            $('#Tips').html('用户名长度为2-10！')
+            $('#Tips').html('请输入正确的姓名,用户名长度为2-10！')
             return false
         }
         if (!patrn.exec(s)){
@@ -224,12 +224,47 @@
         $('#Tips').html('')
         return true;
     }
-    
-    function checkSubmit() {
-        if(!checkIshanzi() || !checkIsTel() || !isQQ() || !checkCampus() || !checkCourse()){
-            $('#Tips').html('请填写完整的报名信息！')
+    function check() {
+        var realname = $("#txtUserName");
+        var phone = $("#txtUserTel");
+
+        var qq = $("#txtUserQQ");
+        var Campus = $("#txtUserCampus");
+        var Course = $("#txtCourse");
+
+        var realnamereg = /^[\u4E00-\u9FA5]+$/;
+        var phonereg = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+        // var phonereg = /^[1][3-9][0-9]9$/;
+        var filter = /^\s*[.0-9]{5,11}\s*$/;
+
+        if (!realnamereg.test(realname.val())) {
+            alert('请输入正确的姓名！');
             return false;
         }
-        return true;
+        if (!phonereg.test(phone.val())) {
+            alert('请输入正确的手机号！');
+            return false;
+        }
+        if (!filter.test(qq.val())) {
+            alert('请输入正确的qq号码！');
+            return false;
+        }
+        if (parseInt(Campus.val()) <= 0) {
+            alert('请选择上课地址');
+            return false;
+        }
+        if (parseInt(Course.val()) <= 0) {
+            alert('请选择学科!');
+            return false;
+        }
+        else {
+            $("#feedback_form").submit();
+            alert('申请成功！\r\n咨询客服人员将会主动联系您，请耐心等待！');
+            realname.val('');
+            phone.val('');
+            qq.val('');
+            Course.val('0');
+            Campus.val('0');
+        }
     }
 </script>

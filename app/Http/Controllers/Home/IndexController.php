@@ -10,6 +10,7 @@ use App\Models\Advert;
 use App\Models\Course;
 use App\Models\Tags;
 use App\Models\Campus;
+use Illuminate\View\View;
 class IndexController extends Controller
 {
     public function __construct()
@@ -57,6 +58,11 @@ class IndexController extends Controller
             $courses = Course::getAllCourse();
             return view('home/faculty',['teacher'=>$data,'campus'=>$campus,'courses'=>$courses,'advert'=>$advert,'course'=>$course,'tags'=>$Tags]);
         }
+    }
+    public function teacher(View $view){
+        $teacher = new Teacher();
+        $data = $teacher->getTeacherLimit(5);
+        $view->with(['data'=>$data]);
     }
 
     public function StudentsStory(){
