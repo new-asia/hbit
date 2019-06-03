@@ -40,7 +40,7 @@ class Article extends Model
     }
 
     public static function recommend(){
-        return parent::where('is_show',1)->orderBy('reading_num','desc')->select('article_id','title')->get();
+        return parent::where('is_show',1)->orderBy('reading_num','desc')->select('reading_num','article_id','title')->get();
     }
 
     public static function Newest(){
@@ -49,5 +49,34 @@ class Article extends Model
             $v['add_time'] = date('m-d',$v['add_time']);
         }
         return $res;
+    }
+    public function getArticleSelect(){
+        $data = DB::table('article_c')
+        ->orderBy('list_order','desc')
+        ->take(3)
+        ->get();
+
+        foreach($data as $k => $v){
+            $arr = [];
+            for($a = 1; $a <= 2;$a++){
+                $arr[] = DB::table('article')->where('is_show',1)
+                ->where('cid',$v->cid)
+                ->orderBy('list_order','desc')
+                ->skip(4 * ($a -1))
+                ->take(4)
+                ->select("article_id","title","img")
+                ->get();
+               
+            }
+            if($k == 0){
+                $v->display = "block";
+            }else{
+                $v->display = "none";
+            }
+            $v->list = $arr;
+            
+        }
+        
+        return $data;
     }
 }

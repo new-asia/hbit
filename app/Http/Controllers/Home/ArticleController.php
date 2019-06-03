@@ -42,7 +42,7 @@ class ArticleController extends Controller
         $tags_id = explode(',',$article['tags_id']);
         $relevant = Article::relevant($tags_id,$id);
         $Category = new Category();
-        $list = $Category->ArticleList();
+        $list = $Category->ArticleList("Y-m-d H:i:s");
         $advert = new Advert();
         $advert = $advert->getAdvert(7);
         $course = new Course();
@@ -57,20 +57,20 @@ class ArticleController extends Controller
     
     public function Campusall(){
         $isMobile = $this->isMobile();
-
+        $Category = new Category();
+        $recommend = Article::recommend();
         if ($isMobile) {
             $Newest = Article::Newest();
-            return view('api/news',['Newest'=>$Newest]);
+            $list = $Category->ArticleList("Y-m-d H:i:s");
+            return view('api/news',['Newest'=>$Newest,'list'=>$list,'recommend'=>$recommend]);
         } else {
-            $Category = new Category();
-            $list = $Category->ArticleList();
             $advert = new Advert();
             $advert = $advert->getAdvert(7);
+            $list = $Category->ArticleList("m月d日");
             $course = new Course();
             $course = $course->course();
             $campus = Campus::getAllCampus();
             $courseall = Course::getAllCourse();
-            $recommend = Article::recommend();
             return view('home/Campusall',['recommend'=>$recommend,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
         }
        

@@ -97,20 +97,25 @@
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
         <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);height:60%">
-          <div class="swiper-slide swiper-slide-active" style="width: 355px;">
+        <!--循环开始-->
+        @foreach ($student_list as $student)
+        <div class="swiper-slide swiper-slide-next" style="width: 355px;">
             <div class="work-contenr">
-              @foreach($employment as $item)
+            @foreach ($student as $item)
               <a href="#">
                 <div class="item">
-                  <p style="color: black;"><span>入职企业：</span><em>{{$item->company}}</em></p>
+                  <p style="color: black;"><span>入职企业：{{$item->company}}</span><em></em></p>
                   <p><span>月薪：</span> <strong>{{$item->pay}}</strong></p>
                   <p><span>姓名：</span><em>{{$item->name}}</em></p>
                   <p><span>班级：</span><em>{{$item->class_name}}</em></p>
                 </div>
               </a>
-              @endforeach
+            @endforeach  
             </div>
           </div>
+        @endforeach
+          
+          
         </div>
         <div class="swiper-pagination swiper-pagination-bullets">
           <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
@@ -131,78 +136,27 @@
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;height:80%">
-          <div class="swiper-slide swiper-slide-active" style="width: 355px;">
+        <!--循环开始-->
+        @foreach ($student_list as $student)
+            <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="student-content">
+
+            @foreach ($student as $item)
               <a href="/StudentsStory/show-4.blade.php">
                 <div class="item">
-                  <img src="/upload/img/201808301609094314.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：王**</p>
-                  <p>班级：java大数据</p>
-                  <p>月薪：25000</p>
+                  <img src="{{$item->img}}" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
+                  <p>姓名：{{$item->name}}</p>
+                  <p>班级：{{$item->class_name}}</p>
+                  <p>月薪：{{$item->pay}}</p>
                 </div>
               </a>
-              <a href="/StudentsStory/show-19.html">
-                <div class="item">
-                  <img src="/upload/img/201809171656317575.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：石**</p>
-                  <p>班级：PHP全栈</p>
-                  <p>月薪：15000</p>
-                </div>
-              </a>
-              <a href="/StudentsStory/show-18.html">
-                <div class="item">
-                  <img src="/upload/img/201809171658434753.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：王**月</p>
-                  <p>班级：java大数据</p>
-                  <p>月薪：20000</p>
-                </div>
-              </a>
-              <a href="/StudentsStory/show-16.html">
-                <div class="item">
-                  <img src="/upload/img/201805281545564876.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：秦**</p>
-                  <p>班级：java大数据</p>
-                  <p>月薪：18000</p>
-                </div>
-              </a>
+              @endforeach
+              
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-next" style="width: 355px;">
-            <div class="student-content">
-              <a href="/StudentsStory/show-15.html">
-                <div class="item">
-                  <img src="/upload/img/201805281547452845.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：苏**</p>
-                  <p>班级：java大数据</p>
-                  <p>月薪：16000</p>
-                </div>
-              </a>
-              <a href="/StudentsStory/show-22.html">
-                <div class="item">
-                  <img src="/upload/img/201805281553397981.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：李**</p>
-                  <p>班级：java大数据</p>
-                  <p>月薪：15000</p>
-                </div>
-              </a>
-              <a href="/StudentsStory/show-14.html">
-                <div class="item">
-                  <img src="/upload/img/201809171657333191.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：张**</p>
-                  <p>班级：java大数据</p>
-                  <p>月薪：26000</p>
-                </div>
-              </a>
-              <a href="/StudentsStory/show-26.html">
-                <div class="item">
-                  <img src="/upload/img/201809171659460310.jpg" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
-                  <p>姓名：乔**</p>
-                  <p>班级：PHP全栈</p>
-                  <p>月薪：17000</p>
-                </div>
-              </a>
-            </div>
-          </div>
+        @endforeach
+          
+          <!--循环结束-->
         </div>
         <div class="swiper-pagination swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span></div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
@@ -222,70 +176,35 @@
     </div>
     <div class="content">
       <div class="nav-bar">
-        <span class="active nav-bar-item" href="JavaEE">Java大数据<em></em></span>
-        <span class="nav-bar-item" href="php">PHP全栈<em></em></span>
-        <span class="nav-bar-item" href="html">html全栈<em></em></span>
+      @foreach ($article_list as $k=>$item)
+        @if ($k == 0)
+            <span class="active nav-bar-item" href="{{$item->c_name}}">{{$item->c_name}}<em></em></span>
+        @else
+            <span class="nav-bar-item" href="{{$item->c_name}}">{{$item->c_name}}<em></em></span>
+        @endif            
+            
+      @endforeach
       </div>
 
-
-      <div class="swiper-container-list-0 swiper-container-horizontal" id="JavaEE" style="display: block;">
+      @foreach ($article_list as $k=>$item)
+      
+      <div class="swiper-container-list-0 swiper-container-horizontal" id="{{$item->c_name}}" style="display: {{$item->display}};">
         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);height:350px;">
+
+        @foreach ($item->list as $v)
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="it-content">
+            @foreach ($v as $val)
               <a href="/news/show-6457.html">
                 <div class="item">
-                  <img src="/upload/img/201904121348270277.jpg" alt="" class="img-responsive">
-                  <p>Java学习之final关键字详细解析</p>
+                  <img src="{{$val->img}}" alt="" class="img-responsive">
+                  <p>{{$val->title}}</p>
                 </div>
               </a>
-              <a href="/news/show-6455.html">
-                <div class="item">
-                  <img src="/upload/img/201904120912003743.jpg" alt="" class="img-responsive">
-                  <p>2019年Java面试试题之跳表</p>
-                </div>
-              </a>
-              <a href="/news/show-6454.html">
-                <div class="item">
-                  <img src="/upload/img/201904120859213753.jpg" alt="" class="img-responsive">
-                  <p>Java学习之构造方法汇总</p>
-                </div>
-              </a>
-              <a href="/news/show-6451.html">
-                <div class="item">
-                  <img src="/upload/img/201904110855570364.jpg" alt="" class="img-responsive">
-                  <p>Java学习小技巧之利用注解技术检查空指针</p>
-                </div>
-              </a>
+              @endforeach  
             </div>
           </div>
-          <div class="swiper-slide swiper-slide-next" style="">
-            <div class="it-content">
-              <a href="/news/show-6447.html">
-                <div class="item">
-                  <img src="/upload/img/201904100840080648.png" alt="" class="img-responsive">
-                  <p>2019年最新Java常用注释详解</p>
-                </div>
-              </a>
-              <a href="/news/show-6445.html">
-                <div class="item">
-                  <img src="/upload/img/201904090950492298.jpg" alt="" class="img-responsive">
-                  <p>一招巧妙解决Java虚拟机中OMM问题</p>
-                </div>
-              </a>
-              <a href="/news/show-6444.html">
-                <div class="item">
-                  <img src="/upload/img/201904090917212044.jpg" alt="" class="img-responsive">
-                  <p>Java8新特性引用详细解析</p>
-                </div>
-              </a>
-              <a href="/news/show-6440.html">
-                <div class="item">
-                  <img src="/upload/img/201904080847573988.jpg" alt="" class="img-responsive">
-                  <p>Java开发中Struts控制器详细解析</p>
-                </div>
-              </a>
-            </div>
-          </div>
+        @endforeach
         </div>
         <div class="swiper-pagination-0 swiper-pagination-bullets">
           <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
@@ -293,143 +212,9 @@
         </div>
         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
       </div>
+      @endforeach
 
-
-      <div class="swiper-container-list-1 swiper-container-horizontal" id="php" style="display: none;">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);height:350px;">
-          <div class="swiper-slide swiper-slide-active" style="width: 355px;">
-            <div class="it-content">
-              <a href="/news/show-6449.html">
-                <div class="item">
-                  <img src="/upload/img/201904100920455589.jpg" alt="" class="img-responsive">
-                  <p>PHP面向对象详细解析</p>
-                </div>
-              </a>
-              <a href="/news/show-6438.html">
-                <div class="item">
-                  <img src="/upload/img/201904041417221312.png" alt="" class="img-responsive">
-                  <p>PHP通过Laravel巧妙实现超大文件上传</p>
-                </div>
-              </a>
-              <a href="/news/show-6433.html">
-                <div class="item">
-                  <img src="/upload/img/201904020926518539.jpg" alt="" class="img-responsive">
-                  <p>PHP开发之 strpos stripos strrpos strripos的区别</p>
-                </div>
-              </a>
-              <a href="/news/show-6430.html">
-                <div class="item">
-                  <img src="/upload/img/201904011402340804.jpg" alt="" class="img-responsive">
-                  <p>2019年最新PHP访问数据缓存处理详细解析</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-next" style="">
-            <div class="it-content">
-              <a href="/news/show-6403.html">
-                <div class="item">
-                  <img src="/upload/img/201903210832518881.jpg" alt="" class="img-responsive">
-                  <p>2019年最新PHP工厂模式使用方法详解</p>
-                </div>
-              </a>
-              <a href="/news/show-6400.html">
-                <div class="item">
-                  <img src="/upload/img/201903201001368431.jpg" alt="" class="img-responsive">
-                  <p>PHP抽象类abstract详细解析</p>
-                </div>
-              </a>
-              <a href="/news/show-6385.html">
-                <div class="item">
-                  <img src="/upload/img/201903130924453168.jpg" alt="" class="img-responsive">
-                  <p>PHP环境部署伪静态教程</p>
-                </div>
-              </a>
-              <a href="/news/show-6382.html">
-                <div class="item">
-                  <img src="/upload/img/201903121601038598.jpg" alt="" class="img-responsive">
-                  <p>php中TS和NTS都有哪些区别？</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination-1 swiper-pagination-bullets">
-          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-          <span class="swiper-pagination-bullet"></span>
-        </div>
-        <div class="swiper-pagination-1 swiper-pagination-bullets">
-          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-          <span class="swiper-pagination-bullet"></span>
-        </div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-      </div>
-
-
-      <div class="swiper-container-list-2 swiper-container-horizontal" id="html" style="display: none;">
-        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); ">
-          <div class="swiper-slide swiper-slide-active" style="width: 355px;">
-            <div class="it-content">
-              <a href="/news/show-4289.html">
-                <div class="item">
-                  <img src="/upload/img/201812120954471870.jpg" alt="" class="img-responsive">
-                  <p>HTML5中巧妙的利用canvas将网页元素生成图片并成功的保存到本地</p>
-                </div>
-              </a>
-              <a href="/news/show-4262.html">
-                <div class="item">
-                  <img src="/upload/img/201812030845230864.jpg" alt="" class="img-responsive">
-                  <p>前端HTML框架(frameset)用法详细解析</p>
-                </div>
-              </a>
-              <a href="/news/show-4251.html">
-                <div class="item">
-                  <img src="/upload/img/201811271537479233.jpg" alt="" class="img-responsive">
-                  <p>for循环+setTimeout的延迟操作详解</p>
-                </div>
-              </a>
-              <a href="/news/show-4248.html">
-                <div class="item">
-                  <img src="/upload/img/201811261023149702.jpg" alt="" class="img-responsive">
-                  <p>HTML5 Web储存实例解析</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="swiper-slide swiper-slide-next" style="">
-            <div class="it-content">
-              <a href="/news/show-4243.html">
-                <div class="item">
-                  <img src="/upload/img/201811211404557867.jpg" alt="" class="img-responsive">
-                  <p>HTML5中webSocket方法详细解析</p>
-                </div>
-              </a>
-              <a href="/news/show-4242.html">
-                <div class="item">
-                  <img src="/upload/img/201811211003327281.png" alt="" class="img-responsive">
-                  <p>WebSocket API详细解析</p>
-                </div>
-              </a>
-              <a href="/news/show-2218.html">
-                <div class="item">
-                  <img src="/upload/img/201810221121188300.jpg" alt="" class="img-responsive">
-                  <p>Web使用技巧—html高亮显示源码示例</p>
-                </div>
-              </a>
-              <a href="/news/show-67.html">
-                <div class="item">
-                  <img src="/upload/img/201805201107540060.jpg" alt="" class="img-responsive">
-                  <p>最适合HTML5的四类人</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination-2 swiper-pagination-bullets">
-          <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-          <span class="swiper-pagination-bullet"></span></div>
-        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-      </div>
+     
     </div>
   </div>
 
