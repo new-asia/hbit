@@ -27,7 +27,7 @@
                                     <div class="scZxListConRTop">
                                         <a target="_blank" href="/show-{{$v->article_id}}.html">
                                             <h2>{{$v->title}}</h2>
-                                            <p>{{$v->title}}</p>
+                                            <p>{{$v->content}}</p>
                                         </a>
                                     </div>
                                 </div>

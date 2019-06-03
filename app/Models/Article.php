@@ -25,7 +25,14 @@ class Article extends Model
     
     public function getall($id){
         $sql  = "(select * from `cmf_article` where is_show = 1 and find_in_set(".$id.",tags_id) order By list_order desc) as article ";
-        return DB::table(DB::raw($sql))->paginate(11);
+        $arr =DB::table(DB::raw($sql))->paginate(11);
+        foreach($arr as $k=>$v){
+            if(mb_strlen($v->content)>200){
+                $newStr = mb_substr(strip_tags(str_replace('&nbsp;','',$v->content)),0,300,"UTF8")."...";
+            }
+            $v->content = $newStr;
+        }
+        return $arr;
     }
 
 
