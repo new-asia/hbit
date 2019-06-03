@@ -233,8 +233,8 @@
         var Course = $("#txtCourse");
 
         var realnamereg = /^[\u4E00-\u9FA5]+$/;
-        var phonereg = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
-        // var phonereg = /^[1][3-9][0-9]9$/;
+       // var phonereg = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+        var phonereg = /^[1][3-9][0-9]{9}$/;
         var filter = /^\s*[.0-9]{5,11}\s*$/;
 
         if (!realnamereg.test(realname.val())) {

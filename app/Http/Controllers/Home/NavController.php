@@ -55,6 +55,7 @@ class NavController extends Controller
                 }
             }
         }
+
         $view->with(['nav'=>$nav,'title'=>$titles]);
     }
 

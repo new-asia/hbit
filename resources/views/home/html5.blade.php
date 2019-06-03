@@ -23,8 +23,8 @@
         display: none;
     }
     .module_left .title p {
-        color: #fff;
-    }
+          color: #fff;
+      }
     .js_list a:link{
         color: #fff;
     }
@@ -32,8 +32,6 @@
         color: white;
     }
 </style>
-{{--轮播图--}}
-{{--@include('home.layouts.banner')--}}
 <div class="banner">
 </div>
 <div class="wrapper">
