@@ -46,7 +46,9 @@ class Article extends Model
             ->get();
         foreach ($relevant as $v){
             $v['add_time'] = date('Y-m-d H:i:s',$v['add_time']);
-            $v['content'] = htmlspecialchars($v['content']);
+           
+            $content = str_replace(array("&nbsp;","&amp;nbsp;","\t","\r\n","\r","\n"),array("","","","","",""),strip_tags($v['content']));
+            $v['content'] = htmlspecialchars(strip_tags($content));
         }
 
         return $relevant;
