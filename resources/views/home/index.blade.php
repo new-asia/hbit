@@ -42,8 +42,8 @@
                             @endforeach
                         </ul>
                     </div>
-                    <a class="prev" href="javascript:void(0)"><i class="iconfont bfont">&#xe60b;</i></a>
-                    <a class="next" href="javascript:void(0)"><i class="iconfont bfont">&#xe614;</i></a>
+                    <a class="prev" id="prev" href="javascript:void(0)"><i class="iconfont bfont">&#xe60b;</i></a>
+                    <a class="next" id="next" href="javascript:void(0)"><i class="iconfont bfont">&#xe614;</i></a>
                 </div>
 
             </div>
@@ -1092,7 +1092,54 @@
         }
     })
 
+    window.onload = function() {
+        /*轮播图*/
+        //隐藏第一张以外的图片
+        $('#bd>ul>li:gt(0)').hide();
+        var n = 0;
+        var len = $('#bd ul li').length; //获取的是li的长度 数量
+        var t;
+        function play() {
+            //alert(n)
+            $('#bd ul li').eq(n).show().siblings().hide();
+        }
+        function autoPlay() {
+            //自动播放
+            t = setInterval(function() {
+                //alert(1)
+                n++;
+                if (n >= len) {
+                    n = 0;
+                }
+                play();
+            }, 5000)
+        }
+        //alert(len)
+        autoPlay(); //调用自动播放函数
 
+        //鼠标经过banner停止播放，移开继续播放
+        $('#bd').hover(function() {
+            clearInterval(t)
+        }, function() {
+            autoPlay();
+        })
+        //点击下一张
+        $('#next').click(function() {
+            n++;
+            if (n >= len) {
+                n = 0;
+            }
+            play();
+        })
+        //点击上一张
+        $('#prev').click(function() {
+            if (n <= 0) {
+                n = len;
+            }
+            n--;
+            play();
+        })
+    }
 
 </script>
 

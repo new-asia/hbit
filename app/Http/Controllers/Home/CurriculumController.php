@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Models\Advert;
+use App\Models\Teacher;
 
 class CurriculumController extends Controller
 {
@@ -28,6 +29,8 @@ class CurriculumController extends Controller
     }
 
     public function python(){
-        return view('home/python');
+        $teacher = new Teacher();
+        $tea_list = $teacher->getpyTeacher(6);
+        return view('home/python',['tea_list'=>$tea_list]);
     }
 }

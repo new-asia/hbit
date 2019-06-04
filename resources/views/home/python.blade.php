@@ -733,86 +733,22 @@
 			<a class="arrow-left"><img src="/static/python/img/ms_left_icon.png"></a>
 			<a class="arrow-right"><img src="/static/python/img/ms_right_icon.png"></a>
 			<div class="swiper-container ms_swiper">
-
-
 				<div class="swiper-wrapper ms_swiper_wrap">
-
+				@foreach($tea_list as $item)
 					<div class="swiper-slide">
 						<div>
-							<img src="/static/python/img/ms_2.jpg">
+							<img src="{{$item->teacher_portrait_src}}">
 							<div class="ms_del">
-								<h3>冯华
-									<small>鸿博python研究院院长</small>
+								<h3>{{$item->name}}
+									<small>{{$item->position_name}}</small>
 								</h3>
 								<p>
-									17 年的C/C++、Python软件开发、调试经验，具有有丰富的物联网、智能硬件、机器人项目实战经验。8 年的以上软件开发教学经验，曾任诺亚舟科技有限公司软件工程师，广银通集团高级项目经理。 授课风格富有激情，以实践为导向，善于启发学生
+									{{$item->details}}
 								</p>
 							</div>
 						</div>
 					</div>
-
-					<div class="swiper-slide">
-						<div>
-							<img src="/static/python/img/ms_1.jpg">
-							<div class="ms_del">
-								<h3>周华飞
-									<small>NSD&NTD&AID产品线教学总监</small>
-								</h3>
-								<p>
-									十五年网络/系统/云计算运维经验，擅长服务器系统管理、应用部署、集群架构和虚拟化技术。拥有RHCDS、RHCVA、RHCA等行业证书。讲课富有激情，善于激发学员的思维，善于激励学员，讲解相应技术通俗易懂。细心、富有责任感。注重原理与实战相结合。
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide">
-						<div>
-							<img src="/static/python/img/ms_3.jpg">
-							<div class="ms_del">
-								<h3>魏明择
-									<small>Python基础 实战讲师</small>
-								</h3>
-								<p>
-									11年以上工业控制、教育电子产品、电子医疗器械开发经验，6年以上IT职业教学经验。曾任文曲星(金远见电脑技术有限公司)电子辞典部高级软件工程师。精通Unix/Linux、C/C++、Python、JavaScript、Node js及各种数据库开发。 </p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div>
-							<img src="/static/python/img/ms_4.jpg">
-							<div class="ms_del">
-								<h3>祁天暄
-									<small>Python高级 实战讲师</small>
-								</h3>
-								<p>
-									曾就职于学尔森集团、完美世界、北华航天工业学院等知名公司及高校，9年软件开发及教学管理经验。精通Python、Java、Unity3D技术，擅长软件架构设计。领域涵盖Web、游戏、VR、人工智能。授课风格：情绪饱满，扣人心弦，生动形象，机智诙谐。</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div>
-							<img src="/static/python/img/ms_5.jpg">
-							<div class="ms_del">
-								<h3>王伟超
-									<small>网络爬虫 实战讲师</small>
-								</h3>
-								<p>
-									8年以上通讯、餐饮、金融行业开发经验。精通Unix/Linux、Python、JavaScript、Shell多种计算机语言，精通MySQL、MongoDB、Redis等多种数据库的开发。授课富有激情、机智诙谐、责任心强，善于将教学与工作实践相结合，启发学生思考。</p>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div>
-							<img src="/static/python/img/ms_6.jpg">
-							<div class="ms_del">
-								<h3>徐铭
-									<small>人工智能 金牌讲师</small>
-								</h3>
-								<p>
-									全栈级软件开发经验，拥有7年一线教学经验，涉及领域涵盖Python、Android、web前端、Java企业级互联网软件、机器学习算法研究。痴迷于钻研各种机器学习算法及各业务领域算法设计。授课风格轻松诙谐，思路清晰，善于使用生活案例解释复杂技术问题。授课风格轻松诙谐，思路清晰，善于使用生活案例解释复杂技术问题。</p>
-							</div>
-						</div>
-					</div>
+				@endforeach
 				</div>
 			</div>
 		</div>
@@ -822,86 +758,12 @@
 <!--学员人数-->
 <!--<div class="xueyuan_bg"></div>-->
 <!--报名-->
-<div class="bg3" id="bg3">
-	<h2 class="tit tit_c1">
-		做下一个python工程师
-		<small class="c6">鸿博特惠：1元即刻领取两周课程</small>
-	</h2>
-	<div class="global_div">
-		<form id="informm" name="form"  action="http://liuyan.bj.tedu.cn/plus/diy.php" target="actionframe" enctype="multipart/form-data" method="post">
-			<input type="hidden" name="action" value="post" />
-			<input type="hidden" name="diyid" value="1" />
-			<input type="hidden" name="do" value="2" />
-
-			<div class="topBox">
-				<div class="th1 clearfix">
-					<img src="http://bj.tedu.cn/liuy/img/icon01.png" width="54" height="40" class="fl"/>
-					<input class="text fl" type="text"  name="name" id="namee" placeholder="请输入您的姓名"/>
-				</div>
-				<div class="th1 clearfix">
-					<img src="http://bj.tedu.cn/liuy/img/icon02.png" width="54" height="40" class="fl"/>
-					<input class="text fl" type="text"  name="phone" id="phonee" placeholder="请输入您的电话"/>
-
-					<div class="fr" id="getcodee">
-						<b></b>
-						<p>获取验证码</p>
-					</div>
-				</div>
-
-				<div class="th1 clearfix">
-					<img src="http://bj.tedu.cn/liuy/img/icon03.png" width="54" height="40" class="fl"/>
-					<input class="text fl"  type="text"  id='phoneCodee' placeholder="请输入手机验证码" value=""/>
-				</div>
-				<div class="btn_wrap clear_fix">
-					<a href="http://tb.53kf.com/code/client/10028340/7" class="btn_more">咨询更多</a>
-					<button type="submit" class="btn_submit" id="submsgg"  name="submit">点击提交获取名额</button>
-				</div>
-			</div>
-			<input type="hidden" id="urlBott"  name="url"  value=""/>
-			<input type="hidden" id="timeBott" name="time" value="" />
-			<input type="hidden" name="dede_fields" value="name,text;phone,text;qq,text;url,text;time,text" />
-			<input type="hidden" name="dede_fieldshash" value="8a472f2ab0cb5ce64dba5a9e3db105bd" />
-			<iframe width="0" height="0" name="actionframe" type="“hidden”" style="display:none"></iframe>
-		</form>
-
-	</div>
-</div>
+{{--底部--}}
+@include('home.layouts.footer')
 
 
 <footer>2002-2018 鸿博时代科技集团有限公司(TARENA INTERNATIONAL,INC.) 版权所有 京ICP证8000853号-56</footer>
-<div id="liuy">
-	<div id="bg"></div>
-	<div id="con" class="clearfix">
-		<img src="http://bj.tedu.cn/liuy/img/pao.png" width="168" height="70" class="fl"/>
-		<div class="conBox fl">
-			<form id="inform" name="form"  action="http://liuyan.bj.tedu.cn/plus/diy.php" target="actionframe" enctype="multipart/form-data" method="post">
-				<input type="hidden" name="action" value="post" />
-				<input type="hidden" name="diyid" value="1" />
-				<input type="hidden" name="do" value="2" />
-				<div class="fl">
-					<img src="http://bj.tedu.cn/liuy/img/icon1.png" width="36" height="28" class="fl"/>
-					<input class="text fl" type="text"  name="name" id="name" placeholder="如何称呼您"/>
-				</div>
-				<div class="fl">
-					<img src="http://bj.tedu.cn/liuy/img/icon3.png" width="37" height="28" class="fl"/>
-					<input class="text fl" type="text"  name="phone" id="phone" placeholder="您的手机"/>
-				</div>
-				<div class="fl" id="getcode">点击获取验证码</div>
-				<div class="fl">
-					<img src="http://bj.tedu.cn/liuy/img/icon2.png" width="39" height="28" class="fl"/>
-					<input class="text fl"  type="text"  id='phoneCode' placeholder="手机验证码" value=""/>
-				</div>
-				<input class="submit fl" type="submit" value=""  name="submit" id="submsg"/>
 
-				<input type="hidden" id="urlBot"  name="url"  value=""/>
-				<input type="hidden" id="timeBot" name="time" value="" />
-				<input type="hidden" name="dede_fields" value="name,text;phone,text;qq,text;url,text;time,text" />
-				<input type="hidden" name="dede_fieldshash" value="8a472f2ab0cb5ce64dba5a9e3db105bd" />
-
-			</form>
-		</div>
-	</div>
-</div>
 <style>.css3btn{  bottom:411px;  right:5px;  z-index:9999999999;  position:fixed;  }  .css3btn a{  display:block;  text-decoration:none;  }  .css3btn img{  left:-10px;  top:50%;  margin-top:-35px;  position:absolute;  z-index:9999; border:0; }  .css3btn p{  font-size:15px;  width:230px;  height:45px;  line-height:45px;  text-indent:55px;  text-align:center;  color:#fff;  display:block;  overflow:hidden;  position: relative;  background:#ff5400;  background:linear-gradient(rgba(254,84,0,.8),rgba(255,118,50,.8));  text-transform: uppercase;  border-radius:20px;  }  .css3btn p.bubble:after {  content: "";  background: #fff;  position: absolute;  width: 200px;  height: 200px;  left: 35px;;  right: 0;  top: 0;  bottom: 0;  opacity: 0;  margin: auto;  border-radius:50%;  transform: scale(1);  animation:1s btn ease-in-out infinite;  }  @keyframes btn {0%{transform:scale(0);opacity: 1;}100%{transform:scale(1);opacity: 0;}}</style>
 <!--[if IE 8]><style>.css3btn p.bubble:after{display:none;}</style><![endif]-->
 

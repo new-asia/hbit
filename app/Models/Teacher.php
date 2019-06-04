@@ -19,7 +19,7 @@ class Teacher extends Model
         return DB::table('teacher')
             ->leftjoin('position','position.position_id','=','teacher.position_id')
             ->orderBy('list_order')
-            ->select('teacher_id', 'name','position_name','teacher_portrait_src','obtain_employment_time','teacher_style','field')
+            ->select('teacher_id','details', 'name','position_name','teacher_portrait_src','obtain_employment_time','teacher_style','field')
             ->get();
     }
     public function getTeacherLimit($limit){
@@ -37,6 +37,14 @@ class Teacher extends Model
             ->where('teacher_id',$id)
             ->take(1)
             ->select('teacher_id', 'name','position_name','teacher_portrait_src','details','obtain_employment_time','field','experience','teacher_style')
+            ->get();
+    }
+    public function getpyTeacher($id){
+        return DB::table('teacher')
+            ->leftjoin('position','position.position_id','=','teacher.position_id')
+            ->where('position.position_id',$id)
+            ->orderBy('list_order')
+            ->select('teacher_id','details', 'name','position_name','teacher_portrait_src')
             ->get();
     }
 }

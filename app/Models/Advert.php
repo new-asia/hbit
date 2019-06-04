@@ -28,6 +28,7 @@ class Advert extends Model
         return DB::table('picture')
             ->where('status',1)
             ->where('is_advert',0)
+            ->where('is_api',0)
             ->select('picture_src','picture_place','picture_url')
             ->get();
     }
