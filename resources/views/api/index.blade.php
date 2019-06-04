@@ -22,14 +22,40 @@
 
   {{--nav--}}
   @include('api.layouts.nav')
-  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
-    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
+  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;height:40%">
+    <div id="bd" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
       @foreach($rotation_chart as $items)
-        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 100%;">
           <img src="{{$items->picture_src}}" alt="轮播" class="img-responsive">
         </div>
       @endforeach
     </div>
+    <script>
+        window.onload = function() {
+            /*轮播图*/
+            //隐藏第一张以外的图片
+            $('#bd>div:gt(0)').hide();
+            var n = 0;
+            var len = $('#bd div').length; //获取的是li的长度 数量
+            var t;
+            function play() {
+                $('#bd div').eq(n).show().siblings().hide();
+            }
+            function autoPlay() {
+                //自动播放
+                t = setInterval(function() {
+                    //alert(1)
+                    n++;
+                    if (n >= len) {
+                        n = 0;
+                    }
+                    play();
+                }, 2000)
+            }
+            //alert(len)
+            autoPlay(); //调用自动播放函数
+        }
+    </script>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   </div>
 
@@ -52,31 +78,35 @@
         <p>html全栈</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>云计算</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>人工智能</p>
       </div>
     </a>
+<<<<<<< HEAD
     <a href="/python.html">
+=======
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
+>>>>>>> 4a5bb7219c291d2924c6af5a727eeefa9274011d
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Python课程</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>UI/UE设计</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>更多资源</p>
@@ -195,7 +225,7 @@
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="it-content">
             @foreach ($v as $val)
-              <a href="/news/show-6457.html">
+              <a href="/show-{{$val->article_id}}.html">
                 <div class="item">
                   <img src="{{$val->img}}" alt="" class="img-responsive">
                   <p>{{$val->title}}</p>
