@@ -60,9 +60,9 @@
                             <a href="/{{$item->href}}" id="{{$item->id}}" target="_blank" title="{{$item->name}}"><img src="{{$item->img}}" width="63" height="73"><u>{{$item->name}}</u></a>
                         @endif
                     @endforeach
-                    <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
-                    <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
-                    <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" title="UI/UE设计"><img src="/static/upload/img/ui_ico.png" width="63" height="73"><u>UI/UE设计</u></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=104044302" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=104044302" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
+                    <a href="tencent://message/?Menu=yes&amp;uin=104044302" target="_blank" title="UI/UE设计"><img src="/static/upload/img/ui_ico.png" width="63" height="73"><u>UI/UE设计</u></a>
                 </div>
             </div>
         </div>
@@ -71,13 +71,13 @@
 
 <div class="nav_main">
     <div class="base_fixed" style="top: 0px;">
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" rel="nofollow" target="_blank" class="f_a1">报名咨询</a>
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" rel="nofollow" target="_blank" class="f_a2">0元入学</a>
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" rel="nofollow" target="_blank" class="f_a3">助学贷款</a>
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" rel="nofollow" target="_blank" class="f_a4">就业保障</a>
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" rel="nofollow" target="_blank" class="f_a5">视频下载</a>
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" class="f_a7">在线公开课</a>
-        <a href="tencent://message/?Menu=yes&amp;uin=932443281" rel="nofollow" target="_blank" class="f_a6">咨询热线<i>010-57032333</i></a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" rel="nofollow" target="_blank" class="f_a1">报名咨询</a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" rel="nofollow" target="_blank" class="f_a2">0元入学</a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" rel="nofollow" target="_blank" class="f_a3">助学贷款</a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" rel="nofollow" target="_blank" class="f_a4">就业保障</a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" rel="nofollow" target="_blank" class="f_a5">视频下载</a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" target="_blank" class="f_a7">在线公开课</a>
+        <a href="tencent://message/?Menu=yes&amp;uin=104044302" rel="nofollow" target="_blank" class="f_a6">咨询热线<i>010-57032333</i></a>
         <img src="/static/upload/img/qf_fix02.png" style="display: block;width:67px;border-top:1px solid #fff;cursor:pointer;display:none" class="qf_fix02">
     </div>
 </div>
