@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="./templates/mobile/css/common.css">
-<script type="text/javascript" src="./templates/mobile/js/newjquery.js"></script>
+<link rel="stylesheet" href="/templates/mobile/css/common.css">
+<script type="text/javascript" src="/templates/mobile/js/newjquery.js"></script>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="font-size: 14px;">
     <div class="navbar-header">
       <div class="mNav">

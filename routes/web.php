@@ -19,7 +19,7 @@ Route::namespace('Home')->group(function () {
     Route::get('/faculty', 'IndexController@faculty');
     Route::get('/StudentsStory', 'IndexController@StudentsStory');
     Route::get('/faculty/teacher', 'IndexController@teacher');
-    Route::get('/Studentsdetails', 'IndexController@Studentsdetails');
+
     //课程
     Route::get('/java.html', 'CurriculumController@java');
     Route::get('/php.html', 'CurriculumController@php');
@@ -45,7 +45,10 @@ Route::namespace('Home')->group(function () {
     //教师详情
     Route::get('/Faculty/show-{id}.html', 'FacultyController@show');
      //标签列表
-     Route::get('/tags/show-{id}.html', 'TagsController@show');
-     Route::get('/category/show-{id}.html', 'ArticleController@list');
+    Route::get('/tags/show-{id}.html', 'TagsController@show');
+    Route::get('/category/show-{id}.html', 'ArticleController@list');
 
+    //学生
+    Route::get('/StudentsStory/show-{id}.html', 'StudentController@show');
+    Route::get('/Studentsdetails', 'StudentController@Studentsdetails');
 });

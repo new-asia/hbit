@@ -30,7 +30,7 @@
         </div>
       @endforeach
     </div>
-    <script>  
+    <script>
         window.onload = function() {
             /*轮播图*/
             //隐藏第一张以外的图片

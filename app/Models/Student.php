@@ -86,4 +86,10 @@ class Student extends Model
             ->select('student_id', 'name','class_name','pay','company','testimonials','sex')
             ->get();
     }
+
+    public static function studentOne($id){
+        $res = DB::table('student')->where('student_id',$id)->first();
+        $res->graduate_time = date('Y-m-d H:i:s',$res->graduate_time);
+        return $res;
+    }
 }
