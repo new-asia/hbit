@@ -29,7 +29,6 @@ class IndexController extends Controller
         if ($isMobile) {
             $student = new Student();
             $student_list = $student->getStudentSelect(4,2);
-
             $Article = new Article();
             $Article_list = $Article->getArticleSelect();
 
@@ -108,10 +107,12 @@ class IndexController extends Controller
         $employment = $employment->Studentlist(20);
         $employment = $employment->toArray();
         foreach ($employment['data'] as $v){
-            $strlen     = mb_strlen($v->name, 'utf-8');
-            $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
-            $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
-            $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
+            if(empty($v->name)){
+                $strlen     = mb_strlen($v->name, 'utf-8');
+                $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
+                $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
+                $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
+            }
         }
         return view("api/EmploymentInformation",['employment'=>$employment['data']]);
     }
@@ -136,7 +137,8 @@ class IndexController extends Controller
         $advert = $advert->getAdvert(1);
         $campus = Campus::getAllCampus();
         $courseall = Course::getAllCourse();
-        $relevant = Article::relevant($tid[]="",$id);
+        $tid = array();
+        $relevant = Article::relevant($tid,$id);
         $prevID = Student::prevID($id);
         $nextId = Student::nextId($id);
         if(empty($prevID)){

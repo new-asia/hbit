@@ -34,19 +34,19 @@
   </div>
 
   <div class="type">
-    <a href="/java.blade.php">
+    <a href="/java.html">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Java大数据</p>
       </div>
     </a>
-    <a href="/php.blade.php">
+    <a href="/php.html">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>PHP全栈</p>
       </div>
     </a>
-    <a href="/html5.blade.php">
+    <a href="/html5.html">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>html全栈</p>
@@ -64,7 +64,7 @@
         <p>人工智能</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="/python.html">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Python课程</p>
