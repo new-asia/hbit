@@ -16,6 +16,7 @@ class ArticleController extends Controller
     public function __construct()
     {
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+        view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
     }
     //文章内容
     public function show($id){

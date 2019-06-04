@@ -75,14 +75,16 @@
     <div class="foot_ch fl" style="width: 1200px;">
         <h3>友情链接</h3>
         <div class="lk">
-            <a class="a_gd" href="http://www.91goodschool.com/" target="_blank">好学校</a>
-            <a class="a_gd" href="http://www.wooedu.com" target="_blank">好学邦</a>
+            @foreach($link as $item)
+            <a class="a_gd" href="{{$item->url}}" target="_blank">{{$item->name}}</a>
+            @endforeach
+            <!--<a class="a_gd" href="http://www.wooedu.com" target="_blank">好学邦</a>-->
         </div>
     </div>
     <div class="foot_ch add" style="text-align: center;">
         <p>版权所有 2006 - 2019 北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;地址：北京市海淀区苏家坨汇喜乐教育园区 &nbsp;&nbsp;&nbsp;
             <br>
-            全国统一咨询热线：：北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;邮箱:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f353f2c0f263b252b22612c2022">[email&#160;protected]</a>&nbsp;&nbsp;&nbsp;京ICP备16043431号-1&nbsp;&nbsp;&nbsp;</p>
+            全国统一咨询热线：：北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;邮箱:<a href="javascript:;" class="__cf_email__" data-cfemail="4f353f2c0f263b252b22612c2022">{{$option->site_admin_email}}</a>&nbsp;&nbsp;&nbsp;{{$option->site_icp}}&nbsp;&nbsp;&nbsp;</p>
     </div>
     <br>
 </div>

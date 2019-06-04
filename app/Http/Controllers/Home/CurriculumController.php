@@ -13,6 +13,7 @@ class CurriculumController extends Controller
     {
         view()->composer('home.layouts.faculty','App\Http\Controllers\Home\IndexController@teacher');
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+        view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
     }
     public function java(){
         $advert = new Advert();

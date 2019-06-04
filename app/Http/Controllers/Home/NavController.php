@@ -9,11 +9,13 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use App\Models\Title;
+use App\Models\Link;
 class NavController extends Controller
 {
     public function __construct()
     {
         view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+        view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
     }
     public function idea(){
         $isMobile = $this->isMobile();
@@ -60,5 +62,11 @@ class NavController extends Controller
 
         $view->with(['nav'=>$nav,'title'=>$titles]);
     }
-
+    public function footer_link(View $view){
+        $links = new Link();
+        $link = $links -> getLink();
+        $option = $links -> getoption();
+        $option = json_decode($option[0]->option_value);
+        $view->with(['link'=>$link,'option'=>$option]);
+    }
 }
