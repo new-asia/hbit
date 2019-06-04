@@ -761,9 +761,6 @@
 {{--底部--}}
 @include('home.layouts.footer')
 
-
-<footer>2002-2018 鸿博时代科技集团有限公司(TARENA INTERNATIONAL,INC.) 版权所有 京ICP证8000853号-56</footer>
-
 <style>.css3btn{  bottom:411px;  right:5px;  z-index:9999999999;  position:fixed;  }  .css3btn a{  display:block;  text-decoration:none;  }  .css3btn img{  left:-10px;  top:50%;  margin-top:-35px;  position:absolute;  z-index:9999; border:0; }  .css3btn p{  font-size:15px;  width:230px;  height:45px;  line-height:45px;  text-indent:55px;  text-align:center;  color:#fff;  display:block;  overflow:hidden;  position: relative;  background:#ff5400;  background:linear-gradient(rgba(254,84,0,.8),rgba(255,118,50,.8));  text-transform: uppercase;  border-radius:20px;  }  .css3btn p.bubble:after {  content: "";  background: #fff;  position: absolute;  width: 200px;  height: 200px;  left: 35px;;  right: 0;  top: 0;  bottom: 0;  opacity: 0;  margin: auto;  border-radius:50%;  transform: scale(1);  animation:1s btn ease-in-out infinite;  }  @keyframes btn {0%{transform:scale(0);opacity: 1;}100%{transform:scale(1);opacity: 0;}}</style>
 <!--[if IE 8]><style>.css3btn p.bubble:after{display:none;}</style><![endif]-->
 
