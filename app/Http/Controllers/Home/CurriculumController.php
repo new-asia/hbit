@@ -39,7 +39,9 @@ class CurriculumController extends Controller
     public function html5(){
         $isMobile = $this->isMobile();
         if($isMobile){
-            return view('api/html5');
+            $teacher = new Teacher();
+            $tea_list = $teacher->getTeacher();
+            return view('api/html5',['tea_list'=>$tea_list]);
         }
         return view('home/html5');
     }

@@ -724,7 +724,7 @@
 									<li>
 										<div class="bg">
 											<div class="border"></div>
-											<img data-cfsrc="./upload/img/201811021010005908.jpg" alt="刘新" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201811021010005908.jpg">
+											<img data-cfsrc="{{$item->teacher_portrait_src}}" alt="刘新" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="{{$item->teacher_portrait_src}}">
 										</div>
 										<p>{{$item->name}}</p>
 									</li>

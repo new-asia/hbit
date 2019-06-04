@@ -598,7 +598,7 @@
 
 						<div class="flex-viewport" style="overflow: hidden; position: relative;">
 							<ul class="slides" style="width: 1200%; margin-left: -555.239px;">
-								<li class="slide clone" style="width: 283px; float: left; display: block;">
+								{{--<li class="slide clone" style="width: 283px; float: left; display: block;">
 									<div class="left">
 										<img data-cfsrc="./upload/img/201901021704136880.jpg" src="./upload/img/201901021704136880.jpg">
 									</div>
@@ -651,7 +651,18 @@
 										<p class="p1">许彩辉</p>
 										<p class="p3">十二年从军经历，教育行业从业12年，对教育的本质有着深刻的理解。创办鸿博教育以来，坚持“认真严谨、用心负责”的核心理念，本着“科学发展，教育为本”的态度，不断前行。</p>
 									</div>
+								</li>--}}
+								@foreach($tea_list as $item)
+								<li class="slide clone" style="width: 283px; float: left; display: block;">
+									<div class="left">
+										<img data-cfsrc="{{$item->teacher_portrait_src}}" src="{{$item->teacher_portrait_src}}">
+									</div>
+									<div class="right">
+										<p class="p1">{{$item->name}}</p>
+										<p class="p3">{{mb_substr($item->details,0,180)}}</p>
+									</div>
 								</li>
+								@endforeach
 							</ul>
 						</div>
 						<ol class="flex-control-nav flex-control-paging">
