@@ -29,6 +29,8 @@ class Article extends Model
         foreach($arr as $k=>$v){
             if(mb_strlen($v->content)>200){
                 $newStr = mb_substr(strip_tags(str_replace('&nbsp;','',$v->content)),0,300,"UTF8")."...";
+            }else{
+                $newStr = $v->content; 
             }
             $v->content = $newStr;
         }

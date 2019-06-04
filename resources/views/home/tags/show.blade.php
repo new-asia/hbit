@@ -15,7 +15,7 @@
                         <ul>
                             <div class="search-tit">
                                 <h3>搜索结果</h3>
-                                <span>查询Tags标签：<strong>{{$tags->name}}</strong>，共有<strong>76</strong>条记录</span>
+                                <span>查询Tags标签：<strong>{{$tags->name}}</strong>，共有<strong>{{ $article->total() }} </strong>条记录</span>
                             </div>
 
                             @foreach($article as $k => $v)
@@ -26,8 +26,15 @@
                                 <div class="scZxListConR">
                                     <div class="scZxListConRTop">
                                         <a target="_blank" href="/show-{{$v->article_id}}.html">
-                                            <h2>{{$v->title}}</h2>
-                                            <p>{{$v->content}}</p>
+                                            <h2>
+                                            @if(!empty($v->title))
+                                                {{$v->title}}
+                                            @endif</h2>
+                                            <p> 
+                                            @if(!empty($v->content))
+                                                {{$v->content}}
+                                            @endif
+                                            </p>
                                         </a>
                                     </div>
                                 </div>
@@ -64,7 +71,8 @@
 								<input type="text" placeholder="请输入您的电话" onblur="checkIsTel()" name="tel" id="txtUserTel" size="5" maxlength="11">
 								<input type="text" placeholder="请输入您的QQ号码" onblur="isQQ()" name="qq" id="txtUserQQ">
 								<select name="campus_id" onchange="checkCampus()" id="txtUserCampus">
-									<option value="0">请选择上课地址</option>
+                                    <option value="0">请选择上课地址</option>
+                                    
 									@foreach($campus as $v)
 									<option value="{{$v->id}}">{{$v->campus}}</option>
 									@endforeach
