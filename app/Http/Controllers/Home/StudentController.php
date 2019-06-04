@@ -10,9 +10,16 @@ use App\Models\Tags;
 use App\Models\Campus;
 use App\Models\Article;
 use App\Models\Student;
+use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+    public function __construct()
+    {
+        view()->composer('home.layouts.faculty','App\Http\Controllers\Home\IndexController@teacher');
+        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
+        view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
+    }
     //学生内容
     public function show($id){
         if((int)$id <= 0) return view('error');
