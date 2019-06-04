@@ -48,8 +48,8 @@ class Student extends Model
         if(strstr($select,",")){
             $sql = [ ];
             $arr = explode($select,",");
-            foreach($arr as $v){
-                $sql[] = $v;
+            foreach($arr as $res){
+                $sql[] = $res;
             }
         }
         for($a = 1; $a <= $sum;$a++){
@@ -60,11 +60,11 @@ class Student extends Model
             ->select($sql)
             ->get()
             ->toArray();
-            foreach ($str_arr as $v){
-                $strlen     = mb_strlen($v->name, 'utf-8');
-                $firstStr     = mb_substr($v->name, 0, 1, 'utf-8');
-                $lastStr     = mb_substr($v->name, -1, 1, 'utf-8');
-                $v->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($v->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
+            foreach ($str_arr as $res){
+                $strlen     = mb_strlen($res->name, 'utf-8');
+                $firstStr     = mb_substr($res->name, 0, 1, 'utf-8');
+                $lastStr     = mb_substr($res->name, -1, 1, 'utf-8');
+                $res->name = $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($res->name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
              }
              $data[] = $str_arr;
         }
@@ -90,6 +90,13 @@ class Student extends Model
     public static function studentOne($id){
         $res = DB::table('student')->where('student_id',$id)->first();
         $res->graduate_time = date('Y-m-d H:i:s',$res->graduate_time);
+        $res->name = self::substr_cut($res->name);
         return $res;
+    }
+    public static function substr_cut($user_name){
+        $strlen     = mb_strlen($user_name, 'utf-8');
+        $firstStr     = mb_substr($user_name, 0, 1, 'utf-8');
+        $lastStr     = mb_substr($user_name, -1, 1, 'utf-8');
+        return $strlen == 2 ? $firstStr . str_repeat('*', mb_strlen($user_name, 'utf-8') - 1) : $firstStr . str_repeat("*", $strlen - 2) . $lastStr;
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>魏** - 学员故事 - 金铭鼎IT教育-匠心打造,品质铸就</title>
+    <title>{{$student->name}} - 学员故事 - 金铭鼎IT教育-匠心打造,品质铸就</title>
     <meta name="keywords" content="金铭鼎,金铭鼎教育,学习" />
     <meta name="description" content="初来金铭鼎时，印象最深刻的就是标识牌上的那句“自己要学会独立”的标语。要为自己的未来拼搏，为自己未来的美好生说努力。" />
     <link rel="stylesheet" type="text/css" href="/templates/mobile/css/newsstyle.css" />
@@ -20,7 +20,7 @@
 </head>
 <body ontouchstart>
 <div class="page">
-    
+
     {{--nav--}}
     @include('api.layouts.nav')
 
