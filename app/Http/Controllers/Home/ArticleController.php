@@ -20,7 +20,17 @@ class ArticleController extends Controller
     }
     //文章内容
     public function show($id){
+
         if((int)$id <= 0) return view('error');
+
+
+        $isMobile = $this->isMobile();
+
+        if($isMobile){
+            $article = Article::where('is_show',1)->find($id);
+            return view('api/content',['article'=>$article]);
+        }
+
         $article = Article::where('is_show',1)->find($id);
         if(!$article) return view('error');
         $prevID = Article::prevID($id);

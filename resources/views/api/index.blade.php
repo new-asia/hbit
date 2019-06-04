@@ -78,31 +78,31 @@
         <p>html全栈</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>云计算</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>人工智能</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Python课程</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>UI/UE设计</p>
       </div>
     </a>
-    <a href="tencent://message/?Menu=yes&amp;uin=932443281">
+    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>更多资源</p>
@@ -221,7 +221,7 @@
           <div class="swiper-slide swiper-slide-active" style="width: 355px;">
             <div class="it-content">
             @foreach ($v as $val)
-              <a href="/news/show-6457.html">
+              <a href="/show-{{$val->article_id}}.html">
                 <div class="item">
                   <img src="{{$val->img}}" alt="" class="img-responsive">
                   <p>{{$val->title}}</p>
