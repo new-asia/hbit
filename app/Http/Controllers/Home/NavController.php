@@ -27,6 +27,11 @@ class NavController extends Controller
     }
 
     public function history(){
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/history');
+        }
         return view('home/history');
     }
 
@@ -35,6 +40,11 @@ class NavController extends Controller
     }
 
     public function abouts(){
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/abouts');
+        }
         return view('home/abouts');
     }
 

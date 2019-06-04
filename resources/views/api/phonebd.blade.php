@@ -214,8 +214,6 @@
 		})
 	</script>
 	<script>
-		alert(1)
-		alert($)
         function checkIshanzi() {
             //var patrn = /^[\u2E80-\u9FFF]$/; //Unicode编码中的汉字范围  /[^\x00-\x80]/
             var s = $.trim($('#txtUserName').val());

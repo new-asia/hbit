@@ -17,9 +17,9 @@
 	window.onload=function (){
 		//alert(window.location.href);
 		var pathname=window.location.pathname;
-	
+
 		var loc = pathname.substring(pathname.lastIndexOf('/')+1,pathname.lastIndexOf('.'));
-		
+
 		if(loc=="abouts")
 		{
 			$("#abouts").addClass("gywmtabon");

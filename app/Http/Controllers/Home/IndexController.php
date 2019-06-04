@@ -97,12 +97,6 @@ class IndexController extends Controller
         return view('home/StudentsStory',['student'=>$data,'stu_story'=>$stu_story]);
     }
 
-
-    public function idea()
-    {
-        return view('home/idea');
-    }
-
     public function EmploymentInformation(){
         $employment = new Student();
         $employment = $employment->Studentlist(20);

@@ -10,7 +10,7 @@
           <li><a href="/phonebd"><img src="/templates/mobile/images/baoming.png"><span>报名</span></a></li>
           <li><a href="/Campusall"><img src="/templates/mobile/images/ITzixun.png"><span>IT资讯</span></a></li>
           <li><a href="/StudentsStory"><img src="/templates/mobile/images/gushi.png"><span>故事</span></a></li>
-          <li><a href="/idea"><img src="/templates/mobile/images/guanyu.png"><span>关于</span></a></li>
+          <li><a href="/abouts"><img src="/templates/mobile/images/guanyu.png"><span>关于</span></a></li>
           <div class="clear"></div>
         </ul>
       </div>
