@@ -46,4 +46,5 @@ Route::namespace('Home')->group(function () {
     Route::get('/Faculty/show-{id}.html', 'FacultyController@show');
      //标签列表
      Route::get('/tags/show-{id}.html', 'TagsController@show');
+     Route::get('/category/show-{id}.html', 'ArticleController@list');
 });

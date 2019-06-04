@@ -29,6 +29,21 @@ class Article extends Model
         foreach($arr as $k=>$v){
             if(mb_strlen($v->content)>200){
                 $newStr = mb_substr(strip_tags(str_replace('&nbsp;','',$v->content)),0,300,"UTF8")."...";
+            }else{
+                $newStr = $v->content; 
+            }
+            $v->content = $newStr;
+        }
+        return $arr;
+    }
+    public function getcategory($id){
+        $sql  = "(select * from `cmf_article` where is_show = 1 and cid = ".$id." order By list_order desc) as article ";
+        $arr =DB::table(DB::raw($sql))->paginate(11);
+        foreach($arr as $k=>$v){
+            if(mb_strlen($v->content)>200){
+                $newStr = mb_substr(strip_tags(str_replace('&nbsp;','',$v->content)),0,300,"UTF8")."...";
+            }else{
+                $newStr = $v->content; 
             }
             $v->content = $newStr;
         }
@@ -46,7 +61,9 @@ class Article extends Model
             ->get();
         foreach ($relevant as $v){
             $v['add_time'] = date('Y-m-d H:i:s',$v['add_time']);
-            $v['content'] = htmlspecialchars($v['content']);
+           
+            $content = str_replace(array("&nbsp;","&amp;nbsp;","\t","\r\n","\r","\n"),array("","","","","",""),strip_tags($v['content']));
+            $v['content'] = htmlspecialchars(strip_tags($content));
         }
 
         return $relevant;

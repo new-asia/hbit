@@ -42,6 +42,8 @@ class ArticleController extends Controller
         if(!Article::where('article_id',$article['article_id'])->update(['reading_num'=>$article['reading_num']])) return 'Modification error';
         $tags_id = explode(',',$article['tags_id']);
         $relevant = Article::relevant($tags_id,$id);
+
+
         $Category = new Category();
         $list = $Category->ArticleList("Y-m-d H:i:s");
         $advert = new Advert();
@@ -52,6 +54,7 @@ class ArticleController extends Controller
         $courseall = Course::getAllCourse();
         $Tags =Tags::allcount();
         $recommend = Article::recommend();
+
         return view('home/show',['recommend'=>$recommend,'tags'=>$Tags,'article'=>$article,'prev'=>$prev,'next'=>$next,'relevant'=>$relevant,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
     }
     //文章列表
@@ -74,6 +77,28 @@ class ArticleController extends Controller
             $courseall = Course::getAllCourse();
             return view('home/Campusall',['recommend'=>$recommend,'list'=>$list,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
         }
-       
+
     }
+
+    public function list($id){
+        if((int)$id <= 0) return view('error');
+        
+        $Article = new Article();
+        $Article_list = $Article->getcategory($id);//分页  数据
+
+        $advert = new Advert();
+        $advert = $advert->getAdvert(7);//图片
+
+
+        $course = new Course();
+        $course = $course->course();//开课信息
+
+
+        $campus = Campus::getAllCampus();//右侧校区下拉
+        $courseall = Course::getAllCourse();//右侧课程下拉
+        $Category =Category::find($id);//标签
+    
+        return view('home/category/show',['article'=>$Article_list,'Category'=>$Category,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
+    }
+       
 }

@@ -4,8 +4,8 @@
             <div class="container">
                 <span>当前位置：</span>
                 <a href="/">首页</a> &gt;
-                <a>标签</a> &gt;
-                {{$tags->name}}
+                <a>分类</a> &gt;
+                {{$Category->c_name}}
             </div>
         </div>
         <div class="content">
@@ -15,7 +15,7 @@
                         <ul>
                             <div class="search-tit">
                                 <h3>搜索结果</h3>
-                                <span>查询Tags标签：<strong>{{$tags->name}}</strong>，共有<strong>{{ $article->total() }} </strong>条记录</span>
+                                <span>查询分类：<strong>{{$Category->c_name}}</strong>，共有<strong>{{ $article->total() }} </strong>条记录</span>
                             </div>
 
                             @foreach($article as $k => $v)
