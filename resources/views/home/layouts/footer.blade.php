@@ -82,7 +82,7 @@
     <div class="foot_ch add" style="text-align: center;">
         <p>版权所有 2006 - 2019 北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;地址：北京市海淀区苏家坨汇喜乐教育园区 &nbsp;&nbsp;&nbsp;
             <br>
-            全国统一咨询热线：：北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;邮箱:<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f353f2c0f263b252b22612c2022">[email&#160;protected]</a>&nbsp;&nbsp;&nbsp;京ICP备16043431号-1&nbsp;&nbsp;&nbsp;</p>
+            全国统一咨询热线：：北京鸿博互联软件有限公司 &nbsp;&nbsp;&nbsp;邮箱:<a href="javascript:;" class="__cf_email__" data-cfemail="4f353f2c0f263b252b22612c2022">104044302@qq.com</a>&nbsp;&nbsp;&nbsp;京ICP备16043431号-1&nbsp;&nbsp;&nbsp;</p>
     </div>
     <br>
 </div>
