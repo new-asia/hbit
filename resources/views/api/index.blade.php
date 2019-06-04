@@ -23,13 +23,39 @@
   {{--nav--}}
   @include('api.layouts.nav')
   <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
-    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-375px, 0px, 0px);">
+    <div id="bd" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
       @foreach($rotation_chart as $items)
         <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
           <img src="{{$items->picture_src}}" alt="轮播" class="img-responsive">
         </div>
       @endforeach
     </div>
+    <script>
+        window.onload = function() {
+            /*轮播图*/
+            //隐藏第一张以外的图片
+            $('#bd>div:gt(0)').hide();
+            var n = 0;
+            var len = $('#bd div').length; //获取的是li的长度 数量
+            var t;
+            function play() {
+                $('#bd div').eq(n).show().siblings().hide();
+            }
+            function autoPlay() {
+                //自动播放
+                t = setInterval(function() {
+                    //alert(1)
+                    n++;
+                    if (n >= len) {
+                        n = 0;
+                    }
+                    play();
+                }, 2000)
+            }
+            //alert(len)
+            autoPlay(); //调用自动播放函数
+        }
+    </script>
     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   </div>
 
