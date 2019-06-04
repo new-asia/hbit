@@ -36,6 +36,19 @@ class Article extends Model
         }
         return $arr;
     }
+    public function getcategory($id){
+        $sql  = "(select * from `cmf_article` where is_show = 1 and cid = ".$id." order By list_order desc) as article ";
+        $arr =DB::table(DB::raw($sql))->paginate(11);
+        foreach($arr as $k=>$v){
+            if(mb_strlen($v->content)>200){
+                $newStr = mb_substr(strip_tags(str_replace('&nbsp;','',$v->content)),0,300,"UTF8")."...";
+            }else{
+                $newStr = $v->content; 
+            }
+            $v->content = $newStr;
+        }
+        return $arr;
+    }
 
 
     public static function relevant($tags_id,$id){

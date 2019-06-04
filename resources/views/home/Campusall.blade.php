@@ -152,8 +152,8 @@
 				<div class="scZxCcSf scZxCcSff">
 					<div class="scZxCcSfM scZCcSfMM clearfix">
 						<div class="scZxCcTit clearfix">
-							<h3><a href="/news/62.html">{{$v[0]->c_name}}</a>
-							</h3><a href="/news/62.html">更多</a>
+							<h3><a href="/category/show-{{$v[0]->cid}}.html">{{$v[0]->c_name}}</a>
+							</h3><a href="/category/show-{{$v[0]->cid}}.html">更多</a>
 						</div>
 						<div class="scZxCcCon clearfix">
 							<div class="scZxCcConTop clearfix">
