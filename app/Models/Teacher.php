@@ -47,4 +47,20 @@ class Teacher extends Model
             ->select('teacher_id','details', 'name','position_name','teacher_portrait_src')
             ->get();
     }
+    public function getTeacherLimits($limit,$sum){
+        for($a = 1; $a <= $sum;$a++) {
+            $data = DB::table('teacher')
+                ->leftjoin('position', 'position.position_id', '=', 'teacher.position_id')
+                ->orderBy('list_order','desc')
+                ->skip(6 * ($a-1))
+                ->take($limit)
+                ->select('teacher_id', 'name', 'position_name', 'teacher_portrait_src', 'details')
+                ->get()
+                ->toArray();
+            //echo $a;
+            $data_arr[]=$data;
+        }
+        return $data_arr;
+    }
+
 }

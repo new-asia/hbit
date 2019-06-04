@@ -1,43 +1,11 @@
 <?php
-namespace App\Http\Controllers\Home;
-
-use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use App\Models\Category;
-use App\Models\Advert;
-use App\Models\Course;
-use App\Models\Tags;
-use App\Models\Campus;
-use App\Models\Article;
-use App\Models\Student;
-use Illuminate\Http\Request;
-
-class StudentController extends Controller
-{
-    public function __construct()
-    {
-        view()->composer('home.layouts.faculty','App\Http\Controllers\Home\IndexController@teacher');
-        view()->composer('home.layouts.header','App\Http\Controllers\Home\NavController@header_nav');
-        view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
-    }
-    //学生内容
-    public function show($id){
-        if((int)$id <= 0) return view('error');
-        $student = Student::studentOne($id);
-        //dump($student);
-        if(!$student) return view('error');
-        return view('api/StudentsStory/studentShow',['student'=>$student]);
-    }
-
-
-    public function Studentsdetails(Request $request){
-        $id = $request->input('id');
-        $Studentfind = new Student();
-        $Studentfind = $Studentfind->Studentfind($id);
-        $Studentfind = $Studentfind->toArray();
-
-        $Tags =Tags::allcount();
-
+/**
+ * Created by PhpStorm.
+ * User: z
+ * Date: 2019/6/4
+ * Time: 21:18
+ */
+<<<<<<< HEAD
         $course = new Course();
         $course = $course->course();
 
@@ -45,7 +13,8 @@ class StudentController extends Controller
         $advert = $advert->getAdvert(1);
         $campus = Campus::getAllCampus();
         $courseall = Course::getAllCourse();
-        $relevant = Article::relevant($tid[]="",$id);
+        $tid = array();
+        $relevant = Article::relevant($tid,$id);
         $prevID = Student::prevID($id);
         $nextId = Student::nextId($id);
         if(empty($prevID)){
@@ -77,5 +46,5 @@ class StudentController extends Controller
         //print_r($Studentfind);die;
         return view("home/studentsdetails",['relevant'=>$relevant,'next'=>$next,'prev'=>$prev,'studentfind'=>$Studentfind,'courseall'=>$courseall,'Tags'=>$Tags,'course'=>$course,'advert'=>$advert,'campus'=>$campus]);
     }
-     
-}
+=======
+>>>>>>> 4a5bb7219c291d2924c6af5a727eeefa9274011d

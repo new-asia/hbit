@@ -22,8 +22,6 @@
 
 {{--nav--}}
 @include('api.layouts.nav')
-
-
 	<script>
 		$("#caidan").live("click", function() {
 			var ariaexpanded = $(this).attr("aria-expanded");
@@ -49,29 +47,24 @@
 				$(this).addClass('collapsed')
 				$(this).attr('aria-expanded', false)
 			}
-
-
-
-
-
 		});
 	</script>
 	<div class="ban">
 		<div id="slideBox" class="slideBox">
 
 			<div class="bd">
-				<div class="tempWrap" style="overflow:hidden; position:relative; width:320px">
-					<ul style="width: 1280px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -640px;">
-						<li class="clone" style="float: left; width: 320px;">
-							<img data-cfsrc="./templates/mobile/images/ban1_img1.jpg" src="./templates/mobile/images/ban1_img1.jpg">
+				<div class="tempWrap" style="overflow:hidden; position:relative; width:100%">
+					<ul style=" width: 100%; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -100%;">
+						<li class="clone" style="float: left; width: 100%;">
+							<img data-cfsrc="./templates/mobile/images/ban1_img1.jpg" style="width: 100%;" src="./templates/mobile/images/ban1_img1.jpg">
 							<div class="btm">
 								<img class="wow slideInRight animated" data-cfsrc="./templates/mobile/images/ban1_img2.png" src="./templates/mobile/images/ban1_img2.png" style="visibility: visible; animation-name: slideInRight;">
 								<img data-cfsrc="./templates/mobile/images/ban1_img3.png" src="./templates/mobile/images/ban1_img3.png">
 								<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">点击咨询</a>
 							</div>
 						</li>
-						<li class="li2" style="float: left; width: 320px;">
-							<img data-cfsrc="./templates/mobile/images/li2_img1.jpg" src="./templates/mobile/images/li2_img1.jpg">
+						<li class="li2" style="float: left; width: 100%;">
+							<img data-cfsrc="./templates/mobile/images/li2_img1.jpg" style="width: 100%;" src="./templates/mobile/images/li2_img1.jpg">
 							<div class="btm">
 								<img class="wow slideInRight animated" data-cfsrc="./templates/mobile/images/li2_img2.png" src="./templates/mobile/images/li2_img2.png" style="visibility: visible; animation-name: slideInRight;">
 								<img class="img3" data-cfsrc="./templates/mobile/images/li2_img3.png" src="./templates/mobile/images/li2_img3.png">
@@ -81,16 +74,16 @@
 								</div>
 							</div>
 						</li>
-						<li style="float: left; width: 320px;">
-							<img data-cfsrc="./templates/mobile/images/ban1_img1.jpg" src="./templates/mobile/images/ban1_img1.jpg">
+						<li style="float: left; width: 100%;">
+							<img data-cfsrc="./templates/mobile/images/ban1_img1.jpg" style="width: 100%;" src="./templates/mobile/images/ban1_img1.jpg">
 							<div class="btm">
 								<img class="wow slideInRight animated" data-cfsrc="./templates/mobile/images/ban1_img2.png" src="./templates/mobile/images/ban1_img2.png" style="visibility: visible; animation-name: slideInRight;">
 								<img data-cfsrc="./templates/mobile/images/ban1_img3.png" src="./templates/mobile/images/ban1_img3.png">
 								<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">点击咨询</a>
 							</div>
 						</li>
-						<li class="li2 clone" style="float: left; width: 320px;">
-							<img data-cfsrc="./templates/mobile/images/li2_img1.jpg" src="./templates/mobile/images/li2_img1.jpg">
+						<li class="li2 clone" style="float: left; width: 100%;">
+							<img data-cfsrc="./templates/mobile/images/li2_img1.jpg" style="width: 100%;" src="./templates/mobile/images/li2_img1.jpg">
 							<div class="btm">
 								<img class="wow slideInRight animated" data-cfsrc="./templates/mobile/images/li2_img2.png" src="./templates/mobile/images/li2_img2.png" style="visibility: visible; animation-name: slideInRight;">
 								<img class="img3" data-cfsrc="./templates/mobile/images/li2_img3.png" src="./templates/mobile/images/li2_img3.png">
@@ -722,199 +715,25 @@
 		</div>
 		<div class="box10-main">
 			<div class="flexslider flextea">
-
 				<div class="flex-viewport" style="overflow: hidden; position: relative;">
 					<ul class="slides" style="width: 800%; margin-left: -320px;">
-						<li class="slide clone" style="width: 320px; float: left; display: block;">
+						@foreach($tea_list as $tea)
+						<li class="slide clone" style="width: 100%; float: left; display: block;">
 							<ol>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201811021010005908.jpg" alt="刘新" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201811021010005908.jpg">
-									</div>
-									<p>刘新</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052011490915.jpg" alt="杨晓芸" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052011490915.jpg">
-									</div>
-									<p>杨晓芸</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201801302338433064.png" alt="李卫军" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201801302338433064.png">
-									</div>
-									<p>李卫军</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201807121715531544.jpg" alt="李春阳" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201807121715531544.jpg">
-									</div>
-									<p>李春阳</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201807121610167696.jpg" alt="徐晓娜" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201807121610167696.jpg">
-									</div>
-									<p>徐晓娜</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201811231131482398.jpg" alt="张志帅" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201811231131482398.jpg">
-									</div>
-									<p>张志帅</p>
-								</li>
+								@foreach($tea as $item)
+									<li>
+										<div class="bg">
+											<div class="border"></div>
+											<img data-cfsrc="./upload/img/201811021010005908.jpg" alt="刘新" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201811021010005908.jpg">
+										</div>
+										<p>{{$item->name}}</p>
+									</li>
+								@endforeach
 							</ol>
 						</li>
-						<li class="slide flex-active-slide" style="width: 320px; float: left; display: block;">
-							<ol>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052008356999.jpg" alt="许彩辉" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052008356999.jpg">
-									</div>
-									<p>许彩辉</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052011102175.jpg" alt="白世鑫" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052011102175.jpg">
-									</div>
-									<p>白世鑫</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201903251512579671.jpg" alt="白涛" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201903251512579671.jpg">
-									</div>
-									<p>白涛</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201901021704136880.jpg" alt="袁伟" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201901021704136880.jpg">
-									</div>
-									<p>袁伟</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052012284792.jpg" alt="张永超" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052012284792.jpg">
-									</div>
-									<p>张永超</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201806071516222169.jpg" alt="王建立" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201806071516222169.jpg">
-									</div>
-									<p>王建立</p>
-								</li>
-							</ol>
-						</li>
-						<li class="slide" style="width: 320px; float: left; display: block;">
-							<ol>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201811021010005908.jpg" alt="刘新" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201811021010005908.jpg">
-									</div>
-									<p>刘新</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052011490915.jpg" alt="杨晓芸" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052011490915.jpg">
-									</div>
-									<p>杨晓芸</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201801302338433064.png" alt="李卫军" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201801302338433064.png">
-									</div>
-									<p>李卫军</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201807121715531544.jpg" alt="李春阳" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201807121715531544.jpg">
-									</div>
-									<p>李春阳</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201807121610167696.jpg" alt="徐晓娜" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201807121610167696.jpg">
-									</div>
-									<p>徐晓娜</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201811231131482398.jpg" alt="张志帅" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201811231131482398.jpg">
-									</div>
-									<p>张志帅</p>
-								</li>
-							</ol>
-						</li>
-						<li class="slide clone" style="width: 320px; float: left; display: block;">
-							<ol>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052008356999.jpg" alt="许彩辉" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052008356999.jpg">
-									</div>
-									<p>许彩辉</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052011102175.jpg" alt="白世鑫" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052011102175.jpg">
-									</div>
-									<p>白世鑫</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201903251512579671.jpg" alt="白涛" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201903251512579671.jpg">
-									</div>
-									<p>白涛</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201901021704136880.jpg" alt="袁伟" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201901021704136880.jpg">
-									</div>
-									<p>袁伟</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201802052012284792.jpg" alt="张永超" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201802052012284792.jpg">
-									</div>
-									<p>张永超</p>
-								</li>
-								<li>
-									<div class="bg">
-										<div class="border"></div>
-										<img data-cfsrc="./upload/img/201806071516222169.jpg" alt="王建立" data-cfstyle="height: 8em;width: 60%;" style="height: 8em;width: 60%;" src="./upload/img/201806071516222169.jpg">
-									</div>
-									<p>王建立</p>
-								</li>
-							</ol>
-						</li>
+						@endforeach
 					</ul>
 				</div>
-				<ol class="flex-control-nav flex-control-paging">
-					<li><a class="flex-active">1</a></li>
-					<li><a class="">2</a></li>
-				</ol>
 			</div>
 		</div>
 		<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">查看更多师资力量</a>
