@@ -44,8 +44,8 @@ var _hmt = _hmt || [];
 <li>
 <a href="/Studentsdetails?id={{$v->student_id}}" class="picbox"><img src="{{$v->img}}"></a>
 <a href="/Studentsdetails?id={{$v->student_id}}" class="txtbox">
-<h3><span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">姓名：{{$v->name}}</span><br><span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">班级：java大数据 </span><br><span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">月薪：{{$v->pay}}</span></h3>
-<p>{{$v->testimonials}}</p>
+<h3><span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">姓名：{{$v->name}}</span><br><span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">班级：{{$v->class_name}} </span><br><span style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">月薪：{{$v->pay}}</span></h3>
+<p>{{  strip_tags($v->testimonials) }}</p>
 </a>
 </li>
 @endforeach
