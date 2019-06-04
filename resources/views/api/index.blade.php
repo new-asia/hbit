@@ -90,11 +90,7 @@
         <p>人工智能</p>
       </div>
     </a>
-<<<<<<< HEAD
     <a href="/python.html">
-=======
-    <a href="tencent://message/?Menu=yes&amp;uin=104044302">
->>>>>>> 4a5bb7219c291d2924c6af5a727eeefa9274011d
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Python课程</p>
