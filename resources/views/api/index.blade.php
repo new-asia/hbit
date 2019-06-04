@@ -22,15 +22,15 @@
 
   {{--nav--}}
   @include('api.layouts.nav')
-  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 375px;height:40%">
+  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;height:40%">
     <div id="bd" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
       @foreach($rotation_chart as $items)
-        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 375px;">
+        <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 100%;">
           <img src="{{$items->picture_src}}" alt="轮播" class="img-responsive">
         </div>
       @endforeach
     </div>
-    <script>
+    <script>  
         window.onload = function() {
             /*轮播图*/
             //隐藏第一张以外的图片
