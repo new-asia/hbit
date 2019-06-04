@@ -19,7 +19,7 @@ class NavMenu extends Model
         return DB::table('nav_menu')
             ->where('nav_id','=','3')
             ->where('status','=','1')
-            ->select('name','href','id','parent_id','list_order')
+            ->select('name','href','id','parent_id','list_order','img')
             ->get();
     }
 }

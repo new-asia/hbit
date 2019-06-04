@@ -57,12 +57,11 @@
                 <div class="base clear" title="">
                     @foreach($nav as $item)
                         @if($item->parent_id == 2)
-                            <a href="/{{$item->href}}" id="{{$item->id}}" target="_blank" title="{{$item->name}}"><img src="/static/upload/img/java_ico.png" width="63" height="73"><u>{{$item->name}}</u></a>
+                            <a href="/{{$item->href}}" id="{{$item->id}}" target="_blank" title="{{$item->name}}"><img src="{{$item->img}}" width="63" height="73"><u>{{$item->name}}</u></a>
                         @endif
                     @endforeach
                     <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" title="云计算"><img src="/static/upload/img/linux_ico.png" width="63" height="73"><u>云计算</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" title="人工智能"><img src="/static/upload/img/big_ico.png" width="63" height="73"><u>人工智能</u></a>
-                    <a href="/python.html" target="_blank" title="Python课程"><img src="/static/upload/img/python_ico.png" width="63" height="73"><u>Python课程</u></a>
                     <a href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank" title="UI/UE设计"><img src="/static/upload/img/ui_ico.png" width="63" height="73"><u>UI/UE设计</u></a>
                 </div>
             </div>
