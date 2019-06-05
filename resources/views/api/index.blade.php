@@ -118,7 +118,7 @@
     <div class="header">
       <img src="/templates/mobile/src/icons/header_icon.png" class="header-icon">
       <strong>就业信息</strong>
-      <a href="/EmploymentInformation">更多信息 &gt;&gt;</a>
+      <a href="/EmploymentInformation.html">更多信息 &gt;&gt;</a>
     </div>
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
@@ -157,7 +157,7 @@
     <div class="header">
       <img src="/templates/mobile/src/icons/header_icon.png" class="header-icon">
       <strong>学员生活</strong>
-      <a href="/StudentsStory.blade.php">更多信息 &gt;&gt;</a>
+      <a href="/StudentsStory.html">更多信息 &gt;&gt;</a>
     </div>
     <div class="content">
       <div class="swiper-container-list swiper-container-horizontal">
@@ -198,7 +198,7 @@
     <div class="header">
       <img src="/templates/mobile/src/icons/header_icon.png" class="header-icon">
       <strong>IT 资讯</strong>
-      <a href="/Campusall">更多信息 &gt;&gt;</a>
+      <a href="/Campusall.html">更多信息 &gt;&gt;</a>
     </div>
     <div class="content">
       <div class="nav-bar">
