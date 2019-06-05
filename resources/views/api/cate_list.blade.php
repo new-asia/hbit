@@ -38,7 +38,7 @@
                         <ul>
                             @foreach($article as $v)
                             <li>
-                                <a href="/news/show-3239.html">
+                                <a href="/show-{{$v->article_id}}.html">
                                     <img data-cfsrc="/upload/201811/07/201811071146444912.png" style="display:none;visibility:hidden;" /><noscript><img src="/upload/201811/07/201811071146444912.png" /></noscript>
                                     <h2>{{$v->title}}</h2>
                                     <div class="note">
