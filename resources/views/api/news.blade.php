@@ -75,7 +75,7 @@
             @foreach($list as $v)
             <div class="weui-panel weui-panel_access">
                 <div class="weui-panel__hd" style="width: 50%;float: left;">{{$v[0]->c_name}}</div>
-                <div class="weui-panel__hd" style="text-align: right;"><a href="/news/62.html">更多</a></div>
+                <div class="weui-panel__hd" style="text-align: right;"><a href="/cat/show-{{$v[0]->cid}}.html">更多</a></div>
                 <div class="weui-panel__bd">
                     <div class="txt-list">
                         <ul>

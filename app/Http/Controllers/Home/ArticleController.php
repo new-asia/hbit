@@ -113,5 +113,16 @@ class ArticleController extends Controller
     
         return view('home/category/show',['article'=>$Article_list,'Category'=>$Category,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);
     }
+
+
+    public function cate_list($id){
+        if((int)$id <= 0) return view('error');
+        $isMobile = $this->isMobile();
+       
+        if (!$isMobile) return view('error');
+        $Article = new Article();
+        $Article_list = $Article->getcategory($id,5,50);//分页  数据
+        return view('api/cate_list',['article'=>$Article_list]);
+    }
        
 }
