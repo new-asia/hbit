@@ -52,4 +52,7 @@ Route::namespace('Home')->group(function () {
     //学生
     Route::get('/StudentsStory/show-{id}.html', 'StudentController@show');
     Route::get('/Studentsdetails.html', 'StudentController@Studentsdetails');
+
+    //文章分类 
+    Route::get('/cat/show-{id}.html', 'ArticleController@cate_list');
 });

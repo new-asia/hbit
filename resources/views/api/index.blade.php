@@ -198,7 +198,7 @@
     <div class="header">
       <img src="/templates/mobile/src/icons/header_icon.png" class="header-icon">
       <strong>IT 资讯</strong>
-      <a href="/news.html">更多信息 &gt;&gt;</a>
+      <a href="/Campusall">更多信息 &gt;&gt;</a>
     </div>
     <div class="content">
       <div class="nav-bar">
