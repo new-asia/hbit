@@ -82,7 +82,7 @@
                             @foreach($v as $kk=>$vv)
                             @if($kk != 0)
                             <li>
-                                <a href="/show-{{$vv->article_id}}.html}">
+                                <a href="/show-{{$vv->article_id}}.html">
                                     <img data-cfsrc="{{$vv->img}}" src="{{$vv->img}}">
                                     <h2>{{$vv->title}}</h2>
                                     <div class="note">
