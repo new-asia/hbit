@@ -45,7 +45,7 @@ class StudentController extends Controller
         $advert = $advert->getAdvert(1);
         $campus = Campus::getAllCampus();
         $courseall = Course::getAllCourse();
-        $relevant = Article::relevant($tid[]="",$id);
+        $relevant = Article::relevant(array(),$id);
         $prevID = Student::prevID($id);
         $nextId = Student::nextId($id);
         if(empty($prevID)){
