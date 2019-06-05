@@ -132,7 +132,7 @@
     <div class="right_item_content">
         <ul>
        @foreach($teacher as $v)
-          <li><a href="/Faculty/show-2.html">{{$v->name}}</a></li>
+          <li><a href="/Faculty/show-{{$v->teacher_id}}.html">{{$v->name}}</a></li>
        @endforeach
 
 
