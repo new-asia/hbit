@@ -59,7 +59,7 @@ var _hmt = _hmt || [];
         @if($student->toArray()['current_page'] == $i)
                 <span class="current">{{$i}}</span>
         @else
-                <a class="current" href="/StudentsStory?page={{$i}}">{{$i}}</a>
+                <a class="current" href="/StudentsStory.html?page={{$i}}">{{$i}}</a>
         @endif
 
         @endfor
