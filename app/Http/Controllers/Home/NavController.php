@@ -34,7 +34,6 @@ class NavController extends Controller
         }
         return view('home/history');
     }
-
     public function school(){
         $isMobile = $this->isMobile();
 
@@ -43,7 +42,6 @@ class NavController extends Controller
         }
         return view('home/school');
     }
-
     public function flow(){
         return view('home/flow');
     }

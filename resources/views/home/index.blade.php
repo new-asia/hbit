@@ -687,7 +687,7 @@
                         </td>
                         <td>
                             <span class="glyphicon glyphicon-fire"></span>
-                            <a href="{{$item->enroll_link}}" class="btn btn-danger" target="_blank">
+                            <a href="tencent://message/?Menu=yes&amp;uin=104044302" class="btn btn-danger" target="_blank">
                                 <b>火热抢座中</b>
                             </a>
                         </td>
@@ -707,7 +707,7 @@
             <div class="container">
                 <div class="newDiv clearfix">
                     <div class="box">
-                        <a href="/Campus/show-1063.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201807051107536358.jpg">
                             </div>
@@ -719,7 +719,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1062.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201807051057055548.jpg">
                             </div>
@@ -731,7 +731,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1061.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201807031612306876.jpg">
                             </div>
@@ -743,7 +743,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1060.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806281412153312.jpg">
                             </div>
@@ -755,7 +755,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1059.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806271351096056.jpg">
                             </div>
@@ -767,7 +767,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1058.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806270728058429.jpg">
                             </div>
@@ -779,7 +779,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1057.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806260741150997.jpg">
                             </div>
@@ -791,7 +791,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1056.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806220951455675.jpg">
                             </div>
@@ -803,7 +803,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1055.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806210816071359.jpg">
                             </div>
@@ -815,7 +815,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1053.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806131402540519.png">
                             </div>
@@ -827,7 +827,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1052.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806120840162355.gif">
                             </div>
@@ -839,7 +839,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1051.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806120825226105.jpg">
                             </div>
@@ -851,7 +851,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1050.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806110932338693.jpg">
                             </div>
@@ -863,7 +863,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1049.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806081911253136.jpg">
                             </div>
@@ -875,7 +875,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1048.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806071001358712.jpg">
                             </div>
@@ -887,7 +887,7 @@
                         </a>
                     </div>
                     <div class="box">
-                        <a href="/Campus/show-1047.html" target="_blank">
+                        <a href="javascript:;" target="_blank">
                             <div class="img">
                                 <img src="/static/upload/img/201806061113036798.jpg">
                             </div>

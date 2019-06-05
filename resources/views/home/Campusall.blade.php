@@ -287,7 +287,7 @@
 					<div class="right_item_content">
 						<ul>
 							@foreach($recommend as $v)
-								<li><a href="/show-{{$v->article_id}}">{{$v->title}}</a></li>
+								<li><a href="/show-{{$v->article_id}}.html">{{$v->title}}</a></li>
 							@endforeach
 						</ul>
 					</div>

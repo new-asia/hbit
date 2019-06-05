@@ -8,8 +8,8 @@
 <div class="content_nav">
 <div class="container">
 <span>当前位置：</span>
-<a href="/index.html">首页</a> &gt;
-<a href=".abouts.html">关于我们</a> &gt;
+<a href="/">首页</a> &gt;
+<a href="/abouts.html">关于我们</a> &gt;
 企业简介
 </div>
 </div>

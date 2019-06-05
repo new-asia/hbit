@@ -19,8 +19,8 @@ var _hmt = _hmt || [];
 <div class="content_nav">
 <div class="container">
 <span>当前位置：</span>
-<a href="/index.html">首页</a> &gt;
-<a href="/about/abouts.html">关于我们</a> &gt;
+<a href="/">首页</a> &gt;
+<a href="/abouts.html">关于我们</a> &gt;
 发展历史
 </div>
 </div>
@@ -29,10 +29,10 @@ var _hmt = _hmt || [];
 <div class="con_about">
 <div class="about_nav">
 <ul>
-    <li><a id="abouts" href="/abouts">企业简介</a></li>
-    <li><a id="idea" href="/idea">企业理念</a></li>
-    <li><a id="history" href="/history">发展历史</a></li>
-    <li><a id="school" href="/school">直营校区</a></li>
+    <li><a id="abouts" href="/abouts.html">企业简介</a></li>
+    <li><a id="idea" href="/idea.html">企业理念</a></li>
+    <li><a id="history" href="/history.html">发展历史</a></li>
+    <li><a id="school" href="/school.html">直营校区</a></li>
 </ul>
 </div>
 <div class="about_con">

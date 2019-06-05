@@ -30,6 +30,7 @@ Route::namespace('Home')->group(function () {
     Route::get('/school.html', 'NavController@school');
     Route::get('/history.html', 'NavController@history');
     Route::get('/flow.html', 'NavController@flow');
+    Route::get('/school.html', 'NavController@school');
     Route::get('/abouts.html', 'NavController@abouts');
     Route::get('/ClassInformation.html', 'NavController@ClassInfomation');
     Route::get('nav/header_nav', 'NavController@header_nav');
