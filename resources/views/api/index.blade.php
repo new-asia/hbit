@@ -7,12 +7,12 @@
   <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训">
   <meta name="description" content="鸿博IT教育，具有良好的学术学习氛围，最具前沿的互联网高新技术。 专注互联网领域技术10余年，全国知名十佳教育培训机构，IT职业教育领军品牌。">
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_689149_dby6e0fcds.css">
-  <link rel="stylesheet" href="./templates/mobile/plugin/bootstrap-3.3.7/css/bootstrap.css">
-  <link rel="stylesheet" href="./templates/mobile/plugin/swiper/swiper-4.3.3.min.css">
-  <link rel="stylesheet" href="./templates/mobile/css/style1.css">
+  <link rel="stylesheet" href="/templates/mobile/plugin/bootstrap-3.3.7/css/bootstrap.css">
+  <link rel="stylesheet" href="/templates/mobile/plugin/swiper/swiper-4.3.3.min.css">
+  <link rel="stylesheet" href="/templates/mobile/css/style1.css">
   <!--[if lt IE 9]>
-  <script src="./templates/mobile/plugin/bootstrap-3.3.7/js/html5shiv.js"></script>
-  <script src="./templates/mobile/plugin/bootstrap-3.3.7/js/respond.min.js"></script>
+  <script src="/templates/mobile/plugin/bootstrap-3.3.7/js/html5shiv.js"></script>
+  <script src="/templates/mobile/plugin/bootstrap-3.3.7/js/respond.min.js"></script>
   <![endif]-->
 </head>
 
@@ -168,7 +168,7 @@
             <div class="student-content">
 
             @foreach ($student as $item)
-              <a href="/StudentsStory/show-4.blade.php">
+              <a href="/StudentsStory/show-{{$item->student_id}}.html">
                 <div class="item">
                   <img src="{{$item->img}}" alt="" style="width: auto;height:140px;max-width: 100%;max-height: 100%;" class="img-responsive">
                   <p>姓名：{{$item->name}}</p>
