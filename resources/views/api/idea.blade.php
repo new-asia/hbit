@@ -2,9 +2,9 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>金铭鼎IT教育-匠心打造,品质铸就</title>
+    <title>鸿博IT教育-匠心打造,品质铸就</title>
     <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训" />
-    <meta name="description" content="金铭鼎IT教育，坐落于首都北京市昌平区，毗邻北京科技大学，具有良好的学术学习氛围，最具前沿的互联网高新技术。 专注互联网领域技术10余年，全国知名十佳教育培训机构，IT职业教育领军品牌。" />
+    <meta name="description" content="鸿博IT教育，坐落于首都北京市昌平区，毗邻北京科技大学，具有良好的学术学习氛围，最具前沿的互联网高新技术。 专注互联网领域技术10余年，全国知名十佳教育培训机构，IT职业教育领军品牌。" />
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <link rel="stylesheet" href="/templates/mobile/css/reset.css" />
@@ -107,7 +107,7 @@
             "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
             "@id": "https://www.itjmd.com/",
             "appid": "1600403569933280",
-            "title": "金铭鼎IT教育-匠心打造,品质铸就",
+            "title": "鸿博IT教育-匠心打造,品质铸就",
             "images": [
                 "https://www.itjmd.com/upload/201807/04/201807041026260216.jpg",
                 "https://www.itjmd.com/upload/201806/24/201806241911120948.png",

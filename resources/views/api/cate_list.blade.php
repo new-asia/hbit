@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>计算机IT - 金铭鼎IT教育-匠心打造,品质铸就</title>
+    <title>计算机IT - 鸿博IT教育-匠心打造,品质铸就</title>
     <meta name="keywords" content="计算机IT,计算机IT培训,计算机I学习" />
     <meta name="description" content="近日，谷歌正式发布了最新的安卓操作系統，并将系统命名为Android Pie，虽然目前这个系统仅仅支持谷歌自家的Pixel手机，但是在系統的测试阶段时，谷歌已经对索尼、小米、OPPO和vivo等手机进行了开放测试，不久后将逐渐开始适配。在新的系統Android Pie中，谷歌加入了大量…" />
     <link rel="stylesheet" type="text/css" href="/css/pagination.css" />
