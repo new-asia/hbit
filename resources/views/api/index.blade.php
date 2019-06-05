@@ -22,7 +22,7 @@
 
   {{--nav--}}
   @include('api.layouts.nav')
-  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 100%;height:40%">
+  <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style=" margin-top: 30px;width: 100%;height:30%">
     <div id="bd" class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
       @foreach($rotation_chart as $items)
         <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 100%;">

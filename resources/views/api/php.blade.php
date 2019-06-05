@@ -59,7 +59,7 @@
 	</script>
 	<div class="main">
 
-		<div class="ban">
+		<div class="ban" style="width: 100%;padding-top: 50px;">
 
 			<img data-cfsrc="./templates/mobile/images/banner1.jpg" src="./templates/mobile/images/banner1.jpg">
 		</div>
@@ -141,8 +141,8 @@
 				<img data-cfsrc="./templates/mobile/images/box5top.jpg" src="./templates/mobile/images/box5top.jpg">
 				<div id="scrollDiv" class="scrollDiv">
 					<div class="box5bot bd">
-						<div class="tempWrap" style="overflow:hidden; position:relative; height:260px">
-							<ul style="height: 962px; position: relative; padding: 0px; margin: 0px; top: -387px;">
+						<div class="tempWrap" style="overflow:hidden; position:relative;">
+							<ul style="height: 100%; position: relative; padding: 0px; margin: 0px; top: -100%;">
 								<li class="clone" style="height: 26px;">
 									<span class="b5bot1">乔**</span>
 									<span class="b5bot2">亚信</span>

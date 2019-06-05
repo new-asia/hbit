@@ -594,7 +594,7 @@
 			</div>
 			<div class="main">
 				<div class="box5_main wow fadeInRight" style="visibility: hidden; animation-name: none;">
-					<div class="flexslider flextea">
+					<div class="flexslider flextea" style="height: 250px">
 
 						<div class="flex-viewport" style="overflow: hidden; position: relative;">
 							<ul class="slides" style="width: 1200%; margin-left: -555.239px;">

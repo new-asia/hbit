@@ -24,13 +24,11 @@ body{background: #26268a;overflow-x: hidden;}
 /* tab */
 .tab{
 	width: 100%;
-	/*height: 100%;*/
 	float: left;
 	margin-top: 5%;
 }
 .tab ul{
 	width: 90%;
-	height: 100%;
 	margin: 0 auto;
 }
 .tab ul li{
@@ -48,7 +46,6 @@ body{background: #26268a;overflow-x: hidden;}
 	color: #fff;
 	float: left;
 	width: 100%;
-	height: 100%;
 	text-align: center;
 }
 .tab ul li.tabon{
@@ -70,7 +67,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .tabs ul{
 	width: 90%;
-	height: 100%;
 	margin: 0 auto;
 }
 .tabs ul li{
@@ -88,7 +84,6 @@ body{background: #26268a;overflow-x: hidden;}
 	color: #fff;
 	float: left;
 	width: 100%;
-	height: 100%;
 	text-align: center;
 }
 .tabs ul li.tabon{
@@ -102,7 +97,6 @@ body{background: #26268a;overflow-x: hidden;}
 /* box1 */
 .box1{
 	width: 100%;
-	height: 100%;
 	margin-top: 5%;
 	float: left;
 }
@@ -129,20 +123,17 @@ body{background: #26268a;overflow-x: hidden;}
 /* .box2 */
 .box2{
 	width: 100%;
-	height: 100%;
 	margin-top: 8%;
 	float: left;
 }
 .box2 .box2con{
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
 }
 
 /* box3 */
 .box3{
 	width: 100%;
-	height: 100%;
 	margin-top: 8%;
 	float: left;
 }
@@ -164,7 +155,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .box3 .box3con{
 	width: 100%;
-	height: 100%;
 	margin-top: 10%;
 }
 .box3 .box3con div{
@@ -194,7 +184,6 @@ body{background: #26268a;overflow-x: hidden;}
 /* box4 */
 .box4,.box5,.box6{
 	width: 100%;
-	height: 100%;
 	margin-top: 5%;
 	float: left;
 }
@@ -220,7 +209,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .box5 .box5con .box5top{
 	width: 100%;
-	height: 100%;
 	margin-top: .5em;
 	margin-bottom: .2em;
 	float: left;
@@ -233,7 +221,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .box5 .box5con .box5bot{
 	width: 100%;
-	height: 100%;
 	margin-top: 2%;
 }
 .box5 .box5con .box5bot li{
@@ -314,7 +301,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .box6 .box6lcon .b6con-cen{
 	width: 100%;
-	height: 100%;
 	float: left;
 	padding-bottom: 5%;
 }
@@ -355,7 +341,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .box6 .box6lcon .b6con-bot{
 	width: 100%;
-	height: 100%;
 	float: left;
 	margin-top: 5%;
 	padding-bottom: 5%;
@@ -402,7 +387,6 @@ body{background: #26268a;overflow-x: hidden;}
 /* box7 */
 .box7{
 	width: 100%;
-	height: 100%;
 	float: left;
 	margin-top: 10%;
 }
@@ -465,7 +449,6 @@ body{background: #26268a;overflow-x: hidden;}
 }
 .box8{
 	width: 100%;
-	height: 100%;
 	float: left;
 	margin-top: 8%;
 }
@@ -504,7 +487,6 @@ body{background: #26268a;overflow-x: hidden;}
 /* box9 */
 .box9{
 	width: 100%;
-	height: 100%;
 	margin-top: 8%;
 	float: left;
 }
@@ -533,7 +515,6 @@ body{background: #26268a;overflow-x: hidden;}
 	width: 96%;
 	margin-left: 2%;
 	padding: 1.2em 0;
-	height: 100%;
 	float: left;
 	border-bottom: 1px #ccc dashed;
 }
@@ -563,7 +544,6 @@ body{background: #26268a;overflow-x: hidden;}
 /* box10 */
 .box10{
 	width: 100%;
-	height: 100%;
 	margin-top: 5%;
 }
 .box10 .box10con{
@@ -629,7 +609,6 @@ body{background: #26268a;overflow-x: hidden;}
 /* 底部 */
 .footer{
 	width: 100%;
-	height: 100%;
 	float: left;
 	margin-top: 15%;
 	background: #16164f;
@@ -732,4 +711,3 @@ body{background: #26268a;overflow-x: hidden;}
 	}
 }
 
-	
