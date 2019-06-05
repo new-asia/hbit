@@ -185,7 +185,7 @@
 <h4>热门标签</h4>
 <div class="tags-box clearfix">
     @foreach($Tags as $v)
-        <a href="{{$v['id']}}">{{$v['name']}}<i>({{$v['count']}})</i></a>
+        <a href="/tags/show-{{$v['id']}}.html">{{$v['name']}}<i>({{$v['count']}})</i></a>
     @endforeach
 </div>
 </div>
