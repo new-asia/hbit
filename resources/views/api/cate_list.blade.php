@@ -59,7 +59,10 @@
 
 
             <div class="page-list">
-                <span>共{{ $article->total() }}记录</span> {{$article->links()}}
+                <span>共{{ $article->total() }}记录</span>
+                <a href="{{$article->previousPageUrl()}}">«上一页</a>
+                <span class="current">{{$article->currentPage()}}</span>
+               <a href="{{$article->nextPageUrl()}}">下一页»</a>
             </div>
 
 
