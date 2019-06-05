@@ -116,4 +116,12 @@ class Article extends Model
             ->select('title','article_id')
             ->get();
     }
+    public function api_list($c_id){
+        return DB::table('article')
+            ->where('cid',$c_id)
+            ->orderBy('add_time','desc')
+            ->limit(5)
+            ->select('title',"add_time",'article_id')
+            ->get();
+    }
 }

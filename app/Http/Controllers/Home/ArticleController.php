@@ -27,8 +27,11 @@ class ArticleController extends Controller
         $isMobile = $this->isMobile();
 
         if($isMobile){
+            $A = new Article();
             $article = Article::where('is_show',1)->find($id);
-            return view('api/content',['article'=>$article]);
+
+            $article_list = $A->api_list($article->cid);
+            return view('api/content',['article'=>$article,'article_list'=>$article_list]);
         }
 
         $article = Article::where('is_show',1)->find($id);
