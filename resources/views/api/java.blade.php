@@ -60,7 +60,7 @@
 							<div class="btm">
 								<img class="wow slideInRight animated" data-cfsrc="./templates/mobile/images/ban1_img2.png" src="./templates/mobile/images/ban1_img2.png" style="visibility: visible; animation-name: slideInRight;">
 								<img data-cfsrc="./templates/mobile/images/ban1_img3.png" src="./templates/mobile/images/ban1_img3.png">
-								<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">点击咨询</a>
+								<a href="#" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">点击咨询</a>
 							</div>
 						</li>
 						<li class="li2" style="float: left; width: 100%;">
@@ -79,7 +79,7 @@
 							<div class="btm">
 								<img class="wow slideInRight animated" data-cfsrc="./templates/mobile/images/ban1_img2.png" src="./templates/mobile/images/ban1_img2.png" style="visibility: visible; animation-name: slideInRight;">
 								<img data-cfsrc="./templates/mobile/images/ban1_img3.png" src="./templates/mobile/images/ban1_img3.png">
-								<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">点击咨询</a>
+								<a href="#" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">点击咨询</a>
 							</div>
 						</li>
 						<li class="li2 clone" style="float: left; width: 100%;">
@@ -114,7 +114,7 @@
 			<img data-cfsrc="./templates/mobile/images/box1_img2.jpg" src="./templates/mobile/images/box1_img2.jpg">
 			<img data-cfsrc="./templates/mobile/images/box1_img3.jpg" src="./templates/mobile/images/box1_img3.jpg">
 		</div>
-		<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">咨询了解更多</a>
+		<a href="#" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">咨询了解更多</a>
 	</div>
 
 	<div class="box2">
@@ -149,7 +149,7 @@
 				<div class="fr">2,500,000,000<span>个</span></div>
 			</li>
 		</ul>
-		<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">咨询了解更多</a>
+		<a href="#" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">咨询了解更多</a>
 	</div>
 
 	<div class="box3">
@@ -417,13 +417,13 @@
 				</div>
 			</div>
 			<p style="color: #fff;font-size: .8em;text-align: center;padding: 0 5% 5%;">*为保障学员隐私，部分信息隐藏，相关数据来源于公司内部统计</p>
-			<a href="https://tb.53kf.com/code/client/10169396/1" class="btn xz_btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">查看全部就业薪资</a>
+			<a href="#" class="btn xz_btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">查看全部就业薪资</a>
 			<h2>Java工程师岗位薪酬发展图</h2>
 			<img data-cfsrc="./templates/mobile/images/box3_img2.jpg" src="./templates/mobile/images/box3_img2.jpg">
-			<a href="https://tb.53kf.com/code/client/10169396/1" class="btn btn2 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">工作方面困惑咨询</a>
+			<a href="#" class="btn btn2 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">工作方面困惑咨询</a>
 			<h2>可以触摸到未来的编程选择</h2>
 			<img data-cfsrc="./templates/mobile/images/box3_img3.jpg" src="./templates/mobile/images/box3_img3.jpg">
-			<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wl_btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">咨询了解更多详情</a>
+			<a href="#" class="btn wl_btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">咨询了解更多详情</a>
 		</div>
 	</div>
 
@@ -468,7 +468,7 @@
 						<span class="span3">已有28795人下载</span>
 					</li>
 				</ul>
-				<a href="https://tb.53kf.com/code/client/10169396/1" target="_blank" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">免费索取资源</a>
+				<a href="#" target="_blank" class="btn wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">免费索取资源</a>
 			</div>
 		</div>
 	</div>
@@ -700,7 +700,7 @@
 			</div>
 		</div>
 		<img data-cfsrc="./templates/mobile/images/box9_img1.jpg" src="./templates/mobile/images/box9_img1.jpg">
-		<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"> 咨询了解更多</a>
+		<a href="#" class="btn wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"> 咨询了解更多</a>
 	</div>
 
 	<div class="box10">
@@ -736,7 +736,7 @@
 				</div>
 			</div>
 		</div>
-		<a href="https://tb.53kf.com/code/client/10169396/1" class="btn wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">查看更多师资力量</a>
+		<a href="#" class="btn wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">查看更多师资力量</a>
 	</div>
 
 	{{--tabBar--}}

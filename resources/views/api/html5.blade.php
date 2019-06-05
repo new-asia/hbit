@@ -397,7 +397,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="https://tb.53kf.com/code/client/10169396/1" class="a_btn wow slideInUp" id="" style="visibility: hidden; animation-name: none;">点击咨询</a>
+			<a href="#" class="a_btn wow slideInUp" id="" style="visibility: hidden; animation-name: none;">点击咨询</a>
 		</div>
 	</div>
 
@@ -575,7 +575,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="https://tb.53kf.com/code/client/10169396/1" class="a_btn wow slideInUp" id="" style="visibility: hidden; animation-name: none;">了解课程详情</a>
+			<a href="#" class="a_btn wow slideInUp" id="" style="visibility: hidden; animation-name: none;">了解课程详情</a>
 		</div>
 	</div>
 
@@ -717,7 +717,7 @@
 					</div>
 				</li>
 			</ul>
-			<a href="https://tb.53kf.com/code/client/10169396/1" class="a_btn wow slideInUp" id="" style="visibility: hidden; animation-name: none;">我适合吗？</a>
+			<a href="#" class="a_btn wow slideInUp" id="" style="visibility: hidden; animation-name: none;">我适合吗？</a>
 		</div>
 	</div>
 

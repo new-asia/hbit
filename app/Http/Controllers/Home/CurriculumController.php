@@ -47,10 +47,7 @@ class CurriculumController extends Controller
     }
 
     public function python(){
-        $isMobile = $this->isMobile();
-        if($isMobile){
-            return view('api/python');
-        }
+    
         $teacher = new Teacher();
         $tea_list = $teacher->getpyTeacher(6);
         return view('home/python',['tea_list'=>$tea_list]);

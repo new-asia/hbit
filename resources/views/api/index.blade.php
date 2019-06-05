@@ -90,7 +90,7 @@
         <p>人工智能</p>
       </div>
     </a>
-    <a href="/python.html">
+    <a href="#">
       <div class="type-item">
         <img src="/templates/mobile/src/images/type.png" alt="">
         <p>Python课程</p>
@@ -111,7 +111,7 @@
   </div>
 
   <div class="fast-enter">
-    <a href="http://q.url.cn/ABULOl?_type=wpa&amp;qidian=true"><img src="/upload/img/201807041037584805.png" alt="广告1" class="img-responsive"></a>
+    <a href="#"><img src="/upload/img/201807041037584805.png" alt="广告1" class="img-responsive"></a>
   </div>
 
   <div class="content-module">
@@ -191,7 +191,7 @@
   </div>
 
   <div class="fast-enter">
-    <a href="http://q.url.cn/ABULOl?_type=wpa&amp;qidian=true"><img src="/upload/img/201808131712170056.jpg" alt="广告1" class="img-responsive"></a>
+    <a href="#"><img src="/upload/img/201808131712170056.jpg" alt="广告1" class="img-responsive"></a>
   </div>
 
   <div class="content-module">
@@ -270,7 +270,7 @@
           </div>
           <div class="swiper-slide swiper-slide-next" style="width: 355px;">
             <div>
-              <a href="">
+              <a href="#">
                 <img src="/upload/img/201802051948025886.jpg" alt="" class="img-responsive">
               </a>
               <div class="school-content">
@@ -294,29 +294,29 @@
     <div class="header" style="position: relative;height: 40px;line-height: 40px;">
       <strong style="float: left;">在鸿博，他们有话说</strong>
       <strong class="header-icon" style="position: absolute;background-color: red;height: 5px;border-radius: 5px;width: 80px;bottom: 0;left: 0;"></strong>
-      <a href="/Campus.blade.php" style="float: right;">更多信息 &gt;&gt;</a>
+      <a href="/Campusall.html" style="float: right;">更多信息 &gt;&gt;</a>
     </div>
     <div class="content">
       <div class="knowledge-content">
-        <a href="/Campus/show-1063.html">
+        <a href="#">
           <div class="item">
             <span>你想成为“扶摇式女主”吗？</span>
             <img src="/upload/img/201807051107536358.jpg" alt="" class="img-responsive">
           </div>
         </a>
-        <a href="/Campus/show-1062.html">
+        <a href="#">
           <div class="item">
             <span>谢谢这些校长的毕业致辞把我从毕业季的伤感中拉了出来！</span>
             <img src="/upload/img/201807051057055548.jpg" alt="" class="img-responsive">
           </div>
         </a>
-        <a href="/Campus/show-1061.html">
+        <a href="#">
           <div class="item">
             <span>鸿博教育给您讲解谷歌涂鸦的由来</span>
             <img src="/upload/img/201807031612306876.jpg" alt="" class="img-responsive">
           </div>
         </a>
-        <a href="/Campus/show-1060.html">
+        <a href="#">
           <div class="item">
             <span>“冲天一博气如虹,踏浪凌波入海中”鸿博教育祝高考学子金榜题名</span>
             <img src="/upload/img/201806281412153312.jpg" alt="" class="img-responsive">
@@ -328,7 +328,7 @@
 
 
   <div class="page-footer">
-    <img src="/templates/mobile/src/images/qrcode.jpg" alt="" class="img-responsive">
+    <img src="/templates/mobile/src/images/hbit.jpg" alt="" class="img-responsive">
     <p style="margin-top: 5px;font-weight: bold;">关注鸿博教育</p>
     <p>版权所有 2006 - 2018 北京鸿博互联软件有限公司</p>
     <p>地址：北京市海淀区苏家坨54号</p>
