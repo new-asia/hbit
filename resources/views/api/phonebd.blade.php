@@ -136,7 +136,7 @@
 				<div class="bm_con">
 					<h2>每期开班座位有限<br>预报名可优先享有占座特权哦！</h2>
 					<iframe style="display:none" id="ajaxframe"  name="ajaxframe"></iframe>
-					<form id="feedback_form" url=""  action="{{url('apply')}}" method="post" target="ajaxframe">
+					<form id="feedback_form" url=""  action="{{url('apply/phonebd.html')}}" method="post" target="ajaxframe">
 						@csrf
 						<div class="left">
 							<ul>

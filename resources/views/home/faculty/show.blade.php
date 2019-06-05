@@ -94,6 +94,18 @@
 								</select>
 								<input id="btnSubmit" type="button" class="lfMflfBtn" value="提交申请" onclick="check()"  />
 							</form>
+                            <div class="form-group" style="margin-left: 50px;">
+                                <div id="Tips" style="color:red;"></div>
+                                @if (count($errors) > 0)
+                                    <div class="alert alert-danger">
+                                        <ul style="color:red;">
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
+                            </div>
                         </div>
 					</div>
 					

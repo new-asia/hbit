@@ -37,7 +37,7 @@ Route::namespace('Home')->group(function () {
     Route::get('/show-{id}.html', 'ArticleController@show');
     Route::get('/Campusall.html', 'ArticleController@Campusall');
     //报名
-    Route::post('/apply.html', 'EnrollController@apply');
+    Route::post('/apply/{url}', 'EnrollController@apply');
 
 
     Route::get('/EmploymentInformation.html', 'IndexController@employmentInformation');

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\Enroll;
 class EnrollController extends Controller
 {
-    public function apply(Request $request){
+    public function apply($url,Request $request){
         $post = $request->input();
         //判断传过来的时候是POST方法
         if(!$request->isMethod('POST')){
@@ -50,7 +50,7 @@ class EnrollController extends Controller
         }
         $isMobile = $this->isMobile();
         if (!$isMobile) {
-            return redirect('faculty')->with('message', '报名成功');
+            return redirect($url)->with('message', '报名成功');
         }
     }
 }
