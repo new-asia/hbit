@@ -5,12 +5,12 @@
       <div class="mNav">
         <div class="mNav-close"><img src="/templates/mobile/images/mNav_10.png" width="19" height="19"></div>
         <ul style="margin-bottom: 00px;">
-          <li><a href="/faculty"><img src="/templates/mobile/images/shizi.png"><span>师资</span></a></li>
-          <li><a href="/EmploymentInformation"><img src="/templates/mobile/images/jiuye.png"><span>就业</span></a></li>
-          <li><a href="/phonebd"><img src="/templates/mobile/images/baoming.png"><span>报名</span></a></li>
-          <li><a href="/Campusall"><img src="/templates/mobile/images/ITzixun.png"><span>IT资讯</span></a></li>
-          <li><a href="/StudentsStory"><img src="/templates/mobile/images/gushi.png"><span>故事</span></a></li>
-          <li><a href="/abouts"><img src="/templates/mobile/images/guanyu.png"><span>关于</span></a></li>
+          <li><a href="/faculty.html"><img src="/templates/mobile/images/shizi.png"><span>师资</span></a></li>
+          <li><a href="/EmploymentInformation.html"><img src="/templates/mobile/images/jiuye.png"><span>就业</span></a></li>
+          <li><a href="/phonebd.html"><img src="/templates/mobile/images/baoming.png"><span>报名</span></a></li>
+          <li><a href="/Campusall.html"><img src="/templates/mobile/images/ITzixun.png"><span>IT资讯</span></a></li>
+          <li><a href="/StudentsStory.html"><img src="/templates/mobile/images/gushi.png"><span>故事</span></a></li>
+          <li><a href="/abouts.html"><img src="/templates/mobile/images/guanyu.png"><span>关于</span></a></li>
           <div class="clear"></div>
         </ul>
       </div>

@@ -70,12 +70,12 @@
                         @foreach($relevant as $v)
                         <li>
                             <div class="img-box">
-                                <a title="{{$v->title}}" href="/show-{{$v->article_id}}">
+                                <a title="{{$v->title}}" href="/show-{{$v->article_id}}.html">
                                     <img src="{{$v->img}}">
                                 </a>
                             </div>
                             <div class="infos">
-                                <h3><a title="{{$v->title}}" href="/show-{{$v->article_id}}">{{$v->title}}</a></h3>
+                                <h3><a title="{{$v->title}}" href="/show-{{$v->article_id}}.html">{{$v->title}}</a></h3>
                                 <p>{{$v->content}}</p>
                                 <span>{{$v->add_time}}</span>
                             </div>
@@ -209,7 +209,7 @@
 
     function show($ids) {
         if ($ids > 0) {
-            window.location = "/show-" + $ids;
+            window.location = "/show-" + $ids +".html";
         }
     }
 </script>

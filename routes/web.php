@@ -15,9 +15,9 @@
 Route::namespace('Home')->group(function () {
     //首页
     Route::get('/','IndexController@index');
-    Route::get('/studentemployment', 'IndexController@studentemployment');
-    Route::get('/faculty', 'IndexController@faculty');
-    Route::get('/StudentsStory', 'IndexController@StudentsStory');
+    Route::get('/studentemployment.html', 'IndexController@studentemployment');
+    Route::get('/faculty.html', 'IndexController@faculty');
+    Route::get('/StudentsStory.html', 'IndexController@StudentsStory');
     Route::get('/faculty/teacher', 'IndexController@teacher');
 
     //课程
@@ -26,21 +26,22 @@ Route::namespace('Home')->group(function () {
     Route::get('/html5.html', 'CurriculumController@html5');
     Route::get('/python.html', 'CurriculumController@python');
     //导航
-    Route::get('/idea', 'NavController@idea');
-    Route::get('/history', 'NavController@history');
-    Route::get('/flow', 'NavController@flow');
-    Route::get('/abouts', 'NavController@abouts');
-    Route::get('/ClassInfomation', 'NavController@ClassInfomation');
+    Route::get('/idea.html', 'NavController@idea');
+    Route::get('/school.html', 'NavController@school');
+    Route::get('/history.html', 'NavController@history');
+    Route::get('/flow.html', 'NavController@flow');
+    Route::get('/abouts.html', 'NavController@abouts');
+    Route::get('/ClassInformation.html', 'NavController@ClassInfomation');
     Route::get('nav/header_nav', 'NavController@header_nav');
     //文章
-    Route::get('/show-{id}', 'ArticleController@show');
-    Route::get('/Campusall', 'ArticleController@Campusall');
+    Route::get('/show-{id}.html', 'ArticleController@show');
+    Route::get('/Campusall.html', 'ArticleController@Campusall');
     //报名
-    Route::post('/apply', 'EnrollController@apply');
+    Route::post('/apply.html', 'EnrollController@apply');
 
 
-    Route::get('/EmploymentInformation', 'IndexController@employmentInformation');
-    Route::get('/phonebd', 'IndexController@phonebd');
+    Route::get('/EmploymentInformation.html', 'IndexController@employmentInformation');
+    Route::get('/phonebd.html', 'IndexController@phonebd');
 
     //教师详情
     Route::get('/Faculty/show-{id}.html', 'FacultyController@show');
@@ -50,5 +51,5 @@ Route::namespace('Home')->group(function () {
 
     //学生
     Route::get('/StudentsStory/show-{id}.html', 'StudentController@show');
-    Route::get('/Studentsdetails', 'StudentController@Studentsdetails');
+    Route::get('/Studentsdetails.html', 'StudentController@Studentsdetails');
 });
