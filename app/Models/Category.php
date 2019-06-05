@@ -21,7 +21,7 @@ class Category extends Model
         $article_arr = [];
         foreach($data as $k => $v){
             $article_arr[$k][] = $v;
-            $arr  = DB::table("article")->where("cid",$v->cid)->limit(4)->get();
+            $arr  = DB::table("article")->where("cid",$v->cid)->orderBy('list_order')->limit(4)->get();
 
             if(!empty( $arr)){
                 foreach($arr as $key => $val){

@@ -15,11 +15,15 @@ class Student extends Model
     public $timestamps = false;
     public $primaryKey ="student_id";
     public function getStudentPage($page){
-        return DB::table('student')
+        $res = DB::table('student')
             ->leftjoin('class','class.class_id','=','student.class_id')
             ->where('is_graduate',1)
             ->select('student_id', 'name','class_name','pay','testimonials','img')
             ->paginate(8,$columns = ['*'], $pageName = '', $page);
+        foreach ($res as $v){
+            $v->name = self::substr_cut($v->name);
+        }
+        return $res;
     }
     public function MaxPage(){
         $num = parent::leftjoin('class','class.class_id','=','student.class_id')
@@ -35,13 +39,17 @@ class Student extends Model
         return parent::where('student_id', '>', $id)->where('is_graduate',1)->min('student_id');
     }
     public function getStudentLimit($limit){
-        return DB::table('student')
+        $res = DB::table('student')
             ->leftjoin('class','class.class_id','=','student.class_id')
             ->where('is_graduate',1)
             -> orderBy('list_order','desc')
             -> take($limit)
             ->select('student_id', 'name','class_name','pay','testimonials','img')
             ->get();
+        foreach ($res as $v){
+            $v->name = self::substr_cut($v->name);
+        }
+        return $res;
     }
     public function getStudentSelect($limit = 4,$sum = 1,$select = ""){
         $sql = ['student_id','name','class_name','pay','img',"company"];

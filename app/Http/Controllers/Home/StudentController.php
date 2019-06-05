@@ -24,7 +24,6 @@ class StudentController extends Controller
     public function show($id){
         if((int)$id <= 0) return view('error');
         $student = Student::studentOne($id);
-        //dump($student);
         if(!$student) return view('error');
         return view('api/StudentsStory/studentShow',['student'=>$student]);
     }
