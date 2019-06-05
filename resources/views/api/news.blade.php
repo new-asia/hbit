@@ -54,7 +54,7 @@
                     <div class="txt-list">
                         <ul>
                             <li>
-                                <a href="/news/show-6457.html">
+                                <a href="/show-{{$Newest[0]->article_id}}.html">
                                     <img data-cfsrc="{{$Newest[0]->img}}" src="{{$Newest[0]->img}}">
                                     <h2>{{$Newest[0]->title}}</h2>
                                     <p class="intro">{{ strip_tags(mb_substr($Newest[0]->content,0,50,'UTF-8')) }}</p>
@@ -62,7 +62,7 @@
                             </li>
                             @foreach($Newest as $v)
                             <li>
-                                <a href="/news/show-6456.html">
+                                <a href="/show-{{$v->article_id}}.html">
                                     <i class="date">{{$v->add_time}}</i>
                                     <span class="text">{{$v->title}}</span>
                                 </a>
@@ -75,14 +75,14 @@
             @foreach($list as $v)
             <div class="weui-panel weui-panel_access">
                 <div class="weui-panel__hd" style="width: 50%;float: left;">{{$v[0]->c_name}}</div>
-                <div class="weui-panel__hd" style="text-align: right;"><a href="/news/62.html">更多</a></div>
+                <div class="weui-panel__hd" style="text-align: right;"><a href="/cat/show-{{$v[0]->cid}}.html">更多</a></div>
                 <div class="weui-panel__bd">
                     <div class="txt-list">
                         <ul>
                             @foreach($v as $kk=>$vv)
                             @if($kk != 0)
                             <li>
-                                <a href="/show-{{$vv->article_id}}">
+                                <a href="/show-{{$vv->article_id}}.html">
                                     <img data-cfsrc="{{$vv->img}}" src="{{$vv->img}}">
                                     <h2>{{$vv->title}}</h2>
                                     <div class="note">
@@ -112,7 +112,7 @@
 
                         @foreach($recommend as $k=>$v)
                             <li>
-                                <a href="/show-{{$v->article_id}}">
+                                <a href="/show-{{$v->article_id}}.html">
                                     <i class="date">{{$v->reading_num}}次</i>
                                     <i class="number">{{$k+1}}</i>
                                     <span class="text">{{$v->title}}</span>

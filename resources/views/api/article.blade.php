@@ -5,9 +5,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>IT资讯 - 金铭鼎IT教育-匠心打造,品质铸就</title>
+    <title>IT资讯 - 鸿博IT教育-匠心打造,品质铸就</title>
     <meta name="keywords" content="Java培训班,PHP培训班,Html5培训班,移动开发培训,大数据培训,IT培训" />
-    <meta name="description" content="金铭鼎IT教育，坐落于首都北京市昌平区，毗邻北京科技大学，具有良好的学术学习氛围，最具前沿的互联网高新技术。 专注互联网领域技术10余年，全国知名十佳教育培训机构，IT职业教育领军品牌。" />
+    <meta name="description" content="鸿博IT教育，坐落于首都北京市昌平区，毗邻北京科技大学，具有良好的学术学习氛围，最具前沿的互联网高新技术。 专注互联网领域技术10余年，全国知名十佳教育培训机构，IT职业教育领军品牌。" />
     <link rel="stylesheet" type="text/css" href="/templates/mobile/css/idangerous.swiper.css" />
     <link rel="stylesheet" type="text/css" href="/templates/mobile/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/templates/mobile/css/newsstyle.css" />
@@ -114,7 +114,7 @@
                 "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
                 "@id": "https://www.itjmd.com/",
                 "appid": "1600403569933280",
-                "title": "金铭鼎IT教育-匠心打造,品质铸就",
+                "title": "鸿博IT教育-匠心打造,品质铸就",
                 "images": [
                     "https://www.itjmd.com/upload/201807/04/201807041026260216.jpg",
                     "https://www.itjmd.com/upload/201806/24/201806241911120948.png",
@@ -558,9 +558,9 @@
                             <li>
                                 <a href="/news/show-6358.html">
                                     <img data-cfsrc="/upload/201902/27/201902271635173100.jpg" style="display:none;visibility:hidden;" /><noscript><img src="/upload/201902/27/201902271635173100.jpg" /></noscript>
-                                    <h2>2019年金铭鼎IT教育特训营开幕仪式</h2>
+                                    <h2>2019年鸿博IT教育特训营开幕仪式</h2>
                                     <div class="note">
-                                        <p>2019年2月25日下午，金铭鼎IT教育新生开学典礼暨始业教育开幕式在北京总部校区顺利举行，学校领导许校长与白副校长主持了新生开学典礼......</p>
+                                        <p>2019年2月25日下午，鸿博IT教育新生开学典礼暨始业教育开幕式在北京总部校区顺利举行，学校领导许校长与白副校长主持了新生开学典礼......</p>
                                         <p>
                                             <i class="hot">55人</i>
                                             <i class="date">时间：2019-02-27</i>
@@ -571,9 +571,9 @@
                             <li>
                                 <a href="/news/show-5358.html">
                                     <img data-cfsrc="/upload/201901/16/201901161457094145.jpg" style="display:none;visibility:hidden;" /><noscript><img src="/upload/201901/16/201901161457094145.jpg" /></noscript>
-                                    <h2>金铭鼎&牡丹江职校联合共建签约通讯稿</h2>
+                                    <h2>鸿博&牡丹江职校联合共建签约通讯稿</h2>
                                     <div class="note">
-                                        <p>为打造金铭鼎品牌，提高市场影响及占有率，1月15日下午在金铭鼎教育总部，牡丹江职校与金铭鼎教育正式签约，参加此次活动的领导有牡丹江职校杨校长、王校长，金铭鼎教育许总、郭校长及牛老师.......</p>
+                                        <p>为打造鸿博品牌，提高市场影响及占有率，1月15日下午在鸿博教育总部，牡丹江职校与鸿博教育正式签约，参加此次活动的领导有牡丹江职校杨校长、王校长，鸿博教育许总、郭校长及牛老师.......</p>
                                         <p>
                                             <i class="hot">555人</i>
                                             <i class="date">时间：2019-01-16</i>
@@ -584,9 +584,9 @@
                             <li>
                                 <a href="/news/show-5301.html">
                                     <img data-cfsrc="/upload/201812/26/201812261539401039.jpg" style="display:none;visibility:hidden;" /><noscript><img src="/upload/201812/26/201812261539401039.jpg" /></noscript>
-                                    <h2>热烈庆祝金铭鼎IT教育2019年招生代理年会圆满闭幕</h2>
+                                    <h2>热烈庆祝鸿博IT教育2019年招生代理年会圆满闭幕</h2>
                                     <div class="note">
-                                        <p>金铭鼎IT教育2019年招生代理大会于12月22号在拓然山庄圆满召开，大会总计有将近300位来自全国各地的招生老师参加......</p>
+                                        <p>鸿博IT教育2019年招生代理大会于12月22号在拓然山庄圆满召开，大会总计有将近300位来自全国各地的招生老师参加......</p>
                                         <p>
                                             <i class="hot">346人</i>
                                             <i class="date">时间：2018-12-26</i>
@@ -1078,7 +1078,7 @@
                             <a href="/news/show-5358.html">
                                 <i class="date">555次</i>
                                 <i class="number">1</i>
-                                <span class="text">金铭鼎&牡丹江职校联合共建签约通讯稿</span>
+                                <span class="text">鸿博&牡丹江职校联合共建签约通讯稿</span>
                             </a>
                         </li>
                         <li>
@@ -1099,7 +1099,7 @@
                             <a href="/news/show-1130.html">
                                 <i class="date">440次</i>
                                 <i class="number">4</i>
-                                <span class="text">金铭鼎教育收费模式</span>
+                                <span class="text">鸿博教育收费模式</span>
                             </a>
                         </li>
                         <li>
@@ -1120,7 +1120,7 @@
                             <a href="/news/show-5301.html">
                                 <i class="date">346次</i>
                                 <i class="number">7</i>
-                                <span class="text">热烈庆祝金铭鼎IT教育2019年招生代理年会圆满闭幕</span>
+                                <span class="text">热烈庆祝鸿博IT教育2019年招生代理年会圆满闭幕</span>
                             </a>
                         </li>
                         <li>

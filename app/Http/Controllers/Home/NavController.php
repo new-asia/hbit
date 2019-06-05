@@ -21,7 +21,7 @@ class NavController extends Controller
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
-            return view('api/abouts');
+            return view('api/idea');
         }
         return view('home/idea');
     }
@@ -33,6 +33,15 @@ class NavController extends Controller
             return view('api/history');
         }
         return view('home/history');
+    }
+
+    public function school(){
+        $isMobile = $this->isMobile();
+
+        if ($isMobile) {
+            return view('api/school');
+        }
+        return view('home/school');
     }
 
     public function flow(){

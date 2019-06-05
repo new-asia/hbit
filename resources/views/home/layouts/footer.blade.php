@@ -17,24 +17,24 @@
         <div class="div_list">
             <h3>鸿博</h3>
             <ul>
-                <li><a class="a_gd" href="/abouts" target="_blank">关于我们</a></li>
-                <li><a class="a_gd" href="/abouts" target="_blank">企业理念</a></li>
-                <li><a class="a_gd" href="/abouts" target="_blank">发展历史</a> </li>
+                <li><a class="a_gd" href="/abouts.html" target="_blank">关于我们</a></li>
+                <li><a class="a_gd" href="/abouts.html" target="_blank">企业理念</a></li>
+                <li><a class="a_gd" href="/abouts.html" target="_blank">发展历史</a> </li>
             </ul>
         </div>
         <div class="div_list">
             <h3>核心优势</h3>
             <ul>
-                <li><a class="a_gd" href="/studentemployment" target="_blank">学员就业</a></li>
-                <li><a class="a_gd" href="/StudentsStory" target="_blank">学员故事</a></li>
-                <li><a class="a_gd" href="/faculty" target="_blank">豪华师资</a></li>
+                <li><a class="a_gd" href="/studentemployment.html" target="_blank">学员就业</a></li>
+                <li><a class="a_gd" href="/StudentsStory.html" target="_blank">学员故事</a></li>
+                <li><a class="a_gd" href="/faculty.html" target="_blank">豪华师资</a></li>
             </ul>
         </div>
         <div class="div_list">
             <h3>校区报名</h3>
             <ul>
-                <li><a class="a_gd" href="/flow" target="_blank">报名流程</a></li>
-                <li><a class="a_gd" href="/ClassInformation" target="_blank">开班信息</a></li>
+                <li><a class="a_gd" href="/flow.html" target="_blank">报名流程</a></li>
+                <li><a class="a_gd" href="/ClassInformation.html" target="_blank">开班信息</a></li>
                 <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">来校线路</a></li>
             </ul>
         </div>
@@ -50,7 +50,7 @@
             <h3>学员故事</h3>
             <ul>
                 <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">学员心声</a></li>
-                <li><a class="a_gd" href="/StudentsStory" target="_blank">学员生活</a></li>
+                <li><a class="a_gd" href="/StudentsStory.html" target="_blank">学员生活</a></li>
                 <li><a class="a_gd" href="tencent://message/?Menu=yes&amp;uin=932443281" target="_blank">学校环境</a></li>
             </ul>
         </div>

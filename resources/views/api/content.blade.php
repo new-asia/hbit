@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>Python基础学习之多任务-协程详细讲解 - Python课程 - 金铭鼎IT教育-匠心打造,品质铸就</title>
+    <title>Python基础学习之多任务-协程详细讲解 - Python课程 - 鸿博IT教育-匠心打造,品质铸就</title>
     <meta name="keywords" content="Python,Python基础,Python学习,Python协程,Python多任务" />
     <meta name="description" content="学习Python的小伙伴对于他的多任务一定不会陌生，那么多任务中的协程又有几个小伙伴们知道呢？在本文将重点剖析协程这个知识点......" />
     <link rel="stylesheet" type="text/css" href="/templates/mobile/css/newsstyle.css" />

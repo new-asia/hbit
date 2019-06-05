@@ -158,7 +158,7 @@
 						<div class="scZxCcCon clearfix">
 							<div class="scZxCcConTop clearfix">
 								@if (isset($v[1]))
-								<a href="/show-{{$v[1]->article_id}}">
+								<a href="/show-{{$v[1]->article_id}}.html">
 									<img src="{{$v[1]->img}}">
 									<div class="scZxCcConTopInfo">
 										<strong style="display: block;overflow:hidden;width: 200px;">{{$v[1]->title}}</strong>
@@ -171,17 +171,17 @@
 								<ul class="clearfix scZxCcConLi-ul">
 								@if (isset($v[2]))
 									<li class="clearfix">
-										<a href="/show-{{$v[2]->article_id}}" title="{{$v[2]->title}}">{{$v[2]->title}}</a><span>{{$v[2]->add_time}}</span>
+										<a href="/show-{{$v[2]->article_id}}.html" title="{{$v[2]->title}}">{{$v[2]->title}}</a><span>{{$v[2]->add_time}}</span>
 									</li>
 								@endif
 								@if (isset($v[3]))
 									<li class="clearfix">
-										<a href="/show-{{$v[3]->article_id}}" title="{{$v[3]->title}}">{{$v[3]->title}}</a><span>{{$v[3]->add_time}}</span>
+										<a href="/show-{{$v[3]->article_id}}.html" title="{{$v[3]->title}}">{{$v[3]->title}}</a><span>{{$v[3]->add_time}}</span>
 									</li>
 								@endif
 								@if (isset($v[4]))
 									<li class="clearfix">
-										<a href="/show-{{$v[4]->article_id}}" title="{{$v[4]->title}}">{{$v[4]->title}}</a><span>{{$v[4]->add_time}}</span>
+										<a href="/show-{{$v[4]->article_id}}.html" title="{{$v[4]->title}}">{{$v[4]->title}}</a><span>{{$v[4]->add_time}}</span>
 									</li>
 								@endif
 								</ul>

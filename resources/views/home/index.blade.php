@@ -223,7 +223,7 @@
                         <div class="kczx_xkzx">
                             <ul>
                                 @foreach($art_java as $art_java)
-                                <a href="/show-{{$art_java->article_id}}"><li>{{$art_java->title}}</li></a>
+                                <a href="/show-{{$art_java->article_id}}.html"><li>{{$art_java->title}}</li></a>
                                 @endforeach
                             </ul>
                         </div>
@@ -283,7 +283,7 @@
                         <div class="kczx_xkzx">
                             <ul>
                                 @foreach($art_php as $art_php)
-                                    <a href="/show-{{$art_php->article_id}}"><li>{{$art_php->title}}</li></a>
+                                    <a href="/show-{{$art_php->article_id}}.html"><li>{{$art_php->title}}</li></a>
                                 @endforeach
                             </ul>
                         </div>
@@ -343,7 +343,7 @@
                         <div class="kczx_xkzx">
                             <ul>
                                 @foreach($art_html as $art_html)
-                                    <a href="/show-{{$art_html->article_id}}"><li>{{$art_html->title}}</li></a>
+                                    <a href="/show-{{$art_html->article_id}}.html"><li>{{$art_html->title}}</li></a>
                                 @endforeach
                             </ul>
                         </div>
@@ -559,7 +559,7 @@
                         <div class="kczx_xkzx">
                             <ul>
                                 @foreach($art_Python as $art_Python)
-                                    <a href="/show-{{$art_Python->article_id}}"><li>{{$art_Python->title}}</li></a>
+                                    <a href="/show-{{$art_Python->article_id}}.html"><li>{{$art_Python->title}}</li></a>
                                 @endforeach
                             </ul>
                         </div>

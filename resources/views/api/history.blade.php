@@ -55,10 +55,10 @@
 			<section class="gywmlist">
 				<div class="gywmtab">
 					<ul>
-						<li id="abouts"><a href="/about/abouts.html">企业简介</a></li>
-						<li id="idea"><a href="/about/idea.html">企业理念</a></li>
-						<li id="history" class="gywmtabon"><a href="/about/history.html">发展历史</a></li>
-						<li id="school"><a href="/about/school.html">直营校区</a></li>
+						<li id="abouts"><a href="/abouts.html">企业简介</a></li>
+						<li id="idea"><a href="/idea.html">企业理念</a></li>
+						<li id="history" class="gywmtabon"><a href="/history.html">发展历史</a></li>
+						<li id="school"><a href="/school.html">直营校区</a></li>
 					</ul>
 				</div>
 				<div class="gywmcon" style="margin-top: 50px;">
