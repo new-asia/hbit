@@ -41,11 +41,11 @@ class FacultyController extends Controller
 
 
         $course = new Course();
-        $course = $course->course();//开课信息
+        $course = $course->course(); 
 
 
         $campus = Campus::getAllCampus();//右侧校区下拉
-        $courseall = Course::getAllCourse();//右侧课程下拉
+        $courseall = Course::getAllCourse(); //课程下拉
         $Tags =Tags::allcount();//右下角鸿博标签
  
         return view('home/faculty/show',['teacher'=>$Teacher[0],"teacher_list"=>$data,'tags'=>$Tags,'advert'=>$advert,'courseall'=>$courseall,'course'=>$course,'campus'=>$campus]);

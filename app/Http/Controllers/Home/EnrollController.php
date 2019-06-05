@@ -14,6 +14,7 @@ class EnrollController extends Controller
         if(!$request->isMethod('POST')){
             return redirect()->back();
         }
+
         $post['name'] = trim($post['name']);
         $post['tel'] = trim($post['tel']);
         $post['qq'] = trim($post['qq']);
@@ -38,7 +39,7 @@ class EnrollController extends Controller
             'campus_id'=>'校区',
             'course_id'=>'课程',
         ]);
-
+        $post['add_time'] = time();
         if ($validator->fails()) {
            return redirect()->back()->withErrors($validator)->withInput();
         }

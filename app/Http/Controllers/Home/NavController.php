@@ -43,7 +43,11 @@ class NavController extends Controller
         return view('home/school');
     }
     public function flow(){
-        return view('home/flow');
+        $campus = Campus::getAllCampus();//校区下拉
+
+        $courseall = Course::getAllCourse();//课程下拉
+       // dd($campus);
+        return view('home/flow',['courses'=>$courseall,'campus'=>$campus]);
     }
 
     public function abouts(){
