@@ -27,9 +27,15 @@ class FacultyController extends Controller
         $Teacher = Teacher::one($id);
         if(!$Teacher) return view('error');
         
+        $isMobile = $this->isMobile();
+
+        if($isMobile){
+            return view('api/teacher',['teacher'=>$Teacher[0]]);
+        } 
+
         $teacher = new Teacher();
         $data = $teacher->getTeacher();
-         
+        
         $advert = new Advert();
         $advert = $advert->getAdvert(7);//图片
 

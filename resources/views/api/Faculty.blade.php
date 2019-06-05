@@ -21,7 +21,7 @@
 
   <!-- 头部  -->
 
-    <div class="fast-enter">
+    <div class="fast-enter" style="margin-top:50px;">
         <div class="swiper-slide">
             <img data-cfsrc="./upload/img/201808131712170056.jpg" alt="" class="img-responsive" src="./upload/img/201808131712170056.jpg">
         </div>
@@ -31,10 +31,10 @@
     @foreach($teacher as $item)
         <div class="cell">
             <div class="img" style="height: 200px;overflow: hidden;">
-                <a href="/Faculty/show-3.html"><img data-cfsrc="{{$item->teacher_portrait_src}}" class="img-responsive" src="{{$item->teacher_portrait_src}}"></a>
+                <a href="/Faculty/show-{{$item->teacher_id}}.html"><img data-cfsrc="{{$item->teacher_portrait_src}}" class="img-responsive" src="{{$item->teacher_portrait_src}}"></a>
             </div>
             <div class="info">
-                <a href="/Faculty/show-3.html">
+                <a href="/Faculty/show-{{$item->teacher_id}}.html">
                     <p><strong class="title">{{$item->name}}</strong></p>
                     <p><span class="sub">{{$item->position_name}}</span></p>
                     <p><span class="des" style="font-size: 12px;">擅长领域：{{$item->field}}</span></p>

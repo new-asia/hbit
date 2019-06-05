@@ -1,0 +1,430 @@
+ * {
+     box-sizing: border-box
+ }
+ 
+ .none {
+     display: none
+ }
+ 
+ .mContain {
+     width: 100%;
+     min-width: 320px;
+     max-width: 640px;
+     margin: 0 auto;
+     position: relative
+ }
+ 
+ header,
+ .dMain {
+     width: 100%
+ }
+ 
+ header {
+     background-color: #fff;
+     padding: 15px 3.125%
+ }
+ 
+ header img {
+     vertical-align: text-bottom
+ }
+ 
+ header h1 {
+     color: #666;
+     font-size: 16px;
+     font-weight: 400;
+     padding-left: 10px
+ }
+ 
+ .dSearch {
+     padding: 10px 3.125% 0;
+     background-color: #f0f0f0
+ }
+ 
+ .dsInput1 {
+     width: 72.33%;
+     height: 40px;
+     line-height: 40px;
+     border: 1px solid #ccc;
+     border-right: 0;
+     border-radius: 3px 0 0 3px;
+     background-color: #fff;
+     padding-left: 5px;
+     float: left;
+     font-size: 14px
+ }
+ 
+ .dsInput2 {
+     width: 27.67%;
+     height: 40px;
+     line-height: 40px;
+     border-radius: 0 3px 3px 0;
+     background-color: #fa4c06;
+     text-align: center;
+     cursor: pointer;
+     color: #fff;
+     font-size: 14px
+ }
+ 
+ .dTuijian {
+     padding: 10px 3.125% 5px;
+     background-color: #f0f0f0;
+     margin-top: 50px;
+ }
+ 
+ .dtPic,
+ .dtPic img {
+     width: 150px;
+     height: 150px
+ }
+ 
+ .dtDes,
+ .dlDes {
+     width: 100%
+ }
+ 
+ .dtDes {
+     background-color: #fff
+ }
+ 
+ .dtDesTxt {
+     margin-left: 160px;
+     height: 150px;
+     overflow: hidden;
+     padding: 27px 0 10px
+ }
+ 
+ .dtDesTxt p.tjTit {
+     font-size: 16px;
+     font-weight: 700;
+     color: #333
+ }
+ 
+ .dtDesTxt a {
+     display: inline-block;
+     padding-top: 10px;
+     color: #333;
+     line-height: 20px
+ }
+ 
+ .dList {
+     padding: 19.5px 3.125%;
+     border-bottom: 1px solid #ccc;
+     background-color: #fff
+ }
+ 
+ .dlPic,
+ .dlPic img {
+     width: 99px;
+     height: 99px
+ }
+ 
+ .dlPic img {
+     border: 1px solid #dcdcdc
+ }
+ 
+ .dlDesTxt {
+     margin-left: 114px;
+     height: 99px;
+     overflow: hidden;
+     padding: 10px 0
+ }
+ 
+ .dlDesTxt p {
+     line-height: 20px
+ }
+ 
+ .dlDesTxt p:nth-child(1) {
+     font-weight: 700;
+     color: #333
+ }
+ 
+ .dlDesTxt p span {
+     color: #fa4c06
+ }
+ 
+ .dMore {
+     display: block;
+     width: 93.75%;
+     border: 1px solid #c9c9c9;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     margin: 10px auto
+ }
+ 
+ .dsContain {
+     background-color: #f0f0f0;
+     padding-bottom: 20px
+ }
+ 
+ .return,
+ .return img {
+     width: 10.5px;
+     height: 19.5px
+ }
+ 
+ .dsHeader h1 {
+     text-align: center
+ }
+ 
+ .dtDesTxt-2 {
+     margin-left: 165px;
+     height: 150px;
+     overflow: hidden;
+     padding: 5px 0 10px
+ }
+ 
+ .dtDesTxt-2 .tjTit {
+     font-size: 16px;
+     font-weight: 700;
+     color: #333
+ }
+ 
+ .dtDesTxt-2 a {
+     display: inline-block;
+     color: #333;
+     line-height: 20px
+ }
+ 
+ .dt2Tit p,
+ .dt2Tit a {
+     display: inline-block;
+     width: 69.5px;
+     height: 40px;
+     line-height: 40px
+ }
+ 
+ .dt2Tit p {
+     color: #333;
+     font-weight: 700;
+     width: 74.5px;
+     font-size: 20px
+ }
+ 
+ .dt2Tit a {
+     color: #fff;
+     text-align: center;
+     background-color: #fa4c06;
+     margin-right: 5px
+ }
+ 
+ .dsDes {
+     padding: 0 3.125% 10px
+ }
+ 
+ .dsDesLeft,
+ .dsDesRight {
+     padding: 14px 10px;
+     line-height: 20px
+ }
+ 
+ .dsDesLeft {
+     width: 16.67%;
+     height: 69px;
+     text-align: center;
+     color: #fff;
+     font-weight: 700;
+     background-color: #e2006c
+ }
+ 
+ .dsDesRight {
+     width: 83.33%;
+     height: 69px;
+     overflow: hidden;
+     background-color: #fff;
+     color: #333;
+     padding: 5px
+ }
+ 
+ .dsrTxt {
+     display: table-cell;
+     height: 59px;
+     vertical-align: middle;
+     font-size: 12px
+ }
+ 
+ .dsZuoping {
+     width: 100%;
+     padding: 15px 0;
+     background: url(../images/designer_07.jpg) center no-repeat;
+     font-size: 16px;
+     text-align: center;
+     color: #333
+ }
+ 
+ .dsZList {
+     padding: 0 3.125% 10px
+ }
+ 
+ .dslPic {
+     display: block;
+     width: 100%;
+     height: auto;
+     background-color: #fff
+ }
+ 
+ .dslPic,
+ .dslPic img {
+     width: 100%
+ }
+ 
+ .dslTit {
+     display: block;
+     background-color: #fff;
+     padding: 5px 2%;
+     color: #333;
+     line-height: 20px
+ }
+ 
+ .dMore2 {
+     background-color: #fff
+ }
+ 
+ .dSort {
+     padding: 0 3.125% 5px;
+     background-color: #f0f0f0
+ }
+ 
+ .dSort span {
+     display: inline-block;
+     width: 50%;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     cursor: pointer;
+     background-color: #fff
+ }
+ 
+ .dSort span:nth-child(1) {
+     border: 1px solid #ccc
+ }
+ 
+ .dSort span:nth-child(2) {
+     border: 1px solid #ccc;
+     border-left: 0
+ }
+ 
+ .dSort span.active {
+     background: url(../images/downArr.png) no-repeat 80% center #fff;
+     background-size: 8%
+ }
+ 
+ .dSort span.normal {
+     background: #fff
+ }
+ 
+ .yTanchuBag {
+     width: 100%;
+     height: 100%;
+     background: rgba( 0, 0, 0, 0.4);
+     position: absolute;
+     top: 0;
+     left: 0;
+     display: none
+ }
+ 
+ .yTanchu {
+     width: 87.97%;
+     height: 260px;
+     background: url(../images/yuyue_08.png) no-repeat;
+     background-size: 100% 100%;
+     position: fixed;
+     top: 20%;
+     left: 7.09%
+ }
+ 
+ .yTanchuCon {
+     width: 100%;
+     height: 100%;
+     position: relative
+ }
+ 
+ .yTanchu-img1 {
+     width: 100%;
+     height: auto;
+     position: absolute;
+     top: 0;
+     left: 0
+ }
+ 
+ .yTform {
+     padding: 6px 5.125% 6px 3.125%;
+     position: absolute;
+     top: 50%;
+     left: 0%;
+     margin-top: -81px
+ }
+ 
+ .yTinput1 {
+     width: 100%;
+     height: 40px;
+     border: 1px solid #cacaca;
+     margin-bottom: 6px;
+     padding-left: 5px;
+     font-size: 14px
+ }
+ 
+ .yTinput2 {
+     width: 57.61%;
+     height: 40px;
+     border: 1px solid #cacaca;
+     margin-bottom: 6px;
+     padding-left: 5px;
+     font-size: 14px
+ }
+ 
+ .yTinput3 {
+     width: 38.73%;
+     height: 40px;
+     border: 1px solid #fa4c06;
+     background-color: #fff;
+     color: #fa4c06;
+     cursor: pointer;
+     float: right;
+     font-size: 14px
+ }
+ 
+ .yTinput4 {
+     width: 100%;
+     height: 40px;
+     background-color: #fa4c06;
+     color: #fff;
+     cursor: pointer;
+     font-size: 14px;
+     border: 0
+ }
+ 
+ .yTanchu2 {
+     height: 160px
+ }
+ 
+ .yTanchuCon2 p {
+     text-align: center;
+     color: #666;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     margin-left: -28px
+ }
+ 
+ .dsJieguo {
+     padding: 10px 3.125%;
+     line-height: 20px;
+     color: #666
+ }
+ 
+ .dsJieguo span {
+     color: #fa4c06
+ }
+ 
+ .dsZuoping2 {
+     padding-top: 0
+ }
+ 
+ .dtDesTxt-2 a font {
+     color: #fa4c06
+ }
+ 
+ .dslTit p {
+     text-align: center
+ }
