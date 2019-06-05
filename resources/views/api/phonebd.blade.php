@@ -131,7 +131,7 @@
 
 
 
-		<div class="con">
+		<div class="con" style="margin-top:50px;">
 			<div class="bm" style="max-width:750px; margin:0 auto;">
 				<div class="bm_con">
 					<h2>每期开班座位有限<br>预报名可优先享有占座特权哦！</h2>

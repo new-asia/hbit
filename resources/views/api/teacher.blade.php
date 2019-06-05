@@ -28,7 +28,7 @@
 
     <div class="wapM">
         <div class="mContain dsContain">
-            <div class="dMain">
+            <div class="dMain" >
                 <div class="dTuijian">
                     <div class="dtPic fl" style="height: 150px;overflow: hidden;">
                         <img src ="{{$teacher->teacher_portrait_src}}">

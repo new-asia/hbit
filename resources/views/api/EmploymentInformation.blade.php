@@ -21,7 +21,7 @@
 
 {{--nav--}}
 @include('api.layouts.nav')
-    <div class="content-module">
+    <div class="content-module" style="margin-top:50px;">
         <div class="content">
             <div class="work-contenr">
                 @foreach($employment as $item)
