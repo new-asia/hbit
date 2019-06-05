@@ -243,7 +243,7 @@
 <div class="plot_con" style="height: 510px;">
 
 <div class="plot_l">
-<a href="/Studentsdetails?id={{$student[0]->student_id}}" class="picbox">
+<a href="/Studentsdetails.html?id={{$student[0]->student_id}}" class="picbox">
     <img src="{{$student[0]->img}}" width="479" height="334" border="0" vspace="0" title="" alt="" style="width: 479px; height: 334px;">
 <p class="p1">{{$student[0]->testimonials}}</p>
 <p class="p2"><span>姓名：{{$student[0]->name}}</span> <span>班级：{{$student[0]->class_name}}</span><span>月薪：{{$student[0]->pay}}</span></p></a>
@@ -252,7 +252,7 @@
 <ul>
     @foreach($student as $k=>$v)
         @if($k != 0)
-            <li><a href="/Studentsdetails?id={{$v->student_id}}" class="picbox"><img height="140" src="{{$v->img}}"><p>姓名：{{$v->name}}<br>班级：{{$v->class_name}}<br>月薪：{{$v->pay}}</p></a></li>
+            <li><a href="/Studentsdetails.html?id={{$v->student_id}}" class="picbox"><img height="140" src="{{$v->img}}"><p>姓名：{{$v->name}}<br>班级：{{$v->class_name}}<br>月薪：{{$v->pay}}</p></a></li>
         @endif
     @endforeach
 </ul>

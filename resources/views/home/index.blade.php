@@ -124,7 +124,7 @@
         <div class="ban_down">
             <div class="fast_path"> <s class="cc"></s> <s class="cc cc1"></s> <s class="cc cc2"></s> <s class="cc cc2 cc3"></s>
                 <ul>
-                    <li> <a href="/about/abouts.html" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe600;</i> <span>企业简介</span> </a> </li>
+                    <li> <a href="/abouts.html" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe600;</i> <span>企业简介</span> </a> </li>
                     <li> <a href="/flow.html" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe61d;</i> <span>报名流程</span> </a> </li>
                     <li class="li_r"> <a href="tencent://message/?Menu=yes&amp;uin=104044302" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe622;</i> <span>来校路线</span> </a> </li>
                     <li class="li_b"> <a href="/StudentsStory.html" target="_blank"> <i class="iconfont">&#xe61c;</i> <span>学员故事</span> </a> </li>

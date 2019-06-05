@@ -54,10 +54,10 @@
 </div>
 <div class="foo">
 <div style="float: left;">
-<strong>上一篇：</strong><a href="/Studentsdetails?id={{$prev['student_id']}}">{{$prev['name']}}</a>
+<strong>上一篇：</strong><a href="/Studentsdetails.html?id={{$prev['student_id']}}">{{$prev['name']}}</a>
 </div>
 <div style="float: right;">
-<strong>下一篇：</strong><a href="/Studentsdetails?id={{$next['student_id']}}">{{$next['name']}}</a>
+<strong>下一篇：</strong><a href="/Studentsdetails.html?id={{$next['student_id']}}">{{$next['name']}}</a>
 </div>
 </div>
 
@@ -115,7 +115,7 @@
         <div class="right_item right_item_4">
                 <div class="lfMflf">
                         <div class="lfMflfTit">提交报名</div>
-                        <form class="rightform1" id="feedback_form" name="feedback_form" url="" action="{{url('apply')}}" method="post" novalidate>
+                        <form class="rightform1" id="feedback_form" name="feedback_form" url="" action="{{url('apply/StudentsStory.html')}}" method="post" novalidate>
                                 @csrf
                                 <input type="text" placeholder="请输入您的姓名" onblur="checkIshanzi()" name="name" id="txtUserName">
                                 <input type="text" placeholder="请输入您的电话" onblur="checkIsTel()"  name="tel" id="txtUserTel" size="5" maxlength="11">
