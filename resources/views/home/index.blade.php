@@ -1,5 +1,4 @@
-﻿{{-- 包含页头 --css--}}
-{{--头部-css--}}
+﻿{{--头部-css--}}
 @include('home.layouts.header')
 <link rel="stylesheet" href="/static/templates/main/css1/index_zdrj.css">
 <link rel="stylesheet" type="text/css" href="/static/templates/main/css1/index1.css" />
@@ -69,7 +68,7 @@
                     <a class="left-ico-bigdata" href="tencent://message/?Menu=yes&amp;uin=104044302" title="人工智能" target="_blank">
                         <span>人工智能</span><i>></i>
                     </a>
-                    <a class="left-ico-python" href="tencent://message/?Menu=yes&amp;uin=104044302" title="Python课程" target="_blank">
+                    <a class="left-ico-python" href="/python.html" title="Python课程" target="_blank">
                         <span>Python课程</span><i>></i>
                     </a>
                     <a class="left-ico-ui" href="tencent://message/?Menu=yes&amp;uin=104044302" title="UI/UE设计" target="_blank">
@@ -128,7 +127,7 @@
                     <li> <a href="/flow.html" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe61d;</i> <span>报名流程</span> </a> </li>
                     <li class="li_r"> <a href="tencent://message/?Menu=yes&amp;uin=104044302" target="_blank"> <i class="iconfont" style="font-size:20px;">&#xe622;</i> <span>来校路线</span> </a> </li>
                     <li class="li_b"> <a href="/StudentsStory.html" target="_blank"> <i class="iconfont">&#xe61c;</i> <span>学员故事</span> </a> </li>
-                    <li class="li_b"> <a href="/Faculty.html" target="_blank"> <i class="iconfont">&#xe64f;</i> <span>豪华师资</span> </a> </li>
+                    <li class="li_b"> <a href="/faculty.html" target="_blank"> <i class="iconfont">&#xe64f;</i> <span>豪华师资</span> </a> </li>
                     <li class="li_r li_b"> <a href="/ClassInformation.html" target="_blank"> <i class="iconfont">&#xe602;</i> <span>开班报道</span> </a> </li>
                 </ul>
             </div>
