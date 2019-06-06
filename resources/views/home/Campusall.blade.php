@@ -274,7 +274,7 @@
 								<li>{{date("Y-m-d",$item->course_time)}}</li>
 							</ul>
 							<ul style="float:left;width: 100px;">
-								<li><a href="{{$item->enroll_link}}" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
+								<li><a href="http://wpa.qq.com/msgrd?v=3&uin=104044302&site=qq&menu=yes" class="sign_up f3 c4" target="_blank"><b style="color: white;">立即报名</b></a></li>
 							</ul>
 						@endforeach
 					</div>
