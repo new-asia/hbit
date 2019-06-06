@@ -17,10 +17,7 @@
         </section>
         
     </div>
-    <footer class="footer" style="margin-bottom:50px;">
-        <p>版权所有 2006 - 2018 北京博育华众教育咨询有限公司</p>
-        <p>地址：北京市昌平区十三陵镇泰胡路24号</p>
-    </footer>
+   
     
     {{--tabBar--}}
 		@include('api.layouts.tabBar')

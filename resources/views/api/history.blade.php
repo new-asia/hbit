@@ -65,10 +65,7 @@
 				</div>
 			</section>
 		</div>
-		<footer class="footer" style='margin-bottom:50px;'>
-			<p>版权所有 2006 - 2018 北京鸿博互联软件有限公司</p>
-			<p>地址：北京市海淀区苏家坨54号</p>
-		</footer>
+		
 		
 		{{--tabBar--}}
 @include('api.layouts.tabBar')

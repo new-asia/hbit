@@ -10,6 +10,10 @@ use Illuminate\View\View;
 use Illuminate\Http\Request;
 use App\Models\Title;
 use App\Models\Link;
+use App\Models\Course;
+
+use App\Models\Campus;
+
 class NavController extends Controller
 {
     public function __construct()
