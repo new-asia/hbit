@@ -9,7 +9,7 @@
         <p>首页</p>
       </div>
     </a>
-    <a href="http://q.url.cn/ABULOl?_type=wpa&amp;qidian=true">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=104044302&site=qq&menu=yes">
       <div class="item">
         <p><img src="/templates/mobile/src/icons/tab_zixun.png" class="img-responsive"></p>
         <p>在线咨询</p>
