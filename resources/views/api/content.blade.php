@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <form id="form" cid="{{@$cid?$cid:178}}" action="/infor-{{$article->article_id}}-{{@$cid?$cid:178}}.html" method="post">
+            <form id="form" action="/infor-{{$article->article_id}}-{{@$cid?$cid:178}}.html" method="post">
 
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>头像</legend>

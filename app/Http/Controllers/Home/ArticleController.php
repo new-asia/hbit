@@ -174,22 +174,11 @@ class ArticleController extends Controller
             $article_list = $A->api_list($article->cid);
             $photos = explode(',', $referrer['photos']);
 
-            return view('api/infors', ['cid'=>$cid,'article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
+            return view('api/infors', ['cid'=>$cid,'article' => $article,'article_list' => $article_list]);
         }
     }
-    public function infors(Request $request,$id,$cid){
-        //print_r($request->input());die;
-        if(!empty($request->input())) {
-            if($request->input('photos')){
-                $post['photos'] = implode(",", $request->input('photos'));
-            }
-            $post['name'] = $request->input('name');
-            $post['tel'] = $request->input('tel');
-            $post['headphoto'] = $request->input('headphoto');
-            $Referrer = new Referrer();
-            $Referrer->insert($post);
-            $cid = DB::getPdo()->lastInsertId();
-        }
+    public function infors($id,$cid){
+
         if ((int)$id <= 0) return view('error');
         //print_r($cid);die;
         $isMobile = $this->isMobile();
