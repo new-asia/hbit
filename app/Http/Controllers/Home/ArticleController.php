@@ -10,6 +10,10 @@ use App\Models\Course;
 use App\Models\Tags;
 use App\Models\Campus;
 use App\Models\Article;
+use App\Models\Referrer;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
@@ -19,7 +23,7 @@ class ArticleController extends Controller
         view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
     }
     //文章内容
-    public function show($id){
+    public function show($id,$rid=12){
 
         if((int)$id <= 0) return view('error');
 
@@ -30,8 +34,12 @@ class ArticleController extends Controller
             $A = new Article();
             $article = Article::where('is_show',1)->find($id);
 
+            $Referrer = new Referrer();
+            $referrer = $Referrer->find($rid)->toArray();
+
             $article_list = $A->api_list($article->cid);
-            return view('api/content',['article'=>$article,'article_list'=>$article_list]);
+            $photos = explode(',',$referrer['photos']);
+            return view('api/content',['article'=>$article,'photos'=>$photos,'referrer'=>$referrer,'article_list'=>$article_list]);
         }
 
         $article = Article::where('is_show',1)->find($id);
@@ -124,5 +132,44 @@ class ArticleController extends Controller
         $Article_list = $Article->getcategory($id,5,50);//分页  数据
         return view('api/cate_list',['article'=>$Article_list]);
     }
-       
+    public function uploads(Request $request){
+        if ($request->isMethod('POST')) {
+            $fileCharater = $request->file('file');
+            if ($fileCharater->isValid()) {
+                $originalName = $fileCharater->getClientOriginalName(); // 文件原名
+                $ext = $fileCharater->getClientOriginalExtension();     // 扩展名
+                $realPath = $fileCharater->getRealPath();   //临时文件的绝对路径
+                $type = $fileCharater->getClientMimeType();     // image/jpeg
+                $filename = date('Y-m-d-H-i-s') . '-' . uniqid() . '.' . $ext;
+                // 使用我们新建的uploads本地存储空间（目录）
+                //这里的uploads是配置文件的名称
+                $bool = Storage::disk('uploads')->put($filename, file_get_contents($realPath));
+                $code['code'] = 0;
+                $code['url'] = '/upload/img/'.$filename;
+                return json_encode($code);
+            }
+        }
+    }
+    public function infor(Request $request){
+        if(empty($request->input('headphoto'))){
+            return '头像不能为空';
+        }
+
+        $post['name'] = $request->input('name');
+        $post['tel'] = $request->input('tel');
+        $post['headphoto'] = $request->input('headphoto');
+        $post['photos'] = trim($request->input('photos'),',');
+
+        $Referrer = new Referrer();
+        $referrers = $Referrer->insertGetId($post);
+        $referreres = $Referrer->find($referrers);
+
+        $this->show($request->input('cid'),$referrers);
+
+        if($referrers){
+            return json_encode($referreres);
+        }else{
+            return '提交失败';
+        }
+    }
 }

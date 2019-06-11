@@ -37,6 +37,8 @@ Route::namespace('Home')->group(function () {
     //文章
     Route::get('/show-{id}.html', 'ArticleController@show');
     Route::get('/Campusall.html', 'ArticleController@Campusall');
+    Route::any('/uploads', 'ArticleController@uploads');
+    Route::any('/infor', 'ArticleController@infor');
     //报名
     Route::post('/apply/{url}', 'EnrollController@apply');
 
