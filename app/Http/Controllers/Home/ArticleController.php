@@ -158,10 +158,10 @@ class ArticleController extends Controller
         $post['tel'] = $request->input('tel');
         $post['headphoto'] = $request->input('headphoto');
         $Referrer = new Referrer();
-        $Referrer->insert($post);
+        //$Referrer->insert($post);
         if ((int)$id <= 0) return view('error');
         $cid = DB::getPdo()->lastInsertId();
-        print_r($cid);
+        //print_r($cid);
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
@@ -170,9 +170,12 @@ class ArticleController extends Controller
 
             $Referrer = new Referrer();
             $referrer = $Referrer->find($cid)->toArray();
-            print_r($referrer);
+
             $article_list = $A->api_list($article->cid);
             $photos = explode(',', $referrer['photos']);
+
+            //print_r($cid);die;
+
             return view('api/content', ['cid'=>$cid,'article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
         }
     }
