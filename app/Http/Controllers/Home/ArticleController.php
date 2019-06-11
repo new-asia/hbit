@@ -150,7 +150,7 @@ class ArticleController extends Controller
             }
         }
     }
-    public function infor(Request $request,$id){
+    public function infor(Request $request,$id,$cid){
         if(!empty($request->input('photos'))) {
             $post['photos'] = implode(",", $request->input('photos'));
         }
@@ -160,7 +160,7 @@ class ArticleController extends Controller
         $Referrer = new Referrer();
         $Referrer->insert($post);
         if ((int)$id <= 0) return view('error');
-        $referrers =  DB::getPdo()->lastInsertId();
+        $cid =  DB::getPdo()->lastInsertId();
         //print_r($request->input('cid'));die;
         $isMobile = $this->isMobile();
 
@@ -169,11 +169,11 @@ class ArticleController extends Controller
             $article = Article::where('is_show', 1)->find($id);
 
             $Referrer = new Referrer();
-            $referrer = $Referrer->find($referrers)->toArray();
+            $referrer = $Referrer->find($cid)->toArray();
 
             $article_list = $A->api_list($article->cid);
             $photos = explode(',', $referrer['photos']);
-            return view('api/content', ['article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
+            return view('api/content', ['cid'=>$cid,'article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
         }
     }
 }
