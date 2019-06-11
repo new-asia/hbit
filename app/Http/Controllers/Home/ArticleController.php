@@ -169,9 +169,8 @@ class ArticleController extends Controller
             $article = Article::where('is_show', 1)->find($id);
 
             $Referrer = new Referrer();
-            if(empty($cid)){$cid = 178;}
+            if(empty($cid)){$cid = 189;}
             $referrer = $Referrer->find($cid)->toArray();
-
             $article_list = $A->api_list($article->cid);
             $photos = explode(',', $referrer['photos']);
 
