@@ -152,7 +152,11 @@ class ArticleController extends Controller
     }
     public function infor(Request $request,$id,$cid){
         if($request->input()) {
-            $post['photos'] = implode(",", $request->input('photos'));
+            if(empty($request->input('photos'))){
+                $post['photos'] = '';
+            }else{
+                $post['photos'] = implode(",", $request->input('photos'));
+            }
             $post['name'] = $request->input('name');
             $post['tel'] = $request->input('tel');
             $post['headphoto'] = $request->input('headphoto');

@@ -53,7 +53,7 @@
                 <legend>头像</legend>
             </fieldset>
             <div class="layui-upload-list">
-                <img class="layui-upload-img" id="demo" width="100" src="{{$referrer['headphoto']}}">
+                <img class="layui-upload-img" id="demo" width="50" src="{{$referrer['headphoto']}}">
             </div>
             <div class="dis" style="display: none;">
                 <fieldset class="layui-elem-field layui-field-title">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div style="margin:0 0 0 10px;line-height: 30px">
-                <input type="button" value="编辑" id="but">||<input class="dis" style="display: none" type="submit" value="提交" id="sub">
+                <input type="button" value="编辑" id="but"><input class="dis" style="display: none" type="submit" value="提交" id="sub">
             </div>
             <div id="image_preview"></div>
         </form>
