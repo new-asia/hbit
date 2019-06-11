@@ -152,15 +152,15 @@ class ArticleController extends Controller
     }
     public function infor(Request $request){
         if(!empty($request->input('photos'))) {
-            $post['name'] = $request->input('name');
-            $post['tel'] = $request->input('tel');
-            $post['headphoto'] = $request->input('headphoto');
             $post['photos'] = implode(",", $request->input('photos'));
-            $Referrer = new Referrer();
-            $Referrer->insert($post);
-            if ((int)$request->input('cid') <= 0) return view('error');
         }
-
+        $post['name'] = $request->input('name');
+        $post['tel'] = $request->input('tel');
+        $post['headphoto'] = $request->input('headphoto');
+        $cid = $request->input('cid');
+        $Referrer = new Referrer();
+        $Referrer->insert($post);
+        if ((int)$cid <= 0) return view('error');
         $referrers =  DB::getPdo()->lastInsertId();
         //print_r($request->input('cid'));die;
         $isMobile = $this->isMobile();
