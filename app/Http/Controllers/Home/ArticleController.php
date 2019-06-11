@@ -166,7 +166,7 @@ class ArticleController extends Controller
 
         if ($isMobile) {
             $A = new Article();
-            $article = Article::where('is_show', 1)->find($request->input('cid'));
+            $article = Article::where('is_show', 1)->find($id);
 
             $Referrer = new Referrer();
             $referrer = $Referrer->find($referrers)->toArray();
