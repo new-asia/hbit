@@ -153,12 +153,12 @@ class ArticleController extends Controller
     public function infor(Request $request,$id,$cid){
         if(!empty($request->input('photos'))) {
             $post['photos'] = implode(",", $request->input('photos'));
+            $post['name'] = $request->input('name');
+            $post['tel'] = $request->input('tel');
+            $post['headphoto'] = $request->input('headphoto');
+            $Referrer = new Referrer();
+            $Referrer->insert($post);
         }
-        $post['name'] = $request->input('name');
-        $post['tel'] = $request->input('tel');
-        $post['headphoto'] = $request->input('headphoto');
-        $Referrer = new Referrer();
-        //$Referrer->insert($post);
         if ((int)$id <= 0) return view('error');
         $cid = DB::getPdo()->lastInsertId();
         //print_r($cid);
@@ -169,7 +169,7 @@ class ArticleController extends Controller
             $article = Article::where('is_show', 1)->find($id);
 
             $Referrer = new Referrer();
-            $referrer = $Referrer->find(134)->toArray();
+            $referrer = $Referrer->find($cid)->toArray();
 
             $article_list = $A->api_list($article->cid);
             $photos = explode(',', $referrer['photos']);
