@@ -158,11 +158,11 @@ class ArticleController extends Controller
             $post['photos'] = implode(",", $request->input('photos'));
             $Referrer = new Referrer();
             $Referrer->insert($post);
+            if ((int)$request->input('cid') <= 0) return view('error');
         }
-        $referrers =  DB::getPdo()->lastInsertId();
-        //print_r($referrers);die;
-        if ((int)$request->input('cid') <= 0) return view('error');
 
+        $referrers =  DB::getPdo()->lastInsertId();
+        //print_r($request->input('cid'));die;
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
