@@ -14,7 +14,7 @@ use App\Models\Referrer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Storage;
-
+use DB;
 class ArticleController extends Controller
 {
     public function __construct()
@@ -151,15 +151,16 @@ class ArticleController extends Controller
         }
     }
     public function infor(Request $request){
-        if(!empty($request->input())) {
+        if(!empty($request->input('photos'))) {
             $post['name'] = $request->input('name');
             $post['tel'] = $request->input('tel');
             $post['headphoto'] = $request->input('headphoto');
             $post['photos'] = implode(",", $request->input('photos'));
             $Referrer = new Referrer();
-            $referrers = $Referrer->insertGetId($post);
+            $Referrer->insert($post);
         }
-        
+        $referrers =  DB::getPdo()->lastInsertId();
+        //print_r($referrers);die;
         if ((int)$request->input('cid') <= 0) return view('error');
 
         $isMobile = $this->isMobile();
