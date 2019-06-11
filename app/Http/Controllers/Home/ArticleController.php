@@ -151,28 +151,29 @@ class ArticleController extends Controller
         }
     }
     public function infor(Request $request){
-        $post['name'] = $request->input('name');
-        $post['tel'] = $request->input('tel');
-        $post['headphoto'] = $request->input('headphoto');
-        $post['photos'] = implode(",", $request->input('photos'));
-
-        $Referrer = new Referrer();
-        $referrers = $Referrer->insertGetId($post);
-
-        if((int)$request->input('cid') <= 0) return view('error');
-
-        $isMobile = $this->isMobile();
-
-        if($isMobile){
-            $A = new Article();
-            $article = Article::where('is_show',1)->find($request->input('cid'));
-
+        if(!empty($request->input())) {
+            $post['name'] = $request->input('name');
+            $post['tel'] = $request->input('tel');
+            $post['headphoto'] = $request->input('headphoto');
+            $post['photos'] = implode(",", $request->input('photos'));
             $Referrer = new Referrer();
-            $referrer = $Referrer->find($referrers)->toArray();
+            $referrers = $Referrer->insertGetId($post);
 
-            $article_list = $A->api_list($article->cid);
-            $photos = explode(',',$referrer['photos']);
-            return view('api/content',['article'=>$article,'photos'=>$photos,'referrer'=>$referrer,'article_list'=>$article_list]);
+            if ((int)$request->input('cid') <= 0) return view('error');
+
+            $isMobile = $this->isMobile();
+
+            if ($isMobile) {
+                $A = new Article();
+                $article = Article::where('is_show', 1)->find($request->input('cid'));
+
+                $Referrer = new Referrer();
+                $referrer = $Referrer->find($referrers)->toArray();
+
+                $article_list = $A->api_list($article->cid);
+                $photos = explode(',', $referrer['photos']);
+                return view('api/content', ['article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
+            }
         }
     }
 }
