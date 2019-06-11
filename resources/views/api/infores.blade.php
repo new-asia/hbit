@@ -86,6 +86,11 @@
                     <img class="layui-upload-img" id="cendemo" width="100" src="{{$photos[$k]}}">
                 @endforeach
             </div>
+            <div id="photos">
+                @foreach($photos as $k => $photo)
+                    <input type="hidden" class="del" name="photos[]" value="{{$photos[$k]}}">
+                @endforeach
+            </div>
             <div class="dis" style="display: none;">
                 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
                     <legend>上传文章图片</legend>
@@ -100,7 +105,7 @@
                 </div>
             </div>
             <div style="margin:0 0 0 10px;line-height: 30px">
-                <input type="button" value="编辑" id="but"><input class="dis" style="display: none" type="submit" value="提交" id="sub">
+                <input type="button" value="编辑" style="" id="but"><input class="dis" style="display: none" type="submit" value="提交" id="sub">
             </div>
             <div id="image_preview"></div>
         </form>
@@ -151,10 +156,12 @@
         //console.log();
         $(".hiddens").attr('style','border:1px solid #ccc;');
         $(".dis").attr('style','');
+        $("#but").attr('style','display: none');
     });
     $("#sub").click(function(){
         $(".hiddens").attr('style','border: none;');
         $(".dis").attr('style','display: none;');
+        $("#but").attr('style','');
     });
     layui.use('upload', function(){
         var $ = layui.jquery
@@ -206,7 +213,8 @@
             ,done: function(res){
                 //上传完毕
                 $('#demo2').append('<img src="'+res.url+'" class="layui-upload-img new-img-s"  width="100">')
-                $('#demo2').append('<input type="hidden" name="photos[]" value="'+res.url+'">')
+                $('#photos').append('<input type="hidden" name="photos[]" value="'+res.url+'">');
+                $('.del').attr('name','pho');
             }
         });
     });
