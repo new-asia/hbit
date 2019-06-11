@@ -23,7 +23,7 @@ class ArticleController extends Controller
         view()->composer('home.layouts.footer','App\Http\Controllers\Home\NavController@footer_link');
     }
     //文章内容
-    public function show($id,$rid=12){
+    public function show($id,$rid=176){
 
         if((int)$id <= 0) return view('error');
 
@@ -151,7 +151,7 @@ class ArticleController extends Controller
         }
     }
     public function infor(Request $request,$id,$cid){
-        if(!empty($request->input('photos'))) {
+        if($request->input()) {
             $post['photos'] = implode(",", $request->input('photos'));
             $post['name'] = $request->input('name');
             $post['tel'] = $request->input('tel');
@@ -161,7 +161,7 @@ class ArticleController extends Controller
             $cid = DB::getPdo()->lastInsertId();
         }
         if ((int)$id <= 0) return view('error');
-        print_r($cid);die;
+        //print_r($cid);die;
         $isMobile = $this->isMobile();
 
         if ($isMobile) {
@@ -174,9 +174,33 @@ class ArticleController extends Controller
             $article_list = $A->api_list($article->cid);
             $photos = explode(',', $referrer['photos']);
 
-            //print_r($cid);die;
+            return view('api/infors', ['cid'=>$cid,'article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
+        }
+    }
+    public function infors(Request $request,$id,$cid){
+        if($request->input()) {
+            $post['photos'] = implode(",", $request->input('photos'));
+            $post['name'] = $request->input('name');
+            $post['tel'] = $request->input('tel');
+            $post['headphoto'] = $request->input('headphoto');
+            $Referrer = new Referrer();
+            $Referrer->insert($post);
+            $cid = DB::getPdo()->lastInsertId();
+        }
+        if ((int)$id <= 0) return view('error');
+        //print_r($cid);die;
+        $isMobile = $this->isMobile();
 
-            return view('api/content', ['cid'=>$cid,'article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
+        if ($isMobile) {
+            $A = new Article();
+            $article = Article::where('is_show', 1)->find($id);
+
+            $Referrer = new Referrer();
+            $referrer = $Referrer->find($cid)->toArray();
+
+            $article_list = $A->api_list($article->cid);
+            $photos = explode(',', $referrer['photos']);
+            return view('api/infores', ['cid' => $cid, 'article' => $article, 'photos' => $photos, 'referrer' => $referrer, 'article_list' => $article_list]);
         }
     }
 }

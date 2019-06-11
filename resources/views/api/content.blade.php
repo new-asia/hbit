@@ -47,9 +47,8 @@
                     </div>
                 </div>
             </div>
+            <form id="form" cid="{{@$cid?$cid:178}}" action="/infor-{{$article->article_id}}-{{@$cid?$cid:178}}.html" method="post">
 
-            <form action="/infor-{{$article->article_id}}-{{isset($cid)?$cid:0}}.html" method="post">
-                {{print_r($referrer)}}
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>头像</legend>
                 </fieldset>
@@ -211,7 +210,4 @@
             }
         });
     });
-    /*/ $('.new-img-s').each(function(){
-    alert($(this).attr('src'));
-    });*/
 </script>
