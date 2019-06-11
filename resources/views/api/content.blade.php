@@ -100,7 +100,7 @@
                     </div>
                 </div>
                 <div style="margin:0 0 0 10px;line-height: 30px">
-                    <input type="button" value="编辑" id="but">||<input class="dis" style="display: none" type="submit" value="提交" id="sub">
+                    <input type="button" value="编辑" id="but"><input class="dis" style="display: none" type="submit" value="提交" id="sub">
                 </div>
                 <div id="image_preview"></div>
             </form>
