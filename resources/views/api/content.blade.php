@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <div>
+            <form action="/infor" method="post">
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>头像</legend>
                 </fieldset>
@@ -64,6 +64,7 @@
                         <div class="layui-upload-list">
                             <input type="hidden" name="w_picture" vaule="" id="file">
                             <img class="layui-upload-img" id="demo1" width="100">
+                            <input type="hidden" name="headphoto" value="" id="headphoto">
                             <p id="demoText"></p>
                         </div>
                     </div>
@@ -98,10 +99,10 @@
                     </div>
                 </div>
                 <div style="margin:0 0 0 10px;line-height: 30px">
-                    <input type="button" value="编辑" id="but">||<input type="button" value="提交" id="sub">
+                    <input type="button" value="编辑" id="but">||<input class="dis" style="display: none" type="submit" value="提交" id="sub">
                 </div>
                 <div id="image_preview"></div>
-            </div>
+            </form>
 
             <div class="weui-panel weui-panel_access">
                 <div class="weui-panel__hd">相关资讯</div>
@@ -153,7 +154,7 @@
     $("#sub").click(function(){
         $(".hiddens").attr('style','border: none;');
         $(".dis").attr('style','display: none;');
-        var infors = [];
+        /*var infors = [];
         infors['name'] = $('input[name="name"]').val();
         infors['tel'] = $('input[name="tel"]').val();
         infors['cid'] = $('input[name="cid"]').val();
@@ -164,7 +165,7 @@
         });
         $.ajax({
             type: "post",
-            url: "/infor",
+            url: "/show-.html",
             data: "name="+infors['name']+"&tel="+infors['tel']+"&headphoto="+infors['headphoto']+"&photos="+infors['photos'],
             traditional: true,
             dataType: "json",
@@ -176,7 +177,7 @@
                 $('input[name="name"]').val(data.name);
                 $('input[name="tel"]').val(data.tel);
             }
-        })
+        })*/
     });
     layui.use('upload', function(){
         var $ = layui.jquery
@@ -189,7 +190,7 @@
             ,before: function(obj){
                 //预读本地文件示例，不支持ie8
                 obj.preview(function(index, file, result){
-                    $('#demo1').attr('src', result); //图片链接（base64）
+                    $('#demo1').attr('src', result); //图片链接（base64）headphoto
                 });
             }
             ,done: function(res){
@@ -203,6 +204,7 @@
                 }
                 //console.log(res.url);
                 $('#demo1').attr('src', res.url);
+                $('#headphoto').val(res.url);
                 //上传成功
             }
             ,error: function(){
@@ -227,6 +229,7 @@
             ,done: function(res){
                 //上传完毕
                 $('#demo2').append('<img src="'+res.url+'" class="layui-upload-img new-img-s"  width="100">')
+                $('#demo2').append('<input type="hidden" name="photos[]" value="'+res.url+'">')
             }
         });
     });

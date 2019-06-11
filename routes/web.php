@@ -35,7 +35,7 @@ Route::namespace('Home')->group(function () {
     Route::get('/ClassInformation.html', 'NavController@ClassInfomation');
     Route::get('nav/header_nav', 'NavController@header_nav');
     //文章
-    Route::get('/show-{id}.html', 'ArticleController@show');
+    Route::any('/show-{id}.html', 'ArticleController@show');
     Route::get('/Campusall.html', 'ArticleController@Campusall');
     Route::any('/uploads', 'ArticleController@uploads');
     Route::any('/infor', 'ArticleController@infor');

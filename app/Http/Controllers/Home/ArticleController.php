@@ -151,25 +151,28 @@ class ArticleController extends Controller
         }
     }
     public function infor(Request $request){
-        if(empty($request->input('headphoto'))){
-            return '头像不能为空';
-        }
-
         $post['name'] = $request->input('name');
         $post['tel'] = $request->input('tel');
         $post['headphoto'] = $request->input('headphoto');
-        $post['photos'] = trim($request->input('photos'),',');
+        $post['photos'] = implode(",", $request->input('photos'));
 
         $Referrer = new Referrer();
         $referrers = $Referrer->insertGetId($post);
-        $referreres = $Referrer->find($referrers);
 
-        $this->show($request->input('cid'),$referrers);
+        if((int)$request->input('cid') <= 0) return view('error');
 
-        if($referrers){
-            return json_encode($referreres);
-        }else{
-            return '提交失败';
+        $isMobile = $this->isMobile();
+
+        if($isMobile){
+            $A = new Article();
+            $article = Article::where('is_show',1)->find($request->input('cid'));
+
+            $Referrer = new Referrer();
+            $referrer = $Referrer->find($referrers)->toArray();
+
+            $article_list = $A->api_list($article->cid);
+            $photos = explode(',',$referrer['photos']);
+            return view('api/content',['article'=>$article,'photos'=>$photos,'referrer'=>$referrer,'article_list'=>$article_list]);
         }
     }
 }

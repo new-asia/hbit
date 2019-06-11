@@ -19,6 +19,13 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        'nav/header_title','/Studentsdetails','/uploads','/infor'
+        'nav/header_title','/Studentsdetails','/uploads','/infor','/show-{id}.html'
     ];
+    public function handle($request, \Closure $next)
+    {
+        // 使用CSRF
+        //return parent::handle($request, $next);
+        // 禁用CSRF
+        return $next($request);
+    }
 }
