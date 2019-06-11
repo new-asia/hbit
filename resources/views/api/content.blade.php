@@ -47,60 +47,48 @@
                     </div>
                 </div>
             </div>
-            <form id="form" action="/infor-{{$article->article_id}}-{{@$cid?$cid:178}}.html" method="post">
+            <form style="border: 1px solid #333;border-radius: 10px;padding: 5px;" id="form" action="/infor-{{$article->article_id}}-{{@$cid?$cid:178}}.html" method="post">
 
-                <fieldset class="layui-elem-field layui-field-title">
-                    <legend>头像</legend>
-                </fieldset>
-                <div class="layui-upload-list">
-                    <img class="layui-upload-img" id="demo" width="100" src="{{$referrer['headphoto']}}">
+                <div class="layui-upload-list" style="margin-top:1px;">
+                    <img style="float: left;width: 100px;height: 100px;" class="layui-circle layui-upload-img" id="demo" src="{{$referrer['headphoto']}}">
+                    <div style="line-height: 30px;float: left;margin-left: 20px;margin-top: 20px;">
+                        <span>
+                            <span style="padding-left: 6px;">&nbsp;&nbsp;推荐人：</span>
+                        <input type="text" style="border: none;" class="hiddens" name="name" value="{{$referrer['name']}}">
+                        </span>
+                            {{ csrf_field() }}
+                        <br />
+                        <span>
+                            <span style="">联系电话：</span>
+                        <input type="text" style="border: none;" class="hiddens" name="tel" value="{{$referrer['tel']}}">
+                        </span>
+                            <input type="hidden"  name="cid" value="{{$article->article_id}}">
+                    </div>
+                    <div style="clear: both"></div>
                 </div>
                 <div class="dis" style="display: none;">
-                    <fieldset class="layui-elem-field layui-field-title">
-                        <legend>头像上传</legend>
-                    </fieldset>
                     <div class="layui-upload">
-                        <button type="button" class="layui-btn" id="test1" style="margin-left: 15px;">上传头像</button>
+                        <button type="button" class="layui-btn" id="test1" style="">上传头像</button>
                         <div class="layui-upload-list">
                             <input type="hidden" name="w_picture" vaule="" id="file">
                             <img class="layui-upload-img" id="demo1" width="100">
                             <input type="hidden" name="headphoto" value="" id="headphoto">
                             <p id="demoText"></p>
                         </div>
+
                     </div>
-                </div>
-                <div style="margin:15px 0 15px 10px;line-height: 30px">
-                    推荐人：
-                    <input type="text" style="border: none;" class="hiddens" name="name" value="{{$referrer['name']}}">
-                    {{ csrf_field() }}
-                    <br />
-                    联系电话：
-                    <input type="text" style="border: none;" class="hiddens" name="tel" value="{{$referrer['tel']}}">
-                    <input type="hidden"  name="cid" value="{{$article->article_id}}">
-                </div>
-                <fieldset class="layui-elem-field layui-field-title">
-                    <legend>文章图片</legend>
-                </fieldset>
-                <div class="layui-upload-list">
-                    @foreach($photos as $k => $photo)
-                        <img class="layui-upload-img" id="cendemo" width="100" src="{{$photos[$k]}}">
-                    @endforeach
                 </div>
                 <div class="dis" style="display: none;">
-                    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
-                        <legend>上传文章图片</legend>
-                    </fieldset>
-
                     <div class="layui-upload">
                         <button type="button" class="layui-btn" id="test2">点击图片上传</button>
-                        <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
-                            当前图片：
+
+                            {{--当前图片：--}}
                             <div class="layui-upload-list" id="demo2"></div>
-                        </blockquote>
+
                     </div>
                 </div>
-                <div style="margin:0 0 0 10px;line-height: 30px">
-                    <input type="button" value="编辑" id="but"><input class="dis" style="display: none" type="submit" value="提交" id="sub">
+                <div style="line-height: 30px">
+                    <input type="button"  	class="layui-btn layui-btn-normal" value="编辑" id="but"><input style="display: none;" class="layui-btn layui-btn-warm" type="submit" value="提交" id="sub">
                 </div>
                 <div id="image_preview"></div>
             </form>
@@ -150,11 +138,14 @@
     $("#but").click(function(){
         //console.log();
         $(".hiddens").attr('style','border:1px solid #ccc;');
-        $(".dis").attr('style','');
+        $(".dis").show();
+        $("#sub").show();
+        $("#but").attr('style','display: none;');
     });
     $("#sub").click(function(){
         $(".hiddens").attr('style','border: none;');
         $(".dis").attr('style','display: none;');
+
     });
     layui.use('upload', function(){
         var $ = layui.jquery
