@@ -48,7 +48,7 @@
                 </div>
             </div>
 
-            <form action="/infor" method="post">
+            <form action="/infor-{{$article->article_id}}.html" method="post">
                 <fieldset class="layui-elem-field layui-field-title">
                     <legend>头像</legend>
                 </fieldset>
@@ -72,6 +72,7 @@
                 <div style="margin:15px 0 15px 10px;line-height: 30px">
                     推荐人：
                     <input type="text" style="border: none;" class="hiddens" name="name" value="{{$referrer['name']}}">
+                    {{ csrf_field() }}
                     <br />
                     联系电话：
                     <input type="text" style="border: none;" class="hiddens" name="tel" value="{{$referrer['tel']}}">
@@ -154,30 +155,6 @@
     $("#sub").click(function(){
         $(".hiddens").attr('style','border: none;');
         $(".dis").attr('style','display: none;');
-        /*var infors = [];
-        infors['name'] = $('input[name="name"]').val();
-        infors['tel'] = $('input[name="tel"]').val();
-        infors['cid'] = $('input[name="cid"]').val();
-        infors['headphoto'] = $('#demo1').attr('src');
-        infors['photos'] = '';
-        $('.new-img-s').each(function(){
-            infors['photos'] += $(this).attr('src')+',';
-        });
-        $.ajax({
-            type: "post",
-            url: "/show-.html",
-            data: "name="+infors['name']+"&tel="+infors['tel']+"&headphoto="+infors['headphoto']+"&photos="+infors['photos'],
-            traditional: true,
-            dataType: "json",
-            async:false,
-            success: function(data){
-                console.log(data);
-                $("#demo").attr('src',data.headphoto);
-                $("#cendemo").attr('src',data.photos);
-                $('input[name="name"]').val(data.name);
-                $('input[name="tel"]').val(data.tel);
-            }
-        })*/
     });
     layui.use('upload', function(){
         var $ = layui.jquery
