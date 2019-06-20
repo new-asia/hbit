@@ -156,7 +156,7 @@ class ArticleController extends Controller
         }
     }
     public function infor(Request $request,$id,$cid){
-      
+        //dump($request->all());die;
         if($request->input()) {
             if(empty($request->input('photos'))){
                 $post['photos'] = '';

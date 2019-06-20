@@ -205,7 +205,7 @@
             ,done: function(res){
                 //上传完毕
                 $('#demo2').append('<img src="'+res.url+'" class="layui-upload-img new-img-s"  width="100">')
-                $('#photos').append('<input type="hidden" name="photos[]" value="'+res.url+'">');
+                $('#demo2').append('<input type="hidden" name="photos[]" value="'+res.url+'">');
                 $('.del').attr('name','pho');
             }
         });
