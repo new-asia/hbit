@@ -10,6 +10,8 @@ use App\Models\Course;
 use App\Models\Tags;
 use App\Models\Campus;
 use App\Models\Article;
+use Cookie;
+
 use App\Models\Referrer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -35,6 +37,9 @@ class ArticleController extends Controller
             $article = Article::where('is_show',1)->find($id);
 
             $Referrer = new Referrer();
+            if(@$_COOKIE['id']){
+                $rid = $_COOKIE['id'];
+            }
             $referrer = $Referrer->find($rid)->toArray();
 
             $article_list = $A->api_list($article->cid);
@@ -151,6 +156,7 @@ class ArticleController extends Controller
         }
     }
     public function infor(Request $request,$id,$cid){
+      
         if($request->input()) {
             if(empty($request->input('photos'))){
                 $post['photos'] = '';
@@ -161,8 +167,13 @@ class ArticleController extends Controller
             $post['tel'] = $request->input('tel');
             $post['headphoto'] = $request->input('headphoto');
             $Referrer = new Referrer();
+            
             $Referrer->insert($post);
             $cid = DB::getPdo()->lastInsertId();
+           
+            if($request->input('is_') == 2){
+                setcookie('id', $cid);
+            }
         }
         if ((int)$id <= 0) return view('error');
         //print_r($cid);die;

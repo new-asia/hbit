@@ -78,6 +78,7 @@
 
                     </div>
                 </div>
+                <input type="hidden" name="is_" value="1" id="is_">
                 <div class="dis" style="display: none;">
                     <div class="layui-upload">
                         <button type="button" class="layui-btn" id="test2">点击图片上传</button>
@@ -88,7 +89,10 @@
                     </div>
                 </div>
                 <div style="line-height: 30px">
-                    <input type="button"  	class="layui-btn layui-btn-normal" value="编辑" id="but"><input style="display: none;" class="layui-btn layui-btn-warm" type="submit" value="提交" id="sub">
+                    <input type="button"  	class="layui-btn layui-btn-normal" value="编辑" id="but">
+                    <input style="display: none;" class="layui-btn layui-btn-warm" type="submit" value="提交" id="sub">
+                    <button style="display: none;" class="layui-btn layui-btn-warm" id="submit_btn">全部替换</button>
+
                 </div>
                 <div id="image_preview"></div>
             </form>
@@ -140,6 +144,8 @@
         $(".hiddens").attr('style','border:1px solid #ccc;');
         $(".dis").show();
         $("#sub").show();
+         $("#submit_btn").show();
+
         $("#but").attr('style','display: none;');
     });
     $("#sub").click(function(){
@@ -147,6 +153,10 @@
         $(".dis").attr('style','display: none;');
 
     });
+    submit_btn.onclick = function(e) {
+        $("#is_").val("2");
+        console.log('submit_btn')
+    }
     layui.use('upload', function(){
         var $ = layui.jquery
             ,upload = layui.upload;
